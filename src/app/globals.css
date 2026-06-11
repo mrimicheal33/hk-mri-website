@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a2332;
+  --surface-muted: #f5f7fa;
+  --surface-subtle: #eef1f5;
+  --text-primary: #1a2332;
+  --text-secondary: #5a6578;
+  --text-muted: #8b95a5;
+  --border: #e2e6ed;
+  --border-strong: #c8cfd9;
+  --brand: #005f8a;
+  --brand-hover: #004a6e;
+  --brand-light: #e8f4f8;
+  --brand-accent: #00a5b5;
+  --footer: #0f1a24;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-subtle: var(--surface-subtle);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-light: var(--brand-light);
+  --color-brand-accent: var(--brand-accent);
+  --color-footer: var(--footer);
+  --font-sans: var(--font-noto-sans-tc);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-inter), var(--font-noto-sans-tc), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #005f8a22;
+  color: #0f1a24;
+}
