@@ -25,9 +25,10 @@ export function HeroSonoEye() {
             <Image
               src="/images/brands/chison.webp"
               alt="CHISON"
-              width={120}
-              height={36}
-              className="h-7 w-auto object-contain mb-6"
+              width={240}
+              height={72}
+              className="h-12 sm:h-14 lg:h-16 w-auto max-w-[280px] object-contain mb-5"
+              style={{ width: "auto", height: "auto" }}
             />
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight text-text-primary mb-3">
