@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 export function PartnersSection() {
@@ -25,16 +25,12 @@ export function PartnersSection() {
             href={`/brands/${partner.slug}`}
             className="group bg-white p-10 lg:p-12 hover:bg-surface-muted transition-colors flex flex-col items-center text-center"
           >
-            <div className="h-14 flex items-center justify-center mb-8 w-full">
-              <Image
-                src={partner.logo}
-                alt={partner.name}
-                width={160}
-                height={48}
-                className="h-10 w-auto max-w-[160px] object-contain"
-                style={{ width: "auto", height: "auto" }}
-              />
-            </div>
+            <BrandLogo
+              src={partner.logo}
+              alt={partner.name}
+              align="center"
+              className="mb-8 mx-auto"
+            />
             <h3 className="text-base font-semibold text-text-primary mb-2">
               {partner.name}
             </h3>

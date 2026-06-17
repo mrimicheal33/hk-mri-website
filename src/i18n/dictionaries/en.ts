@@ -91,7 +91,8 @@ export const en = {
         {
           key: "sonoeye",
           name: "SonoEye Handheld Ultrasound",
-          brand: "CHISON",
+          brandName: "CHISON",
+          brandLogo: "/images/brands/chison.webp",
           description:
             "Our pocket-sized, expert-grade handheld ultrasound redefines point-of-care imaging (POCUS). Featuring a customizable interface, IP67 durability, and AI automation — empowering clinicians across aesthetic medicine, MSK physiotherapy, and emergency care.",
           href: "/sonoeye/clinical",
@@ -100,29 +101,22 @@ export const en = {
         {
           key: "mri-ct",
           name: "MRI & CT Scan Systems",
-          brand: "UNITED IMAGING",
+          brandName: "UNITED IMAGING",
+          brandLogo: "/images/brands/united-imaging.png",
           description:
             "MRI systems combining advanced imaging with patient comfort — from high-resolution anatomical scans to functional imaging. CT scanners delivering rapid, high-resolution imaging for cardiac, trauma, and oncology applications.",
           href: "/brands/united-imaging",
           image: "/images/products/umr-680.jpg",
         },
         {
-          key: "liver",
-          name: "Liver Fibrosis Scanner",
-          brand: "MINDRAY",
+          key: "mindray",
+          name: "Ultrasound, Liver Fibrosis & Digital Radiography",
+          brandName: "MINDRAY",
+          brandLogo: "/images/brands/mindray.png",
           description:
-            "Advanced transient elastography for non-invasive, quantitative assessment of liver stiffness and fatty degeneration — supporting early detection and long-term management of chronic liver diseases in gastroenterology and diagnostic settings.",
-          href: "/products/hepatus-5",
-          image: "/images/products/hepatus-5.jpg",
-        },
-        {
-          key: "dr",
-          name: "Digital Radiography (DR)",
-          brand: "MINDRAY",
-          description:
-            "Streamlined DR systems with comprehensive features for diverse clinical scenarios. Compliant with international standards — prioritising safety, quality, and reliability for radiology departments and imaging centres.",
+            "Comprehensive MINDRAY solutions across diagnostic ultrasound systems for general and specialty imaging, Hepatus liver fibrosis scanners with transient elastography for non-invasive liver assessment, and DigiEye digital radiography (DR) platforms — all built to international standards for clinical accuracy, safety, and reliability.",
           href: "/brands/mindray",
-          image: "/images/products/digieye-680.jpg",
+          image: "/images/products/hepatus-5.jpg",
         },
       ],
     },

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 export function ProductPortfolio() {
@@ -18,7 +19,7 @@ export function ProductPortfolio() {
         description={t.home.portfolio.description}
       />
 
-      <div className="grid md:grid-cols-2 gap-px bg-border border border-border">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
         {t.home.portfolio.items.map((item) => (
           <Link
             key={item.key}
@@ -34,9 +35,11 @@ export function ProductPortfolio() {
                 className="object-contain object-center p-4 group-hover:scale-[1.02] transition-transform duration-300"
               />
             </div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-brand mb-2">
-              {item.brand}
-            </p>
+            <BrandLogo
+              src={item.brandLogo}
+              alt={item.brandName}
+              className="mb-4"
+            />
             <h3 className="text-lg font-semibold text-text-primary mb-3 group-hover:text-brand transition-colors">
               {item.name}
             </h3>

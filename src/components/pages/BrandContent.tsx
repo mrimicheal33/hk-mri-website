@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
@@ -38,13 +38,7 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
       <section className="bg-white border-b border-border">
         <Container className="py-16 lg:py-20">
           <div className="flex flex-col sm:flex-row sm:items-center gap-8">
-            <Image
-              src={brand.logo}
-              alt={brand.name}
-              width={160}
-              height={48}
-              className="h-10 w-auto object-contain"
-            />
+            <BrandLogo src={brand.logo} alt={brand.name} />
             <div>
               <div className="flex flex-wrap items-center gap-3 mb-3">
                 <h1 className="text-3xl lg:text-4xl font-semibold text-text-primary tracking-tight">

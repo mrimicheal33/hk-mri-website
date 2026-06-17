@@ -92,7 +92,8 @@ export const zh: Dictionary = {
         {
           key: "sonoeye",
           name: "SonoEye 手持超聲波",
-          brand: "CHISON",
+          brandName: "CHISON",
+          brandLogo: "/images/brands/chison.webp",
           description:
             "口袋大小的專家級手持超聲波，重新定義床邊影像（POCUS）。配備可自訂界面、IP67 耐用性及 AI 自動化功能，支援醫美、肌骨物理治療及急症護理等臨床場景。",
           href: "/sonoeye/clinical",
@@ -101,29 +102,22 @@ export const zh: Dictionary = {
         {
           key: "mri-ct",
           name: "MRI 及 CT 掃描系統",
-          brand: "UNITED IMAGING",
+          brandName: "UNITED IMAGING",
+          brandLogo: "/images/brands/united-imaging.png",
           description:
             "結合先進成像技術與患者舒適度的 MRI 系統，以及適用於心臟、創傷及腫瘤等應用的高速高解像度 CT 掃描儀。",
           href: "/brands/united-imaging",
           image: "/images/products/umr-680.jpg",
         },
         {
-          key: "liver",
-          name: "肝纖維化掃描儀",
-          brand: "MINDRAY",
+          key: "mindray",
+          name: "超聲波、肝纖維化掃描及數位放射影像",
+          brandName: "MINDRAY",
+          brandLogo: "/images/brands/mindray.png",
           description:
-            "採用瞬時彈性成像技術，提供非侵入性、定量評估肝臟硬度及脂肪變性，支援慢性肝病的早期發現及長期管理。",
-          href: "/products/hepatus-5",
-          image: "/images/products/hepatus-5.jpg",
-        },
-        {
-          key: "dr",
-          name: "數位放射影像 (DR)",
-          brand: "MINDRAY",
-          description:
-            "設計精簡、功能全面的 DR 系統，適用於多種臨床場景，符合國際標準，注重安全、品質及可靠性。",
+            "MINDRAY 全面方案涵蓋診斷超聲波系統、Hepatus 肝纖維化掃描儀（瞬時彈性成像技術作非侵入性肝臟評估），以及 DigiEye 數位放射影像（DR）平台 — 均符合國際標準，確保臨床準確性、安全及可靠性。",
           href: "/brands/mindray",
-          image: "/images/products/digieye-680.jpg",
+          image: "/images/products/hepatus-5.jpg",
         },
       ],
     },
