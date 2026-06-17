@@ -1,8 +1,8 @@
 export const en = {
   metadata: {
-    siteTitle: "HK MRI Instrument | Professional Medical Diagnostics & Imaging",
+    siteTitle: "HK MRI Instrument Ltd. | Medical Device Solutions in Hong Kong",
     siteDescription:
-      "HK MRI Instrument Limited — exclusive agent for CHISON SonoEye in Hong Kong and Macau. Distributor of MINDRAY, UNITED IMAGING, and more.",
+      "HK MRI Instrument Ltd. — your trusted Hong Kong medical device specialist. CHISON, MINDRAY, and UNITED IMAGING solutions for healthcare institutions.",
     aboutTitle: "About Us",
     aboutDescription:
       "HK MRI Instrument Limited — professional medical diagnostics and imaging equipment agent in Hong Kong and Macau.",
@@ -63,56 +63,126 @@ export const en = {
     veterinary: "Veterinary Imaging",
   },
   company: {
-    tagline: "Professional Medical Diagnostics & Imaging Solutions",
+    tagline: "Your Trusted HK Medical Device & Solution Specialist",
     description:
-      "HK MRI Instrument Limited delivers world-class medical imaging equipment to healthcare institutions in Hong Kong and Macau — from ultrasound and radiography to MRI and CT.",
+      "HK MRI Instrument Ltd. is a leading provider of cutting-edge medical devices and solutions in Hong Kong. As a trusted partner to healthcare institutions, we are committed to delivering innovative technologies that enhance patient care and improve clinical outcomes.",
     address: "Hong Kong",
-    subsidiaryRole: "Medical imaging equipment distribution",
+    subsidiaryRole: "Medical device distribution",
     aboutExtra:
-      "We provide complete solutions from handheld ultrasound to premium MRI and CT systems for healthcare institutions in Hong Kong and Macau.",
-    footerAgent: "Medical Imaging Equipment Distribution",
+      "We represent CHISON, MINDRAY, and UNITED IMAGING — delivering ultrasound, MRI, CT, liver fibrosis assessment, and digital radiography solutions across Hong Kong.",
+    footerAgent: "Medical Device & Imaging Solutions",
   },
   home: {
     hero: {
-      subtitle: "Handheld Ultrasound Diagnostic System",
-      description:
-        "Pocket-sized professional ultrasound connected to iOS for instant, accurate diagnosis — from ICU to clinic, one device for multiple specialties.",
-      features: [
-        "Pocket-sized, one-hand operation",
-        "Native iOS integration",
-        "IP67 waterproof / MIL-STD-810G",
-        "AI-assisted clinical diagnosis",
-      ],
+      label: "Hong Kong · Medical Technology",
+      title: "HK MRI Instrument Ltd.",
+      tagline: "Your Trusted HK Medical Device & Solution Specialist",
+      intro:
+        "HK MRI Instrument Ltd. is a leading provider of cutting-edge medical devices and solutions in Hong Kong. As a trusted partner to healthcare institutions, we are committed to delivering innovative technologies that enhance patient care and improve clinical outcomes.",
+      ctaProducts: "Our Product Portfolio",
+      ctaAbout: "About Us",
     },
-    services: {
-      label: "Core Business",
-      title: "Comprehensive Medical Solutions",
+    portfolio: {
+      label: "Our Product Portfolio",
+      title: "Advanced Medical Imaging & Diagnostic Solutions",
       description:
-        "From handheld ultrasound to premium medical imaging — complete equipment and service support for healthcare institutions.",
+        "Partnering with world-class manufacturers to deliver comprehensive clinical solutions across point-of-care ultrasound, MRI, CT, liver care, and digital radiography.",
       items: [
         {
-          title: "Medical Imaging Equipment",
+          key: "sonoeye",
+          name: "SonoEye Handheld Ultrasound",
+          brand: "CHISON",
           description:
-            "Full MINDRAY, CHISON, UNITED IMAGING, and Perlove portfolio from ultrasound to PET-CT.",
+            "Our pocket-sized, expert-grade handheld ultrasound redefines point-of-care imaging (POCUS). Featuring a customizable interface, IP67 durability, and AI automation — empowering clinicians across aesthetic medicine, MSK physiotherapy, and emergency care.",
+          href: "/sonoeye/clinical",
+          image: "/images/products/sonoeye.jpg",
         },
         {
-          title: "Clinical Education & Support",
+          key: "mri-ct",
+          name: "MRI & CT Scan Systems",
+          brand: "UNITED IMAGING",
           description:
-            "SonoEye hands-on workshops, clinical training, and after-sales technical support.",
+            "MRI systems combining advanced imaging with patient comfort — from high-resolution anatomical scans to functional imaging. CT scanners delivering rapid, high-resolution imaging for cardiac, trauma, and oncology applications.",
+          href: "/brands/united-imaging",
+          image: "/images/products/umr-680.jpg",
+        },
+        {
+          key: "liver",
+          name: "Liver Fibrosis Scanner",
+          brand: "MINDRAY",
+          description:
+            "Advanced transient elastography for non-invasive, quantitative assessment of liver stiffness and fatty degeneration — supporting early detection and long-term management of chronic liver diseases in gastroenterology and diagnostic settings.",
+          href: "/products/hepatus-5",
+          image: "/images/products/hepatus-5.jpg",
+        },
+        {
+          key: "dr",
+          name: "Digital Radiography (DR)",
+          brand: "MINDRAY",
+          description:
+            "Streamlined DR systems with comprehensive features for diverse clinical scenarios. Compliant with international standards — prioritising safety, quality, and reliability for radiology departments and imaging centres.",
+          href: "/brands/mindray",
+          image: "/images/products/digieye-680.jpg",
         },
       ],
     },
-    brands: {
-      label: "Partners",
-      title: "World-Class Medical Equipment Brands",
-      description:
-        "Representing global leaders in medical imaging and diagnostics for one-stop solutions in Hong Kong and Macau.",
+    whyChoose: {
+      label: "Why Choose Us",
+      title: "Why Choose HK MRI Instrument Ltd.?",
+      items: [
+        {
+          title: "Expertise",
+          description:
+            "Our team comprises experienced professionals with in-depth knowledge of medical imaging technologies. We understand the unique needs of healthcare providers and work closely with them to address clinical challenges.",
+        },
+        {
+          title: "Quality Assurance",
+          description:
+            "All our devices undergo rigorous quality control and adhere to international standards. We prioritise patient safety and clinical accuracy.",
+        },
+        {
+          title: "Service Excellence",
+          description:
+            "Beyond product delivery, we offer comprehensive service and maintenance support. Our technical experts ensure optimal performance and uptime for your equipment.",
+        },
+      ],
     },
-    cta: {
-      label: "Contact Us",
-      title: "Ready to Elevate Your Diagnostic Capabilities?",
+    partners: {
+      label: "Our Partners",
+      title: "World-Class Manufacturer Partners",
       description:
-        "Whether SonoEye handheld ultrasound or premium MRI / CT systems — our team is ready to advise and quote.",
+        "We proudly represent leading global medical device manufacturers, bringing proven technologies to healthcare institutions across Hong Kong.",
+      items: [
+        {
+          slug: "chison",
+          name: "CHISON",
+          logo: "/images/brands/chison.webp",
+          description:
+            "Global ultrasound innovator — home of the SonoEye handheld ultrasound and advanced POCUS solutions.",
+        },
+        {
+          slug: "united-imaging",
+          name: "UNITED IMAGING",
+          logo: "/images/brands/united-imaging.png",
+          description:
+            "Premium MRI and CT systems combining cutting-edge imaging technology with patient-centred design.",
+        },
+        {
+          slug: "mindray",
+          name: "MINDRAY",
+          logo: "/images/brands/mindray.png",
+          description:
+            "Leading provider of digital radiography, liver fibrosis assessment, and comprehensive imaging solutions.",
+        },
+      ],
+    },
+    connect: {
+      label: "Let's Connect",
+      title: "Partner With HK MRI Instrument Ltd.",
+      description:
+        "Interested in exploring our product offerings? We would be delighted to arrange a meeting at your convenience.",
+      closing:
+        "Thank you for considering HK MRI Instrument Ltd. as your medical device partner. We look forward to collaborating and contributing to the advancement of healthcare in Hong Kong.",
     },
   },
   products: {

@@ -1,15 +1,17 @@
-import { HeroSonoEye } from "@/components/home/HeroSonoEye";
-import { ServicesSection } from "@/components/home/ServicesSection";
-import { BrandShowcase } from "@/components/home/BrandShowcase";
-import { CTABanner } from "@/components/home/CTABanner";
+import { HeroCompany } from "@/components/home/HeroCompany";
+import { ProductPortfolio } from "@/components/home/ProductPortfolio";
+import { WhyChoose } from "@/components/home/WhyChoose";
+import { PartnersSection } from "@/components/home/PartnersSection";
+import { ConnectCTA } from "@/components/home/ConnectCTA";
 
 export default function HomePage() {
   return (
     <>
-      <HeroSonoEye />
-      <ServicesSection />
-      <BrandShowcase />
-      <CTABanner />
+      <HeroCompany />
+      <ProductPortfolio />
+      <WhyChoose />
+      <PartnersSection />
+      <ConnectCTA />
     </>
   );
 }

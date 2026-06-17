@@ -33,9 +33,10 @@ export function AboutContent() {
             <Image
               src={company.logo}
               alt={company.name}
-              width={180}
-              height={72}
-              className="h-[4.5rem] w-auto object-contain shrink-0"
+              width={240}
+              height={96}
+              className="h-24 sm:h-28 w-auto max-w-[240px] object-contain shrink-0"
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
         </Container>

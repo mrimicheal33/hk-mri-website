@@ -15,18 +15,15 @@ export function Footer() {
       <Container className="py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="mb-6">
               <Image
                 src={company.logo}
                 alt={company.name}
-                width={108}
-                height={36}
-                className="h-9 w-auto object-contain"
+                width={220}
+                height={88}
+                className="h-14 w-auto max-w-[220px] object-contain"
+                style={{ width: "auto", height: "auto" }}
               />
-              <div>
-                <div className="font-semibold text-sm">{company.nameLine1}</div>
-                <div className="text-xs text-white/50">{company.nameLine2}</div>
-              </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed max-w-sm">
               {t.company.description}

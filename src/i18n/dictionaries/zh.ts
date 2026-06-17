@@ -2,9 +2,9 @@ import type { Dictionary } from "./en";
 
 export const zh: Dictionary = {
   metadata: {
-    siteTitle: "HK MRI Instrument | 專業醫療診斷與影像解決方案",
+    siteTitle: "HK MRI Instrument | 香港領先醫療設備解決方案",
     siteDescription:
-      "HK MRI Instrument Limited — 港澳地區 CHISON SonoEye 獨家代理，提供 MINDRAY、UNITED IMAGING 等世界級醫療影像設備。",
+      "HK MRI Instrument Limited — 香港領先的尖端醫療設備及解決方案供應商，致力為醫療機構提供創新技術，提升患者護理及臨床成效。",
     aboutTitle: "關於我們",
     aboutDescription:
       "HK MRI Instrument Limited — 香港及澳門專業醫療診斷與影像設備代理商。",
@@ -64,56 +64,122 @@ export const zh: Dictionary = {
     veterinary: "獸醫影像",
   },
   company: {
-    tagline: "專業醫療診斷與影像解決方案",
+    tagline: "您可信賴的香港醫療設備及解決方案專家",
     description:
-      "HK MRI Instrument Limited 致力於為香港及澳門醫療機構提供世界級醫療影像設備，涵蓋超聲波、放射影像及核磁共振等全方位解決方案。",
+      "HK MRI Instrument Ltd. 是香港領先的尖端醫療設備及解決方案供應商。作為醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素及改善臨床成效。",
     address: "香港",
-    subsidiaryRole: "醫療影像設備代理與推廣",
+    subsidiaryRole: "醫療設備代理",
     aboutExtra:
-      "我們為港澳醫療機構提供從手持超聲波到高端 MRI / CT 的完整解決方案。",
-    footerAgent: "醫療影像設備代理",
+      "我們代理 CHISON、MINDRAY 及 UNITED IMAGING，提供超聲波、MRI、CT、肝纖維化檢測及數位放射影像解決方案。",
+    footerAgent: "醫療設備及影像解決方案",
   },
   home: {
     hero: {
-      subtitle: "手持超聲波診斷系統",
-      description:
-        "口袋大小的專業超聲波，連接 iOS 設備即可實現即時精準診斷。從 ICU 到診所，一機滿足多科室臨床需求。",
-      features: [
-        "口袋大小，單手操作",
-        "iOS 原生整合",
-        "IP67 防水 / MIL-STD-810G",
-        "AI 輔助臨床診斷",
-      ],
+      label: "香港 · 醫療科技",
+      title: "HK MRI Instrument Ltd.",
+      tagline: "您可信賴的香港醫療設備及解決方案專家",
+      intro:
+        "HK MRI Instrument Ltd. 是香港領先的尖端醫療設備及解決方案供應商。作為醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素及改善臨床成效。",
+      ctaProducts: "產品組合",
+      ctaAbout: "關於我們",
     },
-    services: {
-      label: "Core Business",
-      title: "全方位醫療解決方案",
+    portfolio: {
+      label: "Our Product Portfolio",
+      title: "先進醫學影像及診斷解決方案",
       description:
-        "從手持超聲波到高端醫學影像，為醫療機構提供完整的設備與服務支援。",
+        "與世界級製造商合作，提供床邊超聲波、MRI、CT、肝臟護理及數位放射影像等全面臨床方案。",
       items: [
         {
-          title: "醫療影像設備",
+          key: "sonoeye",
+          name: "SonoEye 手持超聲波",
+          brand: "CHISON",
           description:
-            "代理 MINDRAY、CHISON、UNITED IMAGING 及 Perlove 全系產品，涵蓋超聲波至 PET-CT。",
+            "口袋大小的專家級手持超聲波，重新定義床邊影像（POCUS）。配備可自訂界面、IP67 耐用性及 AI 自動化功能，支援醫美、肌骨物理治療及急症護理等臨床場景。",
+          href: "/sonoeye/clinical",
+          image: "/images/products/sonoeye.jpg",
         },
         {
-          title: "臨床教育與支援",
+          key: "mri-ct",
+          name: "MRI 及 CT 掃描系統",
+          brand: "UNITED IMAGING",
           description:
-            "提供 SonoEye 實機工作坊、臨床應用培訓及售後技術支援。",
+            "結合先進成像技術與患者舒適度的 MRI 系統，以及適用於心臟、創傷及腫瘤等應用的高速高解像度 CT 掃描儀。",
+          href: "/brands/united-imaging",
+          image: "/images/products/umr-680.jpg",
+        },
+        {
+          key: "liver",
+          name: "肝纖維化掃描儀",
+          brand: "MINDRAY",
+          description:
+            "採用瞬時彈性成像技術，提供非侵入性、定量評估肝臟硬度及脂肪變性，支援慢性肝病的早期發現及長期管理。",
+          href: "/products/hepatus-5",
+          image: "/images/products/hepatus-5.jpg",
+        },
+        {
+          key: "dr",
+          name: "數位放射影像 (DR)",
+          brand: "MINDRAY",
+          description:
+            "設計精簡、功能全面的 DR 系統，適用於多種臨床場景，符合國際標準，注重安全、品質及可靠性。",
+          href: "/brands/mindray",
+          image: "/images/products/digieye-680.jpg",
         },
       ],
     },
-    brands: {
-      label: "Partners",
-      title: "世界級醫療設備品牌",
-      description:
-        "代理全球領先醫療影像及診斷設備，為香港及澳門醫療機構提供一站式解決方案。",
+    whyChoose: {
+      label: "Why Choose Us",
+      title: "為何選擇 HK MRI Instrument Ltd.？",
+      items: [
+        {
+          title: "專業團隊",
+          description:
+            "團隊擁有豐富的醫學影像技術知識，深入了解醫療機構的需求，並緊密合作解決臨床挑戰。",
+        },
+        {
+          title: "品質保證",
+          description:
+            "所有設備均經嚴格品質控制，符合國際標準，以患者安全及臨床準確性為首要考量。",
+        },
+        {
+          title: "卓越服務",
+          description:
+            "除設備供應外，我們提供全面的售後及保養支援，確保設備保持最佳運作狀態。",
+        },
+      ],
     },
-    cta: {
-      label: "Contact Us",
-      title: "準備好升級您的診斷能力？",
+    partners: {
+      label: "Our Partners",
+      title: "世界級製造商夥伴",
       description:
-        "無論是 SonoEye 手持超聲波或高端 MRI / CT 系統，我們的專業團隊隨時為您提供諮詢與報價。",
+        "我們代理全球領先醫療設備製造商，將成熟可靠的技術帶給香港醫療機構。",
+      items: [
+        {
+          slug: "chison",
+          name: "CHISON",
+          logo: "/images/brands/chison.webp",
+          description: "全球超聲波創新者 — SonoEye 手持超聲波及先進 POCUS 方案。",
+        },
+        {
+          slug: "united-imaging",
+          name: "UNITED IMAGING",
+          logo: "/images/brands/united-imaging.png",
+          description: "高端 MRI 及 CT 系統，結合尖端成像技術與以患者為本的設計。",
+        },
+        {
+          slug: "mindray",
+          name: "MINDRAY",
+          logo: "/images/brands/mindray.png",
+          description: "數位放射影像、肝纖維化檢測及全面影像解決方案的領先供應商。",
+        },
+      ],
+    },
+    connect: {
+      label: "Let's Connect",
+      title: "與 HK MRI Instrument Ltd. 合作",
+      description: "如欲進一步了解我們的產品，歡迎聯絡我們安排會面。",
+      closing:
+        "感謝您考慮 HK MRI Instrument Ltd. 作為您的醫療設備夥伴。我們期待與您合作，共同推動香港醫療發展。",
     },
   },
   products: {

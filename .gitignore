@@ -48,3 +48,5 @@ yarn-error.log*
 # python scripts (local tooling only)
 __pycache__/
 *.pyc
+
+.vercel
