@@ -1,5 +1,8 @@
 export const company = {
   name: "HK MRI Instrument Ltd.",
+  legalName: "HK MRI INSTRUMENT LIMITED",
+  legalNameLine1: "HK MRI INSTRUMENT",
+  legalNameLine2: "LIMITED",
   nameLine1: "HK MRI Instrument",
   nameLine2: "Ltd.",
   shortName: "HK MRI",

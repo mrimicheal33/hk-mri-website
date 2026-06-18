@@ -5,8 +5,10 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { BrandLogo } from "@/components/ui/BrandLogo";
+import { BrandLogoSlot } from "@/components/ui/BrandLogo";
 import { useDictionary } from "@/i18n/LocaleProvider";
+
+const PRODUCT_IMAGE_HEIGHT = "h-52 sm:h-56";
 
 export function ProductPortfolio() {
   const t = useDictionary();
@@ -24,29 +26,34 @@ export function ProductPortfolio() {
           <Link
             key={item.key}
             href={item.href}
-            className="group bg-white p-8 lg:p-10 hover:bg-surface-muted transition-colors flex flex-col"
+            className="group bg-white p-8 lg:p-10 hover:bg-surface-muted transition-colors flex flex-col h-full"
           >
-            <div className="relative w-full aspect-[16/10] bg-surface-muted mb-6 overflow-hidden">
+            <div
+              className={`relative w-full ${PRODUCT_IMAGE_HEIGHT} mb-6 overflow-hidden rounded-lg bg-surface-muted shrink-0`}
+            >
               <Image
                 src={item.image}
                 alt={item.name}
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain object-center p-4 group-hover:scale-[1.02] transition-transform duration-300"
+                unoptimized
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover object-center group-hover:scale-[1.03] transition-transform duration-300"
               />
             </div>
-            <BrandLogo
+
+            <BrandLogoSlot
               src={item.brandLogo}
               alt={item.brandName}
               className="mb-4"
             />
-            <h3 className="text-lg font-semibold text-text-primary mb-3 group-hover:text-brand transition-colors">
+
+            <h3 className="text-lg font-bold text-[#0f1a24] mb-3 group-hover:text-brand transition-colors leading-snug">
               {item.name}
             </h3>
-            <p className="text-sm text-text-secondary leading-relaxed mb-6 flex-1">
+            <p className="text-sm text-[#2d3848] font-medium leading-relaxed mb-6 flex-1 antialiased">
               {item.description}
             </p>
-            <span className="inline-flex items-center gap-2 text-sm font-semibold text-brand">
+            <span className="inline-flex items-center gap-2 text-sm font-bold text-brand mt-auto">
               {t.common.viewDetails}
               <ArrowRight
                 size={16}

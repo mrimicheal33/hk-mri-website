@@ -37,7 +37,7 @@ export function ProductsContent() {
           >
             <div className="relative w-full aspect-[16/10] md:aspect-auto md:min-h-[200px] bg-surface-muted">
               <Image
-                src="/images/products/sonoeye.jpg"
+                src="/images/products/sonoeye-hero.png"
                 alt="CHISON SonoEye"
                 fill
                 className="object-cover object-center"

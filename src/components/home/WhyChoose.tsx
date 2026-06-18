@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { Award, ShieldCheck, Wrench } from "lucide-react";
-import { Section } from "@/components/ui/Section";
+import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
@@ -11,31 +12,78 @@ export function WhyChoose() {
   const t = useDictionary();
 
   return (
-    <Section>
-      <SectionHeading
-        label={t.home.whyChoose.label}
-        title={t.home.whyChoose.title}
-      />
-
-      <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
-        {t.home.whyChoose.items.map((item, i) => {
-          const Icon = icons[i];
-          return (
+    <section className="py-20 lg:py-28 bg-surface-muted border-y border-border">
+      <Container>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="relative aspect-[4/5] lg:aspect-auto lg:min-h-[560px] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(15,26,36,0.12)]">
+            <Image
+              src={t.home.whyChoose.image}
+              alt={t.home.whyChoose.imageAlt}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-center"
+            />
             <div
-              key={item.title}
-              className="bg-white p-8 lg:p-10 hover:bg-surface-muted transition-colors"
-            >
-              <Icon size={28} strokeWidth={1.5} className="text-brand mb-6" />
-              <h3 className="text-lg font-semibold text-text-primary mb-3">
-                {item.title}
-              </h3>
-              <p className="text-sm text-text-secondary leading-relaxed">
-                {item.description}
+              className="absolute inset-0 bg-gradient-to-t from-[#0f1a24]/50 via-transparent to-transparent"
+              aria-hidden
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
+              <p className="text-xs font-semibold uppercase tracking-widest text-brand-accent mb-2">
+                {t.home.whyChoose.label}
+              </p>
+              <p className="text-xl sm:text-2xl font-bold text-white leading-snug max-w-sm">
+                {t.home.whyChoose.title}
               </p>
             </div>
-          );
-        })}
-      </div>
-    </Section>
+          </div>
+
+          <div>
+            <div className="lg:hidden mb-10">
+              <SectionHeading
+                label={t.home.whyChoose.label}
+                title={t.home.whyChoose.title}
+              />
+            </div>
+
+            <div className="hidden lg:block mb-10">
+              <p className="text-xs font-semibold uppercase tracking-widest text-brand mb-3">
+                {t.home.whyChoose.label}
+              </p>
+              <h2 className="text-3xl font-semibold text-text-primary leading-tight">
+                {t.home.whyChoose.title}
+              </h2>
+            </div>
+
+            <div className="space-y-8">
+              {t.home.whyChoose.items.map((item, i) => {
+                const Icon = icons[i];
+                return (
+                  <div
+                    key={item.title}
+                    className="flex gap-5 p-6 rounded-xl bg-white border border-border/80 shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <div className="shrink-0 w-12 h-12 rounded-lg bg-brand-light flex items-center justify-center">
+                      <Icon
+                        size={24}
+                        strokeWidth={1.5}
+                        className="text-brand"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-text-primary mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-text-secondary leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
   );
 }

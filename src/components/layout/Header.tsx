@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -7,7 +8,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
-import { SonoEyeNav, SonoEyeNavMobile } from "@/components/layout/SonoEyeNav";
+import { company } from "@/data/company";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 export function Header() {
@@ -25,48 +26,53 @@ export function Header() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
+  const linkClass = (href: string) =>
+    `text-sm font-bold whitespace-nowrap transition-colors ${
+      isActive(href)
+        ? "text-brand"
+        : "text-text-primary hover:text-brand"
+    }`;
+
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-border">
+    <header className="sticky top-0 z-50 bg-white border-b-2 border-text-primary/10 shadow-sm">
       <Container>
-        <div className="flex items-center justify-between h-16 lg:h-[4.5rem] gap-4">
-          <nav className="hidden lg:flex items-center gap-8 flex-1">
-            {navLinks.slice(0, 2).map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-sm font-medium whitespace-nowrap transition-colors ${
-                  isActive(link.href)
-                    ? "text-brand"
-                    : "text-text-secondary hover:text-text-primary"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <SonoEyeNav />
-            {navLinks.slice(2).map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`text-sm font-medium whitespace-nowrap transition-colors ${
-                  isActive(link.href)
-                    ? "text-brand"
-                    : "text-text-secondary hover:text-text-primary"
-                }`}
-              >
+        <div className="flex items-center justify-between h-14 lg:h-16 gap-6">
+          <Link
+            href="/"
+            className="shrink-0 inline-flex items-end gap-1 sm:gap-1.5 h-full py-1.5 lg:py-2"
+            aria-label={company.name}
+          >
+            <Image
+              src={company.logo}
+              alt=""
+              width={160}
+              height={64}
+              priority
+              className="h-11 sm:h-12 w-auto block shrink-0"
+              style={{ width: "auto", height: "auto", maxHeight: "3rem" }}
+              aria-hidden
+            />
+            <span className="pb-px sm:pb-0.5 text-[15px] sm:text-base font-bold text-[#0f1a24] leading-none whitespace-nowrap tracking-tight">
+              {company.name}
+            </span>
+          </Link>
+
+          <nav className="hidden lg:flex items-center gap-8 xl:gap-10 ml-auto">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className={linkClass(link.href)}>
                 {link.label}
               </Link>
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3 shrink-0">
+          <div className="hidden lg:flex items-center gap-4 shrink-0">
             <LanguageSwitcher />
             <Button href="/contact" variant="primary" size="md">
               {t.common.getQuote}
             </Button>
           </div>
 
-          <div className="flex lg:hidden items-center gap-2 shrink-0">
+          <div className="flex lg:hidden items-center gap-2 shrink-0 ml-auto">
             <LanguageSwitcher />
             <button
               type="button"
@@ -84,25 +90,12 @@ export function Header() {
         <div className="lg:hidden border-t border-border bg-white">
           <Container className="py-4">
             <nav className="flex flex-col">
-              {navLinks.slice(0, 2).map((link) => (
+              {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`py-3 text-base font-medium border-b border-border ${
-                    isActive(link.href) ? "text-brand" : "text-text-primary"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-              <SonoEyeNavMobile onNavigate={() => setOpen(false)} />
-              {navLinks.slice(2).map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className={`py-3 text-base font-medium border-b border-border last:border-0 ${
+                  className={`py-3 text-base font-semibold border-b border-border last:border-0 ${
                     isActive(link.href) ? "text-brand" : "text-text-primary"
                   }`}
                 >

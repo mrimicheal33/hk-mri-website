@@ -77,10 +77,13 @@ export const zh: Dictionary = {
     hero: {
       label: "香港 · 醫療科技",
       title: "HK MRI Instrument Ltd.",
+      headlineLead: "您可信賴的",
+      headlineAccent: "香港醫療設備專家",
       tagline: "您可信賴的香港醫療設備及解決方案專家",
       intro:
-        "HK MRI Instrument Ltd. 是香港領先的尖端醫療設備及解決方案供應商。作為醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素及改善臨床成效。",
-      ctaProducts: "產品組合",
+        "為香港醫療機構提供創新影像及診斷技術，提升患者護理質素及臨床成效。",
+      backgroundImage: "/images/hero-chison-bg.png",
+      ctaProducts: "瀏覽產品",
       ctaAbout: "關於我們",
     },
     portfolio: {
@@ -92,26 +95,29 @@ export const zh: Dictionary = {
         {
           key: "sonoeye",
           name: "SonoEye 手持超聲波",
+          tagline: "口袋大小的專家級影像",
           brandName: "CHISON",
           brandLogo: "/images/brands/chison.webp",
           description:
             "口袋大小的專家級手持超聲波，重新定義床邊影像（POCUS）。配備可自訂界面、IP67 耐用性及 AI 自動化功能，支援醫美、肌骨物理治療及急症護理等臨床場景。",
           href: "/sonoeye/clinical",
-          image: "/images/products/sonoeye.jpg",
+          image: "/images/products/sonoeye-hero.png",
         },
         {
           key: "mri-ct",
           name: "MRI 及 CT 掃描系統",
+          tagline: "滿足各類臨床需求的先進成像",
           brandName: "UNITED IMAGING",
           brandLogo: "/images/brands/united-imaging.png",
           description:
             "結合先進成像技術與患者舒適度的 MRI 系統，以及適用於心臟、創傷及腫瘤等應用的高速高解像度 CT 掃描儀。",
           href: "/brands/united-imaging",
-          image: "/images/products/umr-680.jpg",
+          image: "/images/products/umr-680-hero.png",
         },
         {
           key: "mindray",
           name: "超聲波、肝纖維化掃描及數位放射影像",
+          tagline: "全面的診斷影像解決方案",
           brandName: "MINDRAY",
           brandLogo: "/images/brands/mindray.png",
           description:
@@ -124,6 +130,8 @@ export const zh: Dictionary = {
     whyChoose: {
       label: "Why Choose Us",
       title: "為何選擇 HK MRI Instrument Ltd.？",
+      image: "/images/partners/image1.jpeg",
+      imageAlt: "臨床影像環境",
       items: [
         {
           title: "專業團隊",
@@ -152,18 +160,21 @@ export const zh: Dictionary = {
           slug: "chison",
           name: "CHISON",
           logo: "/images/brands/chison.webp",
+          image: "/images/products/sonoeye-hero.png",
           description: "全球超聲波創新者 — SonoEye 手持超聲波及先進 POCUS 方案。",
         },
         {
           slug: "united-imaging",
           name: "UNITED IMAGING",
           logo: "/images/brands/united-imaging.png",
+          image: "/images/products/umr-680-hero.png",
           description: "高端 MRI 及 CT 系統，結合尖端成像技術與以患者為本的設計。",
         },
         {
           slug: "mindray",
           name: "MINDRAY",
           logo: "/images/brands/mindray.png",
+          image: "/images/products/hepatus-5.jpg",
           description: "數位放射影像、肝纖維化檢測及全面影像解決方案的領先供應商。",
         },
       ],
@@ -174,6 +185,7 @@ export const zh: Dictionary = {
       description: "如欲進一步了解我們的產品，歡迎聯絡我們安排會面。",
       closing:
         "感謝您考慮 HK MRI Instrument Ltd. 作為您的醫療設備夥伴。我們期待與您合作，共同推動香港醫療發展。",
+      backgroundImage: "/images/products/uct-780.jpg",
     },
   },
   products: {

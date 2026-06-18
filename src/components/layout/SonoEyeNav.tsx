@@ -8,7 +8,13 @@ import { useDictionary } from "@/i18n/LocaleProvider";
 
 const sonoeyePaths = ["/sonoeye/clinical", "/sonoeye/roi", "/products/sonoeye"];
 
-export function SonoEyeNav({ onNavigate }: { onNavigate?: () => void }) {
+export function SonoEyeNav({
+  onNavigate,
+  layout = "inline",
+}: {
+  onNavigate?: () => void;
+  layout?: "inline" | "stacked";
+}) {
   const t = useDictionary();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -32,28 +38,42 @@ export function SonoEyeNav({ onNavigate }: { onNavigate?: () => void }) {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
+  const isStacked = layout === "stacked";
+
   return (
     <div ref={ref} className="relative">
       <button
         type="button"
         onClick={() => setOpen(!open)}
-        className={`inline-flex items-center gap-1 text-sm font-medium whitespace-nowrap transition-colors ${
+        className={`transition-colors ${
+          isStacked
+            ? "flex flex-col items-center gap-0.5"
+            : "inline-flex items-center gap-1"
+        } ${
           isActive
             ? "text-brand"
-            : "text-text-secondary hover:text-text-primary"
+            : isStacked
+              ? "text-text-primary hover:text-brand"
+              : "text-text-secondary hover:text-text-primary"
         }`}
         aria-expanded={open}
         aria-haspopup="true"
       >
-        {t.nav.sonoeye}
+        <span className={`whitespace-nowrap ${isStacked ? "text-sm font-bold" : "text-sm font-medium"}`}>
+          {t.nav.sonoeye}
+        </span>
         <ChevronDown
-          size={14}
+          size={isStacked ? 12 : 14}
           className={`transition-transform ${open ? "rotate-180" : ""}`}
         />
       </button>
 
       {open && (
-        <div className="absolute top-full left-0 mt-2 min-w-[220px] bg-white border border-border shadow-lg py-2 z-50">
+        <div
+          className={`absolute top-full mt-3 min-w-[220px] bg-white border border-border shadow-lg py-2 z-50 ${
+            isStacked ? "left-1/2 -translate-x-1/2" : "left-0 mt-2"
+          }`}
+        >
           {links.map((link) => (
             <Link
               key={link.href}
