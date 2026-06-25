@@ -60,6 +60,18 @@ const en: Record<string, ProductLocaleFields> = {
       "Non-invasive quantitative assessment of liver fibrosis and fatty liver, measuring liver stiffness (LSM) and controlled attenuation (CAP).",
     highlights: ["Non-invasive testing", "Quantitative liver stiffness", "Fatty liver assessment", "Instant results"],
   },
+  mini800: {
+    tagline: "Portable liver fibrosis and steatosis scanner",
+    description:
+      "iLivTouch Mini800 uses vibration-controlled transient elastography (TE) to deliver quantitative liver stiffness (LSM) and ultrasound attenuation parameter (UAP) measurements for non-invasive assessment of fibrosis, cirrhosis, and steatosis.",
+    highlights: [
+      "FDA cleared and CE marked",
+      "LSM and UAP quantitative testing",
+      "Portable battery-powered design",
+      "Wideband fibrosis scanning probe",
+      "Optional B-mode ultrasound image guidance",
+    ],
+  },
   "mobieye-700": {
     tagline: "Mobile digital radiography system",
     description:

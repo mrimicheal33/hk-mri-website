@@ -90,7 +90,7 @@ export const zh: Dictionary = {
       label: "Our Product Portfolio",
       title: "先進醫學影像及診斷解決方案",
       description:
-        "與世界級製造商合作，提供床邊超聲波、MRI、CT、肝臟護理及數位放射影像等全面臨床方案。",
+        "與世界級製造商合作，提供床邊超聲波、肝臟護理、數位放射影像、獸醫影像及 MRI 和 CT 掃描等全面臨床方案。",
       items: [
         {
           key: "sonoeye",
@@ -104,15 +104,18 @@ export const zh: Dictionary = {
           image: "/images/products/sonoeye-hero.png",
         },
         {
-          key: "mri-ct",
-          name: "MRI 及 CT 掃描系統",
-          tagline: "滿足各類臨床需求的先進成像",
-          brandName: "UNITED IMAGING",
-          brandLogo: "/images/brands/united-imaging.png",
+          key: "mini800",
+          name: "Mini800 肝纖維化掃描儀",
+          tagline: "便攜式非侵入性肝臟評估",
+          brandName: "iLivTouch",
+          brandLogo: "/images/brands/ilivtouch.svg",
           description:
-            "結合先進成像技術與患者舒適度的 MRI 系統，以及適用於心臟、創傷及腫瘤等應用的高速高解像度 CT 掃描儀。",
-          href: "/brands/united-imaging",
-          image: "/images/products/umr-680-hero.png",
+            "iLivTouch Mini800 便攜式剪切波彈性成像系統，提供肝硬度（LSM）及超聲衰減參數（UAP）定量測量。具 FDA 及 CE 認證，配備闊頻纖維化探頭、電池供電，可選 B-mode 超聲波導引，適用於肝纖維化、肝硬化及脂肪肝評估。",
+          href: "/brands/ilivtouch",
+          image: "/images/products/mini800-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "Mini800",
+          imageCaptionSubtitle: "剪切波定量超聲診斷系統",
         },
         {
           key: "mindray",
@@ -124,6 +127,28 @@ export const zh: Dictionary = {
             "MINDRAY 全面方案涵蓋診斷超聲波系統、Hepatus 肝纖維化掃描儀（瞬時彈性成像技術作非侵入性肝臟評估），以及 DigiEye 數位放射影像（DR）平台 — 均符合國際標準，確保臨床準確性、安全及可靠性。",
           href: "/brands/mindray",
           image: "/images/products/hepatus-5.jpg",
+        },
+        {
+          key: "vet1120",
+          name: "獸醫移動式數位 C-arm 系統",
+          tagline: "專為動物護理手術影像而設",
+          brandName: "PERLOVE",
+          brandLogo: "/images/brands/perlove.webp",
+          description:
+            "Perlove VET1120 系列 — 緊湊型移動 C-arm，配備整合式工作站及靈活移動設計、Toshiba 影像增強器提供高解像度透視影像、人性化手控器、高功率 X 光管，以及自動、手動及脈衝透視模式，適用於獸醫診斷及外科手術。",
+          href: "/brands/perlove",
+          image: "/images/products/vet1120.jpg",
+        },
+        {
+          key: "mri-ct",
+          name: "MRI 及 CT 掃描系統",
+          tagline: "滿足各類臨床需求的先進成像",
+          brandName: "UNITED IMAGING",
+          brandLogo: "/images/brands/united-imaging.png",
+          description:
+            "結合先進成像技術與患者舒適度的 MRI 系統，以及適用於心臟、創傷及腫瘤等應用的高速高解像度 CT 掃描儀。",
+          href: "/brands/united-imaging",
+          image: "/images/products/umr-680-hero.png",
         },
       ],
     },
@@ -201,6 +226,7 @@ export const zh: Dictionary = {
     interestMindray: "MINDRAY 產品",
     interestUi: "UNITED IMAGING 產品",
     interestPerlove: "Perlove 獸醫 C-arm",
+    interestIlivtouch: "iLivTouch Mini800",
   },
   productCta: {
     defaultTitle: "索取產品報價",

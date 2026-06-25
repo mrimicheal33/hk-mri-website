@@ -70,6 +70,14 @@ export const brands: Brand[] = [
     description: "專注獸醫影像設備，提供移動式數位 C-arm 系統。",
     color: "#b91c1c",
   },
+  {
+    slug: "ilivtouch",
+    name: "iLivTouch",
+    nameEn: "Hisky Medical iLivTouch",
+    logo: "/images/brands/ilivtouch.svg",
+    description: "非侵入性肝纖維化及脂肪肝管理系統，採用振動控制瞬時彈性成像技術。",
+    color: "#0097a7",
+  },
 ];
 
 export const categoryLabels: Record<ProductCategory, string> = {
@@ -180,6 +188,27 @@ export const products: Product[] = [
     description:
       "非侵入性肝纖維化及脂肪肝定量檢測系統，提供肝硬度 (LSM) 及脂肪變性 (CAP) 測量。",
     highlights: ["非侵入性檢測", "肝硬度定量", "脂肪肝評估", "即時結果"],
+    featured: true,
+  },
+  // iLivTouch - Liver Fibrosis
+  {
+    id: "mini800",
+    name: "Mini800",
+    nameEn: "iLivTouch Mini800",
+    brand: "iLivTouch",
+    brandSlug: "ilivtouch",
+    category: "diagnostic",
+    tagline: "便攜式肝纖維化及脂肪肝掃描儀",
+    description:
+      "iLivTouch Mini800 採用振動控制瞬時彈性成像（TE）技術，提供肝硬度（LSM）及超聲衰減參數（UAP）定量測量，支援肝纖維化、肝硬化及脂肪肝非侵入性評估。",
+    highlights: [
+      "FDA 及 CE 認證",
+      "LSM 及 UAP 定量檢測",
+      "便攜式電池供電",
+      "闊頻纖維化掃描探頭",
+      "可選超聲波 B-mode 影像導引",
+    ],
+    brochure: "/brochures/mini800-ilivtouch.pdf",
     featured: true,
   },
   // MINDRAY - Mobile Radiography

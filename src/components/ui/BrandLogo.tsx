@@ -18,6 +18,8 @@ const LOGO_HEIGHT = {
 const UNIFORM_LOGO_HEIGHT: Record<string, number> = {
   "/images/brands/chison.webp": 52,
   "/images/brands/mindray.png": 30,
+  "/images/brands/perlove.webp": 38,
+  "/images/brands/ilivtouch.svg": 32,
 };
 
 function getLogoHeight(src: string, size: keyof typeof LOGO_HEIGHT) {
@@ -32,6 +34,7 @@ const BRAND_NATIVE_SIZE: Record<string, { width: number; height: number }> = {
   "/images/brands/mindray.png": { width: 192, height: 56 },
   "/images/brands/united-imaging.png": { width: 616, height: 184 },
   "/images/brands/perlove.webp": { width: 474, height: 381 },
+  "/images/brands/ilivtouch.svg": { width: 200, height: 48 },
 };
 
 function getDisplayDimensions(src: string, targetHeight: number) {
@@ -78,7 +81,7 @@ export function BrandLogo({
   );
 }
 
-/** Fixed-height slot so brand logos align across a grid row. */
+/** Fixed slot height — all brand logos align on the same baseline row. */
 export function BrandLogoSlot({
   src,
   alt,
@@ -90,7 +93,7 @@ export function BrandLogoSlot({
 }) {
   return (
     <div
-      className={`h-14 flex items-center shrink-0 ${className}`}
+      className={`h-14 flex items-end shrink-0 ${className}`}
     >
       <BrandLogo src={src} alt={alt} size="uniform" />
     </div>

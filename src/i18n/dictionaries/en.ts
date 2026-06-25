@@ -89,7 +89,7 @@ export const en = {
       label: "Our Product Portfolio",
       title: "Advanced Medical Imaging & Diagnostic Solutions",
       description:
-        "Partnering with world-class manufacturers to deliver comprehensive clinical solutions across point-of-care ultrasound, MRI, CT, liver care, and digital\u00a0radiography.",
+        "Partnering with world-class manufacturers to deliver comprehensive clinical solutions across point-of-care ultrasound, liver care, digital radiography, veterinary imaging, MRI and CT scan.",
       items: [
         {
           key: "sonoeye",
@@ -103,15 +103,19 @@ export const en = {
           image: "/images/products/sonoeye-hero.png",
         },
         {
-          key: "mri-ct",
-          name: "MRI & CT Scan Systems",
-          tagline: "Advanced imaging for every clinical need",
-          brandName: "UNITED IMAGING",
-          brandLogo: "/images/brands/united-imaging.png",
+          key: "mini800",
+          name: "Mini800 Liver Fibrosis Scanner",
+          tagline: "Compact, non-invasive liver assessment",
+          brandName: "iLivTouch",
+          brandLogo: "/images/brands/ilivtouch.svg",
           description:
-            "MRI systems combining advanced imaging with patient comfort — from high-resolution anatomical scans to functional imaging. CT scanners delivering rapid, high-resolution imaging for cardiac, trauma, and oncology applications.",
-          href: "/brands/united-imaging",
-          image: "/images/products/umr-680-hero.png",
+            "iLivTouch Mini800 — a portable shear-wave elastography system for quantitative liver stiffness (LSM) and ultrasound attenuation (UAP) measurement. FDA-cleared and CE marked, with wideband fibrosis probe, battery operation, and optional B-mode ultrasound guidance for fibrosis, cirrhosis, and steatosis assessment.",
+          href: "/brands/ilivtouch",
+          image: "/images/products/mini800-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "Mini800",
+          imageCaptionSubtitle:
+            "Shear Wave Quantificational Ultrasound Diagnostic System",
         },
         {
           key: "mindray",
@@ -123,6 +127,28 @@ export const en = {
             "Comprehensive MINDRAY solutions across diagnostic ultrasound systems for general and specialty imaging, Hepatus liver fibrosis scanners with transient elastography for non-invasive liver assessment, and DigiEye digital radiography (DR) platforms — all built to international standards for clinical accuracy, safety, and reliability.",
           href: "/brands/mindray",
           image: "/images/products/hepatus-5.jpg",
+        },
+        {
+          key: "vet1120",
+          name: "Veterinary Mobile Digital C-arm",
+          tagline: "Surgical imaging for animal care",
+          brandName: "PERLOVE",
+          brandLogo: "/images/brands/perlove.webp",
+          description:
+            "Perlove VET1120 Series — compact mobile C-arm with integrated workstation and flexible movement, Toshiba image intensifier for high-resolution fluoroscopy, intuitive hand controller, high-power X-ray tube, and automatic, manual, and pulse fluoroscopy modes for veterinary diagnostics and surgery.",
+          href: "/brands/perlove",
+          image: "/images/products/vet1120.jpg",
+        },
+        {
+          key: "mri-ct",
+          name: "MRI & CT Scan Systems",
+          tagline: "Advanced imaging for every clinical need",
+          brandName: "UNITED IMAGING",
+          brandLogo: "/images/brands/united-imaging.png",
+          description:
+            "MRI systems combining advanced imaging with patient comfort — from high-resolution anatomical scans to functional imaging. CT scanners delivering rapid, high-resolution imaging for cardiac, trauma, and oncology applications.",
+          href: "/brands/united-imaging",
+          image: "/images/products/umr-680-hero.png",
         },
       ],
     },
@@ -204,6 +230,7 @@ export const en = {
     interestMindray: "MINDRAY Products",
     interestUi: "UNITED IMAGING Products",
     interestPerlove: "Perlove Veterinary C-arm",
+    interestIlivtouch: "iLivTouch Mini800",
   },
   productCta: {
     defaultTitle: "Request a Product Quote",

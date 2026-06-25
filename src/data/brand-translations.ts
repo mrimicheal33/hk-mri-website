@@ -21,6 +21,10 @@ const en: Record<
   perlove: {
     description: "Specialist in veterinary imaging with mobile digital C-arm systems.",
   },
+  ilivtouch: {
+    description:
+      "Non-invasive liver disease management with vibration-controlled transient elastography for fibrosis and steatosis assessment.",
+  },
 };
 
 export function getLocalizedBrand(brand: Brand, locale: Locale): Brand {

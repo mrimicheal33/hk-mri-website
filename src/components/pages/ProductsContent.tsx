@@ -7,6 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Badge } from "@/components/ui/Badge";
 import { ProductCatalog } from "@/components/products/ProductCatalog";
+import { SonoEyePortfolioImage } from "@/components/home/SonoEyePortfolioImage";
 import { brands } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
@@ -35,15 +36,11 @@ export function ProductsContent() {
             href="/sonoeye/clinical"
             className="group grid grid-cols-1 md:grid-cols-[280px_1fr] bg-white border border-border hover:border-brand/30 transition-colors overflow-hidden"
           >
-            <div className="relative w-full aspect-[16/10] md:aspect-auto md:min-h-[200px] bg-surface-muted">
-              <Image
-                src="/images/products/sonoeye-hero.png"
-                alt="CHISON SonoEye"
-                fill
-                className="object-cover object-center"
-                sizes="280px"
-              />
-            </div>
+            <SonoEyePortfolioImage
+              className="w-full aspect-[16/10] md:aspect-auto md:min-h-[200px] md:h-full"
+              taglineClassName="text-sm sm:text-base"
+              sizes="280px"
+            />
             <div className="flex flex-col justify-center p-6 sm:p-8 min-w-0">
               <div className="flex flex-wrap items-center gap-2 mb-3">
                 <Badge variant="brand">{t.common.featured}</Badge>
