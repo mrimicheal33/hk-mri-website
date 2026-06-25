@@ -74,13 +74,13 @@ export const en = {
   },
   home: {
     hero: {
-      label: "Hong Kong · Medical Technology",
+      label: "Advanced Medical Technology",
       title: "HK MRI Instrument Ltd.",
       headlineLead: "YOUR TRUSTED",
       headlineAccent: "MEDICAL DEVICE SPECIALIST",
       tagline: "Your Trusted HK Medical Device & Solution Specialist",
       intro:
-        "Delivering innovative imaging and diagnostic technologies that enhance patient care and improve clinical outcomes across Hong\u00a0Kong.",
+        "Advancing patient care and clinical outcomes through the delivery of innovative imaging and diagnostic technologies.",
       backgroundImage: "/images/hero-chison-bg.png",
       ctaProducts: "View Products",
       ctaAbout: "About Us",

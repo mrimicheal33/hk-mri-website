@@ -75,13 +75,13 @@ export const zh: Dictionary = {
   },
   home: {
     hero: {
-      label: "香港 · 醫療科技",
+      label: "先進醫療科技",
       title: "HK MRI Instrument Ltd.",
       headlineLead: "您可信賴的",
       headlineAccent: "香港醫療設備專家",
       tagline: "您可信賴的香港醫療設備及解決方案專家",
       intro:
-        "為香港醫療機構提供創新影像及診斷技術，提升患者護理質素及臨床成效。",
+        "透過提供創新影像及診斷技術，推進患者護理及臨床成效。",
       backgroundImage: "/images/hero-chison-bg.png",
       ctaProducts: "瀏覽產品",
       ctaAbout: "關於我們",
