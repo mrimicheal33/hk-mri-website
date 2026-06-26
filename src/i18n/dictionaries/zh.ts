@@ -126,18 +126,24 @@ export const zh: Dictionary = {
           description:
             "MINDRAY 全面方案涵蓋診斷超聲波系統、Hepatus 肝纖維化掃描儀（瞬時彈性成像技術作非侵入性肝臟評估），以及 DigiEye 數位放射影像（DR）平台 — 均符合國際標準，確保臨床準確性、安全及可靠性。",
           href: "/brands/mindray",
-          image: "/images/products/hepatus-5.jpg",
+          image: "/images/products/hepatus-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "Hepatus 5",
+          imageCaptionSubtitle: "非侵入性定量肝臟診斷",
         },
         {
           key: "vet1120",
           name: "獸醫移動式數位 C-arm 系統",
           tagline: "專為動物護理手術影像而設",
           brandName: "PERLOVE",
-          brandLogo: "/images/brands/perlove.webp",
+          brandLogo: "/images/brands/perlove.png",
           description:
             "Perlove VET1120 系列 — 緊湊型移動 C-arm，配備整合式工作站及靈活移動設計、Toshiba 影像增強器提供高解像度透視影像、人性化手控器、高功率 X 光管，以及自動、手動及脈衝透視模式，適用於獸醫診斷及外科手術。",
           href: "/brands/perlove",
-          image: "/images/products/vet1120.jpg",
+          image: "/images/products/vet1120-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "VET1120 Series",
+          imageCaptionSubtitle: "獸醫移動式數位 C-arm 系統",
         },
         {
           key: "mri-ct",

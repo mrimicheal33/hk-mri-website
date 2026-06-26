@@ -126,18 +126,24 @@ export const en = {
           description:
             "Comprehensive MINDRAY solutions across diagnostic ultrasound systems for general and specialty imaging, Hepatus liver fibrosis scanners with transient elastography for non-invasive liver assessment, and DigiEye digital radiography (DR) platforms — all built to international standards for clinical accuracy, safety, and reliability.",
           href: "/brands/mindray",
-          image: "/images/products/hepatus-5.jpg",
+          image: "/images/products/hepatus-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "Hepatus 5",
+          imageCaptionSubtitle: "Non-invasive and quantitative Liver diagnose",
         },
         {
           key: "vet1120",
           name: "Veterinary Mobile Digital C-arm",
           tagline: "Surgical imaging for animal care",
           brandName: "PERLOVE",
-          brandLogo: "/images/brands/perlove.webp",
+          brandLogo: "/images/brands/perlove.png",
           description:
             "Perlove VET1120 Series — compact mobile C-arm with integrated workstation and flexible movement, Toshiba image intensifier for high-resolution fluoroscopy, intuitive hand controller, high-power X-ray tube, and automatic, manual, and pulse fluoroscopy modes for veterinary diagnostics and surgery.",
           href: "/brands/perlove",
-          image: "/images/products/vet1120.jpg",
+          image: "/images/products/vet1120-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "VET1120 Series",
+          imageCaptionSubtitle: "Vet Mobile Digital C-arm System",
         },
         {
           key: "mri-ct",

@@ -66,7 +66,7 @@ export const brands: Brand[] = [
     slug: "perlove",
     name: "Perlove",
     nameEn: "Perlove Medical",
-    logo: "/images/brands/perlove.webp",
+    logo: "/images/brands/perlove.png",
     description: "專注獸醫影像設備，提供移動式數位 C-arm 系統。",
     color: "#b91c1c",
   },

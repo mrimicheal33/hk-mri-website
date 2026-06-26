@@ -18,7 +18,7 @@ const LOGO_HEIGHT = {
 const UNIFORM_LOGO_HEIGHT: Record<string, number> = {
   "/images/brands/chison.webp": 52,
   "/images/brands/mindray.png": 30,
-  "/images/brands/perlove.webp": 38,
+  "/images/brands/perlove.png": 28,
   "/images/brands/ilivtouch.svg": 32,
 };
 
@@ -33,7 +33,7 @@ const BRAND_NATIVE_SIZE: Record<string, { width: number; height: number }> = {
   "/images/brands/chison.webp": { width: 412, height: 266 },
   "/images/brands/mindray.png": { width: 192, height: 56 },
   "/images/brands/united-imaging.png": { width: 616, height: 184 },
-  "/images/brands/perlove.webp": { width: 474, height: 381 },
+  "/images/brands/perlove.png": { width: 303, height: 82 },
   "/images/brands/ilivtouch.svg": { width: 200, height: 48 },
 };
 
