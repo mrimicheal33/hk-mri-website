@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Award, ShieldCheck, Wrench } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 const icons = [Award, ShieldCheck, Wrench];
@@ -27,33 +26,14 @@ export function WhyChoose() {
               className="absolute inset-0 bg-gradient-to-t from-[#0f1a24]/50 via-transparent to-transparent"
               aria-hidden
             />
-            <div className="absolute bottom-0 left-0 right-0 p-8 lg:p-10">
-              <p className="text-xs font-semibold uppercase tracking-widest text-brand-accent mb-2">
-                {t.home.whyChoose.label}
-              </p>
-              <p className="text-xl sm:text-2xl font-bold text-white leading-snug max-w-sm">
+            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-10 overflow-hidden">
+              <p className="font-bold text-white leading-tight whitespace-nowrap text-[clamp(0.78rem,2.85vw,1.75rem)]">
                 {t.home.whyChoose.title}
               </p>
             </div>
           </div>
 
           <div>
-            <div className="lg:hidden mb-10">
-              <SectionHeading
-                label={t.home.whyChoose.label}
-                title={t.home.whyChoose.title}
-              />
-            </div>
-
-            <div className="hidden lg:block mb-10">
-              <p className="text-xs font-semibold uppercase tracking-widest text-brand mb-3">
-                {t.home.whyChoose.label}
-              </p>
-              <h2 className="text-3xl font-semibold text-text-primary leading-tight">
-                {t.home.whyChoose.title}
-              </h2>
-            </div>
-
             <div className="space-y-8">
               {t.home.whyChoose.items.map((item, i) => {
                 const Icon = icons[i];
