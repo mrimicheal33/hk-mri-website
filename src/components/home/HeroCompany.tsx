@@ -18,7 +18,7 @@ export function HeroCompany() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center scale-110 blur-[3px] sm:blur-[4px]"
+          className="object-cover object-center"
         />
       </div>
 

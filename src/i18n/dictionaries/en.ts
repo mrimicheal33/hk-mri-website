@@ -81,7 +81,7 @@ export const en = {
       tagline: "Your Trusted HK Medical Device & Solution Specialist",
       intro:
         "Advancing patient care and clinical outcomes through the delivery of innovative imaging and diagnostic technologies.",
-      backgroundImage: "/images/hero-chison-bg.png",
+      backgroundImage: "/images/hero-clinical-facility.png",
       ctaProducts: "View Products",
       ctaAbout: "About Us",
     },
@@ -161,7 +161,7 @@ export const en = {
     whyChoose: {
       label: "Why Choose Us",
       title: "Why Choose HK MRI Instrument Ltd.?",
-      image: "/images/partners/image1.jpeg",
+      image: "/images/hero-clinical-facility.png",
       imageAlt: "Clinical imaging environment",
       items: [
         {
