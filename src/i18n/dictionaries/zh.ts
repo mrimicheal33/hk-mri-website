@@ -52,6 +52,7 @@ export const zh: Dictionary = {
     home: "首頁",
     other: "其他",
     selectProduct: "請選擇產品",
+    downloadBrochure: "下載產品手冊",
   },
   categories: {
     ultrasound: "超聲波系統",
@@ -139,11 +140,25 @@ export const zh: Dictionary = {
           brandLogo: "/images/brands/perlove.png",
           description:
             "Perlove VET1120 系列 — 緊湊型移動 C-arm，配備整合式工作站及靈活移動設計、Toshiba 影像增強器提供高解像度透視影像、人性化手控器、高功率 X 光管，以及自動、手動及脈衝透視模式，適用於獸醫診斷及外科手術。",
-          href: "/brands/perlove",
+          href: "/products/vet1120",
           image: "/images/products/vet1120-card.png",
           imageFit: "contain",
           imageCaptionTitle: "VET1120 Series",
           imageCaptionSubtitle: "獸醫移動式數位 C-arm 系統",
+        },
+        {
+          key: "vf1",
+          name: "VETOO VF1 動態 DR",
+          tagline: "新一代獸醫動態數位放射影像",
+          brandName: "VETOO",
+          brandLogo: "/images/brands/vetoo.svg",
+          description:
+            "VETOO VF1 專為智能寵物影像設計的動態 DR 系統，支援 30 fps 動態成像、最長 15 分鐘透視及可選 DSA 模組，配備 17×17 吋平板探測器及 32kW 高壓發生器，適用於食道、肺部、關節定位及介入等獸醫臨床應用。",
+          href: "/products/vf1",
+          image: "/images/products/vf1-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "VF1",
+          imageCaptionSubtitle: "獸醫動態 DR 系統",
         },
         {
           key: "mri-ct",
@@ -233,6 +248,7 @@ export const zh: Dictionary = {
     interestUi: "UNITED IMAGING 產品",
     interestPerlove: "Perlove 獸醫 C-arm",
     interestIlivtouch: "iLivTouch Mini800",
+    interestVetoo: "VETOO VF1 動態 DR",
   },
   productCta: {
     defaultTitle: "索取產品報價",

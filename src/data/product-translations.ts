@@ -130,6 +130,18 @@ const en: Record<string, ProductLocaleFields> = {
       "Perlove VET1120 mobile digital C-arm designed for veterinary surgical image guidance.",
     highlights: ["Mobile C-arm", "Digital imaging", "Veterinary surgery"],
   },
+  vf1: {
+    tagline: "Next-generation veterinary dynamic digital radiography system",
+    description:
+      "VETOO VF1 is an animal-specific Dynamic DR system for intelligent pet imaging — 30 fps dynamic imaging, up to 15-minute fluoroscopy, and optional DSA for interventional procedures. Covers esophageal, pulmonary, and joint guidance, contrast studies, and more. Features a 17×17\" flat panel detector, 32kW generator (125kV / 400mA), and veterinary-specific software.",
+    highlights: [
+      "32kW high power, 125kV / 400mA",
+      "17×17\" dynamic flat panel detector",
+      "30 fps dynamic imaging, up to 15 min fluoroscopy",
+      "Optional DSA module for interventional use",
+      "Low-dose pulse technology with vet-specific software",
+    ],
+  },
 };
 
 export function getLocalizedProduct(

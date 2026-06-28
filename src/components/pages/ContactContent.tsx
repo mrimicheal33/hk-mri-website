@@ -156,6 +156,7 @@ export function ContactContent() {
                   <option value="united-imaging">{t.products.interestUi}</option>
                   <option value="perlove">{t.products.interestPerlove}</option>
                   <option value="ilivtouch">{t.products.interestIlivtouch}</option>
+                  <option value="vetoo">{t.products.interestVetoo}</option>
                   <option value="other">{t.common.other}</option>
                 </select>
               </div>

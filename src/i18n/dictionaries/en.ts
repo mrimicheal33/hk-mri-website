@@ -51,6 +51,7 @@ export const en = {
     home: "Home",
     other: "Other",
     selectProduct: "Select a product",
+    downloadBrochure: "Download Brochure",
   },
   categories: {
     ultrasound: "Ultrasound Systems",
@@ -139,11 +140,25 @@ export const en = {
           brandLogo: "/images/brands/perlove.png",
           description:
             "Perlove VET1120 Series — compact mobile C-arm with integrated workstation and flexible movement, Toshiba image intensifier for high-resolution fluoroscopy, intuitive hand controller, high-power X-ray tube, and automatic, manual, and pulse fluoroscopy modes for veterinary diagnostics and surgery.",
-          href: "/brands/perlove",
+          href: "/products/vet1120",
           image: "/images/products/vet1120-card.png",
           imageFit: "contain",
           imageCaptionTitle: "VET1120 Series",
           imageCaptionSubtitle: "Vet Mobile Digital C-arm System",
+        },
+        {
+          key: "vf1",
+          name: "VETOO VF1 Dynamic DR",
+          tagline: "Next-generation veterinary dynamic radiography",
+          brandName: "VETOO",
+          brandLogo: "/images/brands/vetoo.svg",
+          description:
+            "VETOO VF1 — animal-specific Dynamic DR for intelligent pet imaging. 30 fps dynamic imaging, up to 15-minute fluoroscopy, optional DSA module, 17×17\" flat panel detector, and 32kW generator for esophageal, pulmonary, joint guidance, and interventional applications.",
+          href: "/products/vf1",
+          image: "/images/products/vf1-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "VF1",
+          imageCaptionSubtitle: "Veterinary Dynamic DR System",
         },
         {
           key: "mri-ct",
@@ -237,6 +252,7 @@ export const en = {
     interestUi: "UNITED IMAGING Products",
     interestPerlove: "Perlove Veterinary C-arm",
     interestIlivtouch: "iLivTouch Mini800",
+    interestVetoo: "VETOO VF1 Dynamic DR",
   },
   productCta: {
     defaultTitle: "Request a Product Quote",

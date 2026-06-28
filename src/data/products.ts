@@ -22,6 +22,7 @@ export interface Product {
   description: string;
   highlights: string[];
   brochure?: string;
+  image?: string;
   featured?: boolean;
   hero?: boolean;
 }
@@ -77,6 +78,14 @@ export const brands: Brand[] = [
     logo: "/images/brands/ilivtouch.svg",
     description: "非侵入性肝纖維化及脂肪肝管理系統，採用振動控制瞬時彈性成像技術。",
     color: "#0097a7",
+  },
+  {
+    slug: "vetoo",
+    name: "VETOO",
+    nameEn: "Shenzhen Vetoo Medical Technology",
+    logo: "/images/brands/vetoo.svg",
+    description: "專注獸醫動態數位放射影像（Dynamic DR）及智能寵物影像解決方案。",
+    color: "#0f4c5c",
   },
 ];
 
@@ -324,6 +333,27 @@ export const products: Product[] = [
     description: "Perlove VET1120 移動式數位 C-arm，專為獸醫外科手術影像導航設計。",
     highlights: ["移動式 C-arm", "數位成像", "獸醫外科專用"],
   },
+  // VETOO
+  {
+    id: "vf1",
+    name: "VF1",
+    nameEn: "VETOO VF1 Dynamic DR",
+    brand: "VETOO",
+    brandSlug: "vetoo",
+    category: "veterinary",
+    tagline: "新一代獸醫動態數位放射影像系統",
+    description:
+      "VETOO VF1 專為智能寵物影像設計的動態 DR 系統，支援 30 fps 動態成像、最長 15 分鐘透視錄影及可選 DSA 模組，涵蓋食道/肺部/關節定位、造影及介入等臨床應用。配備 17×17 吋平板探測器、32kW 高壓發生器（125kV / 400mA）及獸醫專用軟件。",
+    highlights: [
+      "32kW 高功率，125kV / 400mA",
+      "17×17 吋動態平板探測器",
+      "30 fps 動態成像，最長 15 分鐘透視",
+      "可選 DSA 模組支援介入手術",
+      "低劑量脈衝技術，獸醫專用軟件",
+    ],
+    brochure: "/brochures/vf1-product-brochure.pdf",
+    featured: true,
+  },
 ];
 
 export function getBrandBySlug(slug: string) {
@@ -343,7 +373,8 @@ export function getProductHref(id: string) {
 }
 
 export function getProductImage(id: string) {
-  return `/images/products/${id}.jpg`;
+  const product = getProductById(id);
+  return product?.image ?? `/images/products/${id}.jpg`;
 }
 
 export function getHeroProduct() {

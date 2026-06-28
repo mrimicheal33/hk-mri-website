@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, FileDown } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -104,6 +104,17 @@ export function ProductDetail({ product }: ProductDetailProps) {
                 >
                   {t.common.whatsappInquiry}
                 </Button>
+                {product.brochure && (
+                  <Button
+                    href={product.brochure}
+                    variant="outline"
+                    size="lg"
+                    external
+                  >
+                    <FileDown size={16} />
+                    {t.common.downloadBrochure}
+                  </Button>
+                )}
               </div>
             </div>
           </div>
@@ -122,6 +133,14 @@ export function ProductDetail({ product }: ProductDetailProps) {
             <p className="text-text-secondary leading-relaxed text-base sm:text-lg">
               {localized.description}
             </p>
+            {product.brochure && (
+              <div className="mt-8">
+                <Button href={product.brochure} variant="outline" size="md" external>
+                  <FileDown size={16} />
+                  {t.common.downloadBrochure}
+                </Button>
+              </div>
+            )}
           </div>
         </Container>
       </section>

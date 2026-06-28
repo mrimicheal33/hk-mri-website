@@ -25,6 +25,10 @@ const en: Record<
     description:
       "Non-invasive liver disease management with vibration-controlled transient elastography for fibrosis and steatosis assessment.",
   },
+  vetoo: {
+    description:
+      "Specialist in veterinary dynamic digital radiography (Dynamic DR) and intelligent pet imaging solutions.",
+  },
 };
 
 export function getLocalizedBrand(brand: Brand, locale: Locale): Brand {
