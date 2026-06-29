@@ -26,8 +26,8 @@ export function WhyChoose() {
               className="absolute inset-0 bg-gradient-to-t from-[#0f1a24]/50 via-transparent to-transparent"
               aria-hidden
             />
-            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-10 overflow-hidden">
-              <p className="font-bold text-white leading-tight whitespace-nowrap text-[clamp(0.78rem,2.85vw,1.75rem)]">
+            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-10">
+              <p className="font-bold text-white leading-snug text-[clamp(0.75rem,1.65vw,1.125rem)] max-w-full">
                 {t.home.whyChoose.title}
               </p>
             </div>
