@@ -35,6 +35,7 @@ export function AboutContent() {
               alt={company.name}
               width={240}
               height={96}
+              priority
               className="h-24 sm:h-28 w-auto max-w-[240px] object-contain shrink-0"
               style={{ width: "auto", height: "auto" }}
             />
@@ -50,10 +51,23 @@ export function AboutContent() {
               title={company.name}
               align="left"
             />
-            <p className="text-text-secondary leading-relaxed mb-6">
-              {t.company.description}
+            <p className="text-lg font-medium text-text-primary mb-6 leading-relaxed">
+              {t.about.companyTagline}
             </p>
-            <p className="text-text-secondary leading-relaxed">{t.company.aboutExtra}</p>
+            <p className="text-text-secondary leading-relaxed mb-8">
+              {t.about.companyIntro}
+            </p>
+            <h3 className="text-xl font-semibold text-text-primary mb-4">
+              {t.about.brandsModalitiesTitle}
+            </h3>
+            <p className="text-text-secondary leading-relaxed mb-4">
+              {t.about.brandsModalitiesIntro}
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-text-secondary leading-relaxed">
+              {t.about.modalities.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </div>
 
           <div className="space-y-px bg-border border border-border min-w-0">
@@ -96,24 +110,6 @@ export function AboutContent() {
               </div>
             );
           })}
-        </div>
-      </Section>
-
-      <Section>
-        <SectionHeading
-          label={t.about.partnersLabel}
-          title={t.about.partnersTitle}
-        />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
-          {company.partners.map((partner) => (
-            <div
-              key={partner}
-              className="flex items-center gap-3 bg-white px-6 py-5"
-            >
-              <span className="w-1.5 h-1.5 bg-brand shrink-0" />
-              <span className="text-sm text-text-secondary">{partner}</span>
-            </div>
-          ))}
         </div>
       </Section>
     </div>

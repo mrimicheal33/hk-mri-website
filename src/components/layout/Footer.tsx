@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { company } from "@/data/company";
-import { brands } from "@/data/products";
+import { brands, getBrandHref } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 export function Footer() {
@@ -38,7 +38,7 @@ export function Footer() {
               {brands.map((brand) => (
                 <li key={brand.slug}>
                   <Link
-                    href={`/brands/${brand.slug}`}
+                    href={getBrandHref(brand)}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
                     {brand.name}

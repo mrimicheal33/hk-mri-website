@@ -10,10 +10,9 @@ import { ProductBreadcrumb } from "@/components/products/ProductBreadcrumb";
 import { ProductCTA } from "@/components/products/ProductCTA";
 import { ProductCard } from "@/components/products/ProductCard";
 import { ProductImage } from "@/components/products/ProductImage";
-import { getCategoryLabel, getBrandBySlug, getRelatedProducts, type Product } from "@/data/products";
+import { getCategoryLabel, getBrandBySlug, getBrandHref, getRelatedProducts, type Product } from "@/data/products";
 import { getLocalizedBrand } from "@/data/brand-translations";
 import { getLocalizedProduct } from "@/data/product-translations";
-import { company } from "@/data/company";
 import { useDictionary, useLocale } from "@/i18n/LocaleProvider";
 import { formatString } from "@/i18n/utils";
 
@@ -28,12 +27,34 @@ export function ProductDetail({ product }: ProductDetailProps) {
   const brand = getBrandBySlug(product.brandSlug);
   const localizedBrand = brand ? getLocalizedBrand(brand, locale) : null;
   const related = getRelatedProducts(product);
+  const brandIsProductPage = brand?.pageHref === `/products/${product.id}`;
+  const pageTitle = brandIsProductPage && brand ? brand.name : product.name;
 
   return (
     <div>
       <section className="bg-white border-b border-border overflow-hidden">
         <Container className="py-10 lg:py-16">
           <ProductBreadcrumb product={product} />
+
+          <div className="max-w-3xl mb-10 lg:mb-14">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand mb-4">
+              Overview
+            </p>
+            <h2 className="text-2xl font-semibold text-text-primary mb-6">
+              {t.common.productOverview}
+            </h2>
+            <p className="text-text-secondary leading-relaxed text-base sm:text-lg">
+              {localized.description}
+            </p>
+            {product.brochure && (
+              <div className="mt-8">
+                <Button href={product.brochure} variant="outline" size="md" external>
+                  <FileDown size={16} />
+                  {t.common.downloadBrochure}
+                </Button>
+              </div>
+            )}
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             <div className="relative w-full aspect-[4/3] bg-surface-muted overflow-hidden min-w-0">
@@ -46,7 +67,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
             </div>
 
             <div className="min-w-0">
-              {brand && (
+              {brand && product.id !== "mini800" && (
                 <Image
                   src={brand.logo}
                   alt={brand.name}
@@ -66,7 +87,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
               </div>
 
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-primary tracking-tight mb-2">
-                {product.name}
+                {pageTitle}
               </h1>
               {product.nameEn && (
                 <p className="text-sm text-text-muted mb-4 font-[family-name:var(--font-inter)]">
@@ -77,7 +98,10 @@ export function ProductDetail({ product }: ProductDetailProps) {
                 {localized.tagline}
               </p>
 
-              <ul className="space-y-3 mb-8 pb-8 border-b border-border">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand mb-4">
+                {t.common.keyFeatures}
+              </p>
+              <ul className="space-y-3">
                 {localized.highlights.map((item) => (
                   <li
                     key={item}
@@ -91,56 +115,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
                   </li>
                 ))}
               </ul>
-
-              <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                <Button href="/contact" variant="primary" size="lg">
-                  {t.common.getQuote}
-                </Button>
-                <Button
-                  href={company.contact.whatsapp}
-                  variant="outline"
-                  size="lg"
-                  external
-                >
-                  {t.common.whatsappInquiry}
-                </Button>
-                {product.brochure && (
-                  <Button
-                    href={product.brochure}
-                    variant="outline"
-                    size="lg"
-                    external
-                  >
-                    <FileDown size={16} />
-                    {t.common.downloadBrochure}
-                  </Button>
-                )}
-              </div>
             </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="bg-white py-14 lg:py-20">
-        <Container>
-          <div className="max-w-3xl">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand mb-4">
-              Overview
-            </p>
-            <h2 className="text-2xl font-semibold text-text-primary mb-6">
-              {t.common.productOverview}
-            </h2>
-            <p className="text-text-secondary leading-relaxed text-base sm:text-lg">
-              {localized.description}
-            </p>
-            {product.brochure && (
-              <div className="mt-8">
-                <Button href={product.brochure} variant="outline" size="md" external>
-                  <FileDown size={16} />
-                  {t.common.downloadBrochure}
-                </Button>
-              </div>
-            )}
           </div>
         </Container>
       </section>
@@ -159,7 +134,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
               </div>
               {brand && (
                 <Link
-                  href={`/brands/${brand.slug}`}
+                  href={getBrandHref(brand)}
                   className="text-sm font-medium text-brand hover:underline"
                 >
                   {t.common.viewAll} →
@@ -176,7 +151,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
       )}
 
       <ProductCTA
-        title={formatString(t.productCta.interestTitle, { name: product.name })}
+        title={formatString(t.productCta.interestTitle, { name: pageTitle })}
         description={formatString(t.productCta.interestDesc, {
           brand: product.brand,
           name: product.name,

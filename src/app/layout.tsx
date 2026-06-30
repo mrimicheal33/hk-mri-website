@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Noto_Sans_TC } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { LocaleProvider } from "@/i18n/LocaleProvider";
 import { company } from "@/data/company";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -64,6 +65,7 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col antialiased text-text-primary">
         <LocaleProvider locale={locale} dictionary={dictionary}>
+          <ScrollToTop />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

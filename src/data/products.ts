@@ -35,6 +35,7 @@ export interface Brand {
   description: string;
   exclusive?: string;
   color: string;
+  pageHref?: string;
 }
 
 export const brands: Brand[] = [
@@ -54,6 +55,7 @@ export const brands: Brand[] = [
     logo: "/images/brands/ilivtouch.svg",
     description: "非侵入性肝纖維化及脂肪肝管理系統，採用振動控制瞬時彈性成像技術。",
     color: "#0097a7",
+    pageHref: "/products/mini800",
   },
   {
     slug: "mindray",
@@ -207,15 +209,24 @@ export const products: Product[] = [
     brand: "iLivTouch",
     brandSlug: "ilivtouch",
     category: "diagnostic",
-    tagline: "便攜式肝纖維化及脂肪肝掃描儀",
+    image: "/images/products/mini800-card.png",
+    tagline: "緊湊、簡便、快速 — 經濟實惠的肝臟診斷方案",
     description:
-      "iLivTouch Mini800 採用振動控制瞬時彈性成像（TE）技術，提供肝硬度（LSM）及超聲衰減參數（UAP）定量測量，支援肝纖維化、肝硬化及脂肪肝非侵入性評估。",
+      "iLivTouch Mini800 便攜式剪切波定量超聲波診斷系統，採用振動控制瞬時彈性成像（TE）技術，提供肝硬度（LSM）及超聲衰減參數（UAP）定量測量，輔助肝纖維化、肝硬化及脂肪肝的非侵入性全面評估，支援慢性肝病的早期篩查、預防、診斷及治療。",
     highlights: [
-      "FDA 及 CE 認證",
-      "LSM 及 UAP 定量檢測",
-      "便攜式電池供電",
+      "經濟實惠的肝臟診斷方案",
+      "緊湊、簡便、快速",
+      "振動控制瞬時彈性成像（TE）技術",
+      "LSM 及 UAP 定量測量",
+      "輔助評估肝纖維化、肝硬化及脂肪肝",
+      "支援慢性肝病早期篩查、預防、診斷及治療",
+      "輕巧便攜，易於搬運",
+      "快速測量，即時結果",
+      "非侵入性，適合定期監測及患者隨訪",
+      "超聲波 B-mode 影像探頭（可選）",
+      "電池供電",
+      "美國 FDA 510(k) 及 CE 認證",
       "闊頻纖維化掃描探頭",
-      "可選超聲波 B-mode 影像導引",
     ],
     brochure: "/brochures/mini800-ilivtouch.pdf",
     featured: true,
@@ -358,6 +369,10 @@ export const products: Product[] = [
 
 export function getBrandBySlug(slug: string) {
   return brands.find((b) => b.slug === slug);
+}
+
+export function getBrandHref(brand: Brand) {
+  return brand.pageHref ?? `/brands/${brand.slug}`;
 }
 
 export function getProductsByBrand(slug: string) {

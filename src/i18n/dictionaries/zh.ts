@@ -46,6 +46,7 @@ export const zh: Dictionary = {
     productsCount: "{count} 項產品",
     registrationNo: "註冊編號",
     productOverview: "產品介紹",
+    keyFeatures: "功能與優勢",
     relatedProducts: "同品牌其他產品",
     allProducts: "產品總覽",
     brandPage: "品牌專頁",
@@ -65,9 +66,9 @@ export const zh: Dictionary = {
     veterinary: "獸醫影像",
   },
   company: {
-    tagline: "您可信賴的香港醫療設備及解決方案專家",
+    tagline: "您可信賴的醫療設備及影像解決方案專家",
     description:
-      "HK MRI Instrument Ltd. 是香港領先的尖端醫療設備及解決方案供應商。作為醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素及改善臨床成效。",
+      "HK MRI Instrument Ltd. 是尖端醫療設備及先進診斷解決方案的優質供應商。作為全球醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素並優化臨床成效。",
     address: "香港",
     subsidiaryRole: "醫療設備代理",
     aboutExtra:
@@ -79,8 +80,8 @@ export const zh: Dictionary = {
       label: "先進醫療科技",
       title: "HK MRI Instrument Ltd.",
       headlineLead: "您可信賴的",
-      headlineAccent: "香港醫療設備專家",
-      tagline: "您可信賴的香港醫療設備及解決方案專家",
+      headlineAccent: "醫療設備專家",
+      tagline: "您可信賴的醫療設備及影像解決方案專家",
       intro:
         "透過提供創新影像及診斷技術，推進患者護理及臨床成效。",
       backgroundImage: "/images/hero-clinical-facility.png",
@@ -112,7 +113,7 @@ export const zh: Dictionary = {
           brandLogo: "/images/brands/ilivtouch.svg",
           description:
             "iLivTouch Mini800 便攜式剪切波彈性成像系統，提供肝硬度（LSM）及超聲衰減參數（UAP）定量測量。具 FDA 及 CE 認證，配備闊頻纖維化探頭、電池供電，可選 B-mode 超聲波導引，適用於肝纖維化、肝硬化及脂肪肝評估。",
-          href: "/brands/ilivtouch",
+          href: "/products/mini800",
           image: "/images/products/mini800-card.png",
           imageFit: "contain",
           imageCaptionTitle: "Mini800",
@@ -264,7 +265,12 @@ export const zh: Dictionary = {
     description:
       "每項產品均有獨立專頁，了解詳細規格與臨床應用。可按品牌篩選瀏覽。",
     featuredTitle: "CHISON SonoEye 手持超聲波",
-    featuredDesc: "口袋大小的專業超聲波，連接 iOS 即可即時診斷",
+    featuredDesc: "口袋大小的專業超聲波 - 可靈活連接智能手機或平板",
+    ilivtouchFeaturedTitle: "iLivTouch Mini800 便攜式剪切波彈性成像",
+    ilivtouchFeaturedDesc:
+      "緊湊型非侵入性肝臟評估 — LSM 及 UAP 定量測量，具 FDA 及 CE 認證",
+    ilivtouchCaptionTitle: "Mini800",
+    ilivtouchCaptionSubtitle: "便攜式剪切波彈性成像",
     brandsLabel: "Brands",
     filterAll: "全部",
     interestSonoeye: "CHISON SonoEye 手持超聲波",
@@ -278,7 +284,7 @@ export const zh: Dictionary = {
     defaultTitle: "索取產品報價",
     defaultDesc: "聯絡我們的專業團隊，獲取詳細規格、報價及演示安排。",
     interestTitle: "對 {name} 有興趣？",
-    interestDesc: "了解 {brand} {name} 的詳細規格、臨床應用及報價方案。",
+    interestDesc: "探索 {brand} {name} — 了解規格、臨床應用及報價方案。",
   },
   brand: {
     productsInterest: "對 {brand} 產品有興趣？",
@@ -287,13 +293,25 @@ export const zh: Dictionary = {
   },
   about: {
     label: "About Us",
-    heading: "關於 HK MRI Instrument",
+    heading: "關於 HK MRI Instrument Ltd.",
+    companyTagline: "以先進影像方案提升患者護理",
+    companyIntro:
+      "HK MRI Instrument Ltd. 是尖端醫療設備及先進診斷解決方案的優質供應商。作為全球醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素並優化臨床成效。",
+    brandsModalitiesTitle: "我們的優質品牌與影像模態",
+    brandsModalitiesIntro:
+      "我們代理 CHISON、iLivTouch、MINDRAY、UNITED IMAGING、Perlove 及 VETOO，提供全面的先進醫學影像及診斷解決方案，涵蓋：",
+    modalities: [
+      "超聲波系統",
+      "肝纖維化評估",
+      "數位放射影像",
+      "移動式數位 C-arm 系統",
+      "MRI（磁共振成像）",
+      "CT 掃描（電腦斷層）",
+    ],
     brandsTitle: "代理品牌",
     companyLabel: "Company",
     valuesLabel: "Values",
     valuesTitle: "我們的承諾",
-    partnersLabel: "Partners",
-    partnersTitle: "信賴我們的醫療機構",
     values: [
       {
         title: "專業代理",
@@ -304,12 +322,14 @@ export const zh: Dictionary = {
         description: "以臨床需求為核心，提供教育培訓與售後支援。",
       },
       {
-        title: "港澳服務",
-        description: "深耕香港及澳門市場，了解本地醫療體系需求。",
+        title: "在地專業服務",
+        description:
+          "提供貼身在地支援，深入了解區內醫療體系與各類機構的實際需求。",
       },
       {
         title: "B2B 夥伴",
-        description: "與 Quality HealthCare、港安、CUHK 等機構長期合作。",
+        description:
+          "與醫院、診所及醫療機構建立長期合作關係，提供可信賴的供應與專屬支援。",
       },
     ],
   },

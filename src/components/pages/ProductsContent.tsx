@@ -4,11 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
-import { Badge } from "@/components/ui/Badge";
-import { ProductCatalog } from "@/components/products/ProductCatalog";
 import { SonoEyePortfolioImage } from "@/components/home/SonoEyePortfolioImage";
-import { brands } from "@/data/products";
+import { Mini800PortfolioImage } from "@/components/home/Mini800PortfolioImage";
+import { brands, getBrandHref } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 export function ProductsContent() {
@@ -31,7 +29,7 @@ export function ProductsContent() {
       </section>
 
       <section className="bg-surface-muted border-b border-border">
-        <Container className="py-8 lg:py-10">
+        <Container className="py-8 lg:py-10 flex flex-col gap-6">
           <Link
             href="/sonoeye/clinical"
             className="group grid grid-cols-1 md:grid-cols-[280px_1fr] bg-white border border-border hover:border-brand/30 transition-colors overflow-hidden"
@@ -42,15 +40,34 @@ export function ProductsContent() {
               sizes="280px"
             />
             <div className="flex flex-col justify-center p-6 sm:p-8 min-w-0">
-              <div className="flex flex-wrap items-center gap-2 mb-3">
-                <Badge variant="brand">{t.common.featured}</Badge>
-                <Badge variant="neutral">{t.common.exclusiveAgent}</Badge>
-              </div>
               <h2 className="text-lg sm:text-xl font-semibold text-text-primary group-hover:text-brand transition-colors mb-2">
                 {t.products.featuredTitle}
               </h2>
               <p className="text-sm text-text-secondary mb-4">
                 {t.products.featuredDesc}
+              </p>
+              <span className="flex items-center gap-1.5 text-sm font-medium text-brand">
+                {t.common.viewPage} <ArrowRight size={14} />
+              </span>
+            </div>
+          </Link>
+
+          <Link
+            href="/products/mini800"
+            className="group grid grid-cols-1 md:grid-cols-[280px_1fr] bg-white border border-border hover:border-brand/30 transition-colors overflow-hidden"
+          >
+            <Mini800PortfolioImage
+              className="w-full aspect-[16/10] md:aspect-auto md:min-h-[200px] md:h-full"
+              captionTitle={t.products.ilivtouchCaptionTitle}
+              captionSubtitle={t.products.ilivtouchCaptionSubtitle}
+              sizes="280px"
+            />
+            <div className="flex flex-col justify-center p-6 sm:p-8 min-w-0">
+              <h2 className="text-lg sm:text-xl font-semibold text-text-primary group-hover:text-brand transition-colors mb-2">
+                {t.products.ilivtouchFeaturedTitle}
+              </h2>
+              <p className="text-sm text-text-secondary mb-4">
+                {t.products.ilivtouchFeaturedDesc}
               </p>
               <span className="flex items-center gap-1.5 text-sm font-medium text-brand">
                 {t.common.viewPage} <ArrowRight size={14} />
@@ -69,7 +86,7 @@ export function ProductsContent() {
             {brands.map((brand) => (
               <Link
                 key={brand.slug}
-                href={`/brands/${brand.slug}`}
+                href={getBrandHref(brand)}
                 className="flex flex-col items-center justify-center gap-3 p-5 sm:p-6 bg-white hover:bg-surface-muted transition-colors text-center min-h-[100px] min-w-0"
               >
                 <Image
@@ -87,10 +104,6 @@ export function ProductsContent() {
           </div>
         </Container>
       </section>
-
-      <Section muted>
-        <ProductCatalog />
-      </Section>
     </div>
   );
 }

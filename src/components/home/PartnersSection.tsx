@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { getBrandBySlug, getBrandHref } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 const PARTNER_LOGO_SLOT_HEIGHT = 80;
@@ -56,10 +57,14 @@ export function PartnersSection() {
       />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
-        {t.home.partners.items.map((partner) => (
+        {t.home.partners.items.map((partner) => {
+          const brand = getBrandBySlug(partner.slug);
+          const href = brand ? getBrandHref(brand) : `/brands/${partner.slug}`;
+
+          return (
           <Link
             key={partner.slug}
-            href={`/brands/${partner.slug}`}
+            href={href}
             className="group bg-white p-10 lg:p-12 hover:bg-surface-muted transition-colors flex flex-col items-center text-center"
           >
             <PartnerBrandLogo
@@ -81,7 +86,8 @@ export function PartnersSection() {
               />
             </span>
           </Link>
-        ))}
+          );
+        })}
       </div>
     </Section>
   );

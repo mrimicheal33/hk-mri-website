@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { brands, products } from "@/data/products";
+import { brands, products, getBrandHref } from "@/data/products";
 import { getLocalizedBrand } from "@/data/brand-translations";
 import { ProductCard } from "@/components/products/ProductCard";
 import { useDictionary, useLocale } from "@/i18n/LocaleProvider";
@@ -72,7 +72,7 @@ export function ProductCatalog() {
                   {getLocalizedBrand(brand, locale).description}
                 </p>
                 <Link
-                  href={`/brands/${brand.slug}`}
+                  href={getBrandHref(brand)}
                   className="text-sm font-semibold text-brand hover:text-[#004a6e] transition-colors shrink-0"
                 >
                   {t.common.brandPage} →

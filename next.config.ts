@@ -29,6 +29,11 @@ const nextConfig: NextConfig = {
         destination: "/brands/perlove",
         permanent: true,
       },
+      {
+        source: "/brands/ilivtouch",
+        destination: "/products/mini800",
+        permanent: true,
+      },
     ];
   },
 };

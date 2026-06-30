@@ -7,9 +7,9 @@ export const company = {
   nameLine2: "Ltd.",
   shortName: "HK MRI",
   logo: "/images/hk-mri-instrument-logo.png",
-  tagline: "Your Trusted HK Medical Device & Solution Specialist",
+  tagline: "Your Trusted Medical Device & Imaging Solutions Specialist",
   description:
-    "HK MRI Instrument Ltd. is a leading provider of cutting-edge medical devices and solutions in Hong Kong. As a trusted partner to healthcare institutions, we are committed to delivering innovative technologies that enhance patient care and improve clinical outcomes.",
+    "HK MRI Instrument Ltd. is a premier provider of cutting-edge medical devices and advanced diagnostic solutions. As a trusted partner to healthcare institutions worldwide, we are dedicated to delivering innovative technologies that elevate patient care and optimize clinical outcomes.",
   website: "https://hkmriinstrument.com",
   contact: {
     name: "Michael Chan",
@@ -20,12 +20,4 @@ export const company = {
     whatsappPhone: "+852 5363-4540",
     address: "Hong Kong",
   },
-  partners: [
-    "Quality HealthCare Medical Centre",
-    "HK Health Check & Medical Diagnostic Group",
-    "ProCare Medical Laboratory Centre",
-    "Precious Blood Hospital (Caritas)",
-    "S.H. Ho Centre for Digestive Health, CUHK",
-    "澳門鏡湖醫院",
-  ],
 } as const;

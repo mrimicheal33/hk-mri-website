@@ -45,6 +45,7 @@ export const en = {
     productsCount: "{count} products",
     registrationNo: "Registration No.",
     productOverview: "Product Overview",
+    keyFeatures: "Features & Advantages",
     relatedProducts: "More from this Brand",
     allProducts: "All Products",
     brandPage: "Brand Page",
@@ -64,9 +65,9 @@ export const en = {
     veterinary: "Veterinary Imaging",
   },
   company: {
-    tagline: "Your Trusted HK Medical Device & Solution Specialist",
+    tagline: "Your Trusted Medical Device & Imaging Solutions Specialist",
     description:
-      "HK MRI Instrument Ltd. is a leading provider of cutting-edge medical devices and solutions in Hong Kong. As a trusted partner to healthcare institutions, we are committed to delivering innovative technologies that enhance patient care and improve clinical outcomes.",
+      "HK MRI Instrument Ltd. is a premier provider of cutting-edge medical devices and advanced diagnostic solutions. As a trusted partner to healthcare institutions worldwide, we are dedicated to delivering innovative technologies that elevate patient care and optimize clinical outcomes.",
     address: "Hong Kong",
     subsidiaryRole: "Medical device distribution",
     aboutExtra:
@@ -79,7 +80,7 @@ export const en = {
       title: "HK MRI Instrument Ltd.",
       headlineLead: "YOUR TRUSTED",
       headlineAccent: "MEDICAL DEVICE SPECIALIST",
-      tagline: "Your Trusted HK Medical Device & Solution Specialist",
+      tagline: "Your Trusted Medical Device & Imaging Solutions Specialist",
       intro:
         "Advancing patient care and clinical outcomes through the delivery of innovative imaging and diagnostic technologies.",
       backgroundImage: "/images/hero-clinical-facility.png",
@@ -111,7 +112,7 @@ export const en = {
           brandLogo: "/images/brands/ilivtouch.svg",
           description:
             "iLivTouch Mini800 — a portable shear-wave elastography system for quantitative liver stiffness (LSM) and ultrasound attenuation (UAP) measurement. FDA-cleared and CE marked, with wideband fibrosis probe, battery operation, and optional B-mode ultrasound guidance for fibrosis, cirrhosis, and steatosis assessment.",
-          href: "/brands/ilivtouch",
+          href: "/products/mini800",
           image: "/images/products/mini800-card.png",
           imageFit: "contain",
           imageCaptionTitle: "Mini800",
@@ -269,7 +270,13 @@ export const en = {
     description:
       "Each product has a dedicated page with specifications and clinical applications. Filter by brand below.",
     featuredTitle: "CHISON SonoEye Handheld Ultrasound",
-    featuredDesc: "Pocket-sized professional ultrasound — connect to iOS for instant diagnosis",
+    featuredDesc:
+      "Pocket-sized professional ultrasound - a flexible connection with smart phone or pad",
+    ilivtouchFeaturedTitle: "iLivTouch Mini800 Portable Shear-wave Elastography",
+    ilivtouchFeaturedDesc:
+      "Compact, non-invasive liver assessment — quantitative LSM and UAP measurement with FDA and CE certification",
+    ilivtouchCaptionTitle: "Mini800",
+    ilivtouchCaptionSubtitle: "Portable shear-wave Elastography",
     brandsLabel: "Brands",
     filterAll: "All",
     interestSonoeye: "CHISON SonoEye Handheld Ultrasound",
@@ -285,7 +292,7 @@ export const en = {
       "Contact our team for detailed specifications, pricing, and demonstration arrangements.",
     interestTitle: "Interested in {name}?",
     interestDesc:
-      "Learn more about the {brand} {name} — specifications, clinical applications, and pricing.",
+      "Discover the {brand} {name} – Explore specifications, clinical applications, and pricing.",
   },
   brand: {
     productsInterest: "Interested in {brand} products?",
@@ -295,13 +302,25 @@ export const en = {
   },
   about: {
     label: "About Us",
-    heading: "About HK MRI Instrument",
+    heading: "About HK MRI Instrument Ltd.",
+    companyTagline: "Elevating Patient Care with Advanced Imaging Solutions",
+    companyIntro:
+      "HK MRI Instrument Ltd. is a premier provider of cutting-edge medical devices and advanced diagnostic solutions. As a trusted partner to healthcare institutions worldwide, we are dedicated to delivering innovative technologies that elevate patient care and optimize clinical outcomes.",
+    brandsModalitiesTitle: "Our Premium Brands & Modalities",
+    brandsModalitiesIntro:
+      "We proudly represent CHISON, iLivTouch, MINDRAY, UNITED IMAGING, Perlove, and VETOO — delivering a comprehensive suite of advanced medical imaging and diagnostic solutions, including:",
+    modalities: [
+      "Ultrasound Systems",
+      "Liver Fibrosis Assessment",
+      "Digital Radiography",
+      "Mobile Digital C-arm Systems",
+      "MRI (Magnetic Resonance Imaging)",
+      "CT Scans (Computed Tomography)",
+    ],
     brandsTitle: "Represented Brands",
     companyLabel: "Company",
     valuesLabel: "Values",
     valuesTitle: "Our Commitment",
-    partnersLabel: "Partners",
-    partnersTitle: "Trusted by Healthcare Institutions",
     values: [
       {
         title: "Professional Representation",
@@ -312,12 +331,14 @@ export const en = {
         description: "Education, training, and after-sales support centred on clinical needs.",
       },
       {
-        title: "HK & Macau Service",
-        description: "Deep local market knowledge and understanding of regional healthcare systems.",
+        title: "Local Market Expertise",
+        description:
+          "Responsive, on-the-ground support backed by deep knowledge of regional healthcare systems and institutional needs.",
       },
       {
         title: "B2B Partnerships",
-        description: "Long-term collaboration with Quality HealthCare, Adventist, CUHK, and more.",
+        description:
+          "Building lasting relationships with hospitals, clinics, and healthcare organisations through trusted supply and dedicated support.",
       },
     ],
   },
