@@ -28,45 +28,6 @@ function buildInquiryText(payload: {
   ].join("\n");
 }
 
-async function sendViaFormSubmit(payload: {
-  name: string;
-  email: string;
-  phone: string;
-  product: string;
-  message: string;
-}) {
-  const to = company.contact.inquiryEmail;
-  const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(to)}`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json",
-    },
-    body: JSON.stringify({
-      name: payload.name,
-      email: payload.email,
-      phone: payload.phone,
-      product: payload.product,
-      message: payload.message,
-      _subject: `Quote Inquiry from ${payload.name} — HK MRI Instrument`,
-      _replyto: payload.email,
-      _captcha: "false",
-      _template: "table",
-    }),
-  });
-
-  let data: { success?: string; message?: string } = {};
-  try {
-    data = (await response.json()) as { success?: string; message?: string };
-  } catch {
-    throw new Error("Invalid response from email service.");
-  }
-
-  if (!response.ok || data.success !== "true") {
-    throw new Error(data.message ?? "FormSubmit delivery failed.");
-  }
-}
-
 async function sendViaResend(
   payload: {
     name: string;
@@ -125,12 +86,18 @@ export async function POST(request: Request) {
   const inquiry = { name, email, phone, product, message };
   const resendKey = process.env.RESEND_API_KEY;
 
+  if (!resendKey) {
+    return NextResponse.json(
+      {
+        error:
+          "Inquiry API requires RESEND_API_KEY. The contact form submits via FormSubmit from the browser.",
+      },
+      { status: 503 }
+    );
+  }
+
   try {
-    if (resendKey) {
-      await sendViaResend(inquiry, resendKey);
-    } else {
-      await sendViaFormSubmit(inquiry);
-    }
+    await sendViaResend(inquiry, resendKey);
   } catch (error) {
     console.error("Inquiry email failed:", error);
     return NextResponse.json(
