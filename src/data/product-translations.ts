@@ -61,7 +61,7 @@ const en: Record<string, ProductLocaleFields> = {
     highlights: ["Non-invasive testing", "Quantitative liver stiffness", "Fatty liver assessment", "Instant results"],
   },
   mini800: {
-    tagline: "Portable liver fibrosis and steatosis scanner",
+    tagline: "Portable shear-wave elastography",
     description:
       "iLivTouch Mini800 uses vibration-controlled transient elastography (TE) to deliver quantitative liver stiffness (LSM) and ultrasound attenuation parameter (UAP) measurements for non-invasive assessment of fibrosis, cirrhosis, and steatosis.",
     highlights: [

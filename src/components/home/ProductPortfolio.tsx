@@ -58,7 +58,7 @@ export function ProductPortfolio() {
                     ("imageCaptionSubtitle" in item
                       ? item.imageCaptionSubtitle
                       : undefined) ??
-                    "Shear Wave Quantificational Ultrasound Diagnostic System"
+                    "Portable shear-wave Elastography"
                   }
                 />
               ) : isHepatus5 ? (

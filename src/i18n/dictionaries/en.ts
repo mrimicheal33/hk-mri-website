@@ -105,7 +105,7 @@ export const en = {
         },
         {
           key: "mini800",
-          name: "Mini800 Liver Fibrosis Scanner",
+          name: "Mini800 Portable shear-wave Elastography",
           tagline: "Compact, non-invasive liver assessment",
           brandName: "iLivTouch",
           brandLogo: "/images/brands/ilivtouch.svg",
@@ -115,8 +115,7 @@ export const en = {
           image: "/images/products/mini800-card.png",
           imageFit: "contain",
           imageCaptionTitle: "Mini800",
-          imageCaptionSubtitle:
-            "Shear Wave Quantificational Ultrasound Diagnostic System",
+          imageCaptionSubtitle: "Portable shear-wave Elastography",
         },
         {
           key: "mindray",
@@ -273,11 +272,11 @@ export const en = {
     featuredDesc: "Pocket-sized professional ultrasound — connect to iOS for instant diagnosis",
     brandsLabel: "Brands",
     filterAll: "All",
-    interestSonoeye: "CHISON SonoEye",
-    interestMindray: "MINDRAY Products",
-    interestUi: "UNITED IMAGING Products",
-    interestPerlove: "Perlove Veterinary C-arm",
-    interestIlivtouch: "iLivTouch Mini800",
+    interestSonoeye: "CHISON SonoEye Handheld Ultrasound",
+    interestMindray: "MINDRAY Products: Liver Fibrosis Scanner, DR, Ultrasound",
+    interestUi: "UNITED IMAGING Products: MRI, CT Scan",
+    interestPerlove: "Perlove Vet Mobile Digital C-arm System",
+    interestIlivtouch: "iLivTouch Mini800 portable shear-wave elastography",
     interestVetoo: "VETOO VF1 Dynamic DR",
   },
   productCta: {

@@ -259,10 +259,10 @@ export function ContactContent() {
                   >
                     <option value="">{t.common.selectProduct}</option>
                     <option value="sonoeye">{t.products.interestSonoeye}</option>
-                    <option value="mindray">{t.products.interestMindray}</option>
-                    <option value="united-imaging">{t.products.interestUi}</option>
-                    <option value="perlove">{t.products.interestPerlove}</option>
                     <option value="ilivtouch">{t.products.interestIlivtouch}</option>
+                    <option value="mindray">{t.products.interestMindray}</option>
+                    <option value="perlove">{t.products.interestPerlove}</option>
+                    <option value="united-imaging">{t.products.interestUi}</option>
                     <option value="vetoo">{t.products.interestVetoo}</option>
                     <option value="other">{t.common.other}</option>
                   </select>
