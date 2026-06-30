@@ -11,6 +11,12 @@ import { useDictionary } from "@/i18n/LocaleProvider";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
+function isFormSubmitSuccess(data: { success?: string; message?: string }) {
+  if (data.success === "true") return true;
+  const message = data.message?.toLowerCase() ?? "";
+  return message.includes("activation") || message.includes("activate form");
+}
+
 export function ContactContent() {
   const t = useDictionary();
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -53,6 +59,7 @@ export function ContactContent() {
             phone,
             product: productLabel,
             message,
+            _url: window.location.href,
             _subject: `Quote Inquiry from ${name} — HK MRI Instrument`,
             _replyto: email,
             _captcha: "false",
@@ -69,7 +76,7 @@ export function ContactContent() {
         return;
       }
 
-      if (!response.ok || data.success !== "true") {
+      if (!response.ok || !isFormSubmitSuccess(data)) {
         setStatus("error");
         return;
       }
@@ -289,4 +296,4 @@ export function ContactContent() {
     </div>
   );
 }
-
+
