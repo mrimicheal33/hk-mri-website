@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { company } from "@/data/company";
@@ -40,6 +40,15 @@ export function ConnectCTA() {
             >
               <Phone size={16} />
               {company.contact.phone}
+            </a>
+            <a
+              href={company.contact.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:text-white transition-colors"
+            >
+              <MessageCircle size={16} />
+              WhatsApp {company.contact.whatsappPhone}
             </a>
           </div>
 

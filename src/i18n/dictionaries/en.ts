@@ -120,7 +120,7 @@ export const en = {
         },
         {
           key: "mindray",
-          name: "Ultrasound, Liver Fibrosis & Digital Radiography",
+          name: "Liver Fibrosis Scan, Digital Radiography & Ultrasound",
           tagline: "Complete diagnostic imaging solutions",
           brandName: "MINDRAY",
           brandLogo: "/images/brands/mindray.png",
@@ -170,6 +170,8 @@ export const en = {
             "MRI systems combining advanced imaging with patient comfort — from high-resolution anatomical scans to functional imaging. CT scanners delivering rapid, high-resolution imaging for cardiac, trauma, and oncology applications.",
           href: "/brands/united-imaging",
           image: "/images/products/umr-680-hero.png",
+          imageCaptionTitle: "MRI & CT Scan Systems",
+          imageCaptionSubtitle: "Delivering advanced medical imaging worldwide",
         },
       ],
     },
@@ -200,7 +202,7 @@ export const en = {
       label: "Our Partners",
       title: "World-Class Manufacturer Partners",
       description:
-        "We proudly represent leading global medical device manufacturers, bringing proven technologies to healthcare institutions across Hong Kong.",
+        "We proudly represent leading global medical device manufacturers, bringing proven technologies to healthcare institutions across the region.",
       items: [
         {
           slug: "chison",
@@ -211,6 +213,38 @@ export const en = {
             "Global ultrasound innovator — home of the SonoEye handheld ultrasound and advanced POCUS solutions.",
         },
         {
+          slug: "ilivtouch",
+          name: "iLiv Touch",
+          logo: "/images/brands/ilivtouch.svg?v=2",
+          image: "/images/products/mini800-card.png",
+          description:
+            "Non-invasive liver care with quantitative shear-wave elastography for fibrosis, cirrhosis, and steatosis assessment.",
+        },
+        {
+          slug: "mindray",
+          name: "MINDRAY",
+          logo: "/images/brands/mindray.png",
+          image: "/images/products/hepatus-card.png",
+          description:
+            "Leading provider of digital radiography, liver fibrosis assessment, and comprehensive imaging solutions.",
+        },
+        {
+          slug: "perlove",
+          name: "Perlove",
+          logo: "/images/brands/perlove.png",
+          image: "/images/products/vet1120-card.png",
+          description:
+            "Veterinary imaging specialist — compact mobile digital C-arm systems for surgical fluoroscopy and diagnostics.",
+        },
+        {
+          slug: "vetoo",
+          name: "VETOO",
+          logo: "/images/brands/vetoo.svg?v=2",
+          image: "/images/products/vf1-card.png",
+          description:
+            "Veterinary Dynamic DR innovator — intelligent pet imaging with high-frame-rate fluoroscopy and flat-panel detection.",
+        },
+        {
           slug: "united-imaging",
           name: "UNITED IMAGING",
           logo: "/images/brands/united-imaging.png",
@@ -218,23 +252,15 @@ export const en = {
           description:
             "Premium MRI and CT systems combining cutting-edge imaging technology with patient-centred design.",
         },
-        {
-          slug: "mindray",
-          name: "MINDRAY",
-          logo: "/images/brands/mindray.png",
-          image: "/images/products/hepatus-5.jpg",
-          description:
-            "Leading provider of digital radiography, liver fibrosis assessment, and comprehensive imaging solutions.",
-        },
       ],
     },
     connect: {
       label: "Let's Connect",
-      title: "Partner With HK MRI Instrument Ltd.",
+      title: "Partner with HK MRI Instrument Ltd.",
       description:
-        "Interested in exploring our product offerings? We would be delighted to arrange a meeting at your convenience.",
+        "Interested in exploring our products? Let's connect at a time that works best for you.",
       closing:
-        "Thank you for considering HK MRI Instrument Ltd. as your medical device partner. We look forward to collaborating and contributing to the advancement of healthcare in Hong Kong.",
+        "Thank you for choosing HK MRI Instrument Ltd. as your trusted medical device partner. We look forward to collaborating with you to advance healthcare and patient outcomes.",
       backgroundImage: "/images/products/uct-780.jpg",
     },
   },
@@ -316,6 +342,11 @@ export const en = {
     address: "Address",
     whatsappLabel: "WhatsApp",
     whatsappValue: "Instant chat",
+    submitSuccess:
+      "Thank you — your inquiry has been sent. We will respond within 1–2 business days.",
+    submitError:
+      "We could not send your inquiry right now. Please email us directly or try again shortly.",
+    submitting: "Sending…",
   },
   footer: {
     brands: "Brands",

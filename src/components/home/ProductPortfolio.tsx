@@ -11,6 +11,7 @@ import { Mini800PortfolioImage } from "@/components/home/Mini800PortfolioImage";
 import { Hepatus5PortfolioImage } from "@/components/home/Hepatus5PortfolioImage";
 import { Vet1120PortfolioImage } from "@/components/home/Vet1120PortfolioImage";
 import { Vf1PortfolioImage } from "@/components/home/Vf1PortfolioImage";
+import { MriCtPortfolioImage } from "@/components/home/MriCtPortfolioImage";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 /** Shared image block height so logos and titles align across every card. */
@@ -34,6 +35,7 @@ export function ProductPortfolio() {
           const isHepatus5 = item.key === "mindray";
           const isVet1120 = item.key === "vet1120";
           const isVf1 = item.key === "vf1";
+          const isMriCt = item.key === "mri-ct";
 
           return (
             <Link
@@ -99,6 +101,20 @@ export function ProductPortfolio() {
                       ? item.imageCaptionSubtitle
                       : undefined) ??
                     "Veterinary Dynamic DR System"
+                  }
+                />
+              ) : isMriCt ? (
+                <MriCtPortfolioImage
+                  className={`${CARD_IMAGE_HEIGHT} mb-6 shrink-0`}
+                  captionTitle={
+                    ("imageCaptionTitle" in item ? item.imageCaptionTitle : undefined) ??
+                    "MRI & CT Scan Systems"
+                  }
+                  captionSubtitle={
+                    ("imageCaptionSubtitle" in item
+                      ? item.imageCaptionSubtitle
+                      : undefined) ??
+                    "Delivering advanced medical imaging worldwide"
                   }
                 />
               ) : (

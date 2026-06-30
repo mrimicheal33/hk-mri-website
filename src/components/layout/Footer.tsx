@@ -54,9 +54,6 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
-                { href: "/sonoeye/clinical", label: t.nav.sonoeyeClinical },
-                { href: "/sonoeye/roi", label: t.nav.sonoeyeRoi },
-                { href: "/products/sonoeye", label: t.nav.sonoeyeSpecs },
                 { href: "/products", label: t.footer.productOverview },
                 { href: "/about", label: t.nav.about },
                 { href: "/contact", label: t.nav.contact },
@@ -78,9 +75,41 @@ export function Footer() {
               {t.footer.contact}
             </h3>
             <ul className="space-y-3 text-sm text-white/70">
-              <li>{company.contact.email}</li>
-              <li>{company.contact.phone}</li>
-              <li>{t.company.address}</li>
+              <li>
+                <span className="block text-xs text-white/40 mb-0.5">
+                  {t.contact.email}
+                </span>
+                <a
+                  href={`mailto:${company.contact.email}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {company.contact.email}
+                </a>
+              </li>
+              <li>
+                <span className="block text-xs text-white/40 mb-0.5">
+                  {t.contact.phone}
+                </span>
+                <a
+                  href={`tel:${company.contact.phone.replace(/\s/g, "")}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {company.contact.phone}
+                </a>
+              </li>
+              <li>
+                <span className="block text-xs text-white/40 mb-0.5">
+                  {t.contact.whatsappLabel}
+                </span>
+                <a
+                  href={company.contact.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  {company.contact.whatsappPhone}
+                </a>
+              </li>
             </ul>
           </div>
         </div>

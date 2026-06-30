@@ -120,7 +120,7 @@ export const zh: Dictionary = {
         },
         {
           key: "mindray",
-          name: "超聲波、肝纖維化掃描及數位放射影像",
+          name: "肝纖維化掃描、數位放射影像及超聲波",
           tagline: "全面的診斷影像解決方案",
           brandName: "MINDRAY",
           brandLogo: "/images/brands/mindray.png",
@@ -170,6 +170,8 @@ export const zh: Dictionary = {
             "結合先進成像技術與患者舒適度的 MRI 系統，以及適用於心臟、創傷及腫瘤等應用的高速高解像度 CT 掃描儀。",
           href: "/brands/united-imaging",
           image: "/images/products/umr-680-hero.png",
+          imageCaptionTitle: "MRI 及 CT 掃描系統",
+          imageCaptionSubtitle: "為全球提供先進醫學影像",
         },
       ],
     },
@@ -200,7 +202,7 @@ export const zh: Dictionary = {
       label: "Our Partners",
       title: "世界級製造商夥伴",
       description:
-        "我們代理全球領先醫療設備製造商，將成熟可靠的技術帶給香港醫療機構。",
+        "我們代理全球領先醫療設備製造商，將成熟可靠的技術帶給區內醫療機構。",
       items: [
         {
           slug: "chison",
@@ -210,27 +212,49 @@ export const zh: Dictionary = {
           description: "全球超聲波創新者 — SonoEye 手持超聲波及先進 POCUS 方案。",
         },
         {
+          slug: "ilivtouch",
+          name: "iLiv Touch",
+          logo: "/images/brands/ilivtouch.svg?v=2",
+          image: "/images/products/mini800-card.png",
+          description:
+            "非侵入性肝臟護理方案，提供剪切波定量彈性成像，用於肝纖維化、肝硬化及脂肪肝評估。",
+        },
+        {
+          slug: "mindray",
+          name: "MINDRAY",
+          logo: "/images/brands/mindray.png",
+          image: "/images/products/hepatus-card.png",
+          description: "數位放射影像、肝纖維化檢測及全面影像解決方案的領先供應商。",
+        },
+        {
+          slug: "perlove",
+          name: "Perlove",
+          logo: "/images/brands/perlove.png",
+          image: "/images/products/vet1120-card.png",
+          description: "獸醫影像專家 — 提供緊湊型移動式數位 C-arm 透視及診斷系統。",
+        },
+        {
+          slug: "vetoo",
+          name: "VETOO",
+          logo: "/images/brands/vetoo.svg?v=2",
+          image: "/images/products/vf1-card.png",
+          description: "獸醫動態 DR 創新者 — 智能寵物影像、高幀率透視及平板探測器方案。",
+        },
+        {
           slug: "united-imaging",
           name: "UNITED IMAGING",
           logo: "/images/brands/united-imaging.png",
           image: "/images/products/umr-680-hero.png",
           description: "高端 MRI 及 CT 系統，結合尖端成像技術與以患者為本的設計。",
         },
-        {
-          slug: "mindray",
-          name: "MINDRAY",
-          logo: "/images/brands/mindray.png",
-          image: "/images/products/hepatus-5.jpg",
-          description: "數位放射影像、肝纖維化檢測及全面影像解決方案的領先供應商。",
-        },
       ],
     },
     connect: {
       label: "Let's Connect",
       title: "與 HK MRI Instrument Ltd. 合作",
-      description: "如欲進一步了解我們的產品，歡迎聯絡我們安排會面。",
+      description: "有興趣了解我們的產品？歡迎在您方便的時間與我們聯繫。",
       closing:
-        "感謝您考慮 HK MRI Instrument Ltd. 作為您的醫療設備夥伴。我們期待與您合作，共同推動香港醫療發展。",
+        "感謝您選擇 HK MRI Instrument Ltd. 作為您可信賴的醫療設備夥伴。我們期待與您攜手合作，推進醫療發展及提升患者成效。",
       backgroundImage: "/images/products/uct-780.jpg",
     },
   },
@@ -309,6 +333,9 @@ export const zh: Dictionary = {
     address: "地址",
     whatsappLabel: "WhatsApp",
     whatsappValue: "即時查詢",
+    submitSuccess: "謝謝 — 您的查詢已送出，我們將於 1–2 個工作天內回覆。",
+    submitError: "暫時未能送出查詢，請直接電郵聯絡我們或稍後再試。",
+    submitting: "送出中…",
   },
   footer: {
     brands: "產品品牌",

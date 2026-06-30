@@ -20,6 +20,7 @@ interface ButtonProps {
   external?: boolean;
   type?: "button" | "submit";
   fullWidth?: boolean;
+  disabled?: boolean;
   onClick?: () => void;
 }
 
@@ -58,6 +59,7 @@ export function Button({
   external,
   type = "button",
   fullWidth = false,
+  disabled = false,
   onClick,
 }: ButtonProps) {
   const classes = `${base} ${variants[variant]} ${sizes[size]} ${fullWidth ? "w-full" : ""} ${className}`;
@@ -76,7 +78,7 @@ export function Button({
   }
 
   return (
-    <button type={type} className={classes} onClick={onClick}>
+    <button type={type} className={classes} onClick={onClick} disabled={disabled}>
       {children}
     </button>
   );

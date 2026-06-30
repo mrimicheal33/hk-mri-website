@@ -1,11 +1,48 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { BrandLogo } from "@/components/ui/BrandLogo";
 import { useDictionary } from "@/i18n/LocaleProvider";
+
+const PARTNER_LOGO_SLOT_HEIGHT = 80;
+
+/** Per-brand display bounds — CHISON needs extra height due to tall wordmark artwork. */
+const PARTNER_LOGO_CONFIG: Record<string, { maxH: number; maxW: number }> = {
+  chison: { maxH: 76, maxW: 300 },
+  ilivtouch: { maxH: 52, maxW: 200 },
+  mindray: { maxH: 38, maxW: 170 },
+  perlove: { maxH: 34, maxW: 190 },
+  vetoo: { maxH: 38, maxW: 160 },
+  "united-imaging": { maxH: 50, maxW: 230 },
+};
+
+function PartnerBrandLogo({ src, alt, slug }: { src: string; alt: string; slug: string }) {
+  const { maxH, maxW } = PARTNER_LOGO_CONFIG[slug] ?? { maxH: 48, maxW: 220 };
+
+  return (
+    <div
+      className="mb-8 flex w-full items-center justify-center"
+      style={{ height: PARTNER_LOGO_SLOT_HEIGHT }}
+    >
+      <div
+        className="relative mx-auto w-full"
+        style={{ height: maxH, maxWidth: maxW }}
+      >
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          unoptimized
+          sizes={`${maxW}px`}
+          className="object-contain object-center"
+        />
+      </div>
+    </div>
+  );
+}
 
 export function PartnersSection() {
   const t = useDictionary();
@@ -18,18 +55,17 @@ export function PartnersSection() {
         description={t.home.partners.description}
       />
 
-      <div className="grid sm:grid-cols-3 gap-px bg-border border border-border">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
         {t.home.partners.items.map((partner) => (
           <Link
             key={partner.slug}
             href={`/brands/${partner.slug}`}
             className="group bg-white p-10 lg:p-12 hover:bg-surface-muted transition-colors flex flex-col items-center text-center"
           >
-            <BrandLogo
+            <PartnerBrandLogo
               src={partner.logo}
               alt={partner.name}
-              align="center"
-              className="mb-8 mx-auto"
+              slug={partner.slug}
             />
             <h3 className="text-base font-semibold text-text-primary mb-2">
               {partner.name}

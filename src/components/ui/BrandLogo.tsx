@@ -35,6 +35,7 @@ const BRAND_NATIVE_SIZE: Record<string, { width: number; height: number }> = {
   "/images/brands/united-imaging.png": { width: 616, height: 184 },
   "/images/brands/perlove.png": { width: 303, height: 82 },
   "/images/brands/ilivtouch.svg": { width: 200, height: 48 },
+  "/images/brands/vetoo.svg": { width: 160, height: 40 },
 };
 
 function getDisplayDimensions(src: string, targetHeight: number) {
@@ -59,7 +60,7 @@ export function BrandLogo({
   return (
     <div
       className={`flex items-center min-w-0 ${
-        align === "center" ? "justify-center" : "justify-start"
+        align === "center" ? "w-full justify-center" : "justify-start"
       } ${className}`}
       style={{ height: `${height}px` }}
     >

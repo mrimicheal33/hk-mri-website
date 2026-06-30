@@ -13,9 +13,11 @@ export const company = {
   website: "https://hkmriinstrument.com",
   contact: {
     name: "Michael Chan",
-    email: "michael.chan@mti-mill.com",
-    phone: "+852 5363-4540",
+    email: "info@mti-mill.com",
+    inquiryEmail: "michael.chan@mti-mill.com",
+    phone: "+852 3188-5033",
     whatsapp: "https://wa.me/85253634540",
+    whatsappPhone: "+852 5363-4540",
     address: "Hong Kong",
   },
   partners: [
