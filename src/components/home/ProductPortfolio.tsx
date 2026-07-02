@@ -52,7 +52,7 @@ export function ProductPortfolio() {
                   className={`${CARD_IMAGE_HEIGHT} mb-6 shrink-0`}
                   captionTitle={
                     ("imageCaptionTitle" in item ? item.imageCaptionTitle : undefined) ??
-                    "Mini800"
+                    "iLivTouch Mini800"
                   }
                   captionSubtitle={
                     ("imageCaptionSubtitle" in item

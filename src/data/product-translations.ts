@@ -135,7 +135,7 @@ const en: Record<string, ProductLocaleFields> = {
   vet1120: {
     tagline: "Veterinary mobile digital C-arm system",
     description:
-      "Perlove VET1120 mobile digital C-arm designed for veterinary surgical image guidance.",
+      "PERLOVE VET1120 mobile digital C-arm designed for veterinary surgical image guidance.",
     highlights: ["Mobile C-arm", "Digital imaging", "Veterinary surgery"],
   },
   vf1: {

@@ -19,7 +19,7 @@ export function Vet1120PortfolioImage({
       <div className="relative min-h-0 flex-1 overflow-hidden">
         <Image
           src="/images/products/vet1120-card.png?v=7"
-          alt="Perlove VET1120 Series"
+          alt="PERLOVE VET1120 Series"
           fill
           unoptimized
           quality={100}

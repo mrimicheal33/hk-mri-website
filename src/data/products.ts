@@ -50,9 +50,9 @@ export const brands: Brand[] = [
   },
   {
     slug: "ilivtouch",
-    name: "iLivTouch",
-    nameEn: "Hisky Medical iLivTouch",
-    logo: "/images/brands/ilivtouch.svg",
+    name: "HISKY",
+    nameEn: "HISKY Medical",
+    logo: "/images/brands/hisky.png",
     description: "非侵入性肝纖維化及脂肪肝管理系統，採用振動控制瞬時彈性成像技術。",
     color: "#0097a7",
     pageHref: "/products/mini800",
@@ -67,8 +67,8 @@ export const brands: Brand[] = [
   },
   {
     slug: "perlove",
-    name: "Perlove",
-    nameEn: "Perlove Medical",
+    name: "PERLOVE",
+    nameEn: "PERLOVE Medical",
     logo: "/images/brands/perlove.png",
     description: "專注獸醫影像設備，提供移動式數位 C-arm 系統。",
     color: "#b91c1c",
@@ -201,12 +201,12 @@ export const products: Product[] = [
     highlights: ["非侵入性檢測", "肝硬度定量", "脂肪肝評估", "即時結果"],
     featured: true,
   },
-  // iLivTouch - Liver Fibrosis
+  // HISKY - Liver Fibrosis
   {
     id: "mini800",
-    name: "Mini800",
+    name: "iLivTouch Mini800",
     nameEn: "iLivTouch Mini800",
-    brand: "iLivTouch",
+    brand: "HISKY",
     brandSlug: "ilivtouch",
     category: "diagnostic",
     image: "/images/products/mini800-card.png",
@@ -332,16 +332,16 @@ export const products: Product[] = [
     highlights: ["數位 PET 技術", "CT 同機整合", "腫瘤診斷"],
     featured: true,
   },
-  // Perlove
+  // PERLOVE
   {
     id: "vet1120",
     name: "VET1120",
     nameEn: "Veterinary Mobile Digital C-arm",
-    brand: "Perlove",
+    brand: "PERLOVE",
     brandSlug: "perlove",
     category: "veterinary",
     tagline: "獸醫移動式數位 C-arm 系統",
-    description: "Perlove VET1120 移動式數位 C-arm，專為獸醫外科手術影像導航設計。",
+    description: "PERLOVE VET1120 移動式數位 C-arm，專為獸醫外科手術影像導航設計。",
     highlights: ["移動式 C-arm", "數位成像", "獸醫外科專用"],
   },
   // VETOO

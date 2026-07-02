@@ -12,7 +12,7 @@ export const zh: Dictionary = {
     contactDescription: "聯絡 HK MRI Instrument Limited，索取醫療設備報價或預約 SonoEye 演示。",
     productsTitle: "產品總覽",
     productsDescription:
-      "HK MRI Instrument Limited 代理之全部醫療設備產品，涵蓋 CHISON、MINDRAY、UNITED IMAGING 及 Perlove。",
+      "HK MRI Instrument Limited 代理之全部醫療設備產品，涵蓋 CHISON、MINDRAY、UNITED IMAGING 及 PERLOVE。",
     brandNotFound: "品牌未找到",
     productNotFound: "產品未找到",
   },
@@ -107,16 +107,16 @@ export const zh: Dictionary = {
         },
         {
           key: "mini800",
-          name: "Mini800 便攜式剪切波彈性成像",
+          name: "iLivTouch Mini800 便攜式剪切波彈性成像",
           tagline: "便攜式非侵入性肝臟評估",
-          brandName: "iLivTouch",
-          brandLogo: "/images/brands/ilivtouch.svg",
+          brandName: "HISKY",
+          brandLogo: "/images/brands/hisky.png",
           description:
             "iLivTouch Mini800 便攜式剪切波彈性成像系統，提供肝硬度（LSM）及超聲衰減參數（UAP）定量測量。具 FDA 及 CE 認證，配備闊頻纖維化探頭、電池供電，可選 B-mode 超聲波導引，適用於肝纖維化、肝硬化及脂肪肝評估。",
           href: "/products/mini800",
           image: "/images/products/mini800-card.png",
           imageFit: "contain",
-          imageCaptionTitle: "Mini800",
+          imageCaptionTitle: "iLivTouch Mini800",
           imageCaptionSubtitle: "便攜式剪切波彈性成像",
         },
         {
@@ -140,7 +140,7 @@ export const zh: Dictionary = {
           brandName: "PERLOVE",
           brandLogo: "/images/brands/perlove.png",
           description:
-            "Perlove VET1120 系列 — 緊湊型移動 C-arm，配備整合式工作站及靈活移動設計、Toshiba 影像增強器提供高解像度透視影像、人性化手控器、高功率 X 光管，以及自動、手動及脈衝透視模式，適用於獸醫診斷及外科手術。",
+            "PERLOVE VET1120 系列 — 緊湊型移動 C-arm，配備整合式工作站及靈活移動設計、Toshiba 影像增強器提供高解像度透視影像、人性化手控器、高功率 X 光管，以及自動、手動及脈衝透視模式，適用於獸醫診斷及外科手術。",
           href: "/products/vet1120",
           image: "/images/products/vet1120-card.png",
           imageFit: "contain",
@@ -214,8 +214,8 @@ export const zh: Dictionary = {
         },
         {
           slug: "ilivtouch",
-          name: "iLiv Touch",
-          logo: "/images/brands/ilivtouch.svg?v=2",
+          name: "HISKY",
+          logo: "/images/brands/hisky.png",
           image: "/images/products/mini800-card.png",
           description:
             "非侵入性肝臟護理方案，提供剪切波定量彈性成像，用於肝纖維化、肝硬化及脂肪肝評估。",
@@ -229,7 +229,7 @@ export const zh: Dictionary = {
         },
         {
           slug: "perlove",
-          name: "Perlove",
+          name: "PERLOVE",
           logo: "/images/brands/perlove.png",
           image: "/images/products/vet1120-card.png",
           description: "獸醫影像專家 — 提供緊湊型移動式數位 C-arm 透視及診斷系統。",
@@ -266,17 +266,17 @@ export const zh: Dictionary = {
       "每項產品均有獨立專頁，了解詳細規格與臨床應用。可按品牌篩選瀏覽。",
     featuredTitle: "CHISON SonoEye 手持超聲波",
     featuredDesc: "口袋大小的專業超聲波 - 可靈活連接智能手機或平板",
-    ilivtouchFeaturedTitle: "iLivTouch Mini800 便攜式剪切波彈性成像",
+    ilivtouchFeaturedTitle: "HISKY iLivTouch Mini800 便攜式剪切波彈性成像",
     ilivtouchFeaturedDesc:
       "緊湊型非侵入性肝臟評估 — LSM 及 UAP 定量測量，具 FDA 及 CE 認證",
-    ilivtouchCaptionTitle: "Mini800",
+    ilivtouchCaptionTitle: "iLivTouch Mini800",
     ilivtouchCaptionSubtitle: "便攜式剪切波彈性成像",
     brandsLabel: "Brands",
     filterAll: "全部",
     interestSonoeye: "CHISON SonoEye 手持超聲波",
     interestMindray: "MINDRAY 產品：肝纖維化掃描儀、DR、超聲波",
     interestUi: "UNITED IMAGING 產品：MRI、CT 掃描",
-    interestPerlove: "Perlove Vet 移動式數碼 C-arm 系統",
+    interestPERLOVE: "PERLOVE Vet 移動式數碼 C-arm 系統",
     interestIlivtouch: "iLivTouch Mini800 便攜式剪切波彈性成像",
     interestVetoo: "VETOO VF1 動態 DR",
   },
@@ -299,7 +299,7 @@ export const zh: Dictionary = {
       "HK MRI Instrument Ltd. 是尖端醫療設備及先進診斷解決方案的優質供應商。作為全球醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素並優化臨床成效。",
     brandsModalitiesTitle: "我們的優質品牌與影像模態",
     brandsModalitiesIntro:
-      "我們代理 CHISON、iLivTouch、MINDRAY、UNITED IMAGING、Perlove 及 VETOO，提供全面的先進醫學影像及診斷解決方案，涵蓋：",
+      "我們代理 CHISON、HISKY、MINDRAY、UNITED IMAGING、PERLOVE 及 VETOO，提供全面的先進醫學影像及診斷解決方案，涵蓋：",
     modalities: [
       "超聲波系統",
       "肝纖維化評估",

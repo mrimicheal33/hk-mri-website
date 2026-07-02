@@ -11,7 +11,7 @@ export const en = {
       "Contact HK MRI Instrument Limited for medical equipment quotes or SonoEye demonstrations.",
     productsTitle: "Products",
     productsDescription:
-      "Full range of medical equipment distributed by HK MRI Instrument Limited — CHISON, MINDRAY, UNITED IMAGING, and Perlove.",
+      "Full range of medical equipment distributed by HK MRI Instrument Limited — CHISON, MINDRAY, UNITED IMAGING, and PERLOVE.",
     brandNotFound: "Brand Not Found",
     productNotFound: "Product Not Found",
   },
@@ -106,16 +106,16 @@ export const en = {
         },
         {
           key: "mini800",
-          name: "Mini800 Portable shear-wave Elastography",
+          name: "iLivTouch Mini800 Portable shear-wave Elastography",
           tagline: "Compact, non-invasive liver assessment",
-          brandName: "iLivTouch",
-          brandLogo: "/images/brands/ilivtouch.svg",
+          brandName: "HISKY",
+          brandLogo: "/images/brands/hisky.png",
           description:
             "iLivTouch Mini800 — a portable shear-wave elastography system for quantitative liver stiffness (LSM) and ultrasound attenuation (UAP) measurement. FDA-cleared and CE marked, with wideband fibrosis probe, battery operation, and optional B-mode ultrasound guidance for fibrosis, cirrhosis, and steatosis assessment.",
           href: "/products/mini800",
           image: "/images/products/mini800-card.png",
           imageFit: "contain",
-          imageCaptionTitle: "Mini800",
+          imageCaptionTitle: "iLivTouch Mini800",
           imageCaptionSubtitle: "Portable shear-wave Elastography",
         },
         {
@@ -139,7 +139,7 @@ export const en = {
           brandName: "PERLOVE",
           brandLogo: "/images/brands/perlove.png",
           description:
-            "Perlove VET1120 Series — compact mobile C-arm with integrated workstation and flexible movement, Toshiba image intensifier for high-resolution fluoroscopy, intuitive hand controller, high-power X-ray tube, and automatic, manual, and pulse fluoroscopy modes for veterinary diagnostics and surgery.",
+            "PERLOVE VET1120 Series — compact mobile C-arm with integrated workstation and flexible movement, Toshiba image intensifier for high-resolution fluoroscopy, intuitive hand controller, high-power X-ray tube, and automatic, manual, and pulse fluoroscopy modes for veterinary diagnostics and surgery.",
           href: "/products/vet1120",
           image: "/images/products/vet1120-card.png",
           imageFit: "contain",
@@ -214,8 +214,8 @@ export const en = {
         },
         {
           slug: "ilivtouch",
-          name: "iLiv Touch",
-          logo: "/images/brands/ilivtouch.svg?v=2",
+          name: "HISKY",
+          logo: "/images/brands/hisky.png",
           image: "/images/products/mini800-card.png",
           description:
             "Non-invasive liver care with quantitative shear-wave elastography for fibrosis, cirrhosis, and steatosis assessment.",
@@ -230,7 +230,7 @@ export const en = {
         },
         {
           slug: "perlove",
-          name: "Perlove",
+          name: "PERLOVE",
           logo: "/images/brands/perlove.png",
           image: "/images/products/vet1120-card.png",
           description:
@@ -272,17 +272,17 @@ export const en = {
     featuredTitle: "CHISON SonoEye Handheld Ultrasound",
     featuredDesc:
       "Pocket-sized professional ultrasound - a flexible connection with smart phone or pad",
-    ilivtouchFeaturedTitle: "iLivTouch Mini800 Portable Shear-wave Elastography",
+    ilivtouchFeaturedTitle: "HISKY iLivTouch Mini800 Portable Shear-wave Elastography",
     ilivtouchFeaturedDesc:
       "Compact, non-invasive liver assessment — quantitative LSM and UAP measurement with FDA and CE certification",
-    ilivtouchCaptionTitle: "Mini800",
+    ilivtouchCaptionTitle: "iLivTouch Mini800",
     ilivtouchCaptionSubtitle: "Portable shear-wave Elastography",
     brandsLabel: "Brands",
     filterAll: "All",
     interestSonoeye: "CHISON SonoEye Handheld Ultrasound",
     interestMindray: "MINDRAY Products: Liver Fibrosis Scanner, DR, Ultrasound",
     interestUi: "UNITED IMAGING Products: MRI, CT Scan",
-    interestPerlove: "Perlove Vet Mobile Digital C-arm System",
+    interestPERLOVE: "PERLOVE Vet Mobile Digital C-arm System",
     interestIlivtouch: "iLivTouch Mini800 portable shear-wave elastography",
     interestVetoo: "VETOO VF1 Dynamic DR",
   },
@@ -308,7 +308,7 @@ export const en = {
       "HK MRI Instrument Ltd. is a premier provider of cutting-edge medical devices and advanced diagnostic solutions. As a trusted partner to healthcare institutions worldwide, we are dedicated to delivering innovative technologies that elevate patient care and optimize clinical outcomes.",
     brandsModalitiesTitle: "Our Premium Brands & Modalities",
     brandsModalitiesIntro:
-      "We proudly represent CHISON, iLivTouch, MINDRAY, UNITED IMAGING, Perlove, and VETOO — delivering a comprehensive suite of advanced medical imaging and diagnostic solutions, including:",
+      "We proudly represent CHISON, HISKY, MINDRAY, UNITED IMAGING, PERLOVE, and VETOO — delivering a comprehensive suite of advanced medical imaging and diagnostic solutions, including:",
     modalities: [
       "Ultrasound Systems",
       "Liver Fibrosis Assessment",

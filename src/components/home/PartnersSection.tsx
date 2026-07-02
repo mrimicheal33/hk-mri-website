@@ -13,7 +13,7 @@ const PARTNER_LOGO_SLOT_HEIGHT = 80;
 /** Per-brand display bounds — CHISON needs extra height due to tall wordmark artwork. */
 const PARTNER_LOGO_CONFIG: Record<string, { maxH: number; maxW: number }> = {
   chison: { maxH: 76, maxW: 300 },
-  ilivtouch: { maxH: 52, maxW: 200 },
+  ilivtouch: { maxH: 44, maxW: 180 },
   mindray: { maxH: 38, maxW: 170 },
   perlove: { maxH: 34, maxW: 190 },
   vetoo: { maxH: 38, maxW: 160 },

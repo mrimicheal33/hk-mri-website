@@ -34,6 +34,11 @@ const nextConfig: NextConfig = {
         destination: "/products/mini800",
         permanent: true,
       },
+      {
+        source: "/brands/hisky",
+        destination: "/products/mini800",
+        permanent: true,
+      },
     ];
   },
 };
