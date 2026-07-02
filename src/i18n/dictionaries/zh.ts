@@ -276,7 +276,7 @@ export const zh: Dictionary = {
     interestSonoeye: "CHISON SonoEye 手持超聲波",
     interestMindray: "MINDRAY 產品：肝纖維化掃描儀、DR、超聲波",
     interestUi: "UNITED IMAGING 產品：MRI、CT 掃描",
-    interestPERLOVE: "PERLOVE Vet 移動式數碼 C-arm 系統",
+    interestPerlove: "PERLOVE Vet 移動式數碼 C-arm 系統",
     interestIlivtouch: "iLivTouch Mini800 便攜式剪切波彈性成像",
     interestVetoo: "VETOO VF1 動態 DR",
   },

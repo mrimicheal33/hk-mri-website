@@ -282,7 +282,7 @@ export const en = {
     interestSonoeye: "CHISON SonoEye Handheld Ultrasound",
     interestMindray: "MINDRAY Products: Liver Fibrosis Scanner, DR, Ultrasound",
     interestUi: "UNITED IMAGING Products: MRI, CT Scan",
-    interestPERLOVE: "PERLOVE Vet Mobile Digital C-arm System",
+    interestPerlove: "PERLOVE Vet Mobile Digital C-arm System",
     interestIlivtouch: "iLivTouch Mini800 portable shear-wave elastography",
     interestVetoo: "VETOO VF1 Dynamic DR",
   },
