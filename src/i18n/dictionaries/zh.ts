@@ -432,7 +432,7 @@ export const zh: Dictionary = {
     cta: {
       title: "體驗 SonoEye 的臨床力量",
       description:
-        "預約實機演示或報名工作坊，親身感受口袋超聲波如何改變您的診斷流程。",
+        "預約實機演示，了解口袋超聲波如何改變您的診斷流程及定價方案。",
     },
     probes: {
       label: "探頭選擇",

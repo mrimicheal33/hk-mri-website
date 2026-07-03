@@ -443,7 +443,7 @@ export const en = {
     cta: {
       title: "Experience the Clinical Power of SonoEye",
       description:
-        "Book a live demo or workshop and discover how pocket ultrasound transforms your diagnostic workflow.",
+        "Book a live demo or discover how pocket ultrasound transforms your diagnostic workflow and pricing.",
     },
     probes: {
       label: "Probe Selection",
