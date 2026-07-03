@@ -31,7 +31,7 @@ export function ProductsContent() {
       <section className="bg-surface-muted border-b border-border">
         <Container className="py-8 lg:py-10 flex flex-col gap-6">
           <Link
-            href="/sonoeye/clinical"
+            href="/products/sonoeye"
             className="group grid grid-cols-1 md:grid-cols-[280px_1fr] bg-white border border-border hover:border-brand/30 transition-colors overflow-hidden"
           >
             <SonoEyePortfolioImage

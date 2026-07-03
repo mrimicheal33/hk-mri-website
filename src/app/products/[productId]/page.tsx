@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ProductDetail } from "@/components/products/ProductDetail";
-import { SonoEyeDetail } from "@/components/products/SonoEyeDetail";
 import { products, getProductById } from "@/data/products";
 import { getLocalizedProduct } from "@/data/product-translations";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -35,10 +34,6 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const { productId } = await params;
   const product = getProductById(productId);
   if (!product) notFound();
-
-  if (product.id === "sonoeye") {
-    return <SonoEyeDetail />;
-  }
 
   return <ProductDetail product={product} />;
 }

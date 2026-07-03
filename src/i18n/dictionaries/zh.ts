@@ -102,7 +102,7 @@ export const zh: Dictionary = {
           brandLogo: "/images/brands/chison.webp",
           description:
             "口袋大小的專家級手持超聲波，重新定義床邊影像（POCUS）。配備可自訂界面、IP67 耐用性及 AI 自動化功能，支援醫美、肌骨物理治療及急症護理等臨床場景。",
-          href: "/sonoeye/clinical",
+          href: "/products/sonoeye",
           image: "/images/products/sonoeye-hero.png",
         },
         {
@@ -277,7 +277,7 @@ export const zh: Dictionary = {
     interestMindray: "MINDRAY 產品：肝纖維化掃描儀、DR、超聲波",
     interestUi: "UNITED IMAGING 產品：MRI、CT 掃描",
     interestPerlove: "PERLOVE Vet 移動式數碼 C-arm 系統",
-    interestIlivtouch: "iLivTouch Mini800 便攜式剪切波彈性成像",
+    interestIlivtouch: "HISKY iLivTouch Mini800 便攜式剪切波彈性成像",
     interestVetoo: "VETOO VF1 動態 DR",
   },
   productCta: {
@@ -432,6 +432,39 @@ export const zh: Dictionary = {
       title: "體驗 SonoEye 的臨床力量",
       description:
         "預約實機演示或報名工作坊，親身感受口袋超聲波如何改變您的診斷流程。",
+    },
+    probes: {
+      label: "探頭選擇",
+      title: "SonoEye P 系列 — 如何選擇探頭？",
+      description:
+        "CHISON SonoEye 提供多款探頭配置，滿足不同臨床需求。請按專科及應用場景選擇合適的 P 系列探頭。",
+      items: [
+        {
+          model: "P1",
+          spec: "9.0 MHz，30 mm 線陣探頭",
+          use: "周邊血管、肌骨（MSK）、小器官及急症。",
+        },
+        {
+          model: "P2",
+          spec: "7.5 MHz，40 mm 線陣探頭",
+          use: "血管、MSK、神經、肺部、小器官及急症。",
+        },
+        {
+          model: "P3",
+          spec: "2.5 MHz 相控陣探頭",
+          use: "心臟、腹部、肺部及急症。",
+        },
+        {
+          model: "P5",
+          spec: "3.5 MHz 凸陣探頭",
+          use: "腹部、肺部、產科/婦科、泌尿及急症。",
+        },
+        {
+          model: "P6",
+          spec: "6.0 MHz 微凸陣探頭",
+          use: "兒科腹部、心臟及急症。",
+        },
+      ],
     },
   },
 };

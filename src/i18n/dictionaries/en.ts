@@ -101,7 +101,7 @@ export const en = {
           brandLogo: "/images/brands/chison.webp",
           description:
             "Our pocket-sized, expert-grade handheld ultrasound redefines point-of-care imaging (POCUS). Featuring a customizable interface, IP67 durability, and AI automation — empowering clinicians across aesthetic medicine, MSK physiotherapy, and emergency care.",
-          href: "/sonoeye/clinical",
+          href: "/products/sonoeye",
           image: "/images/products/sonoeye-hero.png",
         },
         {
@@ -283,7 +283,7 @@ export const en = {
     interestMindray: "MINDRAY Products: Liver Fibrosis Scanner, DR, Ultrasound",
     interestUi: "UNITED IMAGING Products: MRI, CT Scan",
     interestPerlove: "PERLOVE Vet Mobile Digital C-arm System",
-    interestIlivtouch: "iLivTouch Mini800 portable shear-wave elastography",
+    interestIlivtouch: "HISKY iLivTouch Mini800 portable shear-wave elastography",
     interestVetoo: "VETOO VF1 Dynamic DR",
   },
   productCta: {
@@ -443,6 +443,39 @@ export const en = {
       title: "Experience the Clinical Power of SonoEye",
       description:
         "Book a live demo or workshop and discover how pocket ultrasound transforms your diagnostic workflow.",
+    },
+    probes: {
+      label: "Probe Selection",
+      title: "SonoEye P-Series — Which Probe for Which Application?",
+      description:
+        "CHISON SonoEye offers clinical solutions with different scanner configurations. Choose the P-series probe that matches your specialty.",
+      items: [
+        {
+          model: "P1",
+          spec: "9.0 MHz, 30 mm Linear",
+          use: "Peripheral vessel, MSK, small parts, and emergency medicine.",
+        },
+        {
+          model: "P2",
+          spec: "7.5 MHz, 40 mm Linear",
+          use: "Vascular, MSK, nerve, lung, small parts, and emergency medicine.",
+        },
+        {
+          model: "P3",
+          spec: "2.5 MHz Phased Array",
+          use: "Cardiac, abdomen, lung, and emergency medicine.",
+        },
+        {
+          model: "P5",
+          spec: "3.5 MHz Convex",
+          use: "Abdomen, lung, OB/GYN, urology, and emergency medicine.",
+        },
+        {
+          model: "P6",
+          spec: "6.0 MHz Micro-convex",
+          use: "Pediatric abdomen, cardiac, and emergency medicine.",
+        },
+      ],
     },
   },
 };

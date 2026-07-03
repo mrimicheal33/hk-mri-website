@@ -123,6 +123,8 @@ export const products: Product[] = [
     ],
     featured: true,
     hero: true,
+    image: "/images/products/sonoeye-hero.png",
+    brochure: "/brochures/sonoeye-brochure.pdf",
   },
   // MINDRAY - Ultrasound
   {

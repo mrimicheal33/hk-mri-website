@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { ProductBreadcrumb } from "@/components/products/ProductBreadcrumb";
 import { ProductCTA } from "@/components/products/ProductCTA";
+import { SonoEyeProbeGuide } from "@/components/products/SonoEyeProbeGuide";
 import { ProductCard } from "@/components/products/ProductCard";
 import { ProductImage } from "@/components/products/ProductImage";
 import { getCategoryLabel, getBrandBySlug, getBrandHref, getRelatedProducts, type Product } from "@/data/products";
@@ -28,7 +29,12 @@ export function ProductDetail({ product }: ProductDetailProps) {
   const localizedBrand = brand ? getLocalizedBrand(brand, locale) : null;
   const related = getRelatedProducts(product);
   const brandIsProductPage = brand?.pageHref === `/products/${product.id}`;
-  const pageTitle = brandIsProductPage && brand ? brand.name : product.name;
+  const pageTitle =
+    product.id === "sonoeye" && product.nameEn
+      ? product.nameEn
+      : brandIsProductPage && brand
+        ? brand.name
+        : product.name;
 
   return (
     <div>
@@ -120,6 +126,8 @@ export function ProductDetail({ product }: ProductDetailProps) {
         </Container>
       </section>
 
+      {product.id === "sonoeye" && <SonoEyeProbeGuide />}
+
       {related.length > 0 && (
         <section className="bg-surface-muted py-14 lg:py-20 border-t border-border">
           <Container>
@@ -151,11 +159,19 @@ export function ProductDetail({ product }: ProductDetailProps) {
       )}
 
       <ProductCTA
-        title={formatString(t.productCta.interestTitle, { name: pageTitle })}
-        description={formatString(t.productCta.interestDesc, {
-          brand: product.brand,
-          name: product.name,
-        })}
+        title={
+          product.id === "sonoeye"
+            ? t.sonoeye.cta.title
+            : formatString(t.productCta.interestTitle, { name: pageTitle })
+        }
+        description={
+          product.id === "sonoeye"
+            ? t.sonoeye.cta.description
+            : formatString(t.productCta.interestDesc, {
+                brand: product.brand,
+                name: product.name,
+              })
+        }
       />
     </div>
   );
