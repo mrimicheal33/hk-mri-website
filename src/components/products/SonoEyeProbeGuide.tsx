@@ -34,8 +34,8 @@ export function SonoEyeProbeGuide() {
                   alt={`SonoEye ${probe.model}`}
                   fill
                   unoptimized
-                  className="object-contain px-6 py-8"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-contain px-4 py-6"
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 300px"
                 />
               </div>
             )}
