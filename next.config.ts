@@ -20,6 +20,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/products/sonoeye/p1",
+        destination: "/products/sonoeye#probes",
+        permanent: true,
+      },
+      {
+        source: "/products/sonoeye/p6",
+        destination: "/products/sonoeye#probes",
+        permanent: true,
+      },
+      {
         source: "/products/mindray",
         destination: "/brands/mindray",
         permanent: true,

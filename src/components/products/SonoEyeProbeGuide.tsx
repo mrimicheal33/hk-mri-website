@@ -19,7 +19,7 @@ export function SonoEyeProbeGuide() {
         title={probes.title}
         description={probes.description}
       />
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
         {probes.items.map((probe) => {
           const asset = sonoeyeProbes.find((p) => p.model === probe.model);
           if (!asset) return null;

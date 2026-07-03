@@ -442,13 +442,6 @@ export const zh: Dictionary = {
       viewMore: "了解更多",
       items: [
         {
-          slug: "p1",
-          model: "P1",
-          headline: "線陣探頭",
-          spec: "9.0 MHz，30 mm 線陣探頭",
-          use: "周邊血管、MSK（肌骨系統）、小器官及 EM（急症醫學）。",
-        },
-        {
           slug: "p2",
           model: "P2",
           headline: "線陣探頭",
@@ -468,13 +461,6 @@ export const zh: Dictionary = {
           headline: "凸陣探頭",
           spec: "3.5 MHz 凸陣探頭",
           use: "腹部、肺部、OB（產科）/ GYN（婦科）、泌尿及 EM（急症醫學）。",
-        },
-        {
-          slug: "p6",
-          model: "P6",
-          headline: "微凸陣探頭",
-          spec: "6.0 MHz 微凸陣探頭",
-          use: "兒科腹部、心臟、肺部及 EM（急症醫學）。",
         },
       ],
     },
@@ -508,11 +494,6 @@ export const zh: Dictionary = {
         },
       ],
       items: {
-        p1: {
-          specLine: "9.0 MHz，30 mm，線陣探頭",
-          applications: "血管、MSK（肌骨系統）、神經、肺部、小器官、EM（急症醫學）等。",
-          modes: "B 模式 | M 模式 | 彩色模式 | PW 模式 | CPA 模式 | DPD 模式 | 2B 模式",
-        },
         p2: {
           specLine: "7.5 MHz，40 mm，線陣探頭",
           applications:
@@ -527,11 +508,6 @@ export const zh: Dictionary = {
         p5: {
           specLine: "3.5 MHz，凸陣探頭",
           applications: "腹部、OB（產科）、GYN（婦科）、肺部、泌尿、EM（急症醫學）等。",
-          modes: "B 模式 | M 模式 | 彩色模式 | PW 模式 | CPA 模式 | DPD 模式 | 2B 模式",
-        },
-        p6: {
-          specLine: "6.0 MHz，微凸陣探頭",
-          applications: "兒科腹部、心臟、肺部、EM（急症醫學）等。",
           modes: "B 模式 | M 模式 | 彩色模式 | PW 模式 | CPA 模式 | DPD 模式 | 2B 模式",
         },
       },

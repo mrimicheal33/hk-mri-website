@@ -453,13 +453,6 @@ export const en = {
       viewMore: "View More",
       items: [
         {
-          slug: "p1",
-          model: "P1",
-          headline: "Linear",
-          spec: "9.0 MHz, 30 mm Linear",
-          use: "Peripheral vessel, MSK (Musculoskeletal), small parts, and EM (Emergency Medicine).",
-        },
-        {
           slug: "p2",
           model: "P2",
           headline: "Linear",
@@ -479,13 +472,6 @@ export const en = {
           headline: "Convex",
           spec: "3.5 MHz Convex",
           use: "Abdomen, lung, OB (Obstetrics)/GYN (Gynecology), urology, and EM (Emergency Medicine).",
-        },
-        {
-          slug: "p6",
-          model: "P6",
-          headline: "Micro Convex",
-          spec: "6.0 MHz Micro-convex",
-          use: "Pediatric abdomen, cardiac, lung, and EM (Emergency Medicine).",
         },
       ],
     },
@@ -523,12 +509,6 @@ export const en = {
         },
       ],
       items: {
-        p1: {
-          specLine: "9.0 MHz, 30 mm, Linear",
-          applications:
-            "Vascular, MSK (Musculoskeletal), Nerve, Lung, Small Parts, EM (Emergency Medicine), etc.",
-          modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
-        },
         p2: {
           specLine: "7.5 MHz, 40 mm, Linear",
           applications:
@@ -544,11 +524,6 @@ export const en = {
           specLine: "3.5 MHz, Convex",
           applications:
             "Abdomen, OB (Obstetrics), GYN (Gynecology), Lung, Urology, EM (Emergency Medicine), etc.",
-          modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
-        },
-        p6: {
-          specLine: "6.0 MHz, Micro-Convex",
-          applications: "Pediatric Abdomen, Cardiac, Lung, EM (Emergency Medicine), etc.",
           modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
         },
       },

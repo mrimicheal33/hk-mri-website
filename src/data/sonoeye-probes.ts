@@ -5,15 +5,9 @@ export interface SonoEyeProbe {
   heroImage: string;
 }
 
-export type SonoEyeProbeSlug = "p1" | "p2" | "p3" | "p5" | "p6";
+export type SonoEyeProbeSlug = "p2" | "p3" | "p5";
 
 export const sonoeyeProbes: SonoEyeProbe[] = [
-  {
-    slug: "p1",
-    model: "P1",
-    image: "/images/products/sonoeye-probes/p1.png",
-    heroImage: "/images/products/sonoeye-probes/p1-hero.png",
-  },
   {
     slug: "p2",
     model: "P2",
@@ -31,12 +25,6 @@ export const sonoeyeProbes: SonoEyeProbe[] = [
     model: "P5",
     image: "/images/products/sonoeye-probes/p5.png",
     heroImage: "/images/products/sonoeye-probes/p5-hero.png",
-  },
-  {
-    slug: "p6",
-    model: "P6",
-    image: "/images/products/sonoeye-probes/p6.png",
-    heroImage: "/images/products/sonoeye-probes/p6-hero.png",
   },
 ];
 
