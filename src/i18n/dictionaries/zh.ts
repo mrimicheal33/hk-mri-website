@@ -96,7 +96,7 @@ export const zh: Dictionary = {
       items: [
         {
           key: "sonoeye",
-          name: "SonoEye 手持超聲波",
+          name: "CHISON SonoEye 手持超聲波",
           tagline: "口袋大小的專家級影像",
           brandName: "CHISON",
           brandLogo: "/images/brands/chison.webp",
@@ -288,6 +288,7 @@ export const zh: Dictionary = {
   },
   brand: {
     productsInterest: "對 {brand} 產品有興趣？",
+    productsInterestGeneric: "對以下產品有興趣？",
     productsInterestDesc: "聯絡我們的專業團隊，獲取詳細規格與報價。",
     highlights: "品牌亮點",
   },
@@ -438,33 +439,102 @@ export const zh: Dictionary = {
       title: "SonoEye P 系列 — 如何選擇探頭？",
       description:
         "CHISON SonoEye 提供多款探頭配置，滿足不同臨床需求。請按專科及應用場景選擇合適的 P 系列探頭。",
+      viewMore: "了解更多",
       items: [
         {
+          slug: "p1",
           model: "P1",
+          headline: "線陣探頭",
           spec: "9.0 MHz，30 mm 線陣探頭",
-          use: "周邊血管、肌骨（MSK）、小器官及急症。",
+          use: "周邊血管、MSK（肌骨系統）、小器官及 EM（急症醫學）。",
         },
         {
+          slug: "p2",
           model: "P2",
+          headline: "線陣探頭",
           spec: "7.5 MHz，40 mm 線陣探頭",
-          use: "血管、MSK、神經、肺部、小器官及急症。",
+          use: "血管、MSK（肌骨系統）、神經、肺部、小器官及 EM（急症醫學）。",
         },
         {
+          slug: "p3",
           model: "P3",
+          headline: "相控陣探頭",
           spec: "2.5 MHz 相控陣探頭",
-          use: "心臟、腹部、肺部及急症。",
+          use: "心臟、腹部、肺部及 EM（急症醫學）。",
         },
         {
+          slug: "p5",
           model: "P5",
+          headline: "凸陣探頭",
           spec: "3.5 MHz 凸陣探頭",
-          use: "腹部、肺部、產科/婦科、泌尿及急症。",
+          use: "腹部、肺部、OB（產科）/ GYN（婦科）、泌尿及 EM（急症醫學）。",
         },
         {
+          slug: "p6",
           model: "P6",
+          headline: "微凸陣探頭",
           spec: "6.0 MHz 微凸陣探頭",
-          use: "兒科腹部、心臟及急症。",
+          use: "兒科腹部、心臟、肺部及 EM（急症醫學）。",
         },
       ],
+    },
+    probeDetail: {
+      talkToExpert: "聯絡專家",
+      specificationsLabel: "規格",
+      overview:
+        "CHISON SonoEye 可在任何地點提供高品質的 patient care。適配平板或手機的靈活設計，提升便攜性，讓醫護人員可在床邊及基層醫療場景中隨時協作掃查。",
+      backToSonoEye: "返回 SonoEye 探頭",
+      relatedProbes: "相關探頭",
+      features: [
+        {
+          title: "Go Light",
+          description: "重量約為手機的一半，高度整合設計，體積更小巧。",
+        },
+        {
+          title: "多裝置連接",
+          description: "可靈活連接手機或平板，隨時開始掃查。",
+        },
+        {
+          title: "Go Waterproof",
+          description: "手持超聲可自由消毒清潔，符合 IPX67 防水標準。",
+        },
+        {
+          title: "Go Anywhere",
+          description: "整合先進手持超聲技術，提供快速、靈活的多場景解決方案。",
+        },
+        {
+          title: "Go Thumb-Play",
+          description: "一鍵開機掃查，單手拇指即可完成操作，流程如智能手機般簡便。",
+        },
+      ],
+      items: {
+        p1: {
+          specLine: "9.0 MHz，30 mm，線陣探頭",
+          applications: "血管、MSK（肌骨系統）、神經、肺部、小器官、EM（急症醫學）等。",
+          modes: "B 模式 | M 模式 | 彩色模式 | PW 模式 | CPA 模式 | DPD 模式 | 2B 模式",
+        },
+        p2: {
+          specLine: "7.5 MHz，40 mm，線陣探頭",
+          applications:
+            "血管、MSK（肌骨系統）、神經、肺部、小器官、SAT（淺表解剖）、EM（急症醫學）等。",
+          modes: "B 模式 | M 模式 | 彩色模式 | PW 模式 | CPA 模式 | DPD 模式 | 2B 模式",
+        },
+        p3: {
+          specLine: "2.5 MHz，相控陣探頭",
+          applications: "心臟、腹部、肺部、EM（急症醫學）等。",
+          modes: "B 模式 | M 模式 | 彩色模式 | PW 模式 | CPA 模式 | DPD 模式 | 2B 模式",
+        },
+        p5: {
+          specLine: "3.5 MHz，凸陣探頭",
+          applications: "腹部、OB（產科）、GYN（婦科）、肺部、泌尿、EM（急症醫學）等。",
+          modes: "B 模式 | M 模式 | 彩色模式 | PW 模式 | CPA 模式 | DPD 模式 | 2B 模式",
+        },
+        p6: {
+          specLine: "6.0 MHz，微凸陣探頭",
+          applications: "兒科腹部、心臟、肺部、EM（急症醫學）等。",
+          modes: "B 模式 | M 模式 | 彩色模式 | PW 模式 | CPA 模式 | DPD 模式 | 2B 模式",
+        },
+      },
     },
   },
 };

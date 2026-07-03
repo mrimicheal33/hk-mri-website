@@ -15,7 +15,7 @@ export function ProductBreadcrumb({ product, light = false }: ProductBreadcrumbP
   const t = useDictionary();
   const brand = getBrandBySlug(product.brandSlug);
   const brandIsProductPage = brand?.pageHref === `/products/${product.id}`;
-  const currentLabel = brandIsProductPage && brand ? brand.name : product.name;
+  const currentLabel = product.name;
   const linkClass = light
     ? "text-white/60 hover:text-white"
     : "text-text-muted hover:text-brand";

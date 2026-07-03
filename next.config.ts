@@ -11,7 +11,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/products/chison",
-        destination: "/brands/chison",
+        destination: "/products/sonoeye",
+        permanent: true,
+      },
+      {
+        source: "/brands/chison",
+        destination: "/products/sonoeye",
         permanent: true,
       },
       {

@@ -29,12 +29,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
   const localizedBrand = brand ? getLocalizedBrand(brand, locale) : null;
   const related = getRelatedProducts(product);
   const brandIsProductPage = brand?.pageHref === `/products/${product.id}`;
-  const pageTitle =
-    product.id === "sonoeye" && product.nameEn
-      ? product.nameEn
-      : brandIsProductPage && brand
-        ? brand.name
-        : product.name;
+  const pageTitle = product.name;
 
   return (
     <div>

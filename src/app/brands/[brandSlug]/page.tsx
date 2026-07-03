@@ -26,7 +26,10 @@ export async function generateMetadata({
   if (!brand) return { title: t.brandNotFound };
   const localized = getLocalizedBrand(brand, locale);
   return {
-    title: `${brand.name} Products`,
+    title:
+      brandSlug === "chison"
+        ? "SonoEye Handheld Ultrasound"
+        : `${brand.name} Products`,
     description: localized.description,
   };
 }

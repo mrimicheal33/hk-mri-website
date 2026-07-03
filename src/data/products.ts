@@ -47,6 +47,7 @@ export const brands: Brand[] = [
     description: "全球領先的超聲波影像解決方案供應商，SonoEye 手持超聲波為港澳獨家代理。",
     exclusive: "港澳獨家代理",
     color: "#2563eb",
+    pageHref: "/products/sonoeye",
   },
   {
     slug: "ilivtouch",
@@ -106,8 +107,8 @@ export const products: Product[] = [
   // CHISON - Hero Product
   {
     id: "sonoeye",
-    name: "SonoEye",
-    nameEn: "CHISON SonoEye Handheld Ultrasound",
+    name: "CHISON SonoEye",
+    nameEn: "Handheld Ultrasound",
     brand: "CHISON",
     brandSlug: "chison",
     category: "ultrasound",

@@ -71,12 +71,14 @@ export function ProductCatalog() {
                 <p className="text-sm text-text-secondary flex-1">
                   {getLocalizedBrand(brand, locale).description}
                 </p>
-                <Link
-                  href={getBrandHref(brand)}
-                  className="text-sm font-semibold text-brand hover:text-[#004a6e] transition-colors shrink-0"
-                >
-                  {t.common.brandPage} →
-                </Link>
+                {!brand.pageHref && (
+                  <Link
+                    href={getBrandHref(brand)}
+                    className="text-sm font-semibold text-brand hover:text-[#004a6e] transition-colors shrink-0"
+                  >
+                    {t.common.brandPage} →
+                  </Link>
+                )}
               </>
             );
           })()}

@@ -27,6 +27,7 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
   const t = useDictionary();
   const locale = useLocale();
   const localized = getLocalizedBrand(brand, locale);
+  const hideBrandName = brandSlug === "chison";
 
   const brandProducts = products.filter((p) => p.brandSlug === brandSlug);
   const categories = [
@@ -38,12 +39,17 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
       <section className="bg-white border-b border-border">
         <Container className="py-16 lg:py-20">
           <div className="flex flex-col sm:flex-row sm:items-center gap-8">
-            <BrandLogo src={brand.logo} alt={brand.name} />
+            <BrandLogo src={brand.logo} alt={hideBrandName ? "SonoEye" : brand.name} />
             <div>
               <div className="flex flex-wrap items-center gap-3 mb-3">
-                <h1 className="text-3xl lg:text-4xl font-semibold text-text-primary tracking-tight">
-                  {brand.name}
-                </h1>
+                {!hideBrandName && (
+                  <h1 className="text-3xl lg:text-4xl font-semibold text-text-primary tracking-tight">
+                    {brand.name}
+                  </h1>
+                )}
+                {hideBrandName && (
+                  <h1 className="sr-only">SonoEye Handheld Ultrasound</h1>
+                )}
                 {localized.exclusive && (
                   <Badge variant="brand">{localized.exclusive}</Badge>
                 )}
@@ -69,7 +75,7 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
             <div key={cat} className="mb-16 last:mb-0">
               <SectionHeading
                 label={catLabel}
-                title={`${brand.name} — ${catLabel}`}
+                title={hideBrandName ? catLabel : `${brand.name} — ${catLabel}`}
                 align="left"
               />
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -85,7 +91,9 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
       <section className="bg-brand border-t border-brand-hover">
         <Container className="py-16 text-center">
           <h2 className="text-2xl font-semibold text-white mb-4">
-            {formatString(t.brand.productsInterest, { brand: brand.name })}
+            {hideBrandName
+              ? t.brand.productsInterestGeneric
+              : formatString(t.brand.productsInterest, { brand: brand.name })}
           </h2>
           <p className="text-white/75 mb-8 max-w-lg mx-auto">
             {t.brand.productsInterestDesc}

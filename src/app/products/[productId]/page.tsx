@@ -24,8 +24,11 @@ export async function generateMetadata({
   if (!product) return { title: t.productNotFound };
 
   const localized = getLocalizedProduct(product, locale);
+  const title = product.name.toLowerCase().startsWith(product.brand.toLowerCase())
+    ? product.name
+    : `${product.brand} ${product.name}`;
   return {
-    title: `${product.brand} ${product.name}`,
+    title,
     description: localized.tagline,
   };
 }

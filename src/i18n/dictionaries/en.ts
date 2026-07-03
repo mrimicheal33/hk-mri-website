@@ -95,7 +95,7 @@ export const en = {
       items: [
         {
           key: "sonoeye",
-          name: "SonoEye Handheld Ultrasound",
+          name: "CHISON SonoEye Handheld Ultrasound",
           tagline: "Expert-grade imaging in your pocket",
           brandName: "CHISON",
           brandLogo: "/images/brands/chison.webp",
@@ -296,6 +296,7 @@ export const en = {
   },
   brand: {
     productsInterest: "Interested in {brand} products?",
+    productsInterestGeneric: "Interested in these products?",
     productsInterestDesc:
       "Contact our team for detailed specifications and pricing.",
     highlights: "Brand Highlights",
@@ -449,33 +450,108 @@ export const en = {
       title: "SonoEye P-Series — Which Probe for Which Application?",
       description:
         "CHISON SonoEye offers clinical solutions with different scanner configurations. Choose the P-series probe that matches your specialty.",
+      viewMore: "View More",
       items: [
         {
+          slug: "p1",
           model: "P1",
+          headline: "Linear",
           spec: "9.0 MHz, 30 mm Linear",
-          use: "Peripheral vessel, MSK, small parts, and emergency medicine.",
+          use: "Peripheral vessel, MSK (Musculoskeletal), small parts, and EM (Emergency Medicine).",
         },
         {
+          slug: "p2",
           model: "P2",
+          headline: "Linear",
           spec: "7.5 MHz, 40 mm Linear",
-          use: "Vascular, MSK, nerve, lung, small parts, and emergency medicine.",
+          use: "Vascular, MSK (Musculoskeletal), nerve, lung, small parts, and EM (Emergency Medicine).",
         },
         {
+          slug: "p3",
           model: "P3",
+          headline: "Phased Array",
           spec: "2.5 MHz Phased Array",
-          use: "Cardiac, abdomen, lung, and emergency medicine.",
+          use: "Cardiac, abdomen, lung, and EM (Emergency Medicine).",
         },
         {
+          slug: "p5",
           model: "P5",
+          headline: "Convex",
           spec: "3.5 MHz Convex",
-          use: "Abdomen, lung, OB/GYN, urology, and emergency medicine.",
+          use: "Abdomen, lung, OB (Obstetrics)/GYN (Gynecology), urology, and EM (Emergency Medicine).",
         },
         {
+          slug: "p6",
           model: "P6",
+          headline: "Micro Convex",
           spec: "6.0 MHz Micro-convex",
-          use: "Pediatric abdomen, cardiac, and emergency medicine.",
+          use: "Pediatric abdomen, cardiac, lung, and EM (Emergency Medicine).",
         },
       ],
+    },
+    probeDetail: {
+      talkToExpert: "Talk to an Expert",
+      specificationsLabel: "Specifications",
+      overview:
+        "CHISON SonoEye can help to provide high quality patient care in any location. Featuring an adaptable design that goes from pad to mobile phone, increasing portability and making it possible to work together with doctors from patient to patient — initially in point-of-care applications and longer term in primary care.",
+      backToSonoEye: "All SonoEye Probes",
+      relatedProbes: "Related Probes",
+      features: [
+        {
+          title: "Go Light",
+          description:
+            "Half the weight of a phone, highly integrated design, less volume.",
+        },
+        {
+          title: "Multiple Devices",
+          description: "SonoEye provides a flexible connection with smartphone or tablet.",
+        },
+        {
+          title: "Go Waterproof",
+          description:
+            "Hand-held ultrasound you can sterilize and clean freely. Meets IPX67 standard.",
+        },
+        {
+          title: "Go Anywhere",
+          description:
+            "Integrated with the best handheld technologies to provide multiple solutions for fast scanning.",
+        },
+        {
+          title: "Go Thumb-Play",
+          description:
+            "One touch to start an exam. One thumb to finish all operations. Simplified workflow as easy as your smartphone.",
+        },
+      ],
+      items: {
+        p1: {
+          specLine: "9.0 MHz, 30 mm, Linear",
+          applications:
+            "Vascular, MSK (Musculoskeletal), Nerve, Lung, Small Parts, EM (Emergency Medicine), etc.",
+          modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
+        },
+        p2: {
+          specLine: "7.5 MHz, 40 mm, Linear",
+          applications:
+            "Vascular, MSK (Musculoskeletal), Nerve, Lung, Small Parts, SAT (Superficial Anatomy), EM (Emergency Medicine), etc.",
+          modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
+        },
+        p3: {
+          specLine: "2.5 MHz, Phased Array",
+          applications: "Cardiac, Abdomen, Lung, EM (Emergency Medicine), etc.",
+          modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
+        },
+        p5: {
+          specLine: "3.5 MHz, Convex",
+          applications:
+            "Abdomen, OB (Obstetrics), GYN (Gynecology), Lung, Urology, EM (Emergency Medicine), etc.",
+          modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
+        },
+        p6: {
+          specLine: "6.0 MHz, Micro-Convex",
+          applications: "Pediatric Abdomen, Cardiac, Lung, EM (Emergency Medicine), etc.",
+          modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
+        },
+      },
     },
   },
 };
