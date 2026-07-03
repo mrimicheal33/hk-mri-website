@@ -28,12 +28,13 @@ export function SonoEyeProbeGuide() {
         {probes.items.map((probe) => (
           <div key={probe.model} className="bg-white min-w-0 flex flex-col">
             {probeImages[probe.model] && (
-              <div className="relative w-full aspect-[4/3] bg-white border-b border-border">
+              <div className="relative w-full aspect-[3/4] bg-white border-b border-border">
                 <Image
                   src={probeImages[probe.model]}
                   alt={`SonoEye ${probe.model}`}
                   fill
-                  className="object-contain p-4"
+                  unoptimized
+                  className="object-contain px-6 py-8"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
