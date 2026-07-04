@@ -271,7 +271,7 @@ export const en = {
       "Each product has a dedicated page with specifications and clinical applications. Filter by brand below.",
     featuredTitle: "CHISON SonoEye Handheld Ultrasound",
     featuredDesc:
-      "Pocket-sized professional ultrasound - a flexible connection with smart phone or pad",
+      "Pocket-sized professional ultrasound - flexible connection with iOS or Android smartphone, tablet, or pad",
     ilivtouchFeaturedTitle: "HISKY iLivTouch Mini800 Portable Shear-wave Elastography",
     ilivtouchFeaturedDesc:
       "Compact, non-invasive liver assessment — quantitative LSM and UAP measurement with FDA and CE certification",
@@ -391,7 +391,7 @@ export const en = {
         {
           title: "Go Thumb-Play",
           description:
-            "Power on and scan with one hand — connect to iOS and start imaging immediately.",
+            "Power on and scan with one hand — connect to iOS or Android and start imaging immediately.",
         },
         {
           title: "IP67 / MIL-STD-810G",
@@ -420,7 +420,7 @@ export const en = {
       label: "Specifications",
       title: "Certified. Trusted.",
       items: [
-        { label: "Connectivity", value: "iOS (Lightning / USB-C)" },
+        { label: "Connectivity", value: "iOS & Android (smartphone / tablet / pad)" },
         { label: "Probe Types", value: "Linear / Convex options" },
         { label: "Waterproof Rating", value: "IP67" },
         { label: "Durability", value: "MIL-STD-810G" },
@@ -479,7 +479,7 @@ export const en = {
       talkToExpert: "Talk to an Expert",
       specificationsLabel: "Specifications",
       overview:
-        "CHISON SonoEye can help to provide high quality patient care in any location. Featuring an adaptable design that goes from pad to mobile phone, increasing portability and making it possible to work together with doctors from patient to patient — initially in point-of-care applications and longer term in primary care.",
+        "CHISON SonoEye can help provide high-quality patient care in any location. Connect to iOS or Android smartphones, tablets, or pads for greater portability — enabling bedside and primary-care scanning from patient to patient.",
       backToSonoEye: "All SonoEye Probes",
       relatedProbes: "Related Probes",
       features: [
@@ -490,7 +490,8 @@ export const en = {
         },
         {
           title: "Multiple Devices",
-          description: "SonoEye provides a flexible connection with smartphone or tablet.",
+          description:
+            "SonoEye provides a flexible connection with iOS or Android smartphone, tablet, or pad.",
         },
         {
           title: "Go Waterproof",

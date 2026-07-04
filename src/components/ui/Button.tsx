@@ -25,11 +25,11 @@ interface ButtonProps {
 }
 
 const base =
-  "inline-flex items-center justify-center gap-2 font-semibold tracking-wide transition-all duration-200 ease-out rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/35 focus-visible:ring-offset-2 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none";
+  "inline-flex items-center justify-center gap-2 font-semibold tracking-wide transition-all duration-200 ease-out rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/35 focus-visible:ring-offset-2 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-b from-[#0078a8] to-brand text-white shadow-[0_1px_2px_rgba(15,26,36,0.08),0_4px_14px_rgba(0,95,138,0.28)] hover:from-[#0088bc] hover:to-brand-hover hover:shadow-[0_2px_6px_rgba(15,26,36,0.1),0_8px_20px_rgba(0,95,138,0.32)]",
+    "bg-gradient-to-b from-[#4682a9] to-[#2b5d83] text-white shadow-[0_2px_6px_rgba(43,93,131,0.32)] hover:from-[#5596c0] hover:to-[#336991] hover:shadow-[0_4px_14px_rgba(43,93,131,0.38)]",
   secondary:
     "bg-gradient-to-b from-[#2d3848] to-text-primary text-white shadow-[0_2px_8px_rgba(15,26,36,0.18)] hover:from-[#3a4658] hover:to-[#243040] hover:shadow-[0_4px_12px_rgba(15,26,36,0.22)]",
   outline:
@@ -37,7 +37,7 @@ const variants: Record<Variant, string> = {
   ghost:
     "text-text-secondary hover:text-brand hover:bg-brand-light/70",
   whatsapp:
-    "bg-gradient-to-b from-[#1fc9a5] to-[#128c7e] text-white shadow-[0_2px_8px_rgba(18,140,126,0.32)] hover:from-[#28d4ad] hover:to-[#0f9d8f] hover:shadow-[0_4px_14px_rgba(18,140,126,0.38)]",
+    "bg-gradient-to-b from-[#66c7a0] to-[#3f947e] text-white shadow-[0_2px_6px_rgba(63,148,126,0.32)] hover:from-[#73d0ab] hover:to-[#4aa08a] hover:shadow-[0_4px_14px_rgba(63,148,126,0.38)]",
   inverse:
     "bg-white text-brand shadow-[0_2px_10px_rgba(15,26,36,0.14)] hover:bg-[#f8fbfd] hover:text-[#004a6e] hover:shadow-[0_4px_16px_rgba(15,26,36,0.18)]",
   "on-dark":

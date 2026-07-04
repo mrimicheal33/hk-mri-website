@@ -265,7 +265,7 @@ export const zh: Dictionary = {
     description:
       "每項產品均有獨立專頁，了解詳細規格與臨床應用。可按品牌篩選瀏覽。",
     featuredTitle: "CHISON SonoEye 手持超聲波",
-    featuredDesc: "口袋大小的專業超聲波 - 可靈活連接智能手機或平板",
+    featuredDesc: "口袋大小的專業超聲波 - 可靈活連接 iOS 或 Android 智能手機、平板或 Pad",
     ilivtouchFeaturedTitle: "HISKY iLivTouch Mini800 便攜式剪切波彈性成像",
     ilivtouchFeaturedDesc:
       "緊湊型非侵入性肝臟評估 — LSM 及 UAP 定量測量，具 FDA 及 CE 認證",
@@ -380,7 +380,7 @@ export const zh: Dictionary = {
         {
           title: "一指操作 Go Thumb-play",
           description:
-            "開機即用，單手操作，無需複雜設定。連接 iOS 設備後立即開始掃描。",
+            "開機即用，單手操作，無需複雜設定。連接 iOS 或 Android 智能手機、平板或 Pad 後立即開始掃描。",
         },
         {
           title: "IP67 / MIL-STD-810G",
@@ -409,7 +409,7 @@ export const zh: Dictionary = {
       label: "Specifications",
       title: "專業認證，值得信賴",
       items: [
-        { label: "連接方式", value: "iOS (Lightning / USB-C)" },
+        { label: "連接方式", value: "iOS 及 Android（智能手機 / 平板 / Pad）" },
         { label: "探頭類型", value: "線陣 / 凸陣可選" },
         { label: "防水等級", value: "IP67" },
         { label: "耐用認證", value: "MIL-STD-810G" },
@@ -468,7 +468,7 @@ export const zh: Dictionary = {
       talkToExpert: "聯絡專家",
       specificationsLabel: "規格",
       overview:
-        "CHISON SonoEye 可在任何地點提供高品質的 patient care。適配平板或手機的靈活設計，提升便攜性，讓醫護人員可在床邊及基層醫療場景中隨時協作掃查。",
+        "CHISON SonoEye 可在任何地點提供高品質的 patient care。可連接 iOS 或 Android 智能手機、平板或 Pad，提升便攜性，讓醫護人員可在床邊及基層醫療場景中隨時協作掃查。",
       backToSonoEye: "返回 SonoEye 探頭",
       relatedProbes: "相關探頭",
       features: [
@@ -478,7 +478,7 @@ export const zh: Dictionary = {
         },
         {
           title: "多裝置連接",
-          description: "可靈活連接手機或平板，隨時開始掃查。",
+          description: "可靈活連接 iOS 或 Android 智能手機、平板或 Pad，隨時開始掃查。",
         },
         {
           title: "Go Waterproof",

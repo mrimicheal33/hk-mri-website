@@ -98,13 +98,13 @@ export function SonoEyeLandingPage({ variant }: SonoEyeLandingPageProps) {
               )}
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                <Button href="/contact" variant="inverse" size="lg">
+                <Button href="/contact" variant="primary" size="lg">
                   {content.heroCta}
                   <ArrowRight size={16} />
                 </Button>
                 <Button
                   href={company.contact.whatsapp}
-                  variant="on-dark"
+                  variant="whatsapp"
                   size="lg"
                   external
                 >
@@ -249,21 +249,21 @@ export function SonoEyeLandingPage({ variant }: SonoEyeLandingPageProps) {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-brand">
+      <section className="bg-surface-muted border-t border-border">
         <Container className="py-16 lg:py-20 text-center">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-4 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-text-primary mb-4 max-w-2xl mx-auto">
             {content.finalCtaTitle}
           </h2>
-          <p className="text-white/75 mb-8 max-w-xl mx-auto leading-relaxed">
+          <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed">
             {content.finalCtaDesc}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Button href="/contact" variant="inverse" size="lg">
+            <Button href="/contact" variant="primary" size="lg">
               {t.common.getQuote}
             </Button>
             <Button
               href={company.contact.whatsapp}
-              variant="on-dark"
+              variant="whatsapp"
               size="lg"
               external
             >

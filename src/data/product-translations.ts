@@ -1,23 +1,65 @@
 import type { Locale } from "@/i18n/config";
 import type { Product } from "./products";
 
+export interface ProductFeatureGroup {
+  title: string;
+  items: string[];
+}
+
 export interface ProductLocaleFields {
   tagline: string;
   description: string;
   highlights: string[];
+  featureGroups?: ProductFeatureGroup[];
 }
 
 const en: Record<string, ProductLocaleFields> = {
   sonoeye: {
     tagline: "Pocket-sized professional ultrasound for diagnosis anywhere",
     description:
-      "CHISON SonoEye is a revolutionary handheld ultrasound that connects to iOS smartphones and tablets for a seamless Go Thumb-play experience. Ideal for ICU, general practice, chiropractic, and aesthetic medicine, with AI-assisted features including SonoMSK and SonoDiaph.",
-    highlights: [
-      "Pocket-sized, one-hand operation",
-      "Native iOS integration, ready on startup",
-      "IP67 waterproof / MIL-STD-810G certified",
-      "AI lung analysis and MSK injection guidance",
-      "ICU, GP, chiropractic, and aesthetic use cases",
+      "CHISON SonoEye is a revolutionary handheld ultrasound that connects to iOS and Android smartphones, tablets, and pads for a seamless Go Thumb-play experience. Ideal for ICU, general practice, chiropractic, and aesthetic medicine, with AI-assisted features including SonoMSK and SonoDiaph.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Clinical Performance & Medical Grade",
+        items: [
+          "Expert-grade imaging rated 4.1/5.0 by ultrasound specialists — on par with leading premium handheld systems",
+          "Clinical-grade POCUS for ICU, emergency, GP, aesthetics, MSK, and diagnostic centers",
+          "High-definition imaging quality comparable to larger cart-based systems",
+        ],
+      },
+      {
+        title: "Portability & Connectivity",
+        items: [
+          "Pocket-sized design with one-hand Go Thumb-play operation",
+          "iOS and Android integration — connect to smartphone, tablet, or pad, ready on startup",
+          "Wired USB connection for zero-latency, zero-interference scanning in high-density clinics",
+          "No subscription fees — one-time purchase with full clinical functionality",
+        ],
+      },
+      {
+        title: "AI-Assisted Imaging",
+        items: [
+          "Super Needle guidance for filler safety and precise injections",
+          "Auto-IMT, Auto-Bladder, and Auto-EF for streamlined cardiac and urology measurements",
+          "SonoMSK musculoskeletal and SonoDiaph lung analysis",
+        ],
+      },
+      {
+        title: "Durability & Infection Control",
+        items: [
+          "IP67 waterproof and dustproof — immersion-ready for high-turnover sterilization",
+          "MIL-STD-810G drop-tested for demanding clinical environments",
+        ],
+      },
+      {
+        title: "Regulatory & Safety Standards",
+        items: [
+          "FDA 510(k) cleared and CE marked (EU MDR 2017/745) — Class II diagnostic ultrasound",
+          "IEC 60601-1 medical electrical safety standard",
+          "CMD (NMPA), CSA (Canada), and KFDA (Korea) certified",
+        ],
+      },
     ],
   },
   "consona-n6": {
@@ -64,20 +106,41 @@ const en: Record<string, ProductLocaleFields> = {
     tagline: "Compact, simple, fast — cost-effective solution for liver diagnosis",
     description:
       "iLivTouch Mini800 is a portable shear-wave quantificational ultrasound diagnostic system. Using vibration-controlled transient elastography (TE), it delivers quantitative liver stiffness (LSM) and ultrasound attenuation parameter (UAP) measurements — a cost-effective aid for non-invasive assessment of liver fibrosis, cirrhosis, and steatosis, supporting early screening, prevention, diagnosis, and treatment of chronic liver diseases.",
-    highlights: [
-      "Cost-effective solution for liver diagnosis",
-      "Compact, simple, and fast",
-      "Vibration-controlled transient elastography (TE) technology",
-      "Quantitative LSM and UAP measurement",
-      "Aid to overall assessment of fibrosis, cirrhosis, and steatosis",
-      "Early screening, prevention, diagnosis, and treatment of chronic liver disease",
-      "Lightweight — easy to carry and transport",
-      "Rapid measurement with immediate results",
-      "Non-invasive — ideal for monitoring and patient follow-up",
-      "Ultrasound B-mode imaging probe (optional)",
-      "Battery operated",
-      "U.S. FDA 510(k) clearance and CE marked",
-      "Wideband fibrosis scanning probe",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Clinical Applications",
+        items: [
+          "Cost-effective solution for liver diagnosis",
+          "Aid to overall assessment of fibrosis, cirrhosis, and steatosis",
+          "Early screening, prevention, diagnosis, and treatment of chronic liver disease",
+          "Non-invasive — ideal for regular monitoring and patient follow-up",
+        ],
+      },
+      {
+        title: "Technology & Measurement",
+        items: [
+          "Vibration-controlled transient elastography (TE) technology",
+          "Quantitative LSM and UAP measurement",
+          "Wideband fibrosis scanning probe",
+          "Ultrasound B-mode imaging probe (optional)",
+        ],
+      },
+      {
+        title: "Portability & Workflow",
+        items: [
+          "Compact, simple, and fast operation",
+          "Lightweight — easy to carry and transport",
+          "Battery operated for flexible bedside and outreach use",
+          "Rapid measurement with immediate results",
+        ],
+      },
+      {
+        title: "Regulatory & Safety Standards",
+        items: [
+          "U.S. FDA 510(k) clearance and CE marked",
+        ],
+      },
     ],
   },
   "mobieye-700": {
@@ -152,12 +215,107 @@ const en: Record<string, ProductLocaleFields> = {
   },
 };
 
+const zh: Record<string, ProductLocaleFields> = {
+  sonoeye: {
+    tagline: "口袋大小的專業超聲波，隨時隨地精準診斷",
+    description:
+      "CHISON SonoEye 是一款革命性的手持超聲波設備，可連接 iOS 及 Android 智能手機、平板或 Pad，實現「一指操作 (Go Thumb-play)」的流暢體驗。適用於 ICU、普通科、脊醫、醫美等多個臨床場景，支援 SonoMSK、SonoDiaph 等 AI 輔助功能。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "臨床性能與醫療級別",
+        items: [
+          "超聲專家評級 4.1/5.0 專家級影像 — 媲美頂級手持超聲波系統",
+          "臨床級床旁超聲波（POCUS），適用 ICU、急症、普通科、醫美、肌骨及診斷中心",
+          "高清晰度影像，媲美大型推車式超聲波系統",
+        ],
+      },
+      {
+        title: "便攜性與連接",
+        items: [
+          "口袋大小設計，單手 Go Thumb-play 操作",
+          "iOS 及 Android 整合 — 連接智能手機、平板或 Pad，開機即用",
+          "有線 USB 連接，零延遲、零干擾，適合高密度診所環境",
+          "無訂閱費用 — 一次購買，享有完整臨床功能",
+        ],
+      },
+      {
+        title: "AI 輔助成像",
+        items: [
+          "Super Needle 導引，提升填充劑注射及穿刺安全性",
+          "Auto-IMT、Auto-Bladder、Auto-EF 心臟及泌尿系統自動測量",
+          "SonoMSK 肌骨系統及 SonoDiaph 肺部分析",
+        ],
+      },
+      {
+        title: "耐用性與感控",
+        items: [
+          "IP67 防水防塵 — 可浸沒消毒，適合高周轉感染控制（如急症室）",
+          "MIL-STD-810G 軍規跌落測試，適應嚴苛臨床環境",
+        ],
+      },
+      {
+        title: "法規與安全標準",
+        items: [
+          "美國 FDA 510(k) 及 CE 標誌（EU MDR 2017/745）— Class II 診斷超聲波",
+          "IEC 60601-1 醫療電氣安全標準",
+          "CMD（NMPA）、CSA（加拿大）及 KFDA（韓國）認證",
+        ],
+      },
+    ],
+  },
+  mini800: {
+    tagline: "緊湊、簡便、快速 — 經濟實惠的肝臟診斷方案",
+    description:
+      "iLivTouch Mini800 便攜式剪切波定量超聲波診斷系統，採用振動控制瞬時彈性成像（TE）技術，提供肝硬度（LSM）及超聲衰減參數（UAP）定量測量，輔助肝纖維化、肝硬化及脂肪肝的非侵入性全面評估，支援慢性肝病的早期篩查、預防、診斷及治療。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "臨床應用",
+        items: [
+          "經濟實惠的肝臟診斷方案",
+          "輔助評估肝纖維化、肝硬化及脂肪肝",
+          "支援慢性肝病早期篩查、預防、診斷及治療",
+          "非侵入性 — 適合定期監測及患者隨訪",
+        ],
+      },
+      {
+        title: "技術與測量",
+        items: [
+          "振動控制瞬時彈性成像（TE）技術",
+          "LSM 及 UAP 定量測量",
+          "闊頻纖維化掃描探頭",
+          "超聲波 B-mode 影像探頭（可選）",
+        ],
+      },
+      {
+        title: "便攜性與工作流程",
+        items: [
+          "緊湊、簡便、快速操作",
+          "輕巧便攜，易於搬運",
+          "電池供電，適合床邊及外展篩查",
+          "快速測量，即時結果",
+        ],
+      },
+      {
+        title: "法規與安全標準",
+        items: [
+          "美國 FDA 510(k) 及 CE 認證",
+        ],
+      },
+    ],
+  },
+};
+
 export function getLocalizedProduct(
   product: Product,
   locale: Locale
 ): Product & ProductLocaleFields {
   if (locale === "en" && en[product.id]) {
     return { ...product, ...en[product.id] };
+  }
+  if (locale === "zh" && zh[product.id]) {
+    return { ...product, ...zh[product.id] };
   }
   return {
     ...product,

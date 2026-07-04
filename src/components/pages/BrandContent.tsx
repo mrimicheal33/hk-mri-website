@@ -88,23 +88,23 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
         })}
       </Section>
 
-      <section className="bg-brand border-t border-brand-hover">
+      <section className="bg-surface-muted border-t border-border">
         <Container className="py-16 text-center">
-          <h2 className="text-2xl font-semibold text-white mb-4">
+          <h2 className="text-2xl font-semibold text-text-primary mb-4">
             {hideBrandName
               ? t.brand.productsInterestGeneric
               : formatString(t.brand.productsInterest, { brand: brand.name })}
           </h2>
-          <p className="text-white/75 mb-8 max-w-lg mx-auto">
+          <p className="text-text-secondary mb-8 max-w-lg mx-auto">
             {t.brand.productsInterestDesc}
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Button href="/contact" variant="inverse" size="lg">
+            <Button href="/contact" variant="primary" size="lg">
               {t.common.getQuote}
             </Button>
             <Button
               href={company.contact.whatsapp}
-              variant="on-dark"
+              variant="whatsapp"
               size="lg"
               external
             >

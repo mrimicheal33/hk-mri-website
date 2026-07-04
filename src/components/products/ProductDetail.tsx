@@ -102,20 +102,46 @@ export function ProductDetail({ product }: ProductDetailProps) {
               <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-brand mb-4">
                 {t.common.keyFeatures}
               </p>
-              <ul className="space-y-3">
-                {localized.highlights.map((item) => (
-                  <li
-                    key={item}
-                    className="flex items-start gap-3 text-sm text-text-secondary"
-                  >
-                    <CheckCircle2
-                      size={16}
-                      className="text-brand shrink-0 mt-0.5"
-                    />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              {localized.featureGroups && localized.featureGroups.length > 0 ? (
+                <div className="space-y-8">
+                  {localized.featureGroups.map((group) => (
+                    <div key={group.title}>
+                      <p className="text-sm font-semibold text-text-primary mb-3">
+                        {group.title}
+                      </p>
+                      <ul className="space-y-3">
+                        {group.items.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-start gap-3 text-sm text-text-secondary"
+                          >
+                            <CheckCircle2
+                              size={16}
+                              className="text-brand shrink-0 mt-0.5"
+                            />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <ul className="space-y-3">
+                  {localized.highlights.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 text-sm text-text-secondary"
+                    >
+                      <CheckCircle2
+                        size={16}
+                        className="text-brand shrink-0 mt-0.5"
+                      />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </Container>
