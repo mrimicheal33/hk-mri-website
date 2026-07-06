@@ -18,6 +18,10 @@ export function ProductCard({ product, showBrand = true }: ProductCardProps) {
   const localized = getLocalizedProduct(product, locale);
   const href = getProductHref(product.id);
 
+  const showBrandLine =
+    showBrand &&
+    !product.name.toLowerCase().startsWith(product.brand.toLowerCase());
+
   return (
     <Link
       href={href}
@@ -33,7 +37,7 @@ export function ProductCard({ product, showBrand = true }: ProductCardProps) {
 
       <div className="flex flex-col flex-1 p-5 sm:p-6 min-w-0">
         <div className="mb-3 min-w-0">
-          {showBrand && (
+          {showBrandLine && (
             <p className="text-[11px] font-semibold uppercase tracking-wider text-brand mb-1.5">
               {product.brand}
             </p>

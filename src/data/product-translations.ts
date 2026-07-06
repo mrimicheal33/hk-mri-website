@@ -198,19 +198,111 @@ const en: Record<string, ProductLocaleFields> = {
   vet1120: {
     tagline: "Veterinary mobile digital C-arm system",
     description:
-      "PERLOVE VET1120 mobile digital C-arm designed for veterinary surgical image guidance.",
-    highlights: ["Mobile C-arm", "Digital imaging", "Veterinary surgery"],
+      "PERLOVE VET1120 is a compact mobile digital C-arm for real-time fluoroscopic guidance in veterinary orthopedics, trauma, and soft-tissue surgery — combining 5.0 kW imaging power, an integrated workstation, and a space-saving footprint tailored to modern clinic environments.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Clinical Applications",
+        items: [
+          "Real-time fluoroscopy for precise intraoperative guidance in orthopedic and trauma surgery",
+          "Supports accurate implant placement — helps reduce surgical time and improve outcomes",
+          "5.0 kW generator suitable for large-breed dogs (e.g. German Shepherds, Labradors) where lower-power units lose penetration",
+          "Automatic, manual, and pulse fluoroscopy modes for flexible surgical workflow",
+        ],
+      },
+      {
+        title: "Imaging Technology",
+        items: [
+          "Japanese Toshiba image intensifier for high-resolution fluoroscopic clarity",
+          "Digital imaging chain designed for precision in orthopedic and trauma interventions",
+          "High-power X-ray tube delivering reliable penetration for veterinary anatomy",
+        ],
+      },
+      {
+        title: "Space-Saving Mobile Design",
+        items: [
+          "Integrated workstation eliminates the need for a separate monitor cart — saves critical OR floor space",
+          "Compact mobile C-arm footprint for tight operating theaters and urban clinics",
+          "Flexible movement and positioning for diverse clinical layouts",
+        ],
+      },
+      {
+        title: "Ergonomics & Ease of Use",
+        items: [
+          "Humanized hand controller for intuitive operation within the sterile field",
+          "Surgeon can adjust imaging without leaving the operating table",
+          "Streamlined workflow for daily high-throughput veterinary surgery",
+        ],
+      },
+      {
+        title: "Regulatory & Quality Standards",
+        items: [
+          "EU MDR CE certified to international medical device safety standards",
+          "Premium core components with value-focused positioning for strong clinical ROI",
+        ],
+      },
+    ],
   },
   vf1: {
     tagline: "Next-generation veterinary dynamic digital radiography system",
     description:
       "VETOO VF1 is an animal-specific Dynamic DR system for intelligent pet imaging — 30 fps dynamic imaging, up to 15-minute fluoroscopy, and optional DSA for interventional procedures. Covers esophageal, pulmonary, and joint guidance, contrast studies, and more. Features a 17×17\" flat panel detector, 32kW generator (125kV / 400mA), and veterinary-specific software.",
-    highlights: [
-      "32kW high power, 125kV / 400mA",
-      "17×17\" dynamic flat panel detector",
-      "30 fps dynamic imaging, up to 15 min fluoroscopy",
-      "Optional DSA module for interventional use",
-      "Low-dose pulse technology with vet-specific software",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Clinical Applications",
+        items: [
+          "Dynamic observation of motor organs — esophagus, lungs, diaphragm, intestine, and trachea",
+          "Orthopedic surgery support: joint placement, nail changes, and bone localization",
+          "Gastrointestinal contrast studies — esophageal peristalsis, gastric emptying, and barium meal evaluation",
+          "Cardiac and pulmonary assessment with contrast agents; optional DSA for interventional procedures",
+          "Extended dynamic video helps reduce misdiagnosis when pets are nervous, trembling, or short of breath",
+        ],
+      },
+      {
+        title: "Dynamic DR Technology",
+        items: [
+          "Converts digital X-ray data into both still images and smooth video — beyond static DR alone",
+          "30 fps dynamic imaging with full static DR high-definition images and advanced measurement tools",
+          "Up to 15 minutes continuous dynamic video mode per session for difficult surgeries and extended observation",
+          "Optional DSA module for angiography-assisted interventional use",
+          "Broader clinical scenarios and higher diagnostic value compared with conventional static DR",
+        ],
+      },
+      {
+        title: "Imaging Performance",
+        items: [
+          "17×17\" flat panel detector with cesium iodide evaporation — low radiation, high DQE (~80%), 3.6 Lp/mm limiting resolution",
+          "32 kW high-power generator (125 kV / 400 mA) — reliable penetration for both large and small pets",
+          "0.6 / 1.2 mm small focal spot for high-resolution imaging suited to cats, dogs, and other companion animals",
+          "DAEC technology for automatic exposure parameter selection during radiography",
+        ],
+      },
+      {
+        title: "Software & Ease of Use",
+        items: [
+          "HD touch screen with intuitive, veterinary-specific software workflow",
+          "Automatic exposure parameter selection — imaging parameters clearly visible and adjustable in real time",
+          "Full-function measurement and imaging tools tailored to veterinary clinical characteristics",
+          "User-friendly interface designed for efficient daily clinic operation",
+        ],
+      },
+      {
+        title: "Installation & Site Requirements",
+        items: [
+          "Main unit approximately 205 × 151 × 95 cm; weight 120 kg",
+          "Minimum radiation room size 2 × 1.5 m; door width minimum 65 cm",
+          "220 V single-phase three-wire power supply with dedicated high-voltage line recommended",
+        ],
+      },
+      {
+        title: "Quality & Support",
+        items: [
+          "From Vetoo Med — professional veterinary DR manufacturer with strong independent R&D and national invention patents",
+          "Strict supplier management and quality control with comprehensive pre-sales and after-sales service",
+          "Proven market track record with over 2,800 units installed in China",
+        ],
+      },
     ],
   },
 };
@@ -301,6 +393,116 @@ const zh: Record<string, ProductLocaleFields> = {
         title: "法規與安全標準",
         items: [
           "美國 FDA 510(k) 及 CE 認證",
+        ],
+      },
+    ],
+  },
+  vet1120: {
+    tagline: "獸醫移動式數位 C-arm 系統",
+    description:
+      "PERLOVE VET1120 為緊湊型移動式數位 C-arm，提供獸醫骨科、創傷及軟組織手術的即時透視導引 — 結合 5.0 kW 成像功率、整合式工作站及節省空間的設計，適合現代診所環境。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "臨床應用",
+        items: [
+          "即時透視影像，支援骨科及創傷手術的術中精準導引",
+          "協助準確植入物定位 — 有助縮短手術時間並改善臨床成效",
+          "5.0 kW 發生器適用大型犬（如德國牧羊犬、拉布拉多），低功率機型難以穿透的部位亦可清晰成像",
+          "自動、手動及脈衝透視模式，配合不同手術流程",
+        ],
+      },
+      {
+        title: "成像技術",
+        items: [
+          "日本 Toshiba 影像增強器，提供高解像度透視影像",
+          "數位成像鏈專為骨科及創傷介入的精準度而設",
+          "高功率 X 光管，為獸醫解剖結構提供可靠穿透力",
+        ],
+      },
+      {
+        title: "節省空間的移動設計",
+        items: [
+          "整合式工作站，無需另設顯示器推車 — 節省寶貴的手術室空間",
+          "緊湊移動式 C-arm 機身，適合狹小手術室及市區診所",
+          "靈活移動及定位，適應不同臨床布局",
+        ],
+      },
+      {
+        title: "人體工學與易用性",
+        items: [
+          "人性化手控器，可在無菌區內直觀操作",
+          "外科醫生無需離開手術台即可調整影像",
+          "簡化日常工作流程，適合高周轉獸醫外科",
+        ],
+      },
+      {
+        title: "法規與品質標準",
+        items: [
+          "EU MDR CE 認證，符合國際醫療器械安全標準",
+          "採用優質核心部件，以具競爭力的定位提供強勁臨床投資回報",
+        ],
+      },
+    ],
+  },
+  vf1: {
+    tagline: "新一代獸醫動態數位放射影像系統",
+    description:
+      "VETOO VF1 專為智能寵物影像設計的動態 DR 系統，支援 30 fps 動態成像、最長 15 分鐘透視錄影及可選 DSA 模組，涵蓋食道/肺部/關節定位、造影及介入等臨床應用。配備 17×17 吋平板探測器、32kW 高壓發生器（125kV / 400mA）及獸醫專用軟件。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "臨床應用",
+        items: [
+          "動態觀察運動器官 — 食道、肺部、橫膈膜、腸道及氣管",
+          "骨科手術支援：關節置換、釘板調整及骨骼定位",
+          "消化道造影 — 食道蠕動、胃排空及鋇餐檢查，提供診斷依據",
+          "心臟及肺部造影評估；可選 DSA 模組支援介入手術",
+          "長時間動態錄影有助減少寵物緊張、顫抖或呼吸急促造成的誤診",
+        ],
+      },
+      {
+        title: "動態 DR 技術",
+        items: [
+          "將數位 X 光資料轉換為靜態影像及流暢視頻 — 超越傳統靜態 DR",
+          "30 fps 動態成像，兼備靜態 DR 高清影像及進階測量功能",
+          "每次最長 15 分鐘連續動態透視模式，適合複雜手術及長時間觀察",
+          "可選 DSA 模組，支援血管造影輔助介入治療",
+          "臨床應用場景更廣，診斷價值高於傳統靜態 DR",
+        ],
+      },
+      {
+        title: "成像性能",
+        items: [
+          "17×17 吋平板探測器，採用碘化銫蒸發技術 — 低輻射、高 DQE（約 80%）、極限解析度 3.6 Lp/mm",
+          "32 kW 高功率發生器（125 kV / 400 mA）— 大小型寵物均可獲得可靠穿透力",
+          "0.6 / 1.2 mm 小焦點，高解像度成像，適合貓、狗及其他寵物",
+          "DAEC 自動曝光控制技術，透視時自動選擇最佳曝光參數",
+        ],
+      },
+      {
+        title: "軟件與易用性",
+        items: [
+          "高清觸控螢幕，配備直觀的獸醫專用軟件工作流程",
+          "自動曝光參數選擇 — 成像參數清晰可見，可即時調整",
+          "完整測量及成像工具，專為獸醫臨床特點而設",
+          "友善操作介面，適合日常高周轉診所使用",
+        ],
+      },
+      {
+        title: "安裝及場地要求",
+        items: [
+          "主機尺寸約 205 × 151 × 95 cm；重量 120 kg",
+          "最小輻射房尺寸 2 × 1.5 m；門寬最少 65 cm",
+          "220 V 單相三線電源，建議配置獨立高壓電源線",
+        ],
+      },
+      {
+        title: "品質與支援",
+        items: [
+          "Vetoo Med 專業獸醫 DR 製造商，具備強大自主研發能力及多項國家發明專利",
+          "嚴格供應商管理及品質控制，提供完善的售前及售後服務",
+          "中國市場累計裝機量超過 2,800 台，獲用戶廣泛好評",
         ],
       },
     ],

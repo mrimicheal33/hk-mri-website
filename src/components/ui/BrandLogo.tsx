@@ -14,19 +14,28 @@ const LOGO_HEIGHT = {
   uniform: 40,
 } as const;
 
-/** Wordmarks that read larger at the same cap height. */
+/** Per-brand cap heights tuned for even visual weight in shared rows. */
 const UNIFORM_LOGO_HEIGHT: Record<string, number> = {
   "/images/brands/chison.webp": 52,
-  "/images/brands/mindray.png": 30,
-  "/images/brands/perlove.png": 28,
   "/images/brands/hisky.png": 40,
+  "/images/brands/mindray.png": 32,
+  "/images/brands/perlove.png": 32,
+  "/images/brands/vetoo.svg": 36,
+  "/images/brands/united-imaging.png": 40,
 };
 
+/** Fixed row height for portfolio / product-card logo bands. */
+export const BRAND_LOGO_SLOT_HEIGHT = 56;
+
 function getLogoHeight(src: string, size: keyof typeof LOGO_HEIGHT) {
-  if (size === "uniform" && UNIFORM_LOGO_HEIGHT[src]) {
-    return UNIFORM_LOGO_HEIGHT[src];
+  const base =
+    size === "uniform" && UNIFORM_LOGO_HEIGHT[src]
+      ? UNIFORM_LOGO_HEIGHT[src]
+      : LOGO_HEIGHT[size];
+  if (size === "uniform") {
+    return Math.min(base, BRAND_LOGO_SLOT_HEIGHT);
   }
-  return LOGO_HEIGHT[size];
+  return base;
 }
 
 const BRAND_NATIVE_SIZE: Record<string, { width: number; height: number }> = {
@@ -82,7 +91,7 @@ export function BrandLogo({
   );
 }
 
-/** Fixed slot height — all brand logos align on the same baseline row. */
+/** Fixed slot height — all brand logos share the same baseline row. */
 export function BrandLogoSlot({
   src,
   alt,
@@ -94,7 +103,8 @@ export function BrandLogoSlot({
 }) {
   return (
     <div
-      className={`h-14 flex items-end shrink-0 ${className}`}
+      className={`flex items-end shrink-0 overflow-hidden ${className}`}
+      style={{ height: `${BRAND_LOGO_SLOT_HEIGHT}px` }}
     >
       <BrandLogo src={src} alt={alt} size="uniform" />
     </div>

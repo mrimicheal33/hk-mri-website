@@ -68,7 +68,7 @@ export const en = {
     tagline: "Your Trusted Medical Device & Imaging Solutions Specialist",
     description:
       "HK MRI Instrument Ltd. is a premier provider of cutting-edge medical devices and advanced diagnostic solutions. As a trusted partner to healthcare institutions worldwide, we are dedicated to delivering innovative technologies that elevate patient care and optimize clinical outcomes.",
-    address: "Hong Kong",
+    address: "Suite 03, 7/F, Lemmi Centre, No.50 Hoi Yuen Road, Kowloon, Hong Kong",
     subsidiaryRole: "Medical device distribution",
     aboutExtra:
       "We represent CHISON, MINDRAY, and UNITED IMAGING — delivering ultrasound, MRI, CT, liver fibrosis assessment, and digital radiography solutions across Hong Kong.",
@@ -134,7 +134,7 @@ export const en = {
         },
         {
           key: "vet1120",
-          name: "Veterinary Mobile Digital C-arm",
+          name: "PERLOVE VET1120",
           tagline: "Surgical imaging for animal care",
           brandName: "PERLOVE",
           brandLogo: "/images/brands/perlove.png",
@@ -143,7 +143,7 @@ export const en = {
           href: "/products/vet1120",
           image: "/images/products/vet1120-card.png",
           imageFit: "contain",
-          imageCaptionTitle: "VET1120 Series",
+          imageCaptionTitle: "PERLOVE VET1120",
           imageCaptionSubtitle: "Vet Mobile Digital C-arm System",
         },
         {
@@ -157,7 +157,7 @@ export const en = {
           href: "/products/vf1",
           image: "/images/products/vf1-card.png",
           imageFit: "contain",
-          imageCaptionTitle: "VF1",
+          imageCaptionTitle: "VETOO VF1",
           imageCaptionSubtitle: "Veterinary Dynamic DR System",
         },
         {
@@ -347,7 +347,7 @@ export const en = {
     label: "Contact",
     heading: "Contact Us",
     description:
-      "Product quotes, technical enquiries, or SonoEye workshop registration — we are happy to help.",
+      "Whether you require a product quotation, technical assistance, or a live demonstration, our team is ready to assist you.",
     getInTouch: "Get in Touch",
     formTitle: "Request a Quote / Book a Demo",
     formDesc: "We will respond within 1–2 business days.",

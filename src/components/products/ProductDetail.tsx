@@ -12,7 +12,6 @@ import { SonoEyeProbeGuide } from "@/components/products/SonoEyeProbeGuide";
 import { ProductCard } from "@/components/products/ProductCard";
 import { ProductImage } from "@/components/products/ProductImage";
 import { getCategoryLabel, getBrandBySlug, getBrandHref, getRelatedProducts, type Product } from "@/data/products";
-import { getLocalizedBrand } from "@/data/brand-translations";
 import { getLocalizedProduct } from "@/data/product-translations";
 import { useDictionary, useLocale } from "@/i18n/LocaleProvider";
 import { formatString } from "@/i18n/utils";
@@ -26,7 +25,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
   const locale = useLocale();
   const localized = getLocalizedProduct(product, locale);
   const brand = getBrandBySlug(product.brandSlug);
-  const localizedBrand = brand ? getLocalizedBrand(brand, locale) : null;
   const related = getRelatedProducts(product);
   const brandIsProductPage = brand?.pageHref === `/products/${product.id}`;
   const pageTitle = product.name;
@@ -72,9 +70,13 @@ export function ProductDetail({ product }: ProductDetailProps) {
                 <Image
                   src={brand.logo}
                   alt={brand.name}
-                  width={120}
-                  height={36}
-                  className="h-7 w-auto object-contain mb-6"
+                  width={brand.slug === "chison" ? 220 : 120}
+                  height={brand.slug === "chison" ? 72 : 36}
+                  className={
+                    brand.slug === "chison"
+                      ? "h-14 sm:h-16 w-auto object-contain mb-6"
+                      : "h-7 w-auto object-contain mb-6"
+                  }
                 />
               )}
 
@@ -82,9 +84,6 @@ export function ProductDetail({ product }: ProductDetailProps) {
                 <Badge variant="neutral">
                   {getCategoryLabel(product.category, locale)}
                 </Badge>
-                {localizedBrand?.exclusive && (
-                  <Badge variant="brand">{localizedBrand.exclusive}</Badge>
-                )}
               </div>
 
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-text-primary tracking-tight mb-2">

@@ -44,8 +44,7 @@ export const brands: Brand[] = [
     name: "CHISON",
     nameEn: "CHISON Medical Technologies",
     logo: "/images/brands/chison.webp",
-    description: "全球領先的超聲波影像解決方案供應商，SonoEye 手持超聲波為港澳獨家代理。",
-    exclusive: "港澳獨家代理",
+    description: "全球領先的超聲波影像解決方案供應商，SonoEye 手持超聲波。",
     color: "#2563eb",
     pageHref: "/products/sonoeye",
   },
@@ -73,6 +72,7 @@ export const brands: Brand[] = [
     logo: "/images/brands/perlove.png",
     description: "專注獸醫影像設備，提供移動式數位 C-arm 系統。",
     color: "#b91c1c",
+    pageHref: "/products/vet1120",
   },
   {
     slug: "united-imaging",
@@ -89,6 +89,7 @@ export const brands: Brand[] = [
     logo: "/images/brands/vetoo.svg",
     description: "專注獸醫動態數位放射影像（Dynamic DR）及智能寵物影像解決方案。",
     color: "#0f4c5c",
+    pageHref: "/products/vf1",
   },
 ];
 
@@ -318,33 +319,29 @@ export const products: Product[] = [
   // PERLOVE
   {
     id: "vet1120",
-    name: "VET1120",
+    name: "PERLOVE VET1120",
     nameEn: "Veterinary Mobile Digital C-arm",
     brand: "PERLOVE",
     brandSlug: "perlove",
     category: "veterinary",
     tagline: "獸醫移動式數位 C-arm 系統",
-    description: "PERLOVE VET1120 移動式數位 C-arm，專為獸醫外科手術影像導航設計。",
-    highlights: ["移動式 C-arm", "數位成像", "獸醫外科專用"],
+    description:
+      "PERLOVE VET1120 為緊湊型移動式數位 C-arm，提供獸醫骨科、創傷及軟組織手術的即時透視導引 — 結合 5.0 kW 成像功率、整合式工作站及節省空間的設計。",
+    highlights: [],
+    brochure: "/brochures/vet1120-product-brochure.pdf",
   },
   // VETOO
   {
     id: "vf1",
-    name: "VF1",
-    nameEn: "VETOO VF1 Dynamic DR",
+    name: "VETOO VF1",
+    nameEn: "Veterinary Dynamic DR System",
     brand: "VETOO",
     brandSlug: "vetoo",
     category: "veterinary",
     tagline: "新一代獸醫動態數位放射影像系統",
     description:
       "VETOO VF1 專為智能寵物影像設計的動態 DR 系統，支援 30 fps 動態成像、最長 15 分鐘透視錄影及可選 DSA 模組，涵蓋食道/肺部/關節定位、造影及介入等臨床應用。配備 17×17 吋平板探測器、32kW 高壓發生器（125kV / 400mA）及獸醫專用軟件。",
-    highlights: [
-      "32kW 高功率，125kV / 400mA",
-      "17×17 吋動態平板探測器",
-      "30 fps 動態成像，最長 15 分鐘透視",
-      "可選 DSA 模組支援介入手術",
-      "低劑量脈衝技術，獸醫專用軟件",
-    ],
+    highlights: [],
     brochure: "/brochures/vf1-product-brochure.pdf",
     featured: true,
   },

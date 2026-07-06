@@ -53,17 +53,14 @@ export function SonoEyeLandingPage({ variant }: SonoEyeLandingPageProps) {
                 <span className="inline-flex px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-white/15 border border-white/25 rounded-md">
                   {content.badge}
                 </span>
-                <span className="inline-flex px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-brand-accent/20 border border-brand-accent/40 text-brand-accent rounded-md">
-                  {t.common.exclusiveAgent}
-                </span>
               </div>
 
               <Image
                 src="/images/brands/chison.webp"
                 alt="CHISON"
-                width={120}
-                height={36}
-                className="h-7 w-auto object-contain mb-6 brightness-0 invert"
+                width={220}
+                height={72}
+                className="h-14 sm:h-16 w-auto object-contain mb-6 brightness-0 invert"
               />
 
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight tracking-tight mb-5">

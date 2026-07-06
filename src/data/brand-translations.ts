@@ -7,8 +7,7 @@ const en: Record<
 > = {
   chison: {
     description:
-      "Global leader in ultrasound imaging solutions. Exclusive agent for SonoEye handheld ultrasound in Hong Kong and Macau.",
-    exclusive: "HK & Macau Exclusive Agent",
+      "Global leader in ultrasound imaging solutions, including the SonoEye handheld ultrasound.",
   },
   mindray: {
     description:

@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { Mini800PromoCaption } from "@/components/home/Mini800PromoCaption";
+import {
+  PORTFOLIO_IMAGE_CAPTION_CLASS,
+  PORTFOLIO_IMAGE_SHELL_CLASS,
+} from "@/components/home/portfolioImageShared";
 
 interface Mini800PortfolioImageProps {
   className?: string;
@@ -15,7 +19,7 @@ export function Mini800PortfolioImage({
   sizes = "(max-width: 768px) 100vw, 20vw",
 }: Mini800PortfolioImageProps) {
   return (
-    <div className={`flex flex-col overflow-hidden rounded-lg bg-white ${className}`}>
+    <div className={`${PORTFOLIO_IMAGE_SHELL_CLASS} ${className}`}>
       <div className="relative min-h-0 flex-1 overflow-hidden">
         <Image
           src="/images/products/mini800-card.png?v=4"
@@ -26,7 +30,7 @@ export function Mini800PortfolioImage({
           className="object-contain object-center"
         />
       </div>
-      <div className="shrink-0 border-t border-[#eef2f6] bg-white px-2 py-2 sm:px-3 sm:py-2.5">
+      <div className={PORTFOLIO_IMAGE_CAPTION_CLASS}>
         <Mini800PromoCaption title={captionTitle} subtitle={captionSubtitle} />
       </div>
     </div>

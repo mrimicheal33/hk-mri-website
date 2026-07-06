@@ -41,7 +41,22 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/products/perlove",
-        destination: "/brands/perlove",
+        destination: "/products/vet1120",
+        permanent: true,
+      },
+      {
+        source: "/brands/perlove",
+        destination: "/products/vet1120",
+        permanent: true,
+      },
+      {
+        source: "/products/vetoo",
+        destination: "/products/vf1",
+        permanent: true,
+      },
+      {
+        source: "/brands/vetoo",
+        destination: "/products/vf1",
         permanent: true,
       },
       {

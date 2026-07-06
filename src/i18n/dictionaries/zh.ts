@@ -69,7 +69,7 @@ export const zh: Dictionary = {
     tagline: "您可信賴的醫療設備及影像解決方案專家",
     description:
       "HK MRI Instrument Ltd. 是尖端醫療設備及先進診斷解決方案的優質供應商。作為全球醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素並優化臨床成效。",
-    address: "香港",
+    address: "香港九龍開源道50號利寶時中心7樓03室",
     subsidiaryRole: "醫療設備代理",
     aboutExtra:
       "我們代理 CHISON、MINDRAY 及 UNITED IMAGING，提供超聲波、MRI、CT、肝纖維化檢測及數位放射影像解決方案。",
@@ -135,7 +135,7 @@ export const zh: Dictionary = {
         },
         {
           key: "vet1120",
-          name: "獸醫移動式數位 C-arm 系統",
+          name: "PERLOVE VET1120",
           tagline: "專為動物護理手術影像而設",
           brandName: "PERLOVE",
           brandLogo: "/images/brands/perlove.png",
@@ -144,7 +144,7 @@ export const zh: Dictionary = {
           href: "/products/vet1120",
           image: "/images/products/vet1120-card.png",
           imageFit: "contain",
-          imageCaptionTitle: "VET1120 Series",
+          imageCaptionTitle: "PERLOVE VET1120",
           imageCaptionSubtitle: "獸醫移動式數位 C-arm 系統",
         },
         {
@@ -158,7 +158,7 @@ export const zh: Dictionary = {
           href: "/products/vf1",
           image: "/images/products/vf1-card.png",
           imageFit: "contain",
-          imageCaptionTitle: "VF1",
+          imageCaptionTitle: "VETOO VF1",
           imageCaptionSubtitle: "獸醫動態 DR 系統",
         },
         {
@@ -338,7 +338,7 @@ export const zh: Dictionary = {
     label: "Contact",
     heading: "聯絡我們",
     description:
-      "無論是產品報價、技術諮詢或 SonoEye 工作坊報名，我們樂意為您服務。",
+      "無論您需要產品報價、技術支援或實機演示，我們的團隊隨時為您服務。",
     getInTouch: "與我們對話",
     formTitle: "索取報價 / 預約演示",
     formDesc: "我們將在 1–2 個工作天內回覆您的查詢。",

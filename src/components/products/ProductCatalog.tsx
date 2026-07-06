@@ -37,7 +37,9 @@ export function ProductCatalog() {
         >
           {t.products.filterAll} ({products.length})
         </button>
-        {brands.map((brand) => {
+        {brands
+          .filter((brand) => !brand.pageHref)
+          .map((brand) => {
           const count = products.filter((p) => p.brandSlug === brand.slug).length;
           return (
             <button

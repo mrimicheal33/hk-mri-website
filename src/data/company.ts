@@ -18,6 +18,6 @@ export const company = {
     phone: "+852 3188-5033",
     whatsapp: "https://wa.me/85253634540",
     whatsappPhone: "+852 5363-4540",
-    address: "Hong Kong",
+    address: "Suite 03, 7/F, Lemmi Centre, No.50 Hoi Yuen Road, Kowloon, Hong Kong",
   },
 } as const;
