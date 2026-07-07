@@ -201,32 +201,44 @@ export const products: Product[] = [
   {
     id: "digieye-330",
     name: "DigiEye 330",
+    nameEn: "MINDRAY DigiEye 330",
     brand: "MINDRAY",
     brandSlug: "mindray",
     category: "radiography",
-    tagline: "數位放射攝影系統",
-    description: "MINDRAY DigiEye 330 系列數位 X 光攝影系統。",
-    highlights: ["數位化影像", "快速成像", "低輻射劑量"],
+    image: "/images/products/digieye-330-card.png",
+    tagline: "流線型設計，提升數位放射攝影效率",
+    description:
+      "MINDRAY DigiEye 330 系列為落地式數位放射攝影（DR）系統，以流線型人體工學設計、人性化工作流程及遠程連接功能，滿足多樣化臨床場景的 X 光檢查需求 — 適合基層醫療機構、診斷中心及高周轉放射科使用。",
+    highlights: [],
+    brochure: "/brochures/digieye-330-brochure.pdf",
   },
   {
     id: "digieye-350",
     name: "DigiEye 350",
+    nameEn: "MINDRAY DigiEye 350",
     brand: "MINDRAY",
     brandSlug: "mindray",
     category: "radiography",
-    tagline: "進階數位放射攝影系統",
-    description: "DigiEye 350 系列，提供更高效的數位放射影像解決方案。",
-    highlights: ["高解析度成像", "智能後處理", "工作流程優化"],
+    image: "/images/products/digieye-350-card.png",
+    tagline: "新一代落地式 DR — 流暢操作，卓越影像",
+    description:
+      "MINDRAY DigiEye 350 系列為新一代落地式數位放射攝影（DR）系統，融合 Mindray 自主研發的機架、高壓發生器、平板探測器及 DROC 影像算法，提供流暢高效的放射檢查方案 — 配備雙向同步、移動式 FPD、iStitch 自動拼接及人性化觸控工作流程，滿足多樣化臨床場景。",
+    highlights: [],
+    brochure: "/brochures/digieye-350-brochure.pdf",
   },
   {
     id: "digieye-680",
     name: "DigiEye 680",
+    nameEn: "MINDRAY DigiEye 680",
     brand: "MINDRAY",
     brandSlug: "mindray",
     category: "radiography",
-    tagline: "高端數位放射攝影系統",
-    description: "DigiEye 680 系列旗艦 DR 系統，適合大型醫院及影像中心。",
-    highlights: ["旗艦 DR 性能", "大面積探測器", "醫院級應用"],
+    image: "/images/products/digieye-680-card.webp",
+    tagline: "吊架式旗艦 DR — 緊湊佔地，全方位患者關懷",
+    description:
+      "MINDRAY DigiEye 680 系列為吊架式數位放射攝影（DR）系統，緊湊佔地設計適合大型醫院及影像中心 — 配備移動式探測器、Level 後處理軟件、iStitch 全景成像及多種檢查床選項，配合 MiCo+ 遠程連接與 M·Share 共享探測器，提供快速、流暢、高價值的檢查與診斷體驗。",
+    highlights: [],
+    brochure: "/brochures/digieye-680-brochure.pdf",
     featured: true,
   },
   // HISKY - Liver Fibrosis
@@ -249,12 +261,16 @@ export const products: Product[] = [
   {
     id: "mobieye-700",
     name: "MobiEye 700",
+    nameEn: "MINDRAY MobiEye 700",
     brand: "MINDRAY",
     brandSlug: "mindray",
     category: "radiography",
-    tagline: "移動式數位放射攝影系統",
-    description: "便攜式移動 DR 系統，適合 ICU、急診及行動不便患者床邊攝影。",
-    highlights: ["移動便攜", "床邊攝影", "電動升降"],
+    image: "/images/products/mobieye-700-card.jpg",
+    tagline: "智能移動 DR — 強大動力，靈活機動",
+    description:
+      "MINDRAY MobiEye 700 為新一代移動式數位放射攝影（DR）系統，緊湊輕便、操作便捷 — 配備獨特仿生機械臂、智能速度調控、5G 無線 MPX 探測器及雙模式電源管理，為 ICU、急診及行動不便患者床邊攝影提供卓越影像品質與最大檢查覆蓋範圍。",
+    highlights: [],
+    brochure: "/brochures/mobieye-700-brochure.pdf",
   },
   // UNITED IMAGING - CT
   {
@@ -412,7 +428,12 @@ export function getFeaturedProducts() {
 
 export function getRelatedProducts(product: Product, limit = 3) {
   return products
-    .filter((p) => p.brandSlug === product.brandSlug && p.id !== product.id)
+    .filter(
+      (p) =>
+        p.brandSlug === product.brandSlug &&
+        p.category === product.category &&
+        p.id !== product.id,
+    )
     .slice(0, limit);
 }
 

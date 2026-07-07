@@ -28,7 +28,7 @@ export function ProductImage({
       alt={alt}
       fill
       priority={priority}
-      unoptimized={src.includes("-card.png")}
+      unoptimized={src.includes("-card.")}
       className={className}
       sizes={sizes}
     />

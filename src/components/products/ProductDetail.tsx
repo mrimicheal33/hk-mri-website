@@ -58,7 +58,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
             <div
               className={`relative w-full aspect-[4/3] overflow-hidden min-w-0 ${
-                product.image?.includes("-card.png") ? "bg-white" : "bg-surface-muted"
+                product.image?.includes("-card.") ? "bg-white" : "bg-surface-muted"
               }`}
             >
               <ProductImage

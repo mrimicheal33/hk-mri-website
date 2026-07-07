@@ -29,7 +29,7 @@ export function ProductCard({ product, showBrand = true }: ProductCardProps) {
     >
       <div
         className={`relative w-full aspect-[4/3] overflow-hidden shrink-0 ${
-          product.image?.includes("-card.png") ? "bg-white" : "bg-surface-muted"
+          product.image?.includes("-card.") ? "bg-white" : "bg-surface-muted"
         }`}
       >
         <ProductImage
