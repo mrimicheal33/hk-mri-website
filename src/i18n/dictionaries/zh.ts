@@ -58,6 +58,7 @@ export const zh: Dictionary = {
   categories: {
     ultrasound: "超聲波系統",
     radiography: "放射影像",
+    "liver-fibrosis": "肝纖維化掃描儀",
     mri: "磁共振 (MRI)",
     ct: "電腦斷層 (CT)",
     mammography: "乳腺攝影",
@@ -128,7 +129,7 @@ export const zh: Dictionary = {
           description:
             "MINDRAY 全面方案涵蓋診斷超聲波系統、Hepatus 肝纖維化掃描儀（瞬時彈性成像技術作非侵入性肝臟評估），以及 DigiEye 數位放射影像（DR）平台 — 均符合國際標準，確保臨床準確性、安全及可靠性。",
           href: "/brands/mindray",
-          image: "/images/products/hepatus-card.png",
+          image: "/images/products/hepatus-card.png?v=4",
           imageFit: "contain",
           imageCaptionTitle: "Hepatus 5",
           imageCaptionSubtitle: "非侵入性定量肝臟診斷",
@@ -224,7 +225,7 @@ export const zh: Dictionary = {
           slug: "mindray",
           name: "MINDRAY",
           logo: "/images/brands/mindray.png",
-          image: "/images/products/hepatus-card.png",
+          image: "/images/products/hepatus-card.png?v=4",
           description: "數位放射影像、肝纖維化檢測及全面影像解決方案的領先供應商。",
         },
         {
@@ -291,6 +292,7 @@ export const zh: Dictionary = {
     productsInterestGeneric: "對以下產品有興趣？",
     productsInterestDesc: "聯絡我們的專業團隊，獲取詳細規格與報價。",
     highlights: "品牌亮點",
+    mindrayHepatusSeries: "Hepatus 系列",
   },
   about: {
     label: "About Us",

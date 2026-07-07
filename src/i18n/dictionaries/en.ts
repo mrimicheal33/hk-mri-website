@@ -57,6 +57,7 @@ export const en = {
   categories: {
     ultrasound: "Ultrasound Systems",
     radiography: "Radiography",
+    "liver-fibrosis": "Liver Fibrosis Scanner",
     mri: "MRI",
     ct: "CT",
     mammography: "Mammography",
@@ -127,7 +128,7 @@ export const en = {
           description:
             "Comprehensive MINDRAY solutions across diagnostic ultrasound systems for general and specialty imaging, Hepatus liver fibrosis scanners with transient elastography for non-invasive liver assessment, and DigiEye digital radiography (DR) platforms — all built to international standards for clinical accuracy, safety, and reliability.",
           href: "/brands/mindray",
-          image: "/images/products/hepatus-card.png",
+          image: "/images/products/hepatus-card.png?v=4",
           imageFit: "contain",
           imageCaptionTitle: "Hepatus 5",
           imageCaptionSubtitle: "Non-invasive and quantitative Liver diagnose",
@@ -224,7 +225,7 @@ export const en = {
           slug: "mindray",
           name: "MINDRAY",
           logo: "/images/brands/mindray.png",
-          image: "/images/products/hepatus-card.png",
+          image: "/images/products/hepatus-card.png?v=4",
           description:
             "Leading provider of digital radiography, liver fibrosis assessment, and comprehensive imaging solutions.",
         },
@@ -300,6 +301,7 @@ export const en = {
     productsInterestDesc:
       "Contact our team for detailed specifications and pricing.",
     highlights: "Brand Highlights",
+    mindrayHepatusSeries: "Hepatus Series",
   },
   about: {
     label: "About Us",

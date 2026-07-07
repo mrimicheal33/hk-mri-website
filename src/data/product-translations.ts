@@ -63,22 +63,221 @@ const en: Record<string, ProductLocaleFields> = {
     ],
   },
   "consona-n6": {
-    tagline: "Entry-level diagnostic ultrasound system",
+    tagline: "Concrete to Resonate — entry-level diagnostic ultrasound",
     description:
-      "MINDRAY Consona N6 — the entry model in the Consona series, delivering reliable foundational ultrasound diagnostics.",
-    highlights: ["High value", "Stable and dependable", "Ideal for primary care clinics"],
+      "MINDRAY Consona N6 is the entry model in the Consona diagnostic ultrasound series — built on the ZST+ platform with ComboWave transducers for exceptional image quality and wide clinical coverage. With comprehensive clinical solutions, smart measurement tools, and ergonomic design, Consona N6 delivers reliable ultrasound diagnostics for hospitals, clinics, and primary care settings.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Clinical Applications",
+        items: [
+          "Wide clinical application coverage supporting extensive patient types and clinical scenarios",
+          "Concrete solutions for smooth diagnoses — ideal for hospitals, clinics, and skill development",
+          "Highly powerful tools to keep clinicians ahead across routine and advanced examinations",
+        ],
+      },
+      {
+        title: "ZST+ Imaging Platform",
+        items: [
+          "ZST+ platform transforms ultrasound from conventional beam-forming to channel data based processing",
+          "Delivers exceptional image quality with continuous platform improvements",
+          "ComboWave transducers enhance imaging sensitivity across clinical applications",
+        ],
+      },
+      {
+        title: "Advanced Imaging Technologies",
+        items: [
+          "PSH, Glazing Flow, NTE, iClear, HR Flow, and iBeam technologies",
+          "HD-Scope and UWN+ Contrast Imaging for enhanced diagnostic confidence",
+          "Real-time dynamic image optimization for clearer assessment",
+        ],
+      },
+      {
+        title: "Comprehensive Clinical Solutions",
+        items: [
+          "General Imaging Solution — smart tools for smooth everyday diagnosis",
+          "Cardiovascular Solution — effective cardiovascular evaluation with dedicated tools",
+          "Women's Health Solution — designed for efficiency and patient satisfaction",
+        ],
+      },
+      {
+        title: "Smart Measurement Tools",
+        items: [
+          "Smart HRI — automatic hepatic steatosis index calculation",
+          "Smart Bladder — automatic bladder volume measurement",
+          "Smart Calc — automatic trace, measurement, and calculation",
+          "RIMT — RF-data based real-time IMT measurement",
+          "AutoEF — automatic ejection fraction by diastole/systole frames",
+          "TDI — myocardial movement display based on Doppler theory",
+          "Smart Face — one-click automatic removal of occlusions over fetal face",
+          "Glazing Flow — improved 3D presentation of fetal flow",
+          "Smart OB — automatic measurement of fetal biometrics",
+          "iTouch+ with HD Scope and NTE — improved ROI resolution and Shell quantitative stiffness assessment",
+        ],
+      },
+      {
+        title: "Workflow & Learning Tools",
+        items: [
+          "iScanHelper — step-by-step scanning guidance to practice and improve skills",
+          "Smart Vue — automatic recognition and restoration of standard imaging planes",
+          "iWorks — standardized step-by-step protocols to avoid plane omission",
+        ],
+      },
+      {
+        title: "Ergonomic Design & System Features",
+        items: [
+          "21.5\" full HD monitor and 13.3\" full HD touch screen",
+          "Rotatable control panel with adjustable monitor viewing angle",
+          "Adjustable height, integrated storage, and ease-of-transportation design",
+          "Noise-reduced design with water and dust proof panel and built-in battery",
+        ],
+      },
+    ],
   },
   "consona-n7": {
-    tagline: "Mid-range diagnostic ultrasound system",
+    tagline: "Concrete to Resonate — mid-range diagnostic ultrasound",
     description:
-      "A feature-rich mid-tier Consona model meeting broader clinical application needs.",
-    highlights: ["Advanced imaging", "Multi-probe support", "Wide clinical coverage"],
+      "MINDRAY Consona N7 is the mid-tier model in the Consona diagnostic ultrasound series — built on the ZST+ platform with ComboWave transducers for exceptional image quality and broader clinical coverage. With Smart Scene 3D full-stack obstetric intelligence, comprehensive clinical solutions, smart measurement tools, and ergonomic design, Consona N7 meets the advanced diagnostic needs of hospitals and clinics.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Clinical Applications",
+        items: [
+          "Wide clinical application coverage supporting extensive patient types and clinical scenarios",
+          "Concrete solutions for smooth diagnoses — ideal for hospitals, clinics, and skill development",
+          "Highly powerful tools to keep clinicians ahead across routine and advanced examinations",
+        ],
+      },
+      {
+        title: "ZST+ Imaging Platform",
+        items: [
+          "ZST+ platform transforms ultrasound from conventional beam-forming to channel data based processing",
+          "Delivers exceptional image quality with continuous platform improvements",
+          "ComboWave transducers enhance imaging sensitivity across clinical applications",
+        ],
+      },
+      {
+        title: "Advanced Imaging Technologies",
+        items: [
+          "PSH, NTE, iClear, HR Flow, and iBeam technologies",
+          "HD Scope for enhanced ROI resolution and clearer assessment",
+          "Real-time dynamic image optimization via iTouch+",
+        ],
+      },
+      {
+        title: "Comprehensive Clinical Solutions",
+        items: [
+          "General Imaging Solution — smart tools for smooth everyday diagnosis",
+          "Cardiovascular Solution — effective cardiovascular evaluation with dedicated tools",
+          "Women's Health Solution — full-stack smartness based on Smart Scene 3D",
+          "Full-stack smartness obstetric solution empowered by ZST+",
+        ],
+      },
+      {
+        title: "Smart Measurement Tools",
+        items: [
+          "Smart HRI — easy and fast liver steatosis assessment via hepatic steatosis index",
+          "Smart Calc — automatic trace, measurement, and calculation",
+          "RIMT — RF-data based real-time IMT measurement",
+          "AutoEF — automatic ejection fraction by diastole/systole frames",
+          "TTQA — myocardial synchronization evaluation with quantitative analysis",
+          "NTE with Shell — ROI stiffness display with quantitative assessment",
+          "Smart Face — one-click automatic removal of occlusions over fetal face",
+          "Smart FLC 2D/3D — automatic follicle counting and measurement",
+          "Smart OB — automatic measurement of fetal biometrics",
+          "Smart Fetal HR, Smart Planes CNS — fetal heart and brain standard plane analysis",
+          "Smart Scene 3D — innovation in fetal face, spine, and long bone presentation",
+        ],
+      },
+      {
+        title: "Workflow & Learning Tools",
+        items: [
+          "iScanHelper — step-by-step scanning guidance to practice and improve skills",
+          "Smart Vue — automatic recognition and restoration of standard imaging planes",
+          "iWorks — standardized step-by-step protocols to avoid plane omission",
+        ],
+      },
+      {
+        title: "Ergonomic Design & System Features",
+        items: [
+          "21.5\" full HD monitor with lifting monitor arm and 13.3\" full HD touch screen",
+          "Rotatable control panel with adjustable height and integrated storage",
+          "Ease-of-transportation design with noise-reduced operation",
+          "Water and dust proof panel with built-in battery",
+        ],
+      },
+    ],
   },
   "consona-n9": {
-    tagline: "Flagship diagnostic ultrasound system",
+    tagline: "Concrete to Resonate — flagship diagnostic ultrasound",
     description:
-      "The Consona N9 flagship with advanced ultrasound imaging and AI-assisted clinical tools.",
-    highlights: ["Flagship imaging quality", "AI-assisted workflow", "Comprehensive clinical coverage"],
+      "MINDRAY Consona N9 is the flagship model in the Consona diagnostic ultrasound series — built on the ZST+ platform with Single-Crystal and ComboWave transducers for premium image quality and the broadest clinical coverage. With Smart Scene 3D full-stack intelligence, STE/STQ elastography, AI-assisted measurement tools, and dual-wing floating arm ergonomics, Consona N9 meets the advanced diagnostic demands of hospitals and imaging centres.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Clinical Applications",
+        items: [
+          "Wide clinical application coverage supporting extensive patient types and clinical scenarios",
+          "Concrete solutions for smooth diagnoses — ideal for hospitals, clinics, and advanced imaging centres",
+          "Highly powerful tools to keep clinicians ahead across routine and specialist examinations",
+        ],
+      },
+      {
+        title: "ZST+ Imaging Platform & Transducers",
+        items: [
+          "ZST+ platform transforms ultrasound from conventional beam-forming to channel data based processing",
+          "Single-Crystal transducers provide deeper penetration with fine detail",
+          "ComboWave transducers enhance imaging sensitivity — designed for comfortable gripping",
+        ],
+      },
+      {
+        title: "Advanced Imaging Technologies",
+        items: [
+          "PSH, Glazing Flow, NTE, iClear, HR Flow, STE/STQ, and iBeam technologies",
+          "HD-Scope and UMW+ Contrast Imaging for enhanced diagnostic confidence",
+          "Fetus 3D with iLive and real-time dynamic image optimization via iTouch+",
+        ],
+      },
+      {
+        title: "Comprehensive Clinical Solutions",
+        items: [
+          "General Imaging Solution — smart tools for smooth everyday diagnosis",
+          "Cardiovascular Solution — effective cardiovascular evaluation with dedicated tools",
+          "Women's Health Solution — full-stack smartness based on Smart Scene 3D",
+          "Full-stack smartness obstetric solution empowered by ZST+",
+        ],
+      },
+      {
+        title: "Smart Measurement & AI Tools",
+        items: [
+          "Smart HRI — automatic liver and renal cortex recognition with brightness ratio calculation",
+          "Smart Bladder — automatic three-diameter measurement and bladder volume calculation",
+          "Smart Hip — automatic α/β angle measurement for Graf classification",
+          "Smart B-line — automatic and rapid assessment of pulmonary edema",
+          "Smart Calc — automatic trace, measurement, and calculation",
+          "Smart Breast & Smart Thyroid — BI-RADS and TI-RADS analysis with efficient workflow",
+          "RIMT, AutoEF, TTQA, and R-VQS — vascular hardness coefficient and pulse wave velocity (PWV)",
+          "Smart Face, Smart FLC 2D/3D, Smart OB, Smart Fetal HR, Smart Planes CNS, and Smart Scene 3D",
+        ],
+      },
+      {
+        title: "Workflow & Learning Tools",
+        items: [
+          "iScanHelper — step-by-step scanning guidance to practice and improve skills",
+          "Smart Vue — automatic recognition and restoration of standard imaging planes",
+          "iWorks — standardized step-by-step protocols to avoid plane omission",
+        ],
+      },
+      {
+        title: "Ergonomic Design & System Features",
+        items: [
+          "Up to 23.8\" FHD monitor with dual-wing floating arm and up to 15.6\" touch screen",
+          "Rotatable control panel with adjustable height and integrated storage",
+          "Ease-of-transportation design with noise-reduced operation",
+          "Water and dust proof panel with built-in battery",
+        ],
+      },
+    ],
   },
   "digieye-330": {
     tagline: "Digital radiography system",
@@ -97,10 +296,69 @@ const en: Record<string, ProductLocaleFields> = {
     highlights: ["Flagship DR performance", "Large-area detector", "Hospital-grade applications"],
   },
   "hepatus-5": {
-    tagline: "Liver fibrosis and steatosis scanner",
+    tagline: "Non-invasive and quantitative Fibrosis & Steatosis analysis",
     description:
-      "Non-invasive quantitative assessment of liver fibrosis and fatty liver, measuring liver stiffness (LSM) and controlled attenuation (CAP).",
-    highlights: ["Non-invasive testing", "Quantitative liver stiffness", "Fatty liver assessment", "Instant results"],
+      "MINDRAY Hepatus Series is a professional non-invasive diagnostic system for liver disease — delivering quantitative liver stiffness (E/kPa) and steatosis assessment via transient elastography and LiSA technology. With Advanced ViTE visual guidance, Q-Scan intelligent acquisition, and built-in quality control indices, Hepatus supports early screening, diagnosis, monitoring, and treatment evaluation of liver fibrosis and steatosis across a wide range of clinical indications.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Clinical Applications",
+        items: [
+          "Screening, diagnosis, monitoring, and treatment assessment of liver fibrosis and steatosis — especially at early, reversible stages",
+          "Applicable to NAFLD, alcoholic liver disease, chronic hepatitis B/C, drug-induced liver injury, autoimmune liver disease, and biliary tract disease",
+          "Non-invasive alternative to liver biopsy — reduces biopsy risk; simple, fast, safe, and economical with easy patient follow-up",
+          "High sensitivity and accuracy for early fibrosis and fatty liver, supporting prevention before progression to cirrhosis or liver cancer",
+        ],
+      },
+      {
+        title: "Quantitative Measurement",
+        items: [
+          "Quantitative liver stiffness (E/kPa) and fibrosis staging (F0–F4) by transient elastography",
+          "LiSA (Liver Ultra-Sound Attenuation) technology for quantitative steatosis evaluation",
+          "Sensitive to mild–moderate hepatic fibrosis and early fatty liver — mature, guideline-backed diagnostic criteria",
+          "Widely recommended by global liver disease guidelines as a preferred chronic liver disease examination method",
+        ],
+      },
+      {
+        title: "Advanced ViTE Technology",
+        items: [
+          "Advanced ViTE (Visualized Transient Elastography) under real-time 2D ultrasound guidance",
+          "Avoid blood vessels and lesions to improve measurement accuracy and reliability",
+          "Greatly reduces operator difficulty and improves repeatability vs conventional shear-wave systems",
+        ],
+      },
+      {
+        title: "Q-Scan & Quality Control",
+        items: [
+          "Q-Scan intelligent acquisition — 10 valid measurement groups auto-collected and screened with one button",
+          "Results available within approximately 7 seconds after positioning — significantly faster workflow",
+          "Pressure index (P) and motion stability index (m-STB) with color-coded guidance for examination quality control",
+        ],
+      },
+      {
+        title: "Integrated Probe & Workflow",
+        items: [
+          "Ultra-wideband multi-element integrated probe — covers all ages and body types without probe switching",
+          "One-button acquisition with probe status light; streamlined, slip-resistant, fully sealed design for easy disinfection",
+          "Smart trend analysis with batch data export — supports disease tracking, treatment evaluation, and research",
+        ],
+      },
+      {
+        title: "System Design & User Experience",
+        items: [
+          "Full touch-screen tablet interface; built-in battery for mobile and outreach applications",
+          "Barcode patient ID input; flexible adjustable panel and excellent cable management",
+          "Dual-probe sockets for fast switching; optional ultrasound for ascites, biopsy guidance, portal hemodynamics, and liver morphology",
+        ],
+      },
+      {
+        title: "Guidelines & Clinical Validation",
+        items: [
+          "Recommended by AASLD, EASL, APASL, CMA, WFUMB, and other global liver disease guidelines",
+          "Clinical validation at leading centres including Beijing Ditan Hospital, Shanghai Ruijin Hospital, and Shenzhen Third People's Hospital",
+        ],
+      },
+    ],
   },
   mini800: {
     tagline: "Compact, simple, fast — cost-effective solution for liver diagnosis",
@@ -393,6 +651,288 @@ const zh: Record<string, ProductLocaleFields> = {
         title: "法規與安全標準",
         items: [
           "美國 FDA 510(k) 及 CE 認證",
+        ],
+      },
+    ],
+  },
+  "consona-n6": {
+    tagline: "Concrete to Resonate — 入門級診斷超聲波系統",
+    description:
+      "MINDRAY Consona N6 為 Consona 系列入門型診斷超聲波系統，搭載 ZST+ 超聲平台及 ComboWave 探頭，提供卓越影像品質及廣泛臨床應用覆蓋 — 結合綜合臨床解決方案、智能測量工具及人體工學設計，支援醫院、診所及基層醫療的可靠超聲診斷。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "臨床應用",
+        items: [
+          "廣泛臨床應用覆蓋，支援多種患者類型及臨床場景",
+          "提供具體可靠的診斷方案 — 適合醫院、診所及技能提升培訓",
+          "強大工具支援日常及進階檢查，助臨床人員保持領先",
+        ],
+      },
+      {
+        title: "ZST+ 超聲平台",
+        items: [
+          "ZST+ 平台將超聲指標從傳統波束合成提升至通道數據處理",
+          "提供卓越影像品質，平台持續優化升級",
+          "ComboWave 探頭提升成像靈敏度，覆蓋更廣臨床應用",
+        ],
+      },
+      {
+        title: "先進成像技術",
+        items: [
+          "PSH、Glazing Flow、NTE、iClear、HR Flow 及 iBeam 技術",
+          "HD-Scope 及 UWN+ 造影成像，提升診斷信心",
+          "即時動態影像優化，影像更清晰易判讀",
+        ],
+      },
+      {
+        title: "綜合臨床解決方案",
+        items: [
+          "General Imaging Solution — 智能工具支援流暢日常診斷",
+          "Cardiovascular Solution — 有效心血管評估及專用工具",
+          "Women's Health Solution — 提升效率及患者滿意度",
+        ],
+      },
+      {
+        title: "智能測量工具",
+        items: [
+          "Smart HRI — 自動計算肝脂肪變性指數（HRI）",
+          "Smart Bladder — 自動膀胱容量測量",
+          "Smart Calc — 自動描記、測量及計算",
+          "RIMT — 基於 RF 數據的即時 IMT 測量",
+          "AutoEF — 依舒張/收縮幀自動計算射血分數",
+          "TDI — 基於都卜勒理論顯示心肌運動",
+          "Smart Face — 一鍵自動去除胎兒面部遮擋",
+          "Glazing Flow — 改善胎兒血流 3D 呈現",
+          "Smart OB — 自動測量胎兒生物測量參數",
+          "iTouch+ 配合 HD Scope 及 NTE — 提升 ROI 解析度及 Shell 定量硬度評估",
+        ],
+      },
+      {
+        title: "工作流程及學習工具",
+        items: [
+          "iScanHelper — 逐步掃描引導，助操作者練習及提升技能",
+          "Smart Vue — 自動識別及還原標準切面",
+          "iWorks — 標準化逐步掃描協議，避免切面遺漏",
+        ],
+      },
+      {
+        title: "人體工學設計及系統配置",
+        items: [
+          "21.5 吋全高清顯示器及 13.3 吋全高清觸控屏",
+          "可旋轉控制面板，顯示器視角可調",
+          "高度可調、整合收納空間及易於搬運設計",
+          "降噪設計，防水防塵面板及內建電池",
+        ],
+      },
+    ],
+  },
+  "consona-n7": {
+    tagline: "Concrete to Resonate — 中階診斷超聲波系統",
+    description:
+      "MINDRAY Consona N7 為 Consona 系列中階診斷超聲波系統，搭載 ZST+ 超聲平台及 ComboWave 探頭，提供卓越影像品質及更廣泛臨床覆蓋 — 結合 Smart Scene 3D 全棧智能婦產解決方案、綜合臨床工具及人體工學設計，滿足醫院及診所的中高階超聲診斷需求。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "臨床應用",
+        items: [
+          "廣泛臨床應用覆蓋，支援多種患者類型及臨床場景",
+          "提供具體可靠的診斷方案 — 適合醫院、診所及技能提升培訓",
+          "強大工具支援日常及進階檢查，助臨床人員保持領先",
+        ],
+      },
+      {
+        title: "ZST+ 超聲平台",
+        items: [
+          "ZST+ 平台將超聲指標從傳統波束合成提升至通道數據處理",
+          "提供卓越影像品質，平台持續優化升級",
+          "ComboWave 探頭提升成像靈敏度，覆蓋更廣臨床應用",
+        ],
+      },
+      {
+        title: "先進成像技術",
+        items: [
+          "PSH、NTE、iClear、HR Flow 及 iBeam 技術",
+          "HD Scope 提升 ROI 解析度，影像更清晰易判讀",
+          "iTouch+ 即時動態影像優化",
+        ],
+      },
+      {
+        title: "綜合臨床解決方案",
+        items: [
+          "General Imaging Solution — 智能工具支援流暢日常診斷",
+          "Cardiovascular Solution — 有效心血管評估及專用工具",
+          "Women's Health Solution — 基於 Smart Scene 3D 的全棧智能方案",
+          "ZST+ 賦能的全棧智能婦產解決方案",
+        ],
+      },
+      {
+        title: "智能測量工具",
+        items: [
+          "Smart HRI — 快速簡便的肝脂肪變性指數（HRI）評估",
+          "Smart Calc — 自動描記、測量及計算",
+          "RIMT — 基於 RF 數據的即時 IMT 測量",
+          "AutoEF — 依舒張/收縮幀自動計算射血分數",
+          "TTQA — 心肌同步化定量分析評估",
+          "NTE 配合 Shell — ROI 定量硬度評估",
+          "Smart Face — 一鍵自動去除胎兒面部遮擋",
+          "Smart FLC 2D/3D — 自動卵泡計數及測量",
+          "Smart OB — 自動測量胎兒生物測量參數",
+          "Smart Fetal HR、Smart Planes CNS — 胎兒心臟及腦部標準切面分析",
+          "Smart Scene 3D — 創新呈現胎兒面部、脊柱及長骨",
+        ],
+      },
+      {
+        title: "工作流程及學習工具",
+        items: [
+          "iScanHelper — 逐步掃描引導，助操作者練習及提升技能",
+          "Smart Vue — 自動識別及還原標準切面",
+          "iWorks — 標準化逐步掃描協議，避免切面遺漏",
+        ],
+      },
+      {
+        title: "人體工學設計及系統配置",
+        items: [
+          "21.5 吋全高清顯示器配合升降臂及 13.3 吋全高清觸控屏",
+          "可旋轉控制面板，高度可調及整合收納空間",
+          "易於搬運設計及降噪運行",
+          "防水防塵面板及內建電池",
+        ],
+      },
+    ],
+  },
+  "consona-n9": {
+    tagline: "Concrete to Resonate — 旗艦診斷超聲波系統",
+    description:
+      "MINDRAY Consona N9 為 Consona 系列旗艦診斷超聲波系統，搭載 ZST+ 超聲平台、Single-Crystal 及 ComboWave 探頭，提供頂級影像品質及最廣泛臨床覆蓋 — 結合 Smart Scene 3D 全棧智能方案、STE/STQ 彈性成像、AI 輔助測量工具及雙翼浮動臂人體工學設計，滿足大型醫院及影像中心的高階診斷需求。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "臨床應用",
+        items: [
+          "廣泛臨床應用覆蓋，支援多種患者類型及臨床場景",
+          "提供具體可靠的診斷方案 — 適合醫院、診所及進階影像中心",
+          "強大工具支援日常及專科檢查，助臨床人員保持領先",
+        ],
+      },
+      {
+        title: "ZST+ 超聲平台及探頭",
+        items: [
+          "ZST+ 平台將超聲指標從傳統波束合成提升至通道數據處理",
+          "Single-Crystal 探頭提供更深度穿透及精細細節",
+          "ComboWave 探頭提升成像靈敏度 — 人體工學握持設計",
+        ],
+      },
+      {
+        title: "先進成像技術",
+        items: [
+          "PSH、Glazing Flow、NTE、iClear、HR Flow、STE/STQ 及 iBeam 技術",
+          "HD-Scope 及 UMW+ 造影成像，提升診斷信心",
+          "Fetus 3D with iLive 及 iTouch+ 即時動態影像優化",
+        ],
+      },
+      {
+        title: "綜合臨床解決方案",
+        items: [
+          "General Imaging Solution — 智能工具支援流暢日常診斷",
+          "Cardiovascular Solution — 有效心血管評估及專用工具",
+          "Women's Health Solution — 基於 Smart Scene 3D 的全棧智能方案",
+          "ZST+ 賦能的全棧智能婦產解決方案",
+        ],
+      },
+      {
+        title: "智能測量及 AI 工具",
+        items: [
+          "Smart HRI — 自動識別肝臟及腎皮質並計算亮度比值",
+          "Smart Bladder — 自動測量三徑及膀胱容量",
+          "Smart Hip — 自動測量髖關節 α/β 角，支援 Graf 分類",
+          "Smart B-line — 自動快速評估肺水腫",
+          "Smart Calc — 自動描記、測量及計算",
+          "Smart Breast 及 Smart Thyroid — BI-RADS 及 TI-RADS 分析，高效工作流程",
+          "RIMT、AutoEF、TTQA 及 R-VQS — 血管硬度係數及脈搏波速度（PWV）",
+          "Smart Face、Smart FLC 2D/3D、Smart OB、Smart Fetal HR、Smart Planes CNS 及 Smart Scene 3D",
+        ],
+      },
+      {
+        title: "工作流程及學習工具",
+        items: [
+          "iScanHelper — 逐步掃描引導，助操作者練習及提升技能",
+          "Smart Vue — 自動識別及還原標準切面",
+          "iWorks — 標準化逐步掃描協議，避免切面遺漏",
+        ],
+      },
+      {
+        title: "人體工學設計及系統配置",
+        items: [
+          "最高 23.8 吋全高清顯示器配合雙翼浮動臂及最高 15.6 吋觸控屏",
+          "可旋轉控制面板，高度可調及整合收納空間",
+          "易於搬運設計及降噪運行",
+          "防水防塵面板及內建電池",
+        ],
+      },
+    ],
+  },
+  "hepatus-5": {
+    tagline: "非侵入性定量肝纖維化及脂肪肝分析",
+    description:
+      "MINDRAY Hepatus 系列為專業非侵入性肝臟疾病診斷系統，透過瞬時彈性成像及 LiSA 技術提供肝硬度（E/kPa）及脂肪肝定量評估。結合 Advanced ViTE 視覺化引導、Q-Scan 智能採集及內建質控指標，支援肝纖維化及脂肪肝的早期篩查、診斷、監測及治療評估。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "臨床應用",
+        items: [
+          "適用於肝纖維化及脂肪肝的篩查、診斷、監測及治療評估 — 尤其早期可逆階段",
+          "涵蓋非酒精性脂肪肝、酒精性肝病、慢性乙型/丙型肝炎、藥物性肝損傷、自體免疫性肝病及膽道疾病",
+          "非侵入性替代肝活檢 — 降低活檢風險；操作簡便、快速、安全、經濟，易於患者隨訪",
+          "對早期肝纖維化及脂肪肝具高靈敏度及準確度，有助在演變為肝硬化或肝癌前介入",
+        ],
+      },
+      {
+        title: "定量測量",
+        items: [
+          "瞬時彈性成像定量測量肝硬度（E/kPa）及肝纖維化分期（F0–F4）",
+          "LiSA（Liver Ultra-Sound Attenuation）技術定量評估脂肪肝程度",
+          "對輕中度肝纖維化及早期脂肪肝敏感 — 診斷標準成熟，獲全球指南廣泛推薦",
+          "慢性肝病首選檢查方法之一",
+        ],
+      },
+      {
+        title: "Advanced ViTE 技術",
+        items: [
+          "Advanced ViTE（Visualized Transient Elastography）配合即時二維超聲引導",
+          "避開血管及病灶，提升測量準確度及可靠性",
+          "大幅降低操作難度，改善定量測量的可重複性",
+        ],
+      },
+      {
+        title: "Q-Scan 及質量控制",
+        items: [
+          "Q-Scan 智能採集 — 一鍵自動連續採集並篩選 10 組有效數據",
+          "定位後約 7 秒內即可獲得有效結果 — 顯著提升檢查效率",
+          "壓力指數（P）及運動穩定性指數（m-STB），以顏色提示輔助質控",
+        ],
+      },
+      {
+        title: "整合探頭及工作流程",
+        items: [
+          "超寬頻多陣元整合探頭 — 涵蓋不同年齡及體型，無需更換探頭",
+          "一鍵採集配合探頭狀態指示燈；流線型防滑全密封設計，易於清潔消毒",
+          "智能趨勢分析支援批量數據導出 — 方便疾病追蹤、治療評估及科研",
+        ],
+      },
+      {
+        title: "系統設計及使用體驗",
+        items: [
+          "全觸控平板介面；內建電池，適合移動及外展應用",
+          "條碼掃描輸入患者資料；面板可靈活調節，線材管理完善",
+          "雙探頭接口快速切換；可選超聲功能支援腹水、穿刺引導、門脈血流及形態評估",
+        ],
+      },
+      {
+        title: "指南認可及臨床驗證",
+        items: [
+          "獲 AASLD、EASL、APASL、CMA、WFUMB 等全球肝病指南推薦",
+          "於北京地壇醫院、上海瑞金醫院、深圳第三人民醫院等中心完成臨床驗證",
         ],
       },
     ],

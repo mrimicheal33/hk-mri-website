@@ -20,12 +20,15 @@ export function ProductImage({
   className = "object-contain object-center",
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px",
 }: ProductImageProps) {
+  const src = getProductImage(productId);
+
   return (
     <Image
-      src={getProductImage(productId)}
+      src={src}
       alt={alt}
       fill
       priority={priority}
+      unoptimized={src.includes("-card.png")}
       className={className}
       sizes={sizes}
     />

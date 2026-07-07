@@ -27,7 +27,11 @@ export function ProductCard({ product, showBrand = true }: ProductCardProps) {
       href={href}
       className="group flex flex-col bg-white border border-border hover:border-brand/40 transition-colors h-full min-w-0"
     >
-      <div className="relative w-full aspect-[4/3] bg-surface-muted overflow-hidden shrink-0">
+      <div
+        className={`relative w-full aspect-[4/3] overflow-hidden shrink-0 ${
+          product.image?.includes("-card.png") ? "bg-white" : "bg-surface-muted"
+        }`}
+      >
         <ProductImage
           productId={product.id}
           alt={`${product.brand} ${product.name}`}

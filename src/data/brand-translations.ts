@@ -11,7 +11,7 @@ const en: Record<
   },
   mindray: {
     description:
-      "World-leading medical device supplier covering ultrasound, radiography, and liver fibrosis assessment.",
+      "As a world-leading medical device supplier specializing in ultrasound, radiography, and liver fibrosis assessment, Mindray believes it is time for the healthcare industry to respect every life and prioritize patient care.",
   },
   "united-imaging": {
     description:

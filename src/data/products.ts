@@ -4,6 +4,7 @@ import { getDictionary } from "@/i18n/get-dictionary";
 export type ProductCategory =
   | "ultrasound"
   | "radiography"
+  | "liver-fibrosis"
   | "mri"
   | "ct"
   | "mammography"
@@ -96,6 +97,7 @@ export const brands: Brand[] = [
 export const categoryLabels: Record<ProductCategory, string> = {
   ultrasound: "超聲波系統",
   radiography: "放射影像",
+  "liver-fibrosis": "肝纖維化掃描儀",
   mri: "磁共振 (MRI)",
   ct: "電腦斷層 (CT)",
   mammography: "乳腺攝影",
@@ -103,6 +105,19 @@ export const categoryLabels: Record<ProductCategory, string> = {
   diagnostic: "診斷檢測",
   veterinary: "獸醫影像",
 };
+
+/** Preferred section order on brand pages (e.g. MINDRAY). */
+export const categoryDisplayOrder: ProductCategory[] = [
+  "liver-fibrosis",
+  "ultrasound",
+  "radiography",
+  "diagnostic",
+  "mri",
+  "ct",
+  "mammography",
+  "pet-ct",
+  "veterinary",
+];
 
 export const products: Product[] = [
   // CHISON - Hero Product
@@ -122,37 +137,65 @@ export const products: Product[] = [
     image: "/images/products/sonoeye-hero.png",
     brochure: "/brochures/sonoeye-brochure.pdf",
   },
+  // MINDRAY - Liver Fibrosis Scanner
+  {
+    id: "hepatus-5",
+    name: "Hepatus Series",
+    nameEn: "Hepatus 5 & Hepatus 6 Diagnostic System",
+    brand: "MINDRAY",
+    brandSlug: "mindray",
+    category: "liver-fibrosis",
+    tagline: "非侵入性定量肝纖維化及脂肪肝分析",
+    description:
+      "MINDRAY Hepatus Series 為專業非侵入性肝臟疾病診斷系統，提供肝纖維化及脂肪肝的定量評估 — 結合 ViTE 視覺化瞬時彈性成像、LiSA 超聲衰減技術、Q-Scan 智能採集及質控指標，適用於慢性肝病的早期篩查、診斷、監測及治療評估。",
+    highlights: [],
+    featured: true,
+    image: "/images/products/hepatus-card.png?v=4",
+    brochure: "/brochures/hepatus-5-brochure.pdf",
+  },
   // MINDRAY - Ultrasound
   {
     id: "consona-n6",
     name: "Consona N6",
+    nameEn: "MINDRAY Consona N6 Diagnostic Ultrasound System",
     brand: "MINDRAY",
     brandSlug: "mindray",
     category: "ultrasound",
-    tagline: "入門級診斷超聲波系統",
-    description: "MINDRAY Consona 系列入門型號，提供可靠的基礎超聲波診斷功能。",
-    highlights: ["高性價比", "穩定可靠", "適合基層診所"],
+    tagline: "Concrete to Resonate — 入門級診斷超聲波系統",
+    description:
+      "MINDRAY Consona N6 為 Consona 系列入門型診斷超聲波系統，搭載 ZST+ 超聲平台及 ComboWave 探頭，提供卓越影像品質及廣泛臨床應用覆蓋 — 結合綜合臨床解決方案、智能測量工具及人體工學設計，支援醫院、診所及基層醫療的可靠超聲診斷。",
+    highlights: [],
+    image: "/images/products/consona-n6-card.png?v=2",
+    brochure: "/brochures/consona-n6-brochure.pdf",
   },
   {
     id: "consona-n7",
     name: "Consona N7",
+    nameEn: "MINDRAY Consona N7 Diagnostic Ultrasound System",
     brand: "MINDRAY",
     brandSlug: "mindray",
     category: "ultrasound",
-    tagline: "中階診斷超聲波系統",
-    description: "功能更豐富的中階 Consona 型號，滿足更多臨床應用需求。",
-    highlights: ["進階成像技術", "多探頭支援", "臨床應用廣泛"],
+    tagline: "Concrete to Resonate — 中階診斷超聲波系統",
+    description:
+      "MINDRAY Consona N7 為 Consona 系列中階診斷超聲波系統，搭載 ZST+ 超聲平台及 ComboWave 探頭，提供卓越影像品質及更廣泛臨床覆蓋 — 結合 Smart Scene 3D 全棧智能婦產解決方案、綜合臨床工具及人體工學設計，滿足醫院及診所的中高階超聲診斷需求。",
+    highlights: [],
+    image: "/images/products/consona-n7-card.png?v=2",
+    brochure: "/brochures/consona-n7-brochure.pdf",
   },
   {
     id: "consona-n9",
     name: "Consona N9",
+    nameEn: "MINDRAY Consona N9 Diagnostic Ultrasound System",
     brand: "MINDRAY",
     brandSlug: "mindray",
     category: "ultrasound",
-    tagline: "旗艦診斷超聲波系統",
-    description: "Consona 系列旗艦型號，配備最先進的超聲波成像技術與 AI 輔助功能。",
-    highlights: ["旗艦級成像", "AI 智能輔助", "全面臨床覆蓋"],
+    tagline: "Concrete to Resonate — 旗艦診斷超聲波系統",
+    description:
+      "MINDRAY Consona N9 為 Consona 系列旗艦診斷超聲波系統，搭載 ZST+ 超聲平台、Single-Crystal 及 ComboWave 探頭，提供頂級影像品質及最廣泛臨床覆蓋 — 結合 Smart Scene 3D 全棧智能方案、STE/STQ 彈性成像、AI 輔助測量工具及雙翼浮動臂人體工學設計，滿足大型醫院及影像中心的高階診斷需求。",
+    highlights: [],
     featured: true,
+    image: "/images/products/consona-n9-card.png?v=1",
+    brochure: "/brochures/consona-n9-brochure.pdf",
   },
   // MINDRAY - Radiography
   {
@@ -184,19 +227,6 @@ export const products: Product[] = [
     tagline: "高端數位放射攝影系統",
     description: "DigiEye 680 系列旗艦 DR 系統，適合大型醫院及影像中心。",
     highlights: ["旗艦 DR 性能", "大面積探測器", "醫院級應用"],
-    featured: true,
-  },
-  // MINDRAY - Liver Fibrosis
-  {
-    id: "hepatus-5",
-    name: "Hepatus 5",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "ultrasound",
-    tagline: "肝纖維化及脂肪肝掃描儀",
-    description:
-      "非侵入性肝纖維化及脂肪肝定量檢測系統，提供肝硬度 (LSM) 及脂肪變性 (CAP) 測量。",
-    highlights: ["非侵入性檢測", "肝硬度定量", "脂肪肝評估", "即時結果"],
     featured: true,
   },
   // HISKY - Liver Fibrosis

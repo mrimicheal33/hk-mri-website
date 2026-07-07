@@ -22,7 +22,7 @@ export function Hepatus5PortfolioImage({
     <div className={`${PORTFOLIO_IMAGE_SHELL_CLASS} ${className}`}>
       <div className="relative min-h-0 flex-1 overflow-hidden">
         <Image
-          src="/images/products/hepatus-card.png?v=1"
+          src="/images/products/hepatus-card.png?v=4"
           alt="MINDRAY Hepatus 5"
           fill
           unoptimized

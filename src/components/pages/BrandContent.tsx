@@ -10,6 +10,7 @@ import { ProductCard } from "@/components/products/ProductCard";
 import {
   products,
   getCategoryLabel,
+  categoryDisplayOrder,
   type ProductCategory,
   type Brand,
 } from "@/data/products";
@@ -30,9 +31,8 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
   const hideBrandName = brandSlug === "chison";
 
   const brandProducts = products.filter((p) => p.brandSlug === brandSlug);
-  const categories = [
-    ...new Set(brandProducts.map((p) => p.category)),
-  ] as ProductCategory[];
+  const categorySet = new Set(brandProducts.map((p) => p.category));
+  const categories = categoryDisplayOrder.filter((cat) => categorySet.has(cat));
 
   return (
     <div>
@@ -71,11 +71,17 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
         {categories.map((cat) => {
           const catProducts = brandProducts.filter((p) => p.category === cat);
           const catLabel = getCategoryLabel(cat, locale);
+          const sectionTitle =
+            brandSlug === "mindray" && cat === "liver-fibrosis"
+              ? `${brand.name} — ${t.brand.mindrayHepatusSeries}`
+              : hideBrandName
+                ? catLabel
+                : `${brand.name} — ${catLabel}`;
           return (
             <div key={cat} className="mb-16 last:mb-0">
               <SectionHeading
                 label={catLabel}
-                title={hideBrandName ? catLabel : `${brand.name} — ${catLabel}`}
+                title={sectionTitle}
                 align="left"
               />
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
