@@ -1,5 +1,6 @@
 import type { Locale } from "@/i18n/config";
 import type { Product, ProductVideo } from "./products";
+import { HEPATUS_OPERATION_VIDEO_SRC } from "./products";
 
 export interface ProductFeatureGroup {
   title: string;
@@ -2515,7 +2516,7 @@ const zh: Record<string, ProductLocaleFields> = {
         ],
       },
     ],
-    videos: [{ title: "操作影片", src: "/videos/hepatus-operation-video.mp4" }],
+    videos: [{ title: "操作影片", src: HEPATUS_OPERATION_VIDEO_SRC }],
   },
   vet1120: {
     tagline: "獸醫移動式數位 C-arm 系統",

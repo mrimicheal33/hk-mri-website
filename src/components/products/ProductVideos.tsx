@@ -38,7 +38,9 @@ export function ProductVideos({ videos, label, className = "" }: ProductVideosPr
                   playsInline
                   preload="metadata"
                   className="absolute inset-0 h-full w-full bg-black object-contain"
-                />
+                >
+                  <source src={video.src} type="video/mp4" />
+                </video>
               ) : (
                 <iframe
                   src={getEmbedSrc(video)}

@@ -19,6 +19,10 @@ export interface ProductVideo {
   start?: number;
 }
 
+/** GitHub LFS media URL — Vercel serves LFS pointer files unless Git LFS is enabled in project settings. */
+export const HEPATUS_OPERATION_VIDEO_SRC =
+  "https://media.githubusercontent.com/media/mrimicheal33/hk-mri-website/main/public/videos/hepatus-operation-video.mp4";
+
 export interface Product {
   id: string;
   name: string;
@@ -169,7 +173,7 @@ export const products: Product[] = [
     featured: true,
     image: "/images/products/hepatus-card.png?v=4",
     brochure: "/brochures/hepatus-5-brochure.pdf",
-    videos: [{ title: "Operation video", src: "/videos/hepatus-operation-video.mp4" }],
+    videos: [{ title: "Operation video", src: HEPATUS_OPERATION_VIDEO_SRC }],
   },
   // MINDRAY - Ultrasound
   {
