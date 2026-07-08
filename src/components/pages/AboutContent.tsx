@@ -1,12 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Building2, Users, Globe, Award } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 import { company } from "@/data/company";
-import { brands } from "@/data/products";
+import { brands, getBrandHref } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 const valueIcons = [Award, Users, Globe, Building2];
@@ -78,15 +80,23 @@ export function AboutContent() {
               <p className="text-sm text-text-secondary mb-4">
                 {t.company.subsidiaryRole}
               </p>
-              <div className="flex flex-wrap gap-2">
-                {brands.map((b) => (
-                    <span
-                      key={b.slug}
-                      className="text-xs bg-white border border-border px-3 py-1 text-text-secondary"
-                    >
-                      {b.name}
-                    </span>
-                  ))}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {brands.map((brand) => (
+                  <Link
+                    key={brand.slug}
+                    href={getBrandHref(brand)}
+                    className="flex items-center justify-center bg-white border border-border px-4 py-5 min-h-[72px] hover:border-brand/30 transition-colors"
+                    title={brand.name}
+                  >
+                    <BrandLogo
+                      src={brand.logo}
+                      alt={brand.name}
+                      align="center"
+                      size="uniform"
+                      className="w-full"
+                    />
+                  </Link>
+                ))}
               </div>
             </div>
           </div>

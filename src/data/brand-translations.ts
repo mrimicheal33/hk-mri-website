@@ -15,7 +15,7 @@ const en: Record<
   },
   "united-imaging": {
     description:
-      "Premium medical imaging manufacturer offering MRI, CT, DR, mammography, and PET-CT systems.",
+      "United Imaging is dedicated to providing, developing and producing high-performance advanced medical imaging, radiotherapy equipment, life science instruments and offers intelligent digital solutions to customers worldwide.",
   },
   perlove: {
     description: "Specialist in veterinary imaging with mobile digital C-arm systems.",

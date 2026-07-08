@@ -12,6 +12,12 @@ export type ProductCategory =
   | "diagnostic"
   | "veterinary";
 
+export interface ProductVideo {
+  youtubeId: string;
+  title: string;
+  start?: number;
+}
+
 export interface Product {
   id: string;
   name: string;
@@ -24,6 +30,7 @@ export interface Product {
   highlights: string[];
   brochure?: string;
   image?: string;
+  videos?: ProductVideo[];
   featured?: boolean;
   hero?: boolean;
 }
@@ -80,7 +87,8 @@ export const brands: Brand[] = [
     name: "UNITED IMAGING",
     nameEn: "United Imaging Healthcare",
     logo: "/images/brands/united-imaging.png",
-    description: "高端醫學影像設備製造商，提供 MRI、CT、DR、乳腺及 PET-CT 全系統解決方案。",
+    description:
+      "UNITED IMAGING 致力於為全球客戶提供、研發及生產高性能先進醫學影像、放射治療設備、生命科學儀器，並提供智能數位化解決方案。",
     color: "#0f4c5c",
   },
   {
@@ -98,10 +106,10 @@ export const categoryLabels: Record<ProductCategory, string> = {
   ultrasound: "超聲波系統",
   radiography: "放射影像",
   "liver-fibrosis": "肝纖維化掃描儀",
-  mri: "磁共振 (MRI)",
-  ct: "電腦斷層 (CT)",
+  mri: "MRI（磁共振成像）",
+  ct: "CT（電腦斷層掃描）",
   mammography: "乳腺攝影",
-  "pet-ct": "PET-CT",
+  "pet-ct": "PET-CT（正電子發射斷層–電腦斷層）",
   diagnostic: "診斷檢測",
   veterinary: "獸醫影像",
 };
@@ -136,6 +144,14 @@ export const products: Product[] = [
     hero: true,
     image: "/images/products/sonoeye-hero.png",
     brochure: "/brochures/sonoeye-brochure.pdf",
+    videos: [
+      { youtubeId: "qxoAgtkjUqQ", title: "CHISON SonoEye" },
+      {
+        youtubeId: "pbaLXwrEeXA",
+        title: "SonoEye Live Show",
+        start: 936,
+      },
+    ],
   },
   // MINDRAY - Liver Fibrosis Scanner
   {
@@ -276,91 +292,124 @@ export const products: Product[] = [
   {
     id: "uct-780",
     name: "uCT 780",
+    nameEn: "United Imaging uCT 780 128-Slice CT System",
     brand: "UNITED IMAGING",
     brandSlug: "united-imaging",
     category: "ct",
-    tagline: "高端 128 層 CT 掃描儀",
-    description: "聯影 uCT 780 高端 CT 系統，提供快速、低劑量、高品質的斷層影像。",
-    highlights: ["128 層掃描", "低劑量技術", "快速成像"],
+    tagline: "Precision and Speed — 128 層高端 CT",
+    description:
+      "UNITED IMAGING uCT 780 為 128 層高端 CT 系統 — 以「Precision and Speed」為核心理念，結合 Z-Detector 一體化探測器、70 kV 低劑量成像、uDose 智能劑量調控、0.5 mm 薄層重建及 GWB 加速重建板，為醫院及影像中心提供快速、低劑量、高品質的斷層影像。",
+    highlights: [],
     featured: true,
+    image: "/images/products/uct-780-card.png?v=1",
+    brochure: "/brochures/uct-780-brochure.pdf",
   },
   {
     id: "uct-960",
     name: "uCT 960+",
+    nameEn: "United Imaging uCT 960+ 640-Slice CT System",
     brand: "UNITED IMAGING",
     brandSlug: "united-imaging",
     category: "ct",
-    tagline: "超高端 CT 掃描儀",
-    description: "聯影旗艦 CT 系統，配備最先進的斷層成像技術。",
-    highlights: ["超高端性能", "精準診斷", "寬體探測器"],
+    tagline: "Attainable Intelligence. Simply Masterful. — 640 層超高端 CT",
+    description:
+      "UNITED IMAGING uCT 960+ 為 640 層超高端 CT 旗艦系統 — 以「Attainable Intelligence. Simply Masterful.」為核心理念，結合 16 cm Z 軸探測器覆蓋、320 排 640 層、0.25 秒旋轉速度、82 cm 超寬孔徑及 uAI 智能平台，為醫院及影像中心提供心血管、卒中、腫瘤及創傷等全面臨床解決方案。",
+    highlights: [],
+    featured: true,
+    image: "/images/products/uct-960-card.png?v=1",
+    brochure: "/brochures/uct-960-brochure.pdf",
   },
   // UNITED IMAGING - DR
   {
     id: "udr-596i",
     name: "uDR 596i",
+    nameEn: "United Imaging uDR 596i Digital Radiography System",
     brand: "UNITED IMAGING",
     brandSlug: "united-imaging",
     category: "radiography",
-    tagline: "雙立柱數位放射攝影系統",
-    description: "聯影 uDR 596i 雙立柱 DR 系統，靈活應對多種攝影需求。",
-    highlights: ["雙立柱設計", "靈活定位", "高品質成像"],
+    tagline: "Performance within Reach — 全自動落地式 DR 系統",
+    description:
+      "UNITED IMAGING uDR 596i 為革命性全自動落地式數位放射攝影（DR）系統，配備無線高清平板探測器 — 結合 Genius Detector、智能控制、全自動管球-探測器追蹤及綜合進階臨床應用，提升放射科工作流程效率及影像品質。",
+    highlights: [],
+    image: "/images/products/udr-596i-card.png?v=1",
+    brochure: "/brochures/udr-596i-brochure.pdf",
   },
   // UNITED IMAGING - Mammography
   {
     id: "umammo-890i",
     name: "uMammo 890i",
+    nameEn: "United Imaging uMammo 890i Low-Dose 3D Mammography System",
     brand: "UNITED IMAGING",
     brandSlug: "united-imaging",
     category: "mammography",
-    tagline: "全數位乳腺攝影系統",
-    description: "聯影 uMammo 890i 全數位乳腺 X 光攝影系統，支援 2D/3D 斷層成像。",
-    highlights: ["全數位乳腺攝影", "3D 斷層成像", "低劑量"],
+    tagline: "Pushing the Boundaries of Breast Imaging — 低劑量 3D 乳腺攝影",
+    description:
+      "UNITED IMAGING uMammo 890i 為低劑量 3D 乳腺攝影系統 — 以「Pushing the Boundaries of Breast Imaging」為核心理念，結合 CMOS 3D 成像平台、U-View 2D 智能乳腺攝影技術及可選乳腺診斷工作站，以低劑量實現精細結構的卓越可視化，為女性健康提供細緻關懷。",
+    highlights: [],
     featured: true,
+    image: "/images/products/umammo-890i-card.png?v=1",
+    brochure: "/brochures/umammo-890i-brochure.pdf",
   },
   // UNITED IMAGING - MRI
   {
     id: "umr-670",
     name: "uMR 670",
+    nameEn: "United Imaging uMR 670 1.5T MRI System",
     brand: "UNITED IMAGING",
     brandSlug: "united-imaging",
     category: "mri",
-    tagline: "1.5T 磁共振成像系統",
-    description: "聯影 1.5T MRI 系統，提供高品質磁共振影像，適合綜合醫院部署。",
-    highlights: ["1.5T 超導磁體", "多序列成像", "患者舒適設計"],
+    tagline: "Freedom Experience · Expand MRI — 1.5T 超導寬孔徑 MRI",
+    description:
+      "UNITED IMAGING uMR 670 為 uAIFI 賦能的 1.5T 超導寬孔徑 MRI 系統，以「3T Performance from 1.5T Wide-bore System」為核心理念 — 結合 70 cm 星輝環境寬孔徑磁體、48+ 獨立接收通道 RF 系統、DeepRecon 深度學習重建及 EasySense/EasyScan/EasyPlan 智能工作流，為綜合醫院提供接近 3T 的影像品質與更佳患者體驗。",
+    highlights: [],
     featured: true,
+    image: "/images/products/umr-670-card.png?v=1",
+    brochure: "/brochures/umr-670-brochure.pdf",
   },
   {
     id: "umr-680",
     name: "uMR 680",
+    nameEn: "United Imaging uMR 680 1.5T MRI System",
     brand: "UNITED IMAGING",
     brandSlug: "united-imaging",
     category: "mri",
-    tagline: "1.5T 進階磁共振系統",
-    description: "聯影 uMR 680 進階 1.5T MRI，更強大的成像能力與臨床應用。",
-    highlights: ["進階 1.5T", "快速掃描", "廣泛臨床應用"],
+    tagline: "1.5T Wide Bore with 3.0T-like Performance",
+    description:
+      "UNITED IMAGING uMR 680 為 uAIFI 賦能的進階 1.5T 超導寬孔徑 MRI 系統 — 以「3.0T-like Performance」為核心理念，結合 70 cm 超均勻寬孔徑磁體、45 mT/m 梯度、72+ RF 接收通道、uCS 2.0 超高速重建及 DeepRecon/EasySense/QScan 智能技術，為醫院及影像中心提供接近 3T 的影像品質、工作流程效率及患者舒適度。",
+    highlights: [],
+    image: "/images/products/umr-680-card.png?v=1",
+    brochure: "/brochures/umr-680-brochure.pdf",
   },
   {
     id: "umr-omega",
     name: "uMR OMEGA",
+    nameEn: "United Imaging uMR OMEGA 3T Ultra-Wide Bore MRI System",
     brand: "UNITED IMAGING",
     brandSlug: "united-imaging",
     category: "mri",
-    tagline: "3T 超高場磁共振系統",
-    description: "聯影 3T 超高場 MRI 旗艦系統，提供極致影像解析度。",
-    highlights: ["3T 超高場", "旗艦影像品質", "科研級性能"],
+    tagline: "Think BIG — 全球首款 75 cm 超寬孔徑 3T MRI",
+    description:
+      "UNITED IMAGING uMR OMEGA 為 uAIFI 賦能的 3T 超寬孔徑 MRI 旗艦系統 — 以「Think BIG」為核心理念，結合全球首款 75 cm 超寬孔徑 3T 磁體、310 kg 承重檢查床、3.5 MW 梯度功率放大器、60×60×50 cm 視野及 ACS/DeepRecon/EasySense/QScan 智能技術，為醫院及影像中心提供極致影像解析度、擴展患者准入及高效工作流程。",
+    highlights: [],
     featured: true,
+    image: "/images/products/umr-omega-card.png?v=1",
+    brochure: "/brochures/umr-omega-brochure.pdf",
   },
   // UNITED IMAGING - PET-CT
   {
     id: "umi-vista",
     name: "uMI Vista",
+    nameEn: "United Imaging uMI Vista Digital PET-CT System",
     brand: "UNITED IMAGING",
     brandSlug: "united-imaging",
     category: "pet-ct",
-    tagline: "數位 PET-CT 掃描儀",
-    description: "聯影 uMI Vista 數位 PET-CT 系統，整合功能與解剖影像。",
-    highlights: ["數位 PET 技術", "CT 同機整合", "腫瘤診斷"],
+    tagline: "Clarity. Profound. — 數位 PET-CT 系統",
+    description:
+      "UNITED IMAGING uMI Vista 為數位 PET-CT 系統 — 以「Clarity. Profound.」為核心理念，結合 Integrated-Light-Guide 數位 PET 技術、160 層 CT、300 ps TOF、24 cm 軸向視野及 HYPER DPR 深度學習重建，為腫瘤、神經及心臟等領域提供高品質功能與解剖影像及全面臨床應用。",
+    highlights: [],
     featured: true,
+    image: "/images/products/umi-vista-card.png?v=1",
+    brochure: "/brochures/umi-vista-brochure.pdf",
   },
   // PERLOVE
   {

@@ -11,6 +11,7 @@ import { ProductCTA } from "@/components/products/ProductCTA";
 import { SonoEyeProbeGuide } from "@/components/products/SonoEyeProbeGuide";
 import { ProductCard } from "@/components/products/ProductCard";
 import { ProductImage } from "@/components/products/ProductImage";
+import { ProductVideos } from "@/components/products/ProductVideos";
 import { getCategoryLabel, getBrandBySlug, getBrandHref, getRelatedProducts, type Product } from "@/data/products";
 import { getLocalizedProduct } from "@/data/product-translations";
 import { useDictionary, useLocale } from "@/i18n/LocaleProvider";
@@ -28,6 +29,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
   const related = getRelatedProducts(product);
   const brandIsProductPage = brand?.pageHref === `/products/${product.id}`;
   const pageTitle = product.name;
+  const videos = localized.videos ?? product.videos;
 
   return (
     <div>
@@ -52,6 +54,13 @@ export function ProductDetail({ product }: ProductDetailProps) {
                   {t.common.downloadBrochure}
                 </Button>
               </div>
+            )}
+            {videos && videos.length > 0 && (
+              <ProductVideos
+                videos={videos}
+                label={t.common.productVideos}
+                className="mt-10"
+              />
             )}
           </div>
 

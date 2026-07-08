@@ -115,9 +115,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-4 text-xs text-white/40">
-          <p>
-            &copy; {new Date().getFullYear()} {company.name}
-          </p>
+          <p>{company.copyright}</p>
           <p>{t.company.footerAgent}</p>
         </div>
       </Container>
