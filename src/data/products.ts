@@ -13,8 +13,9 @@ export type ProductCategory =
   | "veterinary";
 
 export interface ProductVideo {
-  youtubeId: string;
   title: string;
+  youtubeId?: string;
+  src?: string;
   start?: number;
 }
 
@@ -168,6 +169,7 @@ export const products: Product[] = [
     featured: true,
     image: "/images/products/hepatus-card.png?v=4",
     brochure: "/brochures/hepatus-5-brochure.pdf",
+    videos: [{ title: "Operation video", src: "/videos/hepatus-operation-video.mp4" }],
   },
   // MINDRAY - Ultrasound
   {

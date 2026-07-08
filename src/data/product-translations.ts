@@ -2515,6 +2515,7 @@ const zh: Record<string, ProductLocaleFields> = {
         ],
       },
     ],
+    videos: [{ title: "操作影片", src: "/videos/hepatus-operation-video.mp4" }],
   },
   vet1120: {
     tagline: "獸醫移動式數位 C-arm 系統",
