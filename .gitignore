@@ -50,4 +50,12 @@ yarn-error.log*
 __pycache__/
 *.pyc
 
+# script extraction artifacts
+scripts/_*/
+scripts/_*
+scripts/pdf-images/
+scripts/*.pdf
+public/images/products/test-*.png
+public/images/products/sonoeye-probes/page-*.png
+
 .vercel
