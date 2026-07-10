@@ -1,4 +1,8 @@
-export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim();
+/** Public GA4 measurement ID — also overridable via NEXT_PUBLIC_GA_MEASUREMENT_ID. */
+const DEFAULT_GA_MEASUREMENT_ID = "G-867HBW7GVS";
+
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || DEFAULT_GA_MEASUREMENT_ID;
 
 export function isGoogleAnalyticsEnabled() {
   return Boolean(GA_MEASUREMENT_ID);
