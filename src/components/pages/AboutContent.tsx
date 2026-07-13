@@ -8,7 +8,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { company } from "@/data/company";
-import { brands, getBrandHref } from "@/data/products";
+import { getBrandHref, getBrandsSorted } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 const valueIcons = [Award, Users, Globe, Building2];
@@ -81,7 +81,7 @@ export function AboutContent() {
                 {t.company.subsidiaryRole}
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                {brands.map((brand) => (
+                {getBrandsSorted().map((brand) => (
                   <Link
                     key={brand.slug}
                     href={getBrandHref(brand)}

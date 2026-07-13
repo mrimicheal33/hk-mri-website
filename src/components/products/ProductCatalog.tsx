@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { brands, products, getBrandHref } from "@/data/products";
+import { brands, products, getBrandHref, getBrandsSorted } from "@/data/products";
 import { getLocalizedBrand } from "@/data/brand-translations";
 import { ProductCard } from "@/components/products/ProductCard";
 import { useDictionary, useLocale } from "@/i18n/LocaleProvider";
@@ -37,7 +37,7 @@ export function ProductCatalog() {
         >
           {t.products.filterAll} ({products.length})
         </button>
-        {brands
+        {getBrandsSorted()
           .filter((brand) => !brand.pageHref)
           .map((brand) => {
           const count = products.filter((p) => p.brandSlug === brand.slug).length;

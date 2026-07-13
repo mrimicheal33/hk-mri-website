@@ -94,7 +94,7 @@ export const en = {
       label: "Our Product Portfolio",
       title: "Advanced Medical Imaging & Diagnostic Solutions",
       description:
-        "Partnering with world-class manufacturers to deliver comprehensive clinical solutions across point-of-care ultrasound, liver care, digital radiography, veterinary imaging, MRI and CT scan.",
+        "Partnering with world-class manufacturers to deliver comprehensive clinical solutions across point-of-care ultrasound, liver care, digital radiography, mammography, veterinary imaging, MRI and CT scan.",
       items: [
         {
           key: "sonoeye",
@@ -150,18 +150,18 @@ export const en = {
           imageCaptionSubtitle: "Vet Mobile Digital C-arm System",
         },
         {
-          key: "vf1",
-          name: "VETOO VF1 Dynamic DR",
-          tagline: "Next-generation veterinary dynamic radiography",
-          brandName: "VETOO",
-          brandLogo: "/images/brands/vetoo.svg",
+          key: "navigator-3000a",
+          name: "Navigator 3000A 3D Tomosynthesis Mammography",
+          tagline: "3rd-generation digital mammography",
+          brandName: "SINO MDT",
+          brandLogo: "/images/brands/sinomdt.svg",
           description:
-            "VETOO VF1 — animal-specific Dynamic DR for intelligent pet imaging. 30 fps dynamic imaging, up to 15-minute fluoroscopy, optional DSA module, 17×17\" flat panel detector, and 32kW generator for esophageal, pulmonary, joint guidance, and interventional applications.",
-          href: "/products/vf1",
-          image: "/images/products/vf1-card.png",
+            "SINO MDT Navigator 3000A (Navigator Star Series) — high-end digital mammography with streamline design, 2D/3D tomosynthesis and 2D+3D combo modes, TIDE low-dose imaging, and AI-assisted analysis. ISO 9001 & ISO 13485 certified; suitable for hospitals and mobile screening vehicles.",
+          href: "/products/navigator-3000a",
+          image: "/images/products/navigator-3000a-card.jpg",
           imageFit: "contain",
-          imageCaptionTitle: "VETOO VF1",
-          imageCaptionSubtitle: "Veterinary Dynamic DR System",
+          imageCaptionTitle: "Navigator 3000A",
+          imageCaptionSubtitle: "3D Tomosynthesis Digital Mammography",
         },
         {
           key: "mri-ct",
@@ -175,6 +175,20 @@ export const en = {
           image: "/images/products/umr-680-hero.png",
           imageCaptionTitle: "MRI & CT Scan Systems",
           imageCaptionSubtitle: "Delivering advanced medical imaging worldwide",
+        },
+        {
+          key: "vf1",
+          name: "VETOO VF1 Dynamic DR",
+          tagline: "Next-generation veterinary dynamic radiography",
+          brandName: "VETOO",
+          brandLogo: "/images/brands/vetoo.svg",
+          description:
+            "VETOO VF1 — animal-specific Dynamic DR for intelligent pet imaging. 30 fps dynamic imaging, up to 15-minute fluoroscopy, optional DSA module, 17×17\" flat panel detector, and 32kW generator for esophageal, pulmonary, joint guidance, and interventional applications.",
+          href: "/products/vf1",
+          image: "/images/products/vf1-card.png",
+          imageFit: "contain",
+          imageCaptionTitle: "VETOO VF1",
+          imageCaptionSubtitle: "Veterinary Dynamic DR System",
         },
       ],
     },
@@ -240,12 +254,12 @@ export const en = {
             "Veterinary imaging specialist — compact mobile digital C-arm systems for surgical fluoroscopy and diagnostics.",
         },
         {
-          slug: "vetoo",
-          name: "VETOO",
-          logo: "/images/brands/vetoo.svg?v=2",
-          image: "/images/products/vf1-card.png",
+          slug: "sinomdt",
+          name: "SINO MDT",
+          logo: "/images/brands/sinomdt.svg",
+          image: "/images/products/navigator-3000a-card.jpg",
           description:
-            "Veterinary Dynamic DR innovator — intelligent pet imaging with high-frame-rate fluoroscopy and flat-panel detection.",
+            "National high-tech breast imaging innovator — 3rd-generation Navigator Series digital mammography with 2D/3D tomosynthesis and AI-assisted analysis.",
         },
         {
           slug: "united-imaging",
@@ -254,6 +268,14 @@ export const en = {
           image: "/images/products/umr-680-hero.png",
           description:
             "Premium MRI and CT systems combining cutting-edge imaging technology with patient-centred design.",
+        },
+        {
+          slug: "vetoo",
+          name: "VETOO",
+          logo: "/images/brands/vetoo.svg?v=2",
+          image: "/images/products/vf1-card.png",
+          description:
+            "Veterinary Dynamic DR innovator — intelligent pet imaging with high-frame-rate fluoroscopy and flat-panel detection.",
         },
       ],
     },
@@ -313,13 +335,13 @@ export const en = {
       "HK MRI Instrument Ltd. is a premier provider of cutting-edge medical devices and advanced diagnostic solutions. As a trusted partner to healthcare institutions worldwide, we are dedicated to delivering innovative technologies that elevate patient care and optimize clinical outcomes.",
     brandsModalitiesTitle: "Our Premium Brands & Modalities",
     brandsModalitiesIntro:
-      "We proudly represent CHISON, HISKY, MINDRAY, UNITED IMAGING, PERLOVE, and VETOO — delivering end-to-end medical imaging and diagnostic solutions from point-of-care ultrasound and liver assessment to digital radiography, mammography, MRI, CT, PET-CT, and veterinary systems, including:",
+      "We proudly represent CHISON, HISKY, MINDRAY, PERLOVE, SINO MDT, UNITED IMAGING, and VETOO — delivering end-to-end medical imaging and diagnostic solutions from point-of-care ultrasound and liver assessment to digital radiography, mammography, MRI, CT, PET-CT, and veterinary systems, including:",
     modalities: [
       "CT (Computed Tomography) — UNITED IMAGING uCT 780 128-slice & uCT 960+ 640-slice CT",
       "Portable Shear-wave Elastography — HISKY iLivTouch Mini800 portable liver fibrosis & fat quantification",
       "Digital Radiography (DR) — MINDRAY DigiEye & MobiEye mobile DR, UNITED IMAGING uDR 596i floor-standing DR",
       "Liver Fibrosis Scanner — MINDRAY Hepatus Series non-invasive liver fibrosis & steatosis assessment",
-      "Mammography — UNITED IMAGING uMammo 890i low-dose 3D digital mammography",
+      "Mammography — SINO MDT Navigator 3000A 3D tomosynthesis digital mammography, UNITED IMAGING uMammo 890i low-dose 3D digital mammography",
       "MRI (Magnetic Resonance Imaging) — UNITED IMAGING uMR 670, 680 & OMEGA wide-bore 1.5T/3T systems",
       "PET-CT (Positron Emission Tomography–Computed Tomography) — UNITED IMAGING uMI Vista digital PET-CT",
       "Ultrasound Systems — CHISON SonoEye handheld & MINDRAY Consona N6/N7/N9 diagnostic ultrasound",

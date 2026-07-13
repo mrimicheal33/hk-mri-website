@@ -914,6 +914,78 @@ const en: Record<string, ProductLocaleFields> = {
       },
     ],
   },
+  "navigator-3000a": {
+    tagline: "Care Your Concern — 3rd-generation 3D tomosynthesis digital mammography",
+    description:
+      "SINO MDT Navigator 3000A (Navigator Star Series) is a 3rd-generation high-end digital mammography system — with elegant streamline design and humanized ergonomics, offering 2D, 3D tomosynthesis, and 2D+3D combo exposure modes, TIDE low-dose imaging, and AI-assisted analysis to deliver higher imaging resolution with reduced radiation dose for breast screening and diagnosis.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "System Overview & Heritage",
+        items: [
+          "3rd Generation Navigator Star Series digital mammography — \"Care Your Concern\"",
+          "SINO Medical-Device Technology — national high-tech enterprise and R&D specialist in breast imaging",
+          "China's first registered digital mammography system (August 2011); national key new product award",
+          "Shenzhen Science and Technology Progress Award; drafting unit of national mammography industry standards",
+          "15+ years of technical accumulation with 1,000+ mammography installations worldwide in 90+ countries",
+          "ISO 9001 and ISO 13485 certified — suitable for hospital and mobile vehicle deployment",
+        ],
+      },
+      {
+        title: "Imaging Modes & Tomosynthesis",
+        items: [
+          "2D, 3D tomosynthesis, and 2D+3D combo exposure modes — reduces radiation dose vs separate acquisitions",
+          "FFDM 2D images, TOMO-synthesized 2D images, and TOMO-synthesized 3D images",
+          "Dual angle range exposure — ±7.5° fast screening mode and ±20° fine diagnosis mode",
+          "Rich image layers lead to clearer lesion shape visualization",
+          "2D biopsy mode, Spot/Mag spot exposure mode for early-stage cancer and microcalcification detection",
+          "Biopsy location exposure mode for targeted interventional guidance",
+          "Higher resolution suitable for breast disease inspection; shortens outpatient scanning and compression time",
+        ],
+      },
+      {
+        title: "TIDE Low-Dose Imaging",
+        items: [
+          "TIDE imaging technology — high resolution with low radiation dose",
+          "T-I-D-E technology reduces dose by up to 55% compared with traditional molybdenum exposure",
+          "Tungsten target tube with high-performance full-field dynamic flat panel detector",
+          "Excellent image post-processing system for clinical diagnostic confidence",
+          "Intelligent automatic exposure control (AEC) — RCC and LCC standard views",
+        ],
+      },
+      {
+        title: "Ergonomic Design & Workflow",
+        items: [
+          "Unique streamline appearance design — elegant and modern clinical aesthetics",
+          "Humanized ergonomic design with one-click positioning for fast experiences",
+          "10.1\" dual-side large touch screen with quick set of customized parameters",
+          "Base display screen and compression paddle display — four-screen synchronization, everything under control",
+          "Rich portfolio of compression paddles with arc streamlined design",
+          "Multi-level intelligent flexible compression system with micro-adjustment knob",
+          "Auxiliary exposure mode — unique side movement up to 20 mm for armpit and hard-to-reach areas",
+        ],
+      },
+      {
+        title: "Advanced Visualization & AI",
+        items: [
+          "Unique pseudo-color innovative technology — visualizes tiny calcifications and clearly shows mass edges",
+          "High-density tissue and surrounding tissue distinguished by color highlighting",
+          "Intelligent analysis of mammography images with auto-generated structured reports",
+          "AI report with lump location, type, BI-RADS grade, and benign/malignant prediction",
+          "Accurate measurement of lesions and calcifications — detection accuracy up to 90%",
+          "Low false positive rate with LMO-CC bit accurate registration",
+        ],
+      },
+      {
+        title: "Connectivity & Cloud Services",
+        items: [
+          "Cloud diagnosis services for remote collaborative review",
+          "AI smart intelligence facilitates remote diagnosis meetings",
+          "Supports integrated breast health workflow from screening to structured reporting",
+        ],
+      },
+    ],
+  },
   "umr-670": {
     tagline: "Freedom Experience · Expand MRI — 1.5T wide-bore MRI",
     description:
@@ -1898,6 +1970,78 @@ const zh: Record<string, ProductLocaleFields> = {
           "人性化人體工學設計 — 舒適、安全、高效、易用",
           "集成機架觸控屏及人體工學扶手，優化檢查期間患者舒適度",
           "精湛工藝 — 精密設計，每個技術細節均經精心調校",
+        ],
+      },
+    ],
+  },
+  "navigator-3000a": {
+    tagline: "Care Your Concern — 第三代 3D 斷層合成數位乳腺攝影",
+    description:
+      "SINO MDT Navigator 3000A（Navigator Star 系列）為第三代高端數位乳腺攝影系統 — 以優雅流線型外觀及人性化設計，配備 2D、3D 斷層合成及 2D+3D 組合曝光模式、TIDE 低劑量成像技術及 AI 智能分析，為乳腺篩查及診斷提供更高解析度影像與更低輻射劑量。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "系統概述與品牌實力",
+        items: [
+          "第三代 Navigator Star 系列數位乳腺攝影 —「Care Your Concern」",
+          "深圳醫療器械科技（SINO MDT）— 國家級高新技術企業，乳腺影像研發領導者",
+          "中國首款註冊數位乳腺攝影系統（2011 年 8 月）；國家重點新產品",
+          "深圳市科技進步獎；國家乳腺攝影行業標準起草單位",
+          "15 年以上技術積累，全球 1,000+ 台乳腺攝影裝機，覆蓋 90 多個國家及地區",
+          "通過 ISO 9001 及 ISO 13485 認證 — 適合醫院及移動體檢車部署",
+        ],
+      },
+      {
+        title: "成像模式與斷層合成",
+        items: [
+          "2D、3D 斷層合成及 2D+3D 組合曝光模式 — 較分開採集降低輻射劑量",
+          "FFDM 2D 影像、TOMO 合成 2D 影像及 TOMO 合成 3D 影像",
+          "雙角度範圍曝光 — ±7.5° 快速篩查模式及 ±20° 精細診斷模式",
+          "豐富影像層次，病灶形狀顯示更清晰",
+          "2D 活檢模式、點片/放大點片曝光模式 — 早期癌變及微鈣化檢出",
+          "活檢定位曝光模式，支援介入導引",
+          "更高解析度，適合乳腺疾病檢查；縮短門診掃描及加壓時間",
+        ],
+      },
+      {
+        title: "TIDE 低劑量成像",
+        items: [
+          "TIDE 成像技術 — 高解析度、低輻射劑量",
+          "T-I-D-E 技術較傳統鉬靶曝光劑量降低最高達 55%",
+          "鎢靶球管配合高性能全視野動態平板探測器",
+          "卓越影像後處理系統，支援臨床診斷信心",
+          "智能自動曝光控制（AEC）— 支援 RCC 及 LCC 標準體位",
+        ],
+      },
+      {
+        title: "人體工學設計與工作流程",
+        items: [
+          "獨特流線型外觀設計 — 優雅現代臨床美學",
+          "人性化人體工學設計，一鍵定位，操作快速便捷",
+          "10.1 吋雙側大尺寸觸控屏，快速設定自訂參數",
+          "機座顯示屏及加壓板顯示屏 — 四屏同步，一切盡在掌握",
+          "豐富加壓板組合，弧形流線型加壓板及檢查床設計",
+          "多級智能柔性加壓系統，配備微調旋鈕",
+          "輔助曝光模式 — 獨特側向移動最高達 20 mm，覆蓋腋下等易漏檢區域",
+        ],
+      },
+      {
+        title: "進階可視化與 AI",
+        items: [
+          "獨特偽彩創新技術 — 可視化微小鈣化，清晰顯示腫塊邊緣",
+          "高密度組織與周圍組織以色彩高亮區分",
+          "乳腺影像智能分析及自動生成結構化報告",
+          "AI 報告含腫塊定位、類型、BI-RADS 分級及良惡性預測",
+          "病灶及鈣化精準測量 — 良惡性檢出準確率最高達 90%",
+          "低假陽性率，LMO-CC 位精準配準",
+        ],
+      },
+      {
+        title: "連接與雲端服務",
+        items: [
+          "雲端診斷服務，支援遠程協作閱片",
+          "AI 智能促進遠程會診",
+          "支援從篩查到結構化報告的整合乳腺健康工作流",
         ],
       },
     ],

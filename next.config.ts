@@ -69,6 +69,11 @@ const nextConfig: NextConfig = {
         destination: "/products/mini800",
         permanent: true,
       },
+      {
+        source: "/brands/sinomdt",
+        destination: "/products/navigator-3000a",
+        permanent: true,
+      },
     ];
   },
 };

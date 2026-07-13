@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SonoEyePortfolioImage } from "@/components/home/SonoEyePortfolioImage";
 import { Mini800PortfolioImage } from "@/components/home/Mini800PortfolioImage";
-import { brands, getBrandHref } from "@/data/products";
+import { getBrandHref, getBrandsSorted } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 export function ProductsContent() {
@@ -83,7 +83,7 @@ export function ProductsContent() {
             {t.products.brandsLabel}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-px bg-border border border-border">
-            {brands.map((brand) => (
+            {getBrandsSorted().map((brand) => (
               <Link
                 key={brand.slug}
                 href={getBrandHref(brand)}

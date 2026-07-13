@@ -106,6 +106,16 @@ export const brands: Brand[] = [
     color: "#0f4c5c",
     pageHref: "/products/vf1",
   },
+  {
+    slug: "sinomdt",
+    name: "SINO MDT",
+    nameEn: "SINO Medical-Device Technology",
+    logo: "/images/brands/sinomdt.svg",
+    description:
+      "國家級高新技術企業，專注乳腺影像及整合乳腺健康解決方案 — 第三代 Navigator 系列數位乳腺攝影系統領先製造商。",
+    color: "#1e5a8a",
+    pageHref: "/products/navigator-3000a",
+  },
 ];
 
 export const categoryLabels: Record<ProductCategory, string> = {
@@ -420,6 +430,22 @@ export const products: Product[] = [
     image: "/images/products/umi-vista-card.png?v=1",
     brochure: "/brochures/umi-vista-brochure.pdf",
   },
+  // SINO MDT - Mammography
+  {
+    id: "navigator-3000a",
+    name: "SINO MDT Navigator 3000A",
+    nameEn: "3D Tomosynthesis Digital Mammography",
+    brand: "SINO MDT",
+    brandSlug: "sinomdt",
+    category: "mammography",
+    tagline: "Care Your Concern — 第三代 3D 斷層合成數位乳腺攝影",
+    description:
+      "SINO MDT Navigator 3000A（Navigator Star 系列）為第三代高端數位乳腺攝影系統 — 以優雅流線型外觀及人性化設計，配備 2D、3D 斷層合成及 2D+3D 組合曝光模式、TIDE 低劑量成像技術及 AI 智能分析，為乳腺篩查及診斷提供高解析度影像與更低輻射劑量。",
+    highlights: [],
+    featured: true,
+    image: "/images/products/navigator-3000a-card.jpg",
+    brochure: "/brochures/navigator-3000a-brochure.pdf",
+  },
   // PERLOVE
   {
     id: "vet1120",
@@ -453,6 +479,11 @@ export const products: Product[] = [
 
 export function getBrandBySlug(slug: string) {
   return brands.find((b) => b.slug === slug);
+}
+
+/** Brands sorted A→Z by display name — use for filters, footers, and selection UIs. */
+export function getBrandsSorted(): Brand[] {
+  return [...brands].sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export function getBrandHref(brand: Brand) {

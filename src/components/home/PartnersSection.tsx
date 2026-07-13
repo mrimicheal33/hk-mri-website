@@ -16,6 +16,7 @@ const PARTNER_LOGO_CONFIG: Record<string, { maxH: number; maxW: number }> = {
   ilivtouch: { maxH: 44, maxW: 180 },
   mindray: { maxH: 38, maxW: 170 },
   perlove: { maxH: 34, maxW: 190 },
+  sinomdt: { maxH: 38, maxW: 160 },
   vetoo: { maxH: 38, maxW: 160 },
   "united-imaging": { maxH: 50, maxW: 230 },
 };

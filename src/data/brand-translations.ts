@@ -28,6 +28,10 @@ const en: Record<
     description:
       "Specialist in veterinary dynamic digital radiography (Dynamic DR) and intelligent pet imaging solutions.",
   },
+  sinomdt: {
+    description:
+      "National high-tech enterprise specialising in breast imaging and integrated breast health solutions — manufacturer of the 3rd-generation Navigator Series digital mammography systems.",
+  },
 };
 
 export function getLocalizedBrand(brand: Brand, locale: Locale): Brand {

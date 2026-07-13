@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { company } from "@/data/company";
-import { brands, getBrandHref } from "@/data/products";
+import { getBrandHref, getBrandsSorted } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
 export function Footer() {
@@ -35,7 +35,7 @@ export function Footer() {
               {t.footer.brands}
             </h3>
             <ul className="space-y-3">
-              {brands.map((brand) => (
+              {getBrandsSorted().map((brand) => (
                 <li key={brand.slug}>
                   <Link
                     href={getBrandHref(brand)}

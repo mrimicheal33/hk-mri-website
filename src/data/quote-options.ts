@@ -59,22 +59,14 @@ export function getQuoteOptionGroups(locale: Locale): QuoteBrandGroup[] {
     groups.set("CHISON", chisonOptions);
   }
 
-  const brandOrder = [
-    "CHISON",
-    "HISKY",
-    "MINDRAY",
-    "PERLOVE",
-    "UNITED IMAGING",
-    "VETOO",
-  ];
-
-  return brandOrder
-    .filter((brand) => groups.has(brand))
+  return [...groups.keys()]
+    .sort((a, b) => a.localeCompare(b))
     .map((brand) => ({
       brand,
-      options: groups.get(brand)!.sort((a, b) =>
-        a.productName.localeCompare(b.productName) ||
-        a.model.localeCompare(b.model)
+      options: groups.get(brand)!.sort(
+        (a, b) =>
+          a.productName.localeCompare(b.productName) ||
+          a.model.localeCompare(b.model),
       ),
     }));
 }

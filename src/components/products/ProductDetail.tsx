@@ -79,7 +79,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
             </div>
 
             <div className="min-w-0">
-              {brand && product.id !== "mini800" && (
+              {brand && !brandIsProductPage && (
                 <Image
                   src={brand.logo}
                   alt={brand.name}
