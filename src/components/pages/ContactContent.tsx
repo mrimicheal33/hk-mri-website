@@ -7,7 +7,9 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { company } from "@/data/company";
-import { useDictionary } from "@/i18n/LocaleProvider";
+import { formatQuoteSelection } from "@/data/quote-options";
+import { ProductQuoteSelector } from "@/components/pages/ProductQuoteSelector";
+import { useDictionary, useLocale } from "@/i18n/LocaleProvider";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -19,7 +21,9 @@ function isFormSubmitSuccess(data: { success?: string; message?: string }) {
 
 export function ContactContent() {
   const t = useDictionary();
+  const locale = useLocale();
   const [status, setStatus] = useState<FormStatus>("idle");
+  const [selectedProducts, setSelectedProducts] = useState<string[]>([]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -32,8 +36,11 @@ export function ContactContent() {
     const email = String(data.get("email") ?? "").trim();
     const phone = String(data.get("phone") ?? "").trim();
     const message = String(data.get("message") ?? "").trim();
-    const productField = form.elements.namedItem("product") as HTMLSelectElement | null;
-    const productLabel = productField?.selectedOptions[0]?.text?.trim() ?? "";
+    const productLabel = formatQuoteSelection(
+      selectedProducts,
+      locale,
+      t.common.other
+    );
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!name || !email || !emailPattern.test(email)) {
@@ -82,6 +89,7 @@ export function ContactContent() {
       }
 
       setStatus("success");
+      setSelectedProducts([]);
       form.reset();
     } catch {
       setStatus("error");
@@ -252,20 +260,11 @@ export function ContactContent() {
                   <label className="block text-sm font-medium text-text-primary mb-2">
                     {t.contact.productLabel}
                   </label>
-                  <select
-                    name="product"
+                  <ProductQuoteSelector
                     disabled={status === "submitting"}
-                    className="w-full px-4 py-3 border border-border focus:border-brand outline-none transition-colors text-sm bg-white disabled:opacity-60"
-                  >
-                    <option value="">{t.common.selectProduct}</option>
-                    <option value="sonoeye">{t.products.interestSonoeye}</option>
-                    <option value="ilivtouch">{t.products.interestIlivtouch}</option>
-                    <option value="mindray">{t.products.interestMindray}</option>
-                    <option value="perlove">{t.products.interestPerlove}</option>
-                    <option value="united-imaging">{t.products.interestUi}</option>
-                    <option value="vetoo">{t.products.interestVetoo}</option>
-                    <option value="other">{t.common.other}</option>
-                  </select>
+                    selectedIds={selectedProducts}
+                    onChange={setSelectedProducts}
+                  />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-text-primary mb-2">

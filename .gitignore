@@ -59,3 +59,4 @@ public/images/products/test-*.png
 public/images/products/sonoeye-probes/page-*.png
 
 .vercel
+.env*

@@ -1,0 +1,8 @@
+node_modules
+.next
+dist
+scripts/_*
+scripts/pdf-images
+scripts/*.pdf
+public/images/products/sonoeye-probes/page-*.png
+public/images/products/test-*.png

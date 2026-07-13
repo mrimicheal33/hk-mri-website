@@ -10,7 +10,8 @@ export type ProductCategory =
   | "mammography"
   | "pet-ct"
   | "diagnostic"
-  | "veterinary";
+  | "veterinary"
+  | "veterinary-carm";
 
 export interface ProductVideo {
   title: string;
@@ -115,8 +116,9 @@ export const categoryLabels: Record<ProductCategory, string> = {
   ct: "CT（電腦斷層掃描）",
   mammography: "乳腺攝影",
   "pet-ct": "PET-CT（正電子發射斷層–電腦斷層）",
-  diagnostic: "診斷檢測",
+  diagnostic: "便攜式剪切波彈性成像",
   veterinary: "獸醫影像",
+  "veterinary-carm": "獸醫移動式數位 C-arm 系統",
 };
 
 /** Preferred section order on brand pages (e.g. MINDRAY). */
@@ -129,6 +131,7 @@ export const categoryDisplayOrder: ProductCategory[] = [
   "ct",
   "mammography",
   "pet-ct",
+  "veterinary-carm",
   "veterinary",
 ];
 
@@ -161,7 +164,7 @@ export const products: Product[] = [
   // MINDRAY - Liver Fibrosis Scanner
   {
     id: "hepatus-5",
-    name: "Hepatus Series",
+    name: "Hepatus 5",
     nameEn: "Hepatus 5 & Hepatus 6 Diagnostic System",
     brand: "MINDRAY",
     brandSlug: "mindray",
@@ -424,7 +427,7 @@ export const products: Product[] = [
     nameEn: "Veterinary Mobile Digital C-arm",
     brand: "PERLOVE",
     brandSlug: "perlove",
-    category: "veterinary",
+    category: "veterinary-carm",
     tagline: "獸醫移動式數位 C-arm 系統",
     description:
       "PERLOVE VET1120 為緊湊型移動式數位 C-arm，提供獸醫骨科、創傷及軟組織手術的即時透視導引 — 結合 5.0 kW 成像功率、整合式工作站及節省空間的設計。",
