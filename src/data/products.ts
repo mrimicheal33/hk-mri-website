@@ -169,6 +169,7 @@ export const products: Product[] = [
         title: "SonoEye Live Show",
         start: 936,
       },
+      { youtubeId: "W2et0Uaa8BQ", title: "SonoEye Operation Guide" },
     ],
   },
   // MINDRAY - Liver Fibrosis Scanner

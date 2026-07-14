@@ -1445,6 +1445,7 @@ const zh: Record<string, ProductLocaleFields> = {
         title: "SonoEye 直播節目",
         start: 936,
       },
+      { youtubeId: "W2et0Uaa8BQ", title: "SonoEye 操作指南" },
     ],
   },
   "digieye-330": {
