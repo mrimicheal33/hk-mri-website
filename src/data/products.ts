@@ -292,6 +292,7 @@ export const products: Product[] = [
     highlights: [],
     brochure: "/brochures/mini800-ilivtouch.pdf",
     featured: true,
+    videos: [{ youtubeId: "zPa64aWNBiw", title: "iLivTouch Mini800" }],
   },
   // MINDRAY - Mobile Radiography
   {

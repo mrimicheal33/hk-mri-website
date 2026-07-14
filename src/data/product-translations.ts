@@ -551,6 +551,7 @@ const en: Record<string, ProductLocaleFields> = {
         ],
       },
     ],
+    videos: [{ youtubeId: "zPa64aWNBiw", title: "iLivTouch Mini800" }],
   },
   "mobieye-700": {
     tagline: "Intelligent mobile DR — insight with power and mobility",
@@ -2379,6 +2380,7 @@ const zh: Record<string, ProductLocaleFields> = {
         ],
       },
     ],
+    videos: [{ youtubeId: "zPa64aWNBiw", title: "iLivTouch Mini800" }],
   },
   "consona-n6": {
     tagline: "Concrete to Resonate — 入門級診斷超聲波系統",
