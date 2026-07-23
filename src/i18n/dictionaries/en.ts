@@ -2,7 +2,7 @@ export const en = {
   metadata: {
     siteTitle: "HK MRI Instrument Ltd. | Medical Device Solutions in Hong Kong",
     siteDescription:
-      "HK MRI Instrument Ltd. — your trusted Hong Kong medical device specialist. CHISON, MINDRAY, and UNITED IMAGING solutions for healthcare institutions.",
+      "HK MRI Instrument Ltd. — your trusted Hong Kong medical device specialist. CHISON, HISKY, UNITED IMAGING, and more solutions for healthcare institutions.",
     aboutTitle: "About Us",
     aboutDescription:
       "HK MRI Instrument Limited — professional medical diagnostics and imaging equipment agent in Hong Kong and Macau.",
@@ -11,7 +11,7 @@ export const en = {
       "Contact HK MRI Instrument Limited for medical equipment quotes or SonoEye demonstrations.",
     productsTitle: "Products",
     productsDescription:
-      "Full range of medical equipment distributed by HK MRI Instrument Limited — CHISON, MINDRAY, UNITED IMAGING, and PERLOVE.",
+      "Full range of medical equipment distributed by HK MRI Instrument Limited — CHISON, HISKY, UNITED IMAGING, SINO MDT, PERLOVE, and VETOO.",
     brandNotFound: "Brand Not Found",
     productNotFound: "Product Not Found",
   },
@@ -74,7 +74,7 @@ export const en = {
     address: "Suite 03, 7/F, Lemmi Centre, No.50 Hoi Yuen Road, Kowloon, Hong Kong",
     subsidiaryRole: "Medical device distribution",
     aboutExtra:
-      "We represent CHISON, MINDRAY, and UNITED IMAGING — delivering ultrasound, MRI, CT, liver fibrosis assessment, and digital radiography solutions across Hong Kong.",
+      "We represent CHISON, HISKY, UNITED IMAGING, SINO MDT, PERLOVE, and VETOO — delivering ultrasound, MRI, CT, liver assessment, mammography, digital radiography, and veterinary imaging solutions across Hong Kong.",
     footerAgent: "Medical Device & Imaging Solutions",
   },
   home: {
@@ -120,20 +120,6 @@ export const en = {
           imageFit: "contain",
           imageCaptionTitle: "iLivTouch Mini800",
           imageCaptionSubtitle: "Portable shear-wave Elastography",
-        },
-        {
-          key: "mindray",
-          name: "Liver Fibrosis Scan, Digital Radiography & Ultrasound",
-          tagline: "Complete diagnostic imaging solutions",
-          brandName: "MINDRAY",
-          brandLogo: "/images/brands/mindray.png",
-          description:
-            "Comprehensive MINDRAY solutions across diagnostic ultrasound systems for general and specialty imaging, Hepatus liver fibrosis scanners with transient elastography for non-invasive liver assessment, and DigiEye digital radiography (DR) platforms — all built to international standards for clinical accuracy, safety, and reliability.",
-          href: "/brands/mindray",
-          image: "/images/products/hepatus-card.png?v=4",
-          imageFit: "contain",
-          imageCaptionTitle: "Hepatus 5",
-          imageCaptionSubtitle: "Non-invasive and quantitative Liver diagnose",
         },
         {
           key: "vet1120",
@@ -238,14 +224,6 @@ export const en = {
             "Non-invasive liver care with quantitative shear-wave elastography for fibrosis, cirrhosis, and steatosis assessment.",
         },
         {
-          slug: "mindray",
-          name: "MINDRAY",
-          logo: "/images/brands/mindray.png",
-          image: "/images/products/hepatus-card.png?v=4",
-          description:
-            "Leading provider of digital radiography, liver fibrosis assessment, and comprehensive imaging solutions.",
-        },
-        {
           slug: "perlove",
           name: "PERLOVE",
           logo: "/images/brands/perlove.png",
@@ -305,7 +283,6 @@ export const en = {
     brandsLabel: "Brands",
     filterAll: "All",
     interestSonoeye: "CHISON SonoEye Handheld Ultrasound",
-    interestMindray: "MINDRAY Products: Liver Fibrosis Scanner, DR, Ultrasound",
     interestUi: "UNITED IMAGING Products: MRI, CT Scan",
     interestPerlove: "PERLOVE Vet Mobile Digital C-arm System",
     interestIlivtouch: "HISKY iLivTouch Mini800 portable shear-wave elastography",
@@ -325,7 +302,6 @@ export const en = {
     productsInterestDesc:
       "Contact our team for detailed specifications and pricing.",
     highlights: "Brand Highlights",
-    mindrayHepatusSeries: "Hepatus Series",
   },
   about: {
     label: "About Us",
@@ -335,16 +311,15 @@ export const en = {
       "HK MRI Instrument Ltd. is a premier provider of cutting-edge medical devices and advanced diagnostic solutions. As a trusted partner to healthcare institutions worldwide, we are dedicated to delivering innovative technologies that elevate patient care and optimize clinical outcomes.",
     brandsModalitiesTitle: "Our Premium Brands & Modalities",
     brandsModalitiesIntro:
-      "We proudly represent CHISON, HISKY, MINDRAY, PERLOVE, SINO MDT, UNITED IMAGING, and VETOO — delivering end-to-end medical imaging and diagnostic solutions from point-of-care ultrasound and liver assessment to digital radiography, mammography, MRI, CT, PET-CT, and veterinary systems, including:",
+      "We proudly represent CHISON, HISKY, PERLOVE, SINO MDT, UNITED IMAGING, and VETOO — delivering end-to-end medical imaging and diagnostic solutions from point-of-care ultrasound and liver assessment to digital radiography, mammography, MRI, CT, PET-CT, and veterinary systems, including:",
     modalities: [
       "CT (Computed Tomography) — UNITED IMAGING uCT 780 128-slice & uCT 960+ 640-slice CT",
       "Portable Shear-wave Elastography — HISKY iLivTouch Mini800 portable liver fibrosis & fat quantification",
-      "Digital Radiography (DR) — MINDRAY DigiEye & MobiEye mobile DR, UNITED IMAGING uDR 596i floor-standing DR",
-      "Liver Fibrosis Scanner — MINDRAY Hepatus Series non-invasive liver fibrosis & steatosis assessment",
+      "Digital Radiography (DR) — UNITED IMAGING uDR 596i floor-standing DR",
       "Mammography — SINO MDT Navigator 3000A 3D tomosynthesis digital mammography, UNITED IMAGING uMammo 890i low-dose 3D digital mammography",
       "MRI (Magnetic Resonance Imaging) — UNITED IMAGING uMR 670, 680 & OMEGA wide-bore 1.5T/3T systems",
       "PET-CT (Positron Emission Tomography–Computed Tomography) — UNITED IMAGING uMI Vista digital PET-CT",
-      "Ultrasound Systems — CHISON SonoEye handheld & MINDRAY Consona N6/N7/N9 diagnostic ultrasound",
+      "Ultrasound Systems — CHISON SonoEye handheld ultrasound",
       "Veterinary Mobile Digital C-arm System — PERLOVE VET1120 mobile digital C-arm",
       "Veterinary Imaging — VETOO VF1 Dynamic DR",
     ],

@@ -71,12 +71,9 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
         {categories.map((cat) => {
           const catProducts = brandProducts.filter((p) => p.category === cat);
           const catLabel = getCategoryLabel(cat, locale);
-          const sectionTitle =
-            brandSlug === "mindray" && cat === "liver-fibrosis"
-              ? `${brand.name} — ${t.brand.mindrayHepatusSeries}`
-              : hideBrandName
-                ? catLabel
-                : `${brand.name} — ${catLabel}`;
+          const sectionTitle = hideBrandName
+            ? catLabel
+            : `${brand.name} — ${catLabel}`;
           return (
             <div key={cat} className="mb-16 last:mb-0">
               <SectionHeading

@@ -20,10 +20,6 @@ export interface ProductVideo {
   start?: number;
 }
 
-/** GitHub LFS media URL — Vercel serves LFS pointer files unless Git LFS is enabled in project settings. */
-export const HEPATUS_OPERATION_VIDEO_SRC =
-  "https://media.githubusercontent.com/media/mrimicheal33/hk-mri-website/main/public/videos/hepatus-operation-video.mp4";
-
 export interface Product {
   id: string;
   name: string;
@@ -70,14 +66,6 @@ export const brands: Brand[] = [
     description: "非侵入性肝纖維化及脂肪肝管理系統，採用振動控制瞬時彈性成像技術。",
     color: "#0097a7",
     pageHref: "/products/mini800",
-  },
-  {
-    slug: "mindray",
-    name: "MINDRAY",
-    nameEn: "MINDRAY Bio-Medical Electronics",
-    logo: "/images/brands/mindray.png",
-    description: "全球領先的醫療設備與解決方案供應商，涵蓋超聲波、放射影像及肝纖維化檢測。",
-    color: "#dc2626",
   },
   {
     slug: "perlove",
@@ -131,7 +119,7 @@ export const categoryLabels: Record<ProductCategory, string> = {
   "veterinary-carm": "獸醫移動式數位 C-arm 系統",
 };
 
-/** Preferred section order on brand pages (e.g. MINDRAY). */
+/** Preferred section order on brand pages. */
 export const categoryDisplayOrder: ProductCategory[] = [
   "liver-fibrosis",
   "ultrasound",
@@ -172,111 +160,6 @@ export const products: Product[] = [
       { youtubeId: "W2et0Uaa8BQ", title: "SonoEye Operation Guide" },
     ],
   },
-  // MINDRAY - Liver Fibrosis Scanner
-  {
-    id: "hepatus-5",
-    name: "Hepatus 5",
-    nameEn: "Hepatus 5 & Hepatus 6 Diagnostic System",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "liver-fibrosis",
-    tagline: "非侵入性定量肝纖維化及脂肪肝分析",
-    description:
-      "MINDRAY Hepatus Series 為專業非侵入性肝臟疾病診斷系統，提供肝纖維化及脂肪肝的定量評估 — 結合 ViTE 視覺化瞬時彈性成像、LiSA 超聲衰減技術、Q-Scan 智能採集及質控指標，適用於慢性肝病的早期篩查、診斷、監測及治療評估。",
-    highlights: [],
-    featured: true,
-    image: "/images/products/hepatus-card.png?v=4",
-    brochure: "/brochures/hepatus-5-brochure.pdf",
-    videos: [{ title: "Operation video", src: HEPATUS_OPERATION_VIDEO_SRC }],
-  },
-  // MINDRAY - Ultrasound
-  {
-    id: "consona-n6",
-    name: "Consona N6",
-    nameEn: "MINDRAY Consona N6 Diagnostic Ultrasound System",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "ultrasound",
-    tagline: "Concrete to Resonate — 入門級診斷超聲波系統",
-    description:
-      "MINDRAY Consona N6 為 Consona 系列入門型診斷超聲波系統，搭載 ZST+ 超聲平台及 ComboWave 探頭，提供卓越影像品質及廣泛臨床應用覆蓋 — 結合綜合臨床解決方案、智能測量工具及人體工學設計，支援醫院、診所及基層醫療的可靠超聲診斷。",
-    highlights: [],
-    image: "/images/products/consona-n6-card.png?v=2",
-    brochure: "/brochures/consona-n6-brochure.pdf",
-  },
-  {
-    id: "consona-n7",
-    name: "Consona N7",
-    nameEn: "MINDRAY Consona N7 Diagnostic Ultrasound System",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "ultrasound",
-    tagline: "Concrete to Resonate — 中階診斷超聲波系統",
-    description:
-      "MINDRAY Consona N7 為 Consona 系列中階診斷超聲波系統，搭載 ZST+ 超聲平台及 ComboWave 探頭，提供卓越影像品質及更廣泛臨床覆蓋 — 結合 Smart Scene 3D 全棧智能婦產解決方案、綜合臨床工具及人體工學設計，滿足醫院及診所的中高階超聲診斷需求。",
-    highlights: [],
-    image: "/images/products/consona-n7-card.png?v=2",
-    brochure: "/brochures/consona-n7-brochure.pdf",
-  },
-  {
-    id: "consona-n9",
-    name: "Consona N9",
-    nameEn: "MINDRAY Consona N9 Diagnostic Ultrasound System",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "ultrasound",
-    tagline: "Concrete to Resonate — 旗艦診斷超聲波系統",
-    description:
-      "MINDRAY Consona N9 為 Consona 系列旗艦診斷超聲波系統，搭載 ZST+ 超聲平台、Single-Crystal 及 ComboWave 探頭，提供頂級影像品質及最廣泛臨床覆蓋 — 結合 Smart Scene 3D 全棧智能方案、STE/STQ 彈性成像、AI 輔助測量工具及雙翼浮動臂人體工學設計，滿足大型醫院及影像中心的高階診斷需求。",
-    highlights: [],
-    featured: true,
-    image: "/images/products/consona-n9-card.png?v=1",
-    brochure: "/brochures/consona-n9-brochure.pdf",
-  },
-  // MINDRAY - Radiography
-  {
-    id: "digieye-330",
-    name: "DigiEye 330",
-    nameEn: "MINDRAY DigiEye 330",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "radiography",
-    image: "/images/products/digieye-330-card.png",
-    tagline: "流線型設計，提升數位放射攝影效率",
-    description:
-      "MINDRAY DigiEye 330 系列為落地式數位放射攝影（DR）系統，以流線型人體工學設計、人性化工作流程及遠程連接功能，滿足多樣化臨床場景的 X 光檢查需求 — 適合基層醫療機構、診斷中心及高周轉放射科使用。",
-    highlights: [],
-    brochure: "/brochures/digieye-330-brochure.pdf",
-  },
-  {
-    id: "digieye-350",
-    name: "DigiEye 350",
-    nameEn: "MINDRAY DigiEye 350",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "radiography",
-    image: "/images/products/digieye-350-card.png",
-    tagline: "新一代落地式 DR — 流暢操作，卓越影像",
-    description:
-      "MINDRAY DigiEye 350 系列為新一代落地式數位放射攝影（DR）系統，融合 Mindray 自主研發的機架、高壓發生器、平板探測器及 DROC 影像算法，提供流暢高效的放射檢查方案 — 配備雙向同步、移動式 FPD、iStitch 自動拼接及人性化觸控工作流程，滿足多樣化臨床場景。",
-    highlights: [],
-    brochure: "/brochures/digieye-350-brochure.pdf",
-  },
-  {
-    id: "digieye-680",
-    name: "DigiEye 680",
-    nameEn: "MINDRAY DigiEye 680",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "radiography",
-    image: "/images/products/digieye-680-card.webp",
-    tagline: "吊架式旗艦 DR — 緊湊佔地，全方位患者關懷",
-    description:
-      "MINDRAY DigiEye 680 系列為吊架式數位放射攝影（DR）系統，緊湊佔地設計適合大型醫院及影像中心 — 配備移動式探測器、Level 後處理軟件、iStitch 全景成像及多種檢查床選項，配合 MiCo+ 遠程連接與 M·Share 共享探測器，提供快速、流暢、高價值的檢查與診斷體驗。",
-    highlights: [],
-    brochure: "/brochures/digieye-680-brochure.pdf",
-    featured: true,
-  },
   // HISKY - Liver Fibrosis
   {
     id: "mini800",
@@ -293,21 +176,6 @@ export const products: Product[] = [
     brochure: "/brochures/mini800-ilivtouch.pdf",
     featured: true,
     videos: [{ youtubeId: "zPa64aWNBiw", title: "iLivTouch Mini800" }],
-  },
-  // MINDRAY - Mobile Radiography
-  {
-    id: "mobieye-700",
-    name: "MobiEye 700",
-    nameEn: "MINDRAY MobiEye 700",
-    brand: "MINDRAY",
-    brandSlug: "mindray",
-    category: "radiography",
-    image: "/images/products/mobieye-700-card.jpg",
-    tagline: "智能移動 DR — 強大動力，靈活機動",
-    description:
-      "MINDRAY MobiEye 700 為新一代移動式數位放射攝影（DR）系統，緊湊輕便、操作便捷 — 配備獨特仿生機械臂、智能速度調控、5G 無線 MPX 探測器及雙模式電源管理，為 ICU、急診及行動不便患者床邊攝影提供卓越影像品質與最大檢查覆蓋範圍。",
-    highlights: [],
-    brochure: "/brochures/mobieye-700-brochure.pdf",
   },
   // UNITED IMAGING - CT
   {

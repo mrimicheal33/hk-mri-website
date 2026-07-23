@@ -12,7 +12,7 @@ export const zh: Dictionary = {
     contactDescription: "聯絡 HK MRI Instrument Limited，索取醫療設備報價或預約 SonoEye 演示。",
     productsTitle: "產品總覽",
     productsDescription:
-      "HK MRI Instrument Limited 代理之全部醫療設備產品，涵蓋 CHISON、MINDRAY、UNITED IMAGING 及 PERLOVE。",
+      "HK MRI Instrument Limited 代理之全部醫療設備產品，涵蓋 CHISON、HISKY、UNITED IMAGING、SINO MDT、PERLOVE 及 VETOO。",
     brandNotFound: "品牌未找到",
     productNotFound: "產品未找到",
   },
@@ -75,7 +75,7 @@ export const zh: Dictionary = {
     address: "香港九龍開源道50號利寶時中心7樓03室",
     subsidiaryRole: "醫療設備代理",
     aboutExtra:
-      "我們代理 CHISON、MINDRAY 及 UNITED IMAGING，提供超聲波、MRI、CT、肝纖維化檢測及數位放射影像解決方案。",
+      "我們代理 CHISON、HISKY、UNITED IMAGING、SINO MDT、PERLOVE 及 VETOO，提供超聲波、MRI、CT、肝臟評估、乳腺攝影、數位放射影像及獸醫影像解決方案。",
     footerAgent: "醫療設備及影像解決方案",
   },
   home: {
@@ -121,20 +121,6 @@ export const zh: Dictionary = {
           imageFit: "contain",
           imageCaptionTitle: "iLivTouch Mini800",
           imageCaptionSubtitle: "便攜式剪切波彈性成像",
-        },
-        {
-          key: "mindray",
-          name: "肝纖維化掃描、數位放射影像及超聲波",
-          tagline: "全面的診斷影像解決方案",
-          brandName: "MINDRAY",
-          brandLogo: "/images/brands/mindray.png",
-          description:
-            "MINDRAY 全面方案涵蓋診斷超聲波系統、Hepatus 肝纖維化掃描儀（瞬時彈性成像技術作非侵入性肝臟評估），以及 DigiEye 數位放射影像（DR）平台 — 均符合國際標準，確保臨床準確性、安全及可靠性。",
-          href: "/brands/mindray",
-          image: "/images/products/hepatus-card.png?v=4",
-          imageFit: "contain",
-          imageCaptionTitle: "Hepatus 5",
-          imageCaptionSubtitle: "非侵入性定量肝臟診斷",
         },
         {
           key: "vet1120",
@@ -238,13 +224,6 @@ export const zh: Dictionary = {
             "非侵入性肝臟護理方案，提供剪切波定量彈性成像，用於肝纖維化、肝硬化及脂肪肝評估。",
         },
         {
-          slug: "mindray",
-          name: "MINDRAY",
-          logo: "/images/brands/mindray.png",
-          image: "/images/products/hepatus-card.png?v=4",
-          description: "數位放射影像、肝纖維化檢測及全面影像解決方案的領先供應商。",
-        },
-        {
           slug: "perlove",
           name: "PERLOVE",
           logo: "/images/brands/perlove.png",
@@ -299,7 +278,6 @@ export const zh: Dictionary = {
     brandsLabel: "Brands",
     filterAll: "全部",
     interestSonoeye: "CHISON SonoEye 手持超聲波",
-    interestMindray: "MINDRAY 產品：肝纖維化掃描儀、DR、超聲波",
     interestUi: "UNITED IMAGING 產品：MRI、CT 掃描",
     interestPerlove: "PERLOVE Vet 移動式數碼 C-arm 系統",
     interestIlivtouch: "HISKY iLivTouch Mini800 便攜式剪切波彈性成像",
@@ -316,7 +294,6 @@ export const zh: Dictionary = {
     productsInterestGeneric: "對以下產品有興趣？",
     productsInterestDesc: "聯絡我們的專業團隊，獲取詳細規格與報價。",
     highlights: "品牌亮點",
-    mindrayHepatusSeries: "Hepatus 系列",
   },
   about: {
     label: "About Us",
@@ -326,16 +303,15 @@ export const zh: Dictionary = {
       "HK MRI Instrument Ltd. 是尖端醫療設備及先進診斷解決方案的優質供應商。作為全球醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素並優化臨床成效。",
     brandsModalitiesTitle: "我們的優質品牌與影像模態",
     brandsModalitiesIntro:
-      "我們代理 CHISON、HISKY、MINDRAY、PERLOVE、SINO MDT、UNITED IMAGING 及 VETOO，提供由床邊超聲波、肝纖維化評估、數位放射影像、乳腺攝影、MRI、CT、PET-CT 至獸醫影像的全線醫學影像及診斷解決方案，涵蓋：",
+      "我們代理 CHISON、HISKY、PERLOVE、SINO MDT、UNITED IMAGING 及 VETOO，提供由床邊超聲波、肝纖維化評估、數位放射影像、乳腺攝影、MRI、CT、PET-CT 至獸醫影像的全線醫學影像及診斷解決方案，涵蓋：",
     modalities: [
       "CT（電腦斷層掃描）— UNITED IMAGING uCT 780 128 層及 uCT 960+ 640 層 CT",
       "便攜式剪切波彈性成像 — HISKY iLivTouch Mini800 便攜式肝纖維化及脂肪定量分析",
-      "數位放射影像 (DR) — MINDRAY DigiEye 及 MobiEye 移動 DR、UNITED IMAGING uDR 596i 落地式 DR",
-      "肝纖維化掃描儀 — MINDRAY Hepatus 系列非侵入性肝纖維化及脂肪肝評估",
+      "數位放射影像 (DR) — UNITED IMAGING uDR 596i 落地式 DR",
       "乳腺攝影 — SINO MDT Navigator 3000A 3D 斷層合成數位乳腺攝影、UNITED IMAGING uMammo 890i 低劑量 3D 數位乳腺攝影",
       "MRI（磁共振成像）— UNITED IMAGING uMR 670、680 及 OMEGA 寬孔徑 1.5T/3T 系統",
       "PET-CT（正電子發射斷層–電腦斷層）— UNITED IMAGING uMI Vista 數位 PET-CT",
-      "超聲波系統 — CHISON SonoEye 手持超聲波及 MINDRAY Consona N6/N7/N9 診斷超聲波",
+      "超聲波系統 — CHISON SonoEye 手持超聲波",
       "獸醫移動式數位 C-arm 系統 — PERLOVE VET1120 移動式數位 C-arm",
       "獸醫影像 — VETOO VF1 Dynamic DR",
     ],

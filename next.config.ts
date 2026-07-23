@@ -31,7 +31,52 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/products/mindray",
-        destination: "/brands/mindray",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/brands/mindray",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/products/hepatus-5",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/products/consona-n6",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/products/consona-n7",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/products/consona-n9",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/products/digieye-330",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/products/digieye-350",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/products/digieye-680",
+        destination: "/products",
+        permanent: true,
+      },
+      {
+        source: "/products/mobieye-700",
+        destination: "/products",
         permanent: true,
       },
       {

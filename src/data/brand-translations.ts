@@ -9,10 +9,6 @@ const en: Record<
     description:
       "Global leader in ultrasound imaging solutions, including the SonoEye handheld ultrasound.",
   },
-  mindray: {
-    description:
-      "As a world-leading medical device supplier specializing in ultrasound, radiography, and liver fibrosis assessment, Mindray believes it is time for the healthcare industry to respect every life and prioritize patient care.",
-  },
   "united-imaging": {
     description:
       "United Imaging is dedicated to providing, developing and producing high-performance advanced medical imaging, radiotherapy equipment, life science instruments and offers intelligent digital solutions to customers worldwide.",

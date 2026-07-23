@@ -42,8 +42,8 @@ export async function generateMetadata(): Promise<Metadata> {
     keywords: [
       "HK MRI",
       "CHISON SonoEye",
-      "MINDRAY",
       "UNITED IMAGING",
+      "HISKY",
       "medical equipment",
       "ultrasound",
       "Hong Kong",

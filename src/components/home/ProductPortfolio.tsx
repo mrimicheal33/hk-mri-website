@@ -8,7 +8,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { BrandLogoSlot } from "@/components/ui/BrandLogo";
 import { SonoEyePortfolioImage } from "@/components/home/SonoEyePortfolioImage";
 import { Mini800PortfolioImage } from "@/components/home/Mini800PortfolioImage";
-import { Hepatus5PortfolioImage } from "@/components/home/Hepatus5PortfolioImage";
 import { Vet1120PortfolioImage } from "@/components/home/Vet1120PortfolioImage";
 import { Vf1PortfolioImage } from "@/components/home/Vf1PortfolioImage";
 import { MriCtPortfolioImage } from "@/components/home/MriCtPortfolioImage";
@@ -32,7 +31,6 @@ export function ProductPortfolio() {
         {t.home.portfolio.items.map((item) => {
           const isSonoEye = item.key === "sonoeye";
           const isMini800 = item.key === "mini800";
-          const isHepatus5 = item.key === "mindray";
           const isVet1120 = item.key === "vet1120";
           const isVf1 = item.key === "vf1";
           const isMriCt = item.key === "mri-ct";
@@ -59,20 +57,6 @@ export function ProductPortfolio() {
                       ? item.imageCaptionSubtitle
                       : undefined) ??
                     "Portable shear-wave Elastography"
-                  }
-                />
-              ) : isHepatus5 ? (
-                <Hepatus5PortfolioImage
-                  className={`${CARD_IMAGE_HEIGHT} mb-6 shrink-0`}
-                  captionTitle={
-                    ("imageCaptionTitle" in item ? item.imageCaptionTitle : undefined) ??
-                    "Hepatus 5"
-                  }
-                  captionSubtitle={
-                    ("imageCaptionSubtitle" in item
-                      ? item.imageCaptionSubtitle
-                      : undefined) ??
-                    "Non-invasive and quantitative Liver diagnose"
                   }
                 />
               ) : isVet1120 ? (
