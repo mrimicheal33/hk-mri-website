@@ -15,10 +15,14 @@ export const zh: Dictionary = {
       "HK MRI Instrument Limited 代理之全部醫療設備產品，涵蓋 CHISON、HISKY、UNITED IMAGING、SINO MDT、PERLOVE 及 VETOO。",
     brandNotFound: "品牌未找到",
     productNotFound: "產品未找到",
+    specialtyNotFound: "專科未找到",
   },
   nav: {
     home: "首頁",
     products: "產品",
+    specialties: "專科",
+    specialtiesSearch: "搜尋專科…",
+    specialtiesEmpty: "沒有符合的專科",
     sonoeye: "SonoEye",
     sonoeyeClinical: "臨床精準方案",
     sonoeyeRoi: "商業回報方案",
@@ -90,6 +94,205 @@ export const zh: Dictionary = {
       backgroundImage: "/images/hero-clinical-facility.png",
       ctaProducts: "瀏覽產品",
       ctaAbout: "關於我們",
+    },
+    specialties: {
+      label: "臨床配對",
+      title: "按專科尋找設備",
+      description:
+        "選擇您的臨床專科，即時查看切合您執業需求的影像及診斷解決方案。",
+      needsLabel: "臨床需求",
+      recommendedLabel: "推薦產品",
+      items: [
+        {
+          id: "physiotherapist",
+          specialty: "物理治療師",
+          needs:
+            "快速評估軟組織、肌腱、肌肉撕裂及關節問題；即時導引乾針治療。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+          ],
+          pitch:
+            "超便攜肌骨床邊超聲波（POCUS），以影像向患者清晰展示治療進度。",
+          cta: "查看物理治療設備",        },
+        {
+          id: "chiropractor",
+          specialty: "脊醫",
+          needs:
+            "在調整計劃中可視化關節炎症、脊柱軟組織及肌肉勞損。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+          ],
+          pitch:
+            "即時高解像度影像，在診室內驗證脊柱及關節半脫位治療效果。",
+          cta: "查看脊醫設備",        },
+        {
+          id: "aesthetician",
+          specialty: "醫美及美容醫生",
+          needs:
+            "填充劑注射前面部血管定位、深度測量、避免血管栓塞，以及透明質酸酶溶解導引。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波（高頻線陣）",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+          ],
+          pitch:
+            "高頻微血管可視化，確保填充劑精準安全放置及併發症應急處理。",
+          cta: "查看醫美超聲波",        },
+        {
+          id: "obgyn",
+          specialty: "婦產科（產科及婦科）",
+          needs:
+            "床邊盆腔檢查、胎心偵測、快速孕齡評估及緊急產科評估。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye（凸陣 / POCUS 探頭）",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "SINO MDT Navigator 3000A 3D 乳腺攝影",
+              brand: "SINO MDT",
+              link: "/products/navigator-3000a",
+            },
+          ],
+          pitch:
+            "手持胎兒及盆腔篩查，配合高精度 3D 斷層合成乳腺健康診斷系統。",
+          cta: "查看女性健康方案",        },
+        {
+          id: "orthopedic",
+          specialty: "骨科醫生",
+          needs:
+            "術中透視導引、高解像度關節／韌帶動態影像、術後植入物核實，以及快速 CT／MRI 掃描。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 肌骨手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "UNITED IMAGING MRI 及 CT 掃描系統",
+              brand: "UNITED IMAGING",
+              link: "/brands/united-imaging",
+            },
+          ],
+          pitch:
+            "由床邊 POCUS 檢查至全身 MRI 診斷，全面涵蓋骨骼、關節及軟組織影像。",
+          cta: "查看骨科系統",
+        },
+        {
+          id: "gp",
+          specialty: "普通科醫生（GP）",
+          needs:
+            "快速床邊分流、基本腹部檢查，以及非侵入性脂肪肝快速篩查。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "iLivTouch Mini800 剪切波彈性成像",
+              brand: "HISKY",
+              link: "/products/mini800",
+            },
+          ],
+          pitch:
+            "即時進行床邊診斷超聲波及肝臟健康評分，無需另行轉介。",
+          cta: "查看普通科方案",        },
+        {
+          id: "gastroenterologist",
+          specialty: "腸胃肝病科醫生",
+          needs:
+            "床邊腹部超聲波、膽道及腹水評估，以及定量肝硬度（LSM）與超聲衰減參數（UAP），用於脂肪肝及肝纖維化監測。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "iLivTouch Mini800 便攜式剪切波彈性成像",
+              brand: "HISKY",
+              link: "/products/mini800",
+            },
+          ],
+          pitch:
+            "結合便攜腹部 POCUS 與 FDA 認證剪切波彈性成像，快速、可重複、非侵入性進行肝臟及消化系統評估。",
+          cta: "查看肝病科設備",
+        },
+        {
+          id: "cardiothoracic",
+          specialty: "心胸外科醫生",
+          needs:
+            "心臟及胸腔床邊超聲波、胸腔積液檢查、術前／術後胸部 CT 及 MRI，以及進階心血管解剖影像。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "UNITED IMAGING MRI 及 CT 掃描系統",
+              brand: "UNITED IMAGING",
+              link: "/brands/united-imaging",
+            },
+          ],
+          pitch:
+            "床邊心臟及胸腔 POCUS，配合高解像度 CT／MRI 系統，支援手術規劃及術後追蹤。",
+          cta: "查看心胸外科設備",
+        },
+        {
+          id: "radiologist",
+          specialty: "放射科醫生",
+          needs:
+            "高通量解剖掃描、低劑量 3D 乳腺斷層合成，以及全身 MRI／CT。",
+          recommendedProducts: [
+            {
+              name: "SINO MDT Navigator 3000A 3D 斷層合成",
+              brand: "SINO MDT",
+              link: "/products/navigator-3000a",
+            },
+            {
+              name: "UNITED IMAGING MRI 及 CT 掃描系統",
+              brand: "UNITED IMAGING",
+              link: "/brands/united-imaging",
+            },
+          ],
+          pitch:
+            "高解像度診斷系統，配備 AI 輔助分析及低劑量成像協議。",
+          cta: "查看放射科系統",
+        },
+        {
+          id: "veterinarian",
+          specialty: "獸醫外科醫生",
+          needs:
+            "高幀率寵物透視、動態骨科影像及介入程序。",
+          recommendedProducts: [
+            {
+              name: "PERLOVE VET1120 移動式數位 C-arm",
+              brand: "PERLOVE",
+              link: "/products/vet1120",
+            },
+            {
+              name: "VETOO VF1 動態 DR 系統",
+              brand: "VETOO",
+              link: "/products/vf1",
+            },
+          ],
+          pitch:
+            "專為獸醫診所設計的動物專用 30fps 動態影像及移動式 C-arm 透視。",
+          cta: "查看獸醫設備",        },
+      ],
     },
     portfolio: {
       label: "Our Product Portfolio",
@@ -294,6 +497,18 @@ export const zh: Dictionary = {
     productsInterestGeneric: "對以下產品有興趣？",
     productsInterestDesc: "聯絡我們的專業團隊，獲取詳細規格與報價。",
     highlights: "品牌亮點",
+  },
+  specialtyPage: {
+    label: "專科解決方案",
+    productsLabel: "推薦設備",
+    productsTitle: "適合 {specialty} 的設備",
+    productsDescription:
+      "按臨床流程選擇合適產品。點擊任一產品即可查看完整規格、應用場景及演示安排。",
+    noProducts: "此專科暫未列出對應產品。",
+    backHome: "返回首頁",
+    ctaTitle: "需要協助為 {specialty} 選型？",
+    ctaDesc:
+      "告訴我們您的診所配置，我們將推薦合適系統、探頭選項及演示方案。",
   },
   about: {
     label: "About Us",

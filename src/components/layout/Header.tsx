@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import { SpecialtiesNavMenu } from "@/components/layout/SpecialtiesNavMenu";
 import { company } from "@/data/company";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
@@ -15,13 +16,6 @@ export function Header() {
   const t = useDictionary();
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
-
-  const navLinks = [
-    { href: "/", label: t.nav.home },
-    { href: "/products", label: t.nav.products },
-    { href: "/about", label: t.nav.about },
-    { href: "/contact", label: t.nav.contact },
-  ];
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -58,11 +52,19 @@ export function Header() {
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8 xl:gap-10 ml-auto">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className={linkClass(link.href)}>
-                {link.label}
-              </Link>
-            ))}
+            <Link href="/" className={linkClass("/")}>
+              {t.nav.home}
+            </Link>
+            <Link href="/products" className={linkClass("/products")}>
+              {t.nav.products}
+            </Link>
+            <SpecialtiesNavMenu />
+            <Link href="/about" className={linkClass("/about")}>
+              {t.nav.about}
+            </Link>
+            <Link href="/contact" className={linkClass("/contact")}>
+              {t.nav.contact}
+            </Link>
           </nav>
 
           <div className="hidden lg:flex items-center gap-4 shrink-0">
@@ -90,18 +92,46 @@ export function Header() {
         <div className="lg:hidden border-t border-border bg-white">
           <Container className="py-4">
             <nav className="flex flex-col">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className={`py-3 text-base font-semibold border-b border-border last:border-0 ${
-                    isActive(link.href) ? "text-brand" : "text-text-primary"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              <Link
+                href="/"
+                onClick={() => setOpen(false)}
+                className={`py-3 text-base font-semibold border-b border-border ${
+                  isActive("/") ? "text-brand" : "text-text-primary"
+                }`}
+              >
+                {t.nav.home}
+              </Link>
+              <Link
+                href="/products"
+                onClick={() => setOpen(false)}
+                className={`py-3 text-base font-semibold border-b border-border ${
+                  isActive("/products") ? "text-brand" : "text-text-primary"
+                }`}
+              >
+                {t.nav.products}
+              </Link>
+              <SpecialtiesNavMenu
+                mobile
+                onNavigate={() => setOpen(false)}
+              />
+              <Link
+                href="/about"
+                onClick={() => setOpen(false)}
+                className={`py-3 text-base font-semibold border-b border-border ${
+                  isActive("/about") ? "text-brand" : "text-text-primary"
+                }`}
+              >
+                {t.nav.about}
+              </Link>
+              <Link
+                href="/contact"
+                onClick={() => setOpen(false)}
+                className={`py-3 text-base font-semibold border-b border-border ${
+                  isActive("/contact") ? "text-brand" : "text-text-primary"
+                }`}
+              >
+                {t.nav.contact}
+              </Link>
               <Button
                 href="/contact"
                 variant="primary"

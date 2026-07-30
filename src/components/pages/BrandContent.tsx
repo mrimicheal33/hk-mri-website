@@ -11,6 +11,7 @@ import {
   products,
   getCategoryLabel,
   categoryDisplayOrder,
+  sortProductsByName,
   type ProductCategory,
   type Brand,
 } from "@/data/products";
@@ -30,7 +31,9 @@ export function BrandContent({ brand, brandSlug }: BrandContentProps) {
   const localized = getLocalizedBrand(brand, locale);
   const hideBrandName = brandSlug === "chison";
 
-  const brandProducts = products.filter((p) => p.brandSlug === brandSlug);
+  const brandProducts = sortProductsByName(
+    products.filter((p) => p.brandSlug === brandSlug),
+  );
   const categorySet = new Set(brandProducts.map((p) => p.category));
   const categories = categoryDisplayOrder.filter((cat) => categorySet.has(cat));
 

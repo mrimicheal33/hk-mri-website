@@ -14,10 +14,14 @@ export const en = {
       "Full range of medical equipment distributed by HK MRI Instrument Limited — CHISON, HISKY, UNITED IMAGING, SINO MDT, PERLOVE, and VETOO.",
     brandNotFound: "Brand Not Found",
     productNotFound: "Product Not Found",
+    specialtyNotFound: "Specialty Not Found",
   },
   nav: {
     home: "Home",
     products: "Products",
+    specialties: "Specialties",
+    specialtiesSearch: "Search specialties…",
+    specialtiesEmpty: "No matching specialties",
     sonoeye: "SonoEye",
     sonoeyeClinical: "Clinical Excellence",
     sonoeyeRoi: "Practice & ROI",
@@ -89,6 +93,205 @@ export const en = {
       backgroundImage: "/images/hero-clinical-facility.png",
       ctaProducts: "View Products",
       ctaAbout: "About Us",
+    },
+    specialties: {
+      label: "Clinical Matching",
+      title: "Find Equipment by Specialty",
+      description:
+        "Choose your clinical discipline to see recommended imaging and diagnostic solutions tailored to your practice.",
+      needsLabel: "Clinical Needs",
+      recommendedLabel: "Recommended Products",
+      items: [
+        {
+          id: "physiotherapist",
+          specialty: "Physiotherapist",
+          needs:
+            "Rapid soft tissue, tendon, muscle tear, and joint assessment; real-time guided dry-needling.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+          ],
+          pitch:
+            "Ultra-portable MSK point-of-care ultrasound (POCUS) to visually prove treatment progress to patients.",
+          cta: "View Physiotherapy Devices",        },
+        {
+          id: "chiropractor",
+          specialty: "Chiropractor",
+          needs:
+            "Visualizing joint inflammation, spinal soft tissue, and muscle strain during patient adjustment plans.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+          ],
+          pitch:
+            "Instant high-resolution imaging to validate spinal and joint subluxation treatments right in your consultation room.",
+          cta: "View Chiropractic Devices",        },
+        {
+          id: "aesthetician",
+          specialty: "Aesthetic Practitioner & Cosmetic Doctor",
+          needs:
+            "Facial vascular mapping prior to dermal filler injections, depth measurement, avoiding intravascular occlusion, and hyaluronidase dissolution guidance.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound (High-Frequency Linear)",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+          ],
+          pitch:
+            "High-frequency micro-vascular visualization to ensure safe, precise filler placement and emergency complication management.",
+          cta: "View Aesthetic Ultrasound",        },
+        {
+          id: "obgyn",
+          specialty: "OB/GYN (Obstetrics & Gynecology)",
+          needs:
+            "Point-of-care pelvic exams, fetal heartbeat detection, quick gestational age assessment, and emergency maternal evaluations.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye (Convex / POCUS Probe)",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "SINO MDT Navigator 3000A 3D Mammography",
+              brand: "SINO MDT",
+              link: "/products/navigator-3000a",
+            },
+          ],
+          pitch:
+            "Handheld fetal and pelvic screening paired with high-precision 3D tomosynthesis breast health diagnostic systems.",
+          cta: "View Women's Health Solutions",        },
+        {
+          id: "orthopedic",
+          specialty: "Orthopedic Surgeon",
+          needs:
+            "Intraoperative fluoroscopy guidance, high-resolution joint/ligament dynamic imaging, post-op implant verification, and fast CT/MRI scans.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye MSK Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "UNITED IMAGING MRI & CT Scan Systems",
+              brand: "UNITED IMAGING",
+              link: "/brands/united-imaging",
+            },
+          ],
+          pitch:
+            "Comprehensive bone, joint, and soft-tissue imaging from bedside POCUS checks to advanced full-body MRI diagnostics.",
+          cta: "View Orthopedic Systems",
+        },
+        {
+          id: "gp",
+          specialty: "General Practitioner (GP)",
+          needs:
+            "Fast bedside triage, basic abdominal checks, and quick non-invasive liver steatosis screening.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "iLivTouch Mini800 Shear-Wave Elastography",
+              brand: "HISKY",
+              link: "/products/mini800",
+            },
+          ],
+          pitch:
+            "Perform immediate bedside diagnostic ultrasound and liver health scoring without referring patients elsewhere.",
+          cta: "View GP Solutions",        },
+        {
+          id: "gastroenterologist",
+          specialty: "Gastroenterologist & Hepatologist",
+          needs:
+            "Bedside abdominal ultrasound, biliary and ascites assessment, plus quantitative liver stiffness (LSM) and ultrasound attenuation (UAP) for fatty liver & fibrosis monitoring.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "iLivTouch Mini800 Portable Shear-Wave Elastography",
+              brand: "HISKY",
+              link: "/products/mini800",
+            },
+          ],
+          pitch:
+            "Combine portable abdominal POCUS with FDA-cleared shear-wave elastography for fast, repeatable, non-invasive liver and GI assessment.",
+          cta: "View Hepatology Devices",
+        },
+        {
+          id: "cardiothoracic",
+          specialty: "Cardiothoracic Surgeon",
+          needs:
+            "Cardiac and thoracic point-of-care ultrasound, pleural effusion checks, pre-/post-op chest CT and MRI, and advanced cardiovascular anatomical imaging.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "UNITED IMAGING MRI & CT Scan Systems",
+              brand: "UNITED IMAGING",
+              link: "/brands/united-imaging",
+            },
+          ],
+          pitch:
+            "Bedside cardiac and thoracic POCUS paired with high-resolution CT/MRI systems for surgical planning and follow-up.",
+          cta: "View Cardiothoracic Devices",
+        },
+        {
+          id: "radiologist",
+          specialty: "Radiologist",
+          needs:
+            "High-throughput anatomical scanning, low-dose 3D breast tomosynthesis, and full-body MRI/CT.",
+          recommendedProducts: [
+            {
+              name: "SINO MDT Navigator 3000A 3D Tomosynthesis",
+              brand: "SINO MDT",
+              link: "/products/navigator-3000a",
+            },
+            {
+              name: "UNITED IMAGING MRI & CT Scan Systems",
+              brand: "UNITED IMAGING",
+              link: "/brands/united-imaging",
+            },
+          ],
+          pitch:
+            "High-resolution diagnostic systems equipped with AI-assisted analysis and low-dose imaging protocols.",
+          cta: "View Radiology Systems",
+        },
+        {
+          id: "veterinarian",
+          specialty: "Veterinary Surgeon",
+          needs:
+            "High-frame-rate pet fluoroscopy, dynamic orthopedic imaging, and interventional procedures.",
+          recommendedProducts: [
+            {
+              name: "PERLOVE VET1120 Mobile Digital C-Arm",
+              brand: "PERLOVE",
+              link: "/products/vet1120",
+            },
+            {
+              name: "VETOO VF1 Dynamic DR System",
+              brand: "VETOO",
+              link: "/products/vf1",
+            },
+          ],
+          pitch:
+            "Animal-specific 30fps dynamic imaging and mobile C-arm fluoroscopy designed for veterinary clinics.",
+          cta: "View Vet Equipment",        },
+      ],
     },
     portfolio: {
       label: "Our Product Portfolio",
@@ -302,6 +505,18 @@ export const en = {
     productsInterestDesc:
       "Contact our team for detailed specifications and pricing.",
     highlights: "Brand Highlights",
+  },
+  specialtyPage: {
+    label: "Specialty Solutions",
+    productsLabel: "Recommended Equipment",
+    productsTitle: "Devices for {specialty}",
+    productsDescription:
+      "Choose the product that best fits your clinical workflow. Each card opens full specifications, applications, and demo options.",
+    noProducts: "No matching products are listed for this specialty yet.",
+    backHome: "Back to Home",
+    ctaTitle: "Need help choosing for {specialty}?",
+    ctaDesc:
+      "Tell us your clinic setup and we will recommend the right system, probe options, and demonstration plan.",
   },
   about: {
     label: "About Us",

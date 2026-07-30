@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { brands, products, getBrandHref, getBrandsSorted } from "@/data/products";
+import { brands, products, getBrandHref, getBrandsSorted, sortProductsByName } from "@/data/products";
 import { getLocalizedBrand } from "@/data/brand-translations";
 import { ProductCard } from "@/components/products/ProductCard";
 import { useDictionary, useLocale } from "@/i18n/LocaleProvider";
@@ -20,10 +20,11 @@ export function ProductCatalog() {
   const locale = useLocale();
   const [activeBrand, setActiveBrand] = useState<string>("all");
 
-  const filtered =
+  const filtered = sortProductsByName(
     activeBrand === "all"
       ? products
-      : products.filter((p) => p.brandSlug === activeBrand);
+      : products.filter((p) => p.brandSlug === activeBrand),
+  );
 
   return (
     <div>

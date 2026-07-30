@@ -360,8 +360,12 @@ export function getBrandHref(brand: Brand) {
   return brand.pageHref ?? `/brands/${brand.slug}`;
 }
 
+export function sortProductsByName(list: Product[]) {
+  return [...list].sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
+}
+
 export function getProductsByBrand(slug: string) {
-  return products.filter((p) => p.brandSlug === slug);
+  return sortProductsByName(products.filter((p) => p.brandSlug === slug));
 }
 
 export function getProductById(id: string) {
@@ -386,14 +390,14 @@ export function getFeaturedProducts() {
 }
 
 export function getRelatedProducts(product: Product, limit = 3) {
-  return products
-    .filter(
+  return sortProductsByName(
+    products.filter(
       (p) =>
         p.brandSlug === product.brandSlug &&
         p.category === product.category &&
         p.id !== product.id,
-    )
-    .slice(0, limit);
+    ),
+  ).slice(0, limit);
 }
 
 export function getCategoryLabel(category: ProductCategory, locale: Locale) {
