@@ -119,6 +119,11 @@ const nextConfig: NextConfig = {
         destination: "/products/navigator-3000a",
         permanent: true,
       },
+      {
+        source: "/products/vinno",
+        destination: "/brands/vinno",
+        permanent: true,
+      },
     ];
   },
 };

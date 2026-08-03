@@ -104,6 +104,15 @@ export const brands: Brand[] = [
     color: "#1e5a8a",
     pageHref: "/products/navigator-3000a",
   },
+  {
+    slug: "vinno",
+    name: "VINNO",
+    nameEn: "VINNO Technology (Suzhou)",
+    logo: "/images/brands/vinno.png",
+    description:
+      "創新超聲波技術品牌，以 RF 平台及 VLucid 成像架構提供便攜式與高端彩色多普勒超聲波系統。",
+    color: "#2f8f4e",
+  },
 ];
 
 export const categoryLabels: Record<ProductCategory, string> = {
@@ -315,6 +324,37 @@ export const products: Product[] = [
     featured: true,
     image: "/images/products/navigator-3000a-card.jpg",
     brochure: "/brochures/navigator-3000a-brochure.pdf",
+  },
+  // VINNO - Ultrasound
+  {
+    id: "vinno-a3",
+    name: "VINNO A3",
+    nameEn: "Compact Portable Color Doppler Ultrasound",
+    brand: "VINNO",
+    brandSlug: "vinno",
+    category: "ultrasound",
+    tagline: "Expect More With Less — 輕巧便攜彩色多普勒超聲波",
+    description:
+      "VINNO A3 為緊湊型便攜彩色多普勒超聲波系統 — 以 VINNO RF 平台提供高解析度影像，結合簡化工作流程、快速開機、內置電池及可調高度推車，適合一般影像、肌骨、婦產、泌尿及床邊診斷等臨床場景。",
+    highlights: [],
+    featured: true,
+    image: "/images/products/vinno-a3-card.jpg",
+    brochure: "/brochures/vinno-a3-brochure.pdf",
+  },
+  {
+    id: "vinno10",
+    name: "VINNO 10",
+    nameEn: "Premium Compact Portable Ultrasound",
+    brand: "VINNO",
+    brandSlug: "vinno",
+    category: "ultrasound",
+    tagline: "Premium Compact Ultrasound Wherever You Need It",
+    description:
+      "VINNO 10 為旗艦級便攜超聲波系統 — 搭載 VLucid / VLucid+ 平台、Zone Imaging、Pure Wave 探頭技術及智能自動化工具，支援重症、急診、麻醉及一般影像等多場景高品質診斷。",
+    highlights: [],
+    featured: true,
+    image: "/images/products/vinno10-card.png?v=2",
+    brochure: "/brochures/vinno10-brochure.pdf",
   },
   // PERLOVE
   {

@@ -17,6 +17,7 @@ const PARTNER_LOGO_CONFIG: Record<string, { maxH: number; maxW: number }> = {
   perlove: { maxH: 34, maxW: 190 },
   sinomdt: { maxH: 38, maxW: 160 },
   vetoo: { maxH: 38, maxW: 160 },
+  vinno: { maxH: 42, maxW: 180 },
   "united-imaging": { maxH: 50, maxW: 230 },
 };
 
@@ -48,6 +49,10 @@ function PartnerBrandLogo({ src, alt, slug }: { src: string; alt: string; slug: 
 export function PartnersSection() {
   const t = useDictionary();
 
+  const partners = [...t.home.partners.items].sort((a, b) =>
+    a.name.localeCompare(b.name, undefined, { sensitivity: "base" }),
+  );
+
   return (
     <Section muted border>
       <SectionHeading
@@ -57,7 +62,7 @@ export function PartnersSection() {
       />
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
-        {t.home.partners.items.map((partner) => {
+        {partners.map((partner) => {
           const brand = getBrandBySlug(partner.slug);
           const href = brand ? getBrandHref(brand) : `/brands/${partner.slug}`;
 

@@ -12,7 +12,7 @@ export const zh: Dictionary = {
     contactDescription: "聯絡 HK MRI Instrument Limited，索取醫療設備報價或預約 SonoEye 演示。",
     productsTitle: "產品總覽",
     productsDescription:
-      "HK MRI Instrument Limited 代理之全部醫療設備產品，涵蓋 CHISON、HISKY、UNITED IMAGING、SINO MDT、PERLOVE 及 VETOO。",
+      "HK MRI Instrument Limited 代理之全部醫療設備產品，涵蓋 CHISON、HISKY、UNITED IMAGING、SINO MDT、VINNO、PERLOVE 及 VETOO。",
     brandNotFound: "品牌未找到",
     productNotFound: "產品未找到",
     specialtyNotFound: "專科未找到",
@@ -79,7 +79,7 @@ export const zh: Dictionary = {
     address: "香港九龍開源道50號利寶時中心7樓03室",
     subsidiaryRole: "醫療設備代理",
     aboutExtra:
-      "我們代理 CHISON、HISKY、UNITED IMAGING、SINO MDT、PERLOVE 及 VETOO，提供超聲波、MRI、CT、肝臟評估、乳腺攝影、數位放射影像及獸醫影像解決方案。",
+      "我們代理 CHISON、HISKY、UNITED IMAGING、SINO MDT、VINNO、PERLOVE 及 VETOO，提供超聲波、MRI、CT、肝臟評估、乳腺攝影、數位放射影像及獸醫影像解決方案。",
     footerAgent: "醫療設備及影像解決方案",
   },
   home: {
@@ -114,6 +114,16 @@ export const zh: Dictionary = {
               brand: "CHISON",
               link: "/products/sonoeye",
             },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "超便攜肌骨床邊超聲波（POCUS），以影像向患者清晰展示治療進度。",
@@ -129,6 +139,16 @@ export const zh: Dictionary = {
               brand: "CHISON",
               link: "/products/sonoeye",
             },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "即時高解像度影像，在診室內驗證脊柱及關節半脫位治療效果。",
@@ -143,6 +163,16 @@ export const zh: Dictionary = {
               name: "CHISON SonoEye 手持超聲波（高頻線陣）",
               brand: "CHISON",
               link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
             },
           ],
           pitch:
@@ -164,6 +194,16 @@ export const zh: Dictionary = {
               brand: "SINO MDT",
               link: "/products/navigator-3000a",
             },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "手持胎兒及盆腔篩查，配合高精度 3D 斷層合成乳腺健康診斷系統。",
@@ -183,6 +223,16 @@ export const zh: Dictionary = {
               name: "UNITED IMAGING MRI 及 CT 掃描系統",
               brand: "UNITED IMAGING",
               link: "/brands/united-imaging",
+            },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
             },
           ],
           pitch:
@@ -205,6 +255,16 @@ export const zh: Dictionary = {
               brand: "HISKY",
               link: "/products/mini800",
             },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "即時進行床邊診斷超聲波及肝臟健康評分，無需另行轉介。",
@@ -224,6 +284,16 @@ export const zh: Dictionary = {
               name: "iLivTouch Mini800 便攜式剪切波彈性成像",
               brand: "HISKY",
               link: "/products/mini800",
+            },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
             },
           ],
           pitch:
@@ -246,6 +316,16 @@ export const zh: Dictionary = {
               brand: "UNITED IMAGING",
               link: "/brands/united-imaging",
             },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "床邊心臟及胸腔 POCUS，配合高解像度 CT／MRI 系統，支援手術規劃及術後追蹤。",
@@ -266,6 +346,16 @@ export const zh: Dictionary = {
               name: "UNITED IMAGING MRI 及 CT 掃描系統",
               brand: "UNITED IMAGING",
               link: "/brands/united-imaging",
+            },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
             },
           ],
           pitch:
@@ -380,6 +470,20 @@ export const zh: Dictionary = {
           imageCaptionTitle: "VETOO VF1",
           imageCaptionSubtitle: "獸醫動態 DR 系統",
         },
+        {
+          key: "vinno",
+          name: "VINNO 便攜超聲波系統",
+          tagline: "由緊湊至旗艦的便攜彩色多普勒",
+          brandName: "VINNO",
+          brandLogo: "/images/brands/vinno.png",
+          description:
+            "VINNO A3 及 VINNO 10 — VINNO Technology 便攜彩色多普勒超聲波系統。A3 以 RF 平台提供緊湊成像，適合一般、肌骨、婦產及 POCUS；VINNO 10 搭載 VLucid / VLucid+，支援重症、急診、麻醉及一般影像。",
+          href: "/brands/vinno",
+          image: "/images/products/vinno-a3-card.jpg",
+          imageFit: "contain",
+          imageCaptionTitle: "VINNO A3 及 VINNO 10",
+          imageCaptionSubtitle: "便攜彩色多普勒超聲波系統",
+        },
       ],
     },
     whyChoose: {
@@ -455,6 +559,14 @@ export const zh: Dictionary = {
           image: "/images/products/vf1-card.png",
           description: "獸醫動態 DR 創新者 — 智能寵物影像、高幀率透視及平板探測器方案。",
         },
+        {
+          slug: "vinno",
+          name: "VINNO",
+          logo: "/images/brands/vinno.png",
+          image: "/images/products/vinno-a3-card.jpg",
+          description:
+            "創新超聲波技術 — VINNO A3 及 VINNO 10 便攜彩色多普勒系統，建基於 RF 及 VLucid 平台。",
+        },
       ],
     },
     connect: {
@@ -478,6 +590,11 @@ export const zh: Dictionary = {
       "緊湊型非侵入性肝臟評估 — LSM 及 UAP 定量測量，具 FDA 及 CE 認證",
     ilivtouchCaptionTitle: "iLivTouch Mini800",
     ilivtouchCaptionSubtitle: "便攜式剪切波彈性成像",
+    vinnoFeaturedTitle: "VINNO 便攜彩色多普勒超聲波",
+    vinnoFeaturedDesc:
+      "VINNO A3 及 VINNO 10 — 由緊湊至旗艦的便攜超聲波，建基於 RF 及 VLucid 平台，適合診所、醫院及床邊影像",
+    vinnoCaptionTitle: "VINNO A3 及 VINNO 10",
+    vinnoCaptionSubtitle: "便攜彩色多普勒超聲波",
     brandsLabel: "Brands",
     filterAll: "全部",
     interestSonoeye: "CHISON SonoEye 手持超聲波",
@@ -485,6 +602,7 @@ export const zh: Dictionary = {
     interestPerlove: "PERLOVE Vet 移動式數碼 C-arm 系統",
     interestIlivtouch: "HISKY iLivTouch Mini800 便攜式剪切波彈性成像",
     interestVetoo: "VETOO VF1 動態 DR",
+    interestVinno: "VINNO 便攜超聲波系統",
   },
   productCta: {
     defaultTitle: "索取產品報價",
@@ -518,7 +636,7 @@ export const zh: Dictionary = {
       "HK MRI Instrument Ltd. 是尖端醫療設備及先進診斷解決方案的優質供應商。作為全球醫療機構的可靠夥伴，我們致力提供創新技術，提升患者護理質素並優化臨床成效。",
     brandsModalitiesTitle: "我們的優質品牌與影像模態",
     brandsModalitiesIntro:
-      "我們代理 CHISON、HISKY、PERLOVE、SINO MDT、UNITED IMAGING 及 VETOO，提供由床邊超聲波、肝纖維化評估、數位放射影像、乳腺攝影、MRI、CT、PET-CT 至獸醫影像的全線醫學影像及診斷解決方案，涵蓋：",
+      "我們代理 CHISON、HISKY、PERLOVE、SINO MDT、UNITED IMAGING、VINNO 及 VETOO，提供由床邊超聲波、肝纖維化評估、數位放射影像、乳腺攝影、MRI、CT、PET-CT 至獸醫影像的全線醫學影像及診斷解決方案，涵蓋：",
     modalities: [
       "CT（電腦斷層掃描）— UNITED IMAGING uCT 780 128 層及 uCT 960+ 640 層 CT",
       "便攜式剪切波彈性成像 — HISKY iLivTouch Mini800 便攜式肝纖維化及脂肪定量分析",
@@ -526,7 +644,7 @@ export const zh: Dictionary = {
       "乳腺攝影 — SINO MDT Navigator 3000A 3D 斷層合成數位乳腺攝影、UNITED IMAGING uMammo 890i 低劑量 3D 數位乳腺攝影",
       "MRI（磁共振成像）— UNITED IMAGING uMR 670、680 及 OMEGA 寬孔徑 1.5T/3T 系統",
       "PET-CT（正電子發射斷層–電腦斷層）— UNITED IMAGING uMI Vista 數位 PET-CT",
-      "超聲波系統 — CHISON SonoEye 手持超聲波",
+      "超聲波系統 — CHISON SonoEye 手持超聲波；VINNO A3 及 VINNO 10 便攜彩色多普勒超聲波",
       "獸醫移動式數位 C-arm 系統 — PERLOVE VET1120 移動式數位 C-arm",
       "獸醫影像 — VETOO VF1 Dynamic DR",
     ],

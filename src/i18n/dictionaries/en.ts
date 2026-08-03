@@ -11,7 +11,7 @@ export const en = {
       "Contact HK MRI Instrument Limited for medical equipment quotes or SonoEye demonstrations.",
     productsTitle: "Products",
     productsDescription:
-      "Full range of medical equipment distributed by HK MRI Instrument Limited — CHISON, HISKY, UNITED IMAGING, SINO MDT, PERLOVE, and VETOO.",
+      "Full range of medical equipment distributed by HK MRI Instrument Limited — CHISON, HISKY, UNITED IMAGING, SINO MDT, VINNO, PERLOVE, and VETOO.",
     brandNotFound: "Brand Not Found",
     productNotFound: "Product Not Found",
     specialtyNotFound: "Specialty Not Found",
@@ -78,7 +78,7 @@ export const en = {
     address: "Suite 03, 7/F, Lemmi Centre, No.50 Hoi Yuen Road, Kowloon, Hong Kong",
     subsidiaryRole: "Medical device distribution",
     aboutExtra:
-      "We represent CHISON, HISKY, UNITED IMAGING, SINO MDT, PERLOVE, and VETOO — delivering ultrasound, MRI, CT, liver assessment, mammography, digital radiography, and veterinary imaging solutions across Hong Kong.",
+      "We represent CHISON, HISKY, UNITED IMAGING, SINO MDT, VINNO, PERLOVE, and VETOO — delivering ultrasound, MRI, CT, liver assessment, mammography, digital radiography, and veterinary imaging solutions across Hong Kong.",
     footerAgent: "Medical Device & Imaging Solutions",
   },
   home: {
@@ -113,6 +113,16 @@ export const en = {
               brand: "CHISON",
               link: "/products/sonoeye",
             },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "Ultra-portable MSK point-of-care ultrasound (POCUS) to visually prove treatment progress to patients.",
@@ -128,6 +138,16 @@ export const en = {
               brand: "CHISON",
               link: "/products/sonoeye",
             },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "Instant high-resolution imaging to validate spinal and joint subluxation treatments right in your consultation room.",
@@ -142,6 +162,16 @@ export const en = {
               name: "CHISON SonoEye Handheld Ultrasound (High-Frequency Linear)",
               brand: "CHISON",
               link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
             },
           ],
           pitch:
@@ -163,6 +193,16 @@ export const en = {
               brand: "SINO MDT",
               link: "/products/navigator-3000a",
             },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "Handheld fetal and pelvic screening paired with high-precision 3D tomosynthesis breast health diagnostic systems.",
@@ -182,6 +222,16 @@ export const en = {
               name: "UNITED IMAGING MRI & CT Scan Systems",
               brand: "UNITED IMAGING",
               link: "/brands/united-imaging",
+            },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
             },
           ],
           pitch:
@@ -204,6 +254,16 @@ export const en = {
               brand: "HISKY",
               link: "/products/mini800",
             },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "Perform immediate bedside diagnostic ultrasound and liver health scoring without referring patients elsewhere.",
@@ -223,6 +283,16 @@ export const en = {
               name: "iLivTouch Mini800 Portable Shear-Wave Elastography",
               brand: "HISKY",
               link: "/products/mini800",
+            },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
             },
           ],
           pitch:
@@ -245,6 +315,16 @@ export const en = {
               brand: "UNITED IMAGING",
               link: "/brands/united-imaging",
             },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
           ],
           pitch:
             "Bedside cardiac and thoracic POCUS paired with high-resolution CT/MRI systems for surgical planning and follow-up.",
@@ -265,6 +345,16 @@ export const en = {
               name: "UNITED IMAGING MRI & CT Scan Systems",
               brand: "UNITED IMAGING",
               link: "/brands/united-imaging",
+            },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
             },
           ],
           pitch:
@@ -379,6 +469,20 @@ export const en = {
           imageCaptionTitle: "VETOO VF1",
           imageCaptionSubtitle: "Veterinary Dynamic DR System",
         },
+        {
+          key: "vinno",
+          name: "VINNO Portable Ultrasound Systems",
+          tagline: "Compact to premium portable colour Doppler",
+          brandName: "VINNO",
+          brandLogo: "/images/brands/vinno.png",
+          description:
+            "VINNO A3 and VINNO 10 — portable colour Doppler ultrasound systems from VINNO Technology. A3 delivers compact RF-platform imaging for general, MSK, OB/GYN, and POCUS workflows; VINNO 10 adds VLucid / VLucid+ performance for critical care, emergency, anesthesia, and general imaging.",
+          href: "/brands/vinno",
+          image: "/images/products/vinno-a3-card.jpg",
+          imageFit: "contain",
+          imageCaptionTitle: "VINNO A3 & VINNO 10",
+          imageCaptionSubtitle: "Portable Colour Doppler Ultrasound Systems",
+        },
       ],
     },
     whyChoose: {
@@ -458,6 +562,14 @@ export const en = {
           description:
             "Veterinary Dynamic DR innovator — intelligent pet imaging with high-frame-rate fluoroscopy and flat-panel detection.",
         },
+        {
+          slug: "vinno",
+          name: "VINNO",
+          logo: "/images/brands/vinno.png",
+          image: "/images/products/vinno-a3-card.jpg",
+          description:
+            "Innovative ultrasound technology — VINNO A3 and VINNO 10 portable colour Doppler systems built on RF and VLucid platforms.",
+        },
       ],
     },
     connect: {
@@ -483,6 +595,11 @@ export const en = {
       "Compact, non-invasive liver assessment — quantitative LSM and UAP measurement with FDA and CE certification",
     ilivtouchCaptionTitle: "iLivTouch Mini800",
     ilivtouchCaptionSubtitle: "Portable shear-wave Elastography",
+    vinnoFeaturedTitle: "VINNO Portable Colour Doppler Ultrasound",
+    vinnoFeaturedDesc:
+      "VINNO A3 and VINNO 10 — compact to premium portable ultrasound on RF and VLucid platforms for clinics, hospitals, and point-of-care imaging",
+    vinnoCaptionTitle: "VINNO A3 & VINNO 10",
+    vinnoCaptionSubtitle: "Portable Colour Doppler Ultrasound",
     brandsLabel: "Brands",
     filterAll: "All",
     interestSonoeye: "CHISON SonoEye Handheld Ultrasound",
@@ -490,6 +607,7 @@ export const en = {
     interestPerlove: "PERLOVE Vet Mobile Digital C-arm System",
     interestIlivtouch: "HISKY iLivTouch Mini800 portable shear-wave elastography",
     interestVetoo: "VETOO VF1 Dynamic DR",
+    interestVinno: "VINNO Portable Ultrasound Systems",
   },
   productCta: {
     defaultTitle: "Request a Product Quote",
@@ -526,7 +644,7 @@ export const en = {
       "HK MRI Instrument Ltd. is a premier provider of cutting-edge medical devices and advanced diagnostic solutions. As a trusted partner to healthcare institutions worldwide, we are dedicated to delivering innovative technologies that elevate patient care and optimize clinical outcomes.",
     brandsModalitiesTitle: "Our Premium Brands & Modalities",
     brandsModalitiesIntro:
-      "We proudly represent CHISON, HISKY, PERLOVE, SINO MDT, UNITED IMAGING, and VETOO — delivering end-to-end medical imaging and diagnostic solutions from point-of-care ultrasound and liver assessment to digital radiography, mammography, MRI, CT, PET-CT, and veterinary systems, including:",
+      "We proudly represent CHISON, HISKY, PERLOVE, SINO MDT, UNITED IMAGING, VINNO, and VETOO — delivering end-to-end medical imaging and diagnostic solutions from point-of-care ultrasound and liver assessment to digital radiography, mammography, MRI, CT, PET-CT, and veterinary systems, including:",
     modalities: [
       "CT (Computed Tomography) — UNITED IMAGING uCT 780 128-slice & uCT 960+ 640-slice CT",
       "Portable Shear-wave Elastography — HISKY iLivTouch Mini800 portable liver fibrosis & fat quantification",
@@ -534,7 +652,7 @@ export const en = {
       "Mammography — SINO MDT Navigator 3000A 3D tomosynthesis digital mammography, UNITED IMAGING uMammo 890i low-dose 3D digital mammography",
       "MRI (Magnetic Resonance Imaging) — UNITED IMAGING uMR 670, 680 & OMEGA wide-bore 1.5T/3T systems",
       "PET-CT (Positron Emission Tomography–Computed Tomography) — UNITED IMAGING uMI Vista digital PET-CT",
-      "Ultrasound Systems — CHISON SonoEye handheld ultrasound",
+      "Ultrasound Systems — CHISON SonoEye handheld ultrasound; VINNO A3 and VINNO 10 portable colour Doppler ultrasound",
       "Veterinary Mobile Digital C-arm System — PERLOVE VET1120 mobile digital C-arm",
       "Veterinary Imaging — VETOO VF1 Dynamic DR",
     ],

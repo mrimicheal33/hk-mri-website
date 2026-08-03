@@ -28,6 +28,10 @@ const en: Record<
     description:
       "National high-tech enterprise specialising in breast imaging and integrated breast health solutions — manufacturer of the 3rd-generation Navigator Series digital mammography systems.",
   },
+  vinno: {
+    description:
+      "Innovative ultrasound technology brand delivering portable and premium colour Doppler systems on VINNO’s RF platform and VLucid imaging architecture.",
+  },
 };
 
 export function getLocalizedBrand(brand: Brand, locale: Locale): Brand {

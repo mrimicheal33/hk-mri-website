@@ -468,6 +468,104 @@ const en: Record<string, ProductLocaleFields> = {
       },
     ],
   },
+  "vinno-a3": {
+    tagline: "Expect More With Less — compact portable colour Doppler ultrasound",
+    description:
+      "VINNO A3 is a compact portable colour Doppler ultrasound system built on VINNO’s proprietary RF platform. It combines high image quality with a simplified workflow, fast boot, built-in battery, and height-adjustable trolley options — ideal for clinics, hospitals, and specialty practices needing reliable imaging wherever care is delivered.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Imaging Platform",
+        items: [
+          "VINNO RF platform captures and processes full radio-frequency data for enhanced resolution and contrast",
+          "Comprehensive modes including B, M, Color, Power, PW, CW, and Duplex imaging",
+          "One-key image optimisation and customisable presets for faster daily scanning",
+          "Strong penetration with clear visualisation of superficial and deeper structures",
+        ],
+      },
+      {
+        title: "Portability & Workflow",
+        items: [
+          "Compact, lightweight laptop-style console for flexible mobility between rooms or sites",
+          "Fast boot feature — ready to scan when time matters",
+          "Built-in battery for confident scanning at critical moments",
+          "Height-adjustable trolley option for comfortable viewing height",
+          "Noiseless design for a quieter clinical environment",
+          "Durable trolley case option to keep accessories organised on the move",
+        ],
+      },
+      {
+        title: "Clinical Applications",
+        items: [
+          "General imaging and point-of-care ultrasound (POCUS)",
+          "Musculoskeletal (MSK) and sports medicine assessments",
+          "Obstetrics & gynecology",
+          "Urology and small-parts imaging",
+          "Vascular and routine cardiac screening workflows",
+        ],
+      },
+      {
+        title: "Connectivity",
+        items: [
+          "DICOM support with flexible data export options",
+          "Modern connectivity for seamless patient data management",
+        ],
+      },
+    ],
+  },
+  vinno10: {
+    tagline: "Premium compact ultrasound wherever you need it",
+    description:
+      "VINNO 10 is VINNO’s flagship portable ultrasound system powered by the VLucid / VLucid+ platform. With Zone Imaging, Pure Wave probe technology, adaptive beam correction, and smart automation tools, it delivers best-in-class image quality for critical care, emergency, anesthesia, and general imaging.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "VLucid Platform & Beamforming",
+        items: [
+          "VLucid / VLucid+ second-generation platform with advanced adaptive beam synthesis",
+          "Zone Imaging for more uniform energy distribution and improved resolution across the field",
+          "High-precision beamforming with adaptive noise suppression for clearer tissue boundaries",
+          "Up to 2× SNR enhancement at higher frame rates with efficient processing architecture",
+        ],
+      },
+      {
+        title: "Probe & Flow Technologies",
+        items: [
+          "Pure Wave single-crystal probe technology for improved sensitivity and detail",
+          "VFlow+ adaptive colour-flow filtering for enhanced detection of tiny vessels",
+          "Auto needle enhancement for clearer visualisation during steep-angled procedures",
+          "Optional shear-wave elastography (VShear / SWEI) for stiffness assessment in breast, liver, MSK, thyroid, and prostate",
+        ],
+      },
+      {
+        title: "Smart Automation & AI Tools",
+        items: [
+          "VAid Thyroid — real-time detection and TI-RADS-oriented nodule assessment",
+          "VAid Liver — one-button detection support for common focal and diffuse liver findings",
+          "Auto IMT and other automation tools to accelerate standardised measurements",
+          "Easy Compare for before/after exam review",
+        ],
+      },
+      {
+        title: "Ergonomics & Mobility",
+        items: [
+          "15.6\" high-resolution monitor with 8\" touch screen for intuitive control",
+          "Built-in camera and microphone for remote ultrasound workflows (Flyinsono)",
+          "Built-in ECG port and multi-probe holders for versatile clinical setups",
+          "Battery packs supporting extended scanning away from fixed power outlets",
+          "USB and Type-C connectivity for flexible data exchange",
+        ],
+      },
+      {
+        title: "Clinical Focus",
+        items: [
+          "Critical care, emergency, and anesthesia point-of-care imaging",
+          "General imaging, vascular, cardiac, OB/GYN, MSK, and small-parts applications",
+          "Designed for premium portable performance across hospital and clinic environments",
+        ],
+      },
+    ],
+  },
   "umr-670": {
     tagline: "Freedom Experience · Expand MRI — 1.5T wide-bore MRI",
     description:
@@ -1289,6 +1387,104 @@ const zh: Record<string, ProductLocaleFields> = {
           "雲端診斷服務，支援遠程協作閱片",
           "AI 智能促進遠程會診",
           "支援從篩查到結構化報告的整合乳腺健康工作流",
+        ],
+      },
+    ],
+  },
+  "vinno-a3": {
+    tagline: "Expect More With Less — 輕巧便攜彩色多普勒超聲波",
+    description:
+      "VINNO A3 為緊湊型便攜彩色多普勒超聲波系統，建基於 VINNO 專有 RF 平台。結合高影像質素、簡化工作流程、快速開機、內置電池及可調高度推車選配，適合診所、醫院及專科執業，於不同場景提供可靠診斷影像。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "成像平台",
+        items: [
+          "VINNO RF 平台擷取並處理完整射頻數據，提升解析度與對比度",
+          "全面成像模式，包括 B、M、彩色、能量、PW、CW 及 Duplex",
+          "一鍵影像優化及可自訂預設，加快日常掃描",
+          "優良穿透力，清晰顯示表淺及深層結構",
+        ],
+      },
+      {
+        title: "便攜性與工作流程",
+        items: [
+          "輕巧筆記型主機設計，方便跨診室或外勤移動",
+          "快速開機，爭取關鍵掃描時間",
+          "內置電池，於關鍵時刻提供可靠操作信心",
+          "可調高度推車選配，配合舒適觀看高度",
+          "靜音設計，營造更安靜的臨床環境",
+          "耐用推車箱選配，外出時整理配件更有序",
+        ],
+      },
+      {
+        title: "臨床應用",
+        items: [
+          "一般影像及床邊超聲波（POCUS）",
+          "肌骨（MSK）及運動醫學評估",
+          "婦產科",
+          "泌尿科及小器官影像",
+          "血管及常規心臟篩查流程",
+        ],
+      },
+      {
+        title: "連接性",
+        items: [
+          "支援 DICOM 及靈活數據匯出",
+          "現代化連接方案，方便患者資料管理",
+        ],
+      },
+    ],
+  },
+  vinno10: {
+    tagline: "Premium Compact Ultrasound Wherever You Need It — 旗艦便攜超聲波",
+    description:
+      "VINNO 10 為 VINNO 旗艦便攜超聲波系統，搭載 VLucid / VLucid+ 平台。結合 Zone Imaging、Pure Wave 探頭技術、自適應波束校正及智能自動化工具，為重症、急診、麻醉及一般影像提供卓越影像質素。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "VLucid 平台與波束成形",
+        items: [
+          "VLucid / VLucid+ 第二代平台，配備進階自適應波束合成",
+          "Zone Imaging 均勻能量分布，提升全視野解析度",
+          "高精度波束成形及自適應降噪，組織邊界更清晰",
+          "於更高幀率下最高可達約 2 倍訊噪比提升，處理架構高效",
+        ],
+      },
+      {
+        title: "探頭與血流技術",
+        items: [
+          "Pure Wave 單晶探頭技術，提升靈敏度與細節表現",
+          "VFlow+ 自適應彩色血流濾波，加強微細血管偵測",
+          "自動針道增強，於大角度穿刺時仍清晰顯示針尖",
+          "可選剪切波彈性成像（VShear / SWEI），適用乳腺、肝臟、肌骨、甲狀腺及前列腺硬度評估",
+        ],
+      },
+      {
+        title: "智能自動化與 AI 工具",
+        items: [
+          "VAid Thyroid — 即時偵測並提供 TI-RADS 導向結節評估",
+          "VAid Liver — 一鍵輔助偵測常見局灶及瀰漫性肝臟表現",
+          "Auto IMT 等自動化工具，加快標準化測量",
+          "Easy Compare 方便檢查前後對比",
+        ],
+      },
+      {
+        title: "人體工學與機動性",
+        items: [
+          "15.6 吋高解像度顯示屏配合 8 吋觸控屏，操作直觀",
+          "內置鏡頭及咪高峰，支援遠程超聲波工作流（Flyinsono）",
+          "內置 ECG 接口及多探頭支架，適應多元臨床配置",
+          "電池組支援離開固定電源後延長掃描時間",
+          "USB 及 Type-C 連接，方便數據交換",
+        ],
+      },
+      {
+        title: "臨床重點",
+        items: [
+          "重症、急診及麻醉床邊影像",
+          "一般影像、血管、心臟、婦產、肌骨及小器官應用",
+          "為醫院及診所環境提供旗艦級便攜表現",
         ],
       },
     ],

@@ -6,6 +6,11 @@ import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SonoEyePortfolioImage } from "@/components/home/SonoEyePortfolioImage";
 import { Mini800PortfolioImage } from "@/components/home/Mini800PortfolioImage";
+import { Mini800PromoCaption } from "@/components/home/Mini800PromoCaption";
+import {
+  PORTFOLIO_IMAGE_CAPTION_CLASS,
+  PORTFOLIO_IMAGE_SHELL_CLASS,
+} from "@/components/home/portfolioImageShared";
 import { getBrandHref, getBrandsSorted } from "@/data/products";
 import { useDictionary } from "@/i18n/LocaleProvider";
 
@@ -68,6 +73,43 @@ export function ProductsContent() {
               </h2>
               <p className="text-sm text-text-secondary mb-4">
                 {t.products.ilivtouchFeaturedDesc}
+              </p>
+              <span className="flex items-center gap-1.5 text-sm font-medium text-brand">
+                {t.common.viewPage} <ArrowRight size={14} />
+              </span>
+            </div>
+          </Link>
+
+          <Link
+            href="/brands/vinno"
+            className="group grid grid-cols-1 md:grid-cols-[280px_1fr] bg-white border border-border hover:border-brand/30 transition-colors overflow-hidden"
+          >
+            <div
+              className={`${PORTFOLIO_IMAGE_SHELL_CLASS} w-full aspect-[16/10] md:aspect-auto md:min-h-[200px] md:h-full`}
+            >
+              <div className="relative min-h-0 flex-1 overflow-hidden">
+                <Image
+                  src="/images/products/vinno-a3-card.jpg"
+                  alt="VINNO portable ultrasound"
+                  fill
+                  unoptimized
+                  sizes="280px"
+                  className="object-contain object-center"
+                />
+              </div>
+              <div className={PORTFOLIO_IMAGE_CAPTION_CLASS}>
+                <Mini800PromoCaption
+                  title={t.products.vinnoCaptionTitle}
+                  subtitle={t.products.vinnoCaptionSubtitle}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col justify-center p-6 sm:p-8 min-w-0">
+              <h2 className="text-lg sm:text-xl font-semibold text-text-primary group-hover:text-brand transition-colors mb-2">
+                {t.products.vinnoFeaturedTitle}
+              </h2>
+              <p className="text-sm text-text-secondary mb-4">
+                {t.products.vinnoFeaturedDesc}
               </p>
               <span className="flex items-center gap-1.5 text-sm font-medium text-brand">
                 {t.common.viewPage} <ArrowRight size={14} />

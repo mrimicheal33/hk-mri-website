@@ -65,32 +65,47 @@ export const specialtyRecommendations: Record<
   SpecialtyId,
   SpecialtyRecommendation[]
 > = {
-  aesthetician: [{ type: "product", id: "sonoeye" }],
+  aesthetician: [
+    { type: "product", id: "sonoeye" },
+    { type: "brand", slug: "vinno" },
+  ],
   cardiothoracic: [
     { type: "brand", slug: "united-imaging" },
     { type: "product", id: "sonoeye" },
+    { type: "brand", slug: "vinno" },
   ],
-  chiropractor: [{ type: "product", id: "sonoeye" }],
+  chiropractor: [
+    { type: "product", id: "sonoeye" },
+    { type: "brand", slug: "vinno" },
+  ],
   gastroenterologist: [
     { type: "product", id: "sonoeye" },
     { type: "product", id: "mini800" },
+    { type: "brand", slug: "vinno" },
   ],
   gp: [
     { type: "product", id: "sonoeye" },
     { type: "product", id: "mini800" },
+    { type: "brand", slug: "vinno" },
   ],
   obgyn: [
     { type: "product", id: "sonoeye" },
     { type: "product", id: "navigator-3000a" },
+    { type: "brand", slug: "vinno" },
   ],
   orthopedic: [
     { type: "brand", slug: "united-imaging" },
     { type: "product", id: "sonoeye" },
+    { type: "brand", slug: "vinno" },
   ],
-  physiotherapist: [{ type: "product", id: "sonoeye" }],
+  physiotherapist: [
+    { type: "product", id: "sonoeye" },
+    { type: "brand", slug: "vinno" },
+  ],
   radiologist: [
     { type: "brand", slug: "united-imaging" },
     { type: "product", id: "navigator-3000a" },
+    { type: "brand", slug: "vinno" },
   ],
   veterinarian: [
     { type: "product", id: "vet1120" },

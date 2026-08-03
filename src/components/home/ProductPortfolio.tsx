@@ -19,6 +19,10 @@ const CARD_IMAGE_HEIGHT = "h-64 sm:h-72";
 export function ProductPortfolio() {
   const t = useDictionary();
 
+  const items = [...t.home.portfolio.items].sort((a, b) =>
+    a.brandName.localeCompare(b.brandName, undefined, { sensitivity: "base" }),
+  );
+
   return (
     <Section muted border>
       <SectionHeading
@@ -28,7 +32,7 @@ export function ProductPortfolio() {
       />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border items-stretch">
-        {t.home.portfolio.items.map((item) => {
+        {items.map((item) => {
           const isSonoEye = item.key === "sonoeye";
           const isMini800 = item.key === "mini800";
           const isVet1120 = item.key === "vet1120";

@@ -6,7 +6,7 @@ export const company = {
   nameLine1: "HK MRI Instrument",
   nameLine2: "Ltd.",
   shortName: "HK MRI",
-  copyright: "Copyright 2024-2026 @ HK MRI Instrument Ltd.",
+  copyright: "Copyright @ 2024-2026 HK MRI Instrument Ltd.",
   logo: "/images/hk-mri-instrument-logo.png",
   tagline: "Your Trusted Medical Device & Imaging Solutions Specialist",
   description:

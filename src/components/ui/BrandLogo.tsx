@@ -21,6 +21,7 @@ const UNIFORM_LOGO_HEIGHT: Record<string, number> = {
   "/images/brands/perlove.png": 32,
   "/images/brands/vetoo.svg": 36,
   "/images/brands/united-imaging.png": 40,
+  "/images/brands/vinno.png": 40,
 };
 
 /** Fixed row height for portfolio / product-card logo bands. */
@@ -43,6 +44,7 @@ const BRAND_NATIVE_SIZE: Record<string, { width: number; height: number }> = {
   "/images/brands/perlove.png": { width: 303, height: 82 },
   "/images/brands/hisky.png": { width: 155, height: 42 },
   "/images/brands/vetoo.svg": { width: 160, height: 40 },
+  "/images/brands/vinno.png": { width: 320, height: 80 },
 };
 
 function getDisplayDimensions(src: string, targetHeight: number) {
