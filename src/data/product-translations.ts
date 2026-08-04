@@ -566,6 +566,144 @@ const en: Record<string, ProductLocaleFields> = {
       },
     ],
   },
+  "vinno-a5": {
+    tagline: "Deliver Simplified Clinical Solution Anywhere",
+    description:
+      "VINNO A5 is a portable colour Doppler ultrasound system that combines compact design, simplified workflow, and high image quality. With height-adjustable trolley options, fast boot, and built-in battery support, it is ready for general imaging, OB/GYN, MSK, and multi-scene clinical scanning.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Design & Mobility",
+        items: [
+          "Compact, light portable console for flexible room-to-room or site-to-site use",
+          "Height-adjustable trolley for comfortable viewing height",
+          "Fast boot for immediate scanning readiness",
+          "Built-in battery for confidence at critical moments",
+          "Noiseless design for a quieter clinical environment",
+        ],
+      },
+      {
+        title: "Workflow Tools",
+        items: [
+          "Quick navigation bar and fast long-page browsing",
+          "Fast setting area for brightness and preset selection",
+          "Magic Drag and Drop preset sequencing",
+          "Onboard Scan Coach with reference images and schematics during live scanning",
+        ],
+      },
+      {
+        title: "Clinical Applications",
+        items: [
+          "General imaging and point-of-care ultrasound",
+          "Obstetrics & gynecology including advanced fetal visualisation workflows",
+          "Musculoskeletal and small-parts imaging",
+          "Wide transducer compatibility for multi-scene applications",
+        ],
+      },
+    ],
+  },
+  "vinno-r300": {
+    tagline: "Excellence within Reach",
+    description:
+      "VINNO R300 is a cart-based colour Doppler ultrasound system powered by the VLucid+ platform. Combined with UltraSense AI solutions and advanced cardiac/elastography tools, it delivers efficient precision imaging for a wide range of clinical needs.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Imaging Platform",
+        items: [
+          "Powered by VLucid+ for high-efficiency precision imaging",
+          "UltraSense AI solutions for breast and thyroid analysis support",
+          "Advanced acquisition and rendering for improved structure visualisation",
+        ],
+      },
+      {
+        title: "Clinical Tools",
+        items: [
+          "Combined TDI and PW for wall-motion and hemodynamic assessment",
+          "Semi-automated LV deformation quantification for reproducible myocardial measurements",
+          "Non-invasive real-time elastography for relative stiffness assessment",
+          "Colour 3D acquisition and rendering options",
+        ],
+      },
+      {
+        title: "Workflow",
+        items: [
+          "Customisable user interface",
+          "Finger-drawing annotation support",
+          "Designed for shared-service and multi-specialty departments",
+        ],
+      },
+    ],
+  },
+  "vinno-r700": {
+    tagline: "Elevating Ultrasound Efficiency with Lucid Vision",
+    description:
+      "VINNO R700 is a high-efficiency shared-service cart-based ultrasound system powered by VLucid+. It pairs advanced imaging algorithms with ergonomic design — including a 23.8\" monitor, tiltable touch screen, and multi-probe ports — for modern clinical practice.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Advanced Imaging",
+        items: [
+          "Real-time Adaptive De-noising (RAD) to suppress noise/speckle and sharpen tissue interfaces",
+          "Dynamic Signal Enhancement (DSE) for improved penetration and lateral resolution",
+          "Doppler Vector Projection (DVP) for enhanced hemodynamic visualisation",
+          "Powered by VLucid+ with UltraSense clinical tools",
+        ],
+      },
+      {
+        title: "Ergonomics & Efficiency",
+        items: [
+          "23.8\" large monitor for comfortable review",
+          "Tiltable 15.6\" touch screen and height/direction-adjustable console",
+          "In-built gel warmer and endocavity probe holder",
+          "Up to 5 active probe ports",
+          "Built-in battery supporting extended continuous scanning",
+        ],
+      },
+      {
+        title: "Workflow",
+        items: [
+          "Customisable UI for department preferences",
+          "Finger-drawing annotation",
+          "Designed as a shared-service system for multi-specialty imaging",
+        ],
+      },
+    ],
+  },
+  "vinno-d6-vet": {
+    tagline: "Excellent Performance and Advanced Experience for Animals",
+    description:
+      "VINNO D6 VET is a high-end compact veterinary colour Doppler ultrasound system built on the VLucid+ platform. It delivers portable high-quality imaging with veterinary-focused tools such as cardiac quantification (vCQ), VGuide needle visualisation, and strain imaging for advanced animal care.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Veterinary Imaging Platform",
+        items: [
+          "VLucid+ platform with advanced beam correction for accurate animal imaging",
+          "15.6\" wide-angle LCD display with up to 150° viewing angle",
+          "8\" high-sensitivity touch screen operable with sterile gloves",
+          "Expandable probe connectivity for flexible veterinary setups",
+        ],
+      },
+      {
+        title: "Animal-Care Clinical Tools",
+        items: [
+          "VINNO Cardiac Quantification (vCQ) for LV function and cardiac strain evaluation",
+          "Decision support that flags measurements outside predefined ranges",
+          "VGuide technology for visible, precise biopsy and anesthetic puncture guidance",
+          "Dual Doppler sample-gate options including PW/PW, PW/TD, and TD/TD",
+        ],
+      },
+      {
+        title: "Portable Veterinary Workflow",
+        items: [
+          "Highly integrated compact design for clinics, hospitals, and field care",
+          "Intuitive layout with soft keyboard and external keyboard support",
+          "Professional scanning and analysis tools for fast access to reliable images",
+        ],
+      },
+    ],
+  },
   "umr-670": {
     tagline: "Freedom Experience · Expand MRI — 1.5T wide-bore MRI",
     description:
@@ -1485,6 +1623,144 @@ const zh: Record<string, ProductLocaleFields> = {
           "重症、急診及麻醉床邊影像",
           "一般影像、血管、心臟、婦產、肌骨及小器官應用",
           "為醫院及診所環境提供旗艦級便攜表現",
+        ],
+      },
+    ],
+  },
+  "vinno-a5": {
+    tagline: "Deliver Simplified Clinical Solution Anywhere — 簡化臨床方案隨處可用",
+    description:
+      "VINNO A5 為便攜彩色多普勒超聲波系統，結合緊湊設計、簡化工作流程及高影像質素。配備可調高度推車選配、快速開機及內置電池，適合一般影像、婦產、肌骨及多場景臨床掃描。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "設計與機動性",
+        items: [
+          "輕巧便攜主機，方便跨診室或外勤使用",
+          "可調高度推車，配合舒適觀看高度",
+          "快速開機，隨時開始掃描",
+          "內置電池，於關鍵時刻提供操作信心",
+          "靜音設計，營造更安靜的臨床環境",
+        ],
+      },
+      {
+        title: "工作流程工具",
+        items: [
+          "快速導航列及長頁面快速瀏覽",
+          "快速設定區調整亮度及預設",
+          "Magic Drag and Drop 預設排序",
+          "Onboard Scan Coach，即時掃描時顯示參考影像與示意圖",
+        ],
+      },
+      {
+        title: "臨床應用",
+        items: [
+          "一般影像及床邊超聲波",
+          "婦產科（含進階胎兒可視化流程）",
+          "肌骨及小器官影像",
+          "廣泛探頭兼容性，支援多場景應用",
+        ],
+      },
+    ],
+  },
+  "vinno-r300": {
+    tagline: "Excellence within Reach — 卓越觸手可及",
+    description:
+      "VINNO R300 為推車式彩色多普勒超聲波系統，搭載 VLucid+ 平台。結合 UltraSense AI 方案及進階心臟／彈性成像工具，為多元臨床需求提供高效精準成像。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "成像平台",
+        items: [
+          "搭載 VLucid+，提供高效精準成像",
+          "UltraSense AI 方案，支援乳腺及甲狀腺分析",
+          "進階採集與渲染，提升結構可視化",
+        ],
+      },
+      {
+        title: "臨床工具",
+        items: [
+          "TDI 與 PW 結合，評估室壁運動及血流動力學",
+          "半自動左室形變定量，提升心肌測量可重複性",
+          "非侵入性即時彈性成像，評估相對硬度",
+          "彩色 3D 採集與渲染選項",
+        ],
+      },
+      {
+        title: "工作流程",
+        items: [
+          "可自訂使用者介面",
+          "支援手指繪圖標註",
+          "適合共享服務及多專科科室",
+        ],
+      },
+    ],
+  },
+  "vinno-r700": {
+    tagline: "Elevating Ultrasound Efficiency with Lucid Vision — 以 Lucid 視野提升超聲波效率",
+    description:
+      "VINNO R700 為高效共享服務推車式超聲波系統，搭載 VLucid+。結合進階成像算法與人體工學設計（23.8 吋顯示屏、可傾斜觸控屏及多探頭接口），滿足現代臨床實踐需求。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "進階成像",
+        items: [
+          "即時自適應降噪（RAD），抑制雜訊／斑點並銳化組織界面",
+          "動態訊號增強（DSE），提升穿透力與側向解析度",
+          "多普勒向量投影（DVP），強化血流動力學可視化",
+          "搭載 VLucid+ 及 UltraSense 臨床工具",
+        ],
+      },
+      {
+        title: "人體工學與效率",
+        items: [
+          "23.8 吋大顯示屏，閱片更舒適",
+          "可傾斜 15.6 吋觸控屏及高度／方向可調操控台",
+          "內置凝膠加熱器及腔內探頭支架",
+          "最多 5 個活動探頭接口",
+          "內置電池，支援延長連續掃描",
+        ],
+      },
+      {
+        title: "工作流程",
+        items: [
+          "可自訂 UI，配合科室偏好",
+          "手指繪圖標註",
+          "專為多專科共享服務影像而設",
+        ],
+      },
+    ],
+  },
+  "vinno-d6-vet": {
+    tagline: "Excellent Performance and Advanced Experience for Animals — 動物護理的卓越表現",
+    description:
+      "VINNO D6 VET 為高端緊湊獸醫彩色多普勒超聲波系統，建基於 VLucid+ 平台。提供便攜高質素影像，並配備獸醫專用心臟定量（vCQ）、VGuide 針道可視化及應變成像等工具，支援進階動物護理。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "獸醫成像平台",
+        items: [
+          "VLucid+ 平台配合進階波束校正，提供準確動物影像",
+          "15.6 吋廣角 LCD 顯示屏，可視角度最高約 150°",
+          "8 吋高靈敏觸控屏，戴無菌手套亦可操作",
+          "可擴充探頭連接，配合靈活獸醫配置",
+        ],
+      },
+      {
+        title: "動物護理臨床工具",
+        items: [
+          "VINNO 心臟定量（vCQ），評估左室功能及心肌應變",
+          "決策支援可標示超出預設範圍的測量值",
+          "VGuide 技術，讓活檢及麻醉穿刺更清晰精準",
+          "雙多普勒取樣閘選項，包括 PW/PW、PW/TD、TD/TD",
+        ],
+      },
+      {
+        title: "便攜獸醫工作流程",
+        items: [
+          "高度整合緊湊設計，適合診所、醫院及外勤護理",
+          "直觀佈局，支援軟鍵盤及外接鍵盤",
+          "專業掃描與分析工具，快速取得可靠影像",
         ],
       },
     ],

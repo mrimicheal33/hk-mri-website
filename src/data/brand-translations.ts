@@ -30,7 +30,7 @@ const en: Record<
   },
   vinno: {
     description:
-      "Innovative ultrasound technology brand delivering portable and premium colour Doppler systems on VINNO’s RF platform and VLucid imaging architecture.",
+      "Innovative ultrasound technology brand delivering portable, cart-based, and veterinary colour Doppler systems on VINNO’s RF platform and VLucid imaging architecture.",
   },
 };
 

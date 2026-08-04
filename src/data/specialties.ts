@@ -110,6 +110,7 @@ export const specialtyRecommendations: Record<
   veterinarian: [
     { type: "product", id: "vet1120" },
     { type: "product", id: "vf1" },
+    { type: "product", id: "vinno-d6-vet" },
   ],
 };
 
@@ -125,6 +126,7 @@ export function getSpecialtyHref(id: string) {
 export function getSpecialtyProducts(id: SpecialtyId): Product[] {
   const result: Product[] = [];
   const seen = new Set<string>();
+  const vetCategories = new Set(["veterinary", "veterinary-carm"]);
 
   for (const rec of specialtyRecommendations[id]) {
     if (rec.type === "product") {
@@ -138,6 +140,9 @@ export function getSpecialtyProducts(id: SpecialtyId): Product[] {
 
     if (!getBrandBySlug(rec.slug)) continue;
     for (const product of getProductsByBrand(rec.slug)) {
+      if (id !== "veterinarian" && vetCategories.has(product.category)) {
+        continue;
+      }
       if (!seen.has(product.id)) {
         seen.add(product.id);
         result.push(product);
