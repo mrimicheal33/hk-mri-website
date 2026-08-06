@@ -89,7 +89,7 @@ export function ProductsContent() {
             >
               <div className="relative min-h-0 flex-1 overflow-hidden">
                 <Image
-                  src="/images/products/vinno-a3-card.jpg"
+                  src="/images/products/vinno-portfolio.jpg"
                   alt="VINNO portable ultrasound"
                   fill
                   unoptimized

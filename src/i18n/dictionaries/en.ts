@@ -103,63 +103,13 @@ export const en = {
       recommendedLabel: "Recommended Products",
       items: [
         {
-          id: "physiotherapist",
-          specialty: "Physiotherapist",
-          needs:
-            "Rapid soft tissue, tendon, muscle tear, and joint assessment; real-time guided dry-needling.",
-          recommendedProducts: [
-            {
-              name: "CHISON SonoEye Handheld Ultrasound",
-              brand: "CHISON",
-              link: "/products/sonoeye",
-            },
-            {
-              name: "VINNO A3 Compact Ultrasound",
-              brand: "VINNO",
-              link: "/products/vinno-a3",
-            },
-            {
-              name: "VINNO 10 Premium Portable Ultrasound",
-              brand: "VINNO",
-              link: "/products/vinno10",
-            },
-          ],
-          pitch:
-            "Ultra-portable MSK point-of-care ultrasound (POCUS) to visually prove treatment progress to patients.",
-          cta: "View Physiotherapy Devices",        },
-        {
-          id: "chiropractor",
-          specialty: "Chiropractor",
-          needs:
-            "Visualizing joint inflammation, spinal soft tissue, and muscle strain during patient adjustment plans.",
-          recommendedProducts: [
-            {
-              name: "CHISON SonoEye Handheld Ultrasound",
-              brand: "CHISON",
-              link: "/products/sonoeye",
-            },
-            {
-              name: "VINNO A3 Compact Ultrasound",
-              brand: "VINNO",
-              link: "/products/vinno-a3",
-            },
-            {
-              name: "VINNO 10 Premium Portable Ultrasound",
-              brand: "VINNO",
-              link: "/products/vinno10",
-            },
-          ],
-          pitch:
-            "Instant high-resolution imaging to validate spinal and joint subluxation treatments right in your consultation room.",
-          cta: "View Chiropractic Devices",        },
-        {
           id: "aesthetician",
           specialty: "Aesthetic Practitioner & Cosmetic Doctor",
           needs:
             "Facial vascular mapping prior to dermal filler injections, depth measurement, avoiding intravascular occlusion, and hyaluronidase dissolution guidance.",
           recommendedProducts: [
             {
-              name: "CHISON SonoEye Handheld Ultrasound (High-Frequency Linear)",
+              name: "CHISON SonoEye Handheld Ultrasound",
               brand: "CHISON",
               link: "/products/sonoeye",
             },
@@ -169,59 +119,178 @@ export const en = {
               link: "/products/vinno-a3",
             },
             {
+              name: "VINNO A5 Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
+            },
+          ],
+          pitch:
+            "High-frequency micro-vascular visualisation to ensure safe, precise filler placement and emergency complication management.",
+          cta: "View Aesthetic Ultrasound",
+        },
+        {
+          id: "anesthesiologist",
+          specialty: "Anesthesiologist & Pain Specialist",
+          needs:
+            "Ultrasound-guided regional anesthesia and nerve blocks, needle tip visualisation, perioperative monitoring, and bedside pain interventions.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 Ultra-Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO 8 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno8",
+            },
+            {
               name: "VINNO 10 Premium Portable Ultrasound",
               brand: "VINNO",
               link: "/products/vinno10",
             },
           ],
           pitch:
-            "High-frequency micro-vascular visualization to ensure safe, precise filler placement and emergency complication management.",
-          cta: "View Aesthetic Ultrasound",        },
+            "Ultra-portable systems with needle enhancement for precise regional anesthesia, pain procedures, and perioperative ultrasound — as positioned by VINNO for anesthesia and pain management.",
+          cta: "View Anesthesia Ultrasound",
+        },
         {
-          id: "obgyn",
-          specialty: "OB/GYN (Obstetrics & Gynecology)",
+          id: "cardiologist",
+          specialty: "Cardiologist",
           needs:
-            "Point-of-care pelvic exams, fetal heartbeat detection, quick gestational age assessment, and emergency maternal evaluations.",
+            "High-quality 2D and Doppler echocardiography, Stress Echo and strain assessment, plus cardiac CT, PET-CT, and MRI for advanced cardiovascular workups.",
           recommendedProducts: [
             {
-              name: "CHISON SonoEye (Convex / POCUS Probe)",
+              name: "CHISON SonoEye Handheld Ultrasound",
               brand: "CHISON",
               link: "/products/sonoeye",
             },
             {
-              name: "SINO MDT Navigator 3000A 3D Mammography",
-              brand: "SINO MDT",
-              link: "/products/navigator-3000a",
+              name: "VINNO 6 Ultra-Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno6",
             },
             {
-              name: "VINNO A3 Compact Ultrasound",
+              name: "VINNO 8 Premium Portable Ultrasound",
               brand: "VINNO",
-              link: "/products/vinno-a3",
+              link: "/products/vinno8",
             },
             {
               name: "VINNO 10 Premium Portable Ultrasound",
               brand: "VINNO",
               link: "/products/vinno10",
             },
-          ],
-          pitch:
-            "Handheld fetal and pelvic screening paired with high-precision 3D tomosynthesis breast health diagnostic systems.",
-          cta: "View Women's Health Solutions",        },
-        {
-          id: "orthopedic",
-          specialty: "Orthopedic Surgeon",
-          needs:
-            "Intraoperative fluoroscopy guidance, high-resolution joint/ligament dynamic imaging, post-op implant verification, and fast CT/MRI scans.",
-          recommendedProducts: [
             {
-              name: "CHISON SonoEye MSK Handheld Ultrasound",
-              brand: "CHISON",
-              link: "/products/sonoeye",
+              name: "VINNO R300 Cart-Based Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
             },
             {
-              name: "UNITED IMAGING MRI & CT Scan Systems",
+              name: "UNITED IMAGING uCT 780",
               brand: "UNITED IMAGING",
-              link: "/brands/united-imaging",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+            {
+              name: "UNITED IMAGING uMI Vista",
+              brand: "UNITED IMAGING",
+              link: "/products/umi-vista",
+            },
+            {
+              name: "UNITED IMAGING uMR 680",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-680",
+            },
+            {
+              name: "UNITED IMAGING uMR OMEGA",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-omega",
+            },
+          ],
+          pitch:
+            "Cardiac-capable echo platforms plus CT, PET-CT, and MRI systems for clinic-to-hospital cardiology pathways — from bedside Doppler to advanced anatomical and functional imaging.",
+          cta: "View Cardiology Imaging",
+        },
+        {
+          id: "cardiothoracic",
+          specialty: "Cardiothoracic Surgeon",
+          needs:
+            "Cardiac and thoracic point-of-care ultrasound, pleural effusion checks, pre-/post-op chest CT and MRI, and advanced cardiovascular anatomical and PET imaging.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 Ultra-Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
+            {
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+            {
+              name: "UNITED IMAGING uMR 670",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-670",
+            },
+            {
+              name: "UNITED IMAGING uMR 680",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-680",
+            },
+            {
+              name: "UNITED IMAGING uMR OMEGA",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-omega",
+            },
+            {
+              name: "UNITED IMAGING uMI Vista",
+              brand: "UNITED IMAGING",
+              link: "/products/umi-vista",
+            },
+          ],
+          pitch:
+            "Bedside cardiac and thoracic POCUS paired with dedicated CT, MRI, and PET-CT systems for surgical planning and follow-up — without mammography pathways.",
+          cta: "View Cardiothoracic Devices",
+        },
+        {
+          id: "chiropractor",
+          specialty: "Chiropractor",
+          needs:
+            "Visualising joint inflammation, spinal soft tissue, and muscle strain during patient adjustment plans.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 Ultra-Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno6",
             },
             {
               name: "VINNO A3 Compact Ultrasound",
@@ -229,20 +298,102 @@ export const en = {
               link: "/products/vinno-a3",
             },
             {
+              name: "VINNO A5 Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
+            },
+          ],
+          pitch:
+            "Instant high-resolution MSK imaging to validate spinal and joint soft-tissue findings right in your consultation room.",
+          cta: "View Chiropractic Devices",
+        },
+        {
+          id: "emergency",
+          specialty: "Emergency & Critical Care Physician",
+          needs:
+            "Fast bedside triage in ED and ICU, lung and cardiac POCUS, vascular access guidance, plus rapid trauma and acute CT when every second counts.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 Ultra-Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
               name: "VINNO 10 Premium Portable Ultrasound",
               brand: "VINNO",
               link: "/products/vinno10",
             },
+            {
+              name: "VINNO A5 Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
           ],
           pitch:
-            "Comprehensive bone, joint, and soft-tissue imaging from bedside POCUS checks to advanced full-body MRI diagnostics.",
-          cta: "View Orthopedic Systems",
+            "VINNO 6 and VINNO 10 for ED/ICU bedside imaging, pocket SonoEye for immediate triage, and high-speed CT for trauma and acute workups.",
+          cta: "View Emergency Imaging",
+        },
+        {
+          id: "gastroenterologist",
+          specialty: "Gastroenterologist & Hepatologist",
+          needs:
+            "Bedside abdominal ultrasound, biliary and ascites assessment, quantitative liver stiffness (LSM) and attenuation (UAP), plus CT staging support.",
+          recommendedProducts: [
+            {
+              name: "iLivTouch Mini800 Shear-Wave Elastography",
+              brand: "HISKY",
+              link: "/products/mini800",
+            },
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
+            {
+              name: "VINNO R300 Cart-Based Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
+            },
+            {
+              name: "VINNO R700 Shared-Service Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-r700",
+            },
+            {
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+          ],
+          pitch:
+            "Combine portable abdominal POCUS, FDA-cleared shear-wave elastography, premium VINNO 10 and shared-service carts, plus CT for clinic and hospital GI/hepatology imaging.",
+          cta: "View Hepatology Devices",
         },
         {
           id: "gp",
           specialty: "General Practitioner (GP)",
           needs:
-            "Fast bedside triage, basic abdominal checks, and quick non-invasive liver steatosis screening.",
+            "Fast bedside triage, basic abdominal checks, compact colour Doppler imaging, and quick non-invasive liver steatosis screening.",
           recommendedProducts: [
             {
               name: "CHISON SonoEye Handheld Ultrasound",
@@ -260,50 +411,25 @@ export const en = {
               link: "/products/vinno-a3",
             },
             {
-              name: "VINNO 10 Premium Portable Ultrasound",
+              name: "VINNO A5 Portable Ultrasound",
               brand: "VINNO",
-              link: "/products/vinno10",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "VINNO 6 Ultra-Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno6",
             },
           ],
           pitch:
-            "Perform immediate bedside diagnostic ultrasound and liver health scoring without referring patients elsewhere.",
-          cta: "View GP Solutions",        },
-        {
-          id: "gastroenterologist",
-          specialty: "Gastroenterologist & Hepatologist",
-          needs:
-            "Bedside abdominal ultrasound, biliary and ascites assessment, plus quantitative liver stiffness (LSM) and ultrasound attenuation (UAP) for fatty liver & fibrosis monitoring.",
-          recommendedProducts: [
-            {
-              name: "CHISON SonoEye Handheld Ultrasound",
-              brand: "CHISON",
-              link: "/products/sonoeye",
-            },
-            {
-              name: "iLivTouch Mini800 Portable Shear-Wave Elastography",
-              brand: "HISKY",
-              link: "/products/mini800",
-            },
-            {
-              name: "VINNO A3 Compact Ultrasound",
-              brand: "VINNO",
-              link: "/products/vinno-a3",
-            },
-            {
-              name: "VINNO 10 Premium Portable Ultrasound",
-              brand: "VINNO",
-              link: "/products/vinno10",
-            },
-          ],
-          pitch:
-            "Combine portable abdominal POCUS with FDA-cleared shear-wave elastography for fast, repeatable, non-invasive liver and GI assessment.",
-          cta: "View Hepatology Devices",
+            "Perform immediate bedside diagnostic ultrasound and liver health scoring with compact multi-scene VINNO and SonoEye systems.",
+          cta: "View GP Solutions",
         },
         {
-          id: "cardiothoracic",
-          specialty: "Cardiothoracic Surgeon",
+          id: "obgyn",
+          specialty: "OB/GYN (Obstetrics & Gynecology)",
           needs:
-            "Cardiac and thoracic point-of-care ultrasound, pleural effusion checks, pre-/post-op chest CT and MRI, and advanced cardiovascular anatomical imaging.",
+            "Obstetric and gynecologic imaging, fetal visualisation, HSG and volume tools, plus dual mammography pathways for breast screening.",
           recommendedProducts: [
             {
               name: "CHISON SonoEye Handheld Ultrasound",
@@ -311,9 +437,9 @@ export const en = {
               link: "/products/sonoeye",
             },
             {
-              name: "UNITED IMAGING MRI & CT Scan Systems",
-              brand: "UNITED IMAGING",
-              link: "/brands/united-imaging",
+              name: "VINNO 8 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno8",
             },
             {
               name: "VINNO A3 Compact Ultrasound",
@@ -321,30 +447,218 @@ export const en = {
               link: "/products/vinno-a3",
             },
             {
-              name: "VINNO 10 Premium Portable Ultrasound",
+              name: "VINNO A5 Portable Ultrasound",
               brand: "VINNO",
-              link: "/products/vinno10",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "VINNO R300 Cart-Based Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
+            },
+            {
+              name: "VINNO R700 Shared-Service Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-r700",
+            },
+            {
+              name: "SINO MDT Navigator 3000A 3D Mammography",
+              brand: "SINO MDT",
+              link: "/products/navigator-3000a",
+            },
+            {
+              name: "UNITED IMAGING uMammo 890i",
+              brand: "UNITED IMAGING",
+              link: "/products/umammo-890i",
             },
           ],
           pitch:
-            "Bedside cardiac and thoracic POCUS paired with high-resolution CT/MRI systems for surgical planning and follow-up.",
-          cta: "View Cardiothoracic Devices",
+            "VINNO platforms for OB/GYN ultrasound (including HSG and volume tools), with both Navigator 3000A and uMammo 890i for complementary 3D mammography pathways.",
+          cta: "View Women's Health Solutions",
+        },
+        {
+          id: "orthopedic",
+          specialty: "Orthopedic Surgeon",
+          needs:
+            "MSK soft-tissue ultrasound, high-resolution joint and ligament imaging, digital radiography, and fast CT/MRI for bone and implant assessment — without mammography or PET pathways.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 Ultra-Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO A5 Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+            {
+              name: "UNITED IMAGING uDR 596i",
+              brand: "UNITED IMAGING",
+              link: "/products/udr-596i",
+            },
+            {
+              name: "UNITED IMAGING uMR 670",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-670",
+            },
+            {
+              name: "UNITED IMAGING uMR 680",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-680",
+            },
+            {
+              name: "UNITED IMAGING uMR OMEGA",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-omega",
+            },
+          ],
+          pitch:
+            "MSK POCUS through digital radiography, CT, and MRI for bone, joint, and soft-tissue diagnostics — focused orthopedic imaging without mammo or PET.",
+          cta: "View Orthopedic Systems",
+        },
+        {
+          id: "physiotherapist",
+          specialty: "Physiotherapist",
+          needs:
+            "Rapid soft tissue, tendon, muscle tear, and joint assessment; real-time guided dry-needling.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 Ultra-Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO A3 Compact Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO A5 Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
+            },
+          ],
+          pitch:
+            "Ultra-portable MSK point-of-care ultrasound — VINNO 6 is officially positioned for musculoskeletal exams alongside compact A-series systems.",
+          cta: "View Physiotherapy Devices",
         },
         {
           id: "radiologist",
           specialty: "Radiologist",
           needs:
-            "High-throughput anatomical scanning, low-dose 3D breast tomosynthesis, and full-body MRI/CT.",
+            "Full diagnostic imaging suite — CT, MRI, PET-CT, DR, dual mammography, liver elastography, and high-throughput shared-service ultrasound with interventional tools.",
           recommendedProducts: [
             {
-              name: "SINO MDT Navigator 3000A 3D Tomosynthesis",
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+            {
+              name: "UNITED IMAGING uDR 596i",
+              brand: "UNITED IMAGING",
+              link: "/products/udr-596i",
+            },
+            {
+              name: "UNITED IMAGING uMammo 890i",
+              brand: "UNITED IMAGING",
+              link: "/products/umammo-890i",
+            },
+            {
+              name: "UNITED IMAGING uMR 670",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-670",
+            },
+            {
+              name: "UNITED IMAGING uMR 680",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-680",
+            },
+            {
+              name: "UNITED IMAGING uMR OMEGA",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-omega",
+            },
+            {
+              name: "UNITED IMAGING uMI Vista",
+              brand: "UNITED IMAGING",
+              link: "/products/umi-vista",
+            },
+            {
+              name: "SINO MDT Navigator 3000A 3D Mammography",
               brand: "SINO MDT",
               link: "/products/navigator-3000a",
             },
             {
-              name: "UNITED IMAGING MRI & CT Scan Systems",
-              brand: "UNITED IMAGING",
-              link: "/brands/united-imaging",
+              name: "iLivTouch Mini800 Shear-Wave Elastography",
+              brand: "HISKY",
+              link: "/products/mini800",
+            },
+            {
+              name: "VINNO 8 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno8",
+            },
+            {
+              name: "VINNO 10 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
+            {
+              name: "VINNO R300 Cart-Based Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
+            },
+            {
+              name: "VINNO R700 Shared-Service Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-r700",
+            },
+          ],
+          pitch:
+            "End-to-end radiology: UNITED IMAGING CT/MRI/PET/DR/mammo, Navigator 3D mammography, Mini800 elastography, and shared-service VINNO ultrasound with interventional capability.",
+          cta: "View Radiology Systems",
+        },
+        {
+          id: "urologist",
+          specialty: "Urologist",
+          needs:
+            "Pelvic, scrotal, and small-parts ultrasound, bladder and prostate assessment, and guided procedures with compact and cart-based colour Doppler systems.",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye Handheld Ultrasound",
+              brand: "CHISON",
+              link: "/products/sonoeye",
             },
             {
               name: "VINNO A3 Compact Ultrasound",
@@ -352,20 +666,30 @@ export const en = {
               link: "/products/vinno-a3",
             },
             {
-              name: "VINNO 10 Premium Portable Ultrasound",
+              name: "VINNO A5 Portable Ultrasound",
               brand: "VINNO",
-              link: "/products/vinno10",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "VINNO 8 Premium Portable Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno8",
+            },
+            {
+              name: "VINNO R300 Cart-Based Ultrasound",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
             },
           ],
           pitch:
-            "High-resolution diagnostic systems equipped with AI-assisted analysis and low-dose imaging protocols.",
-          cta: "View Radiology Systems",
+            "VINNO A3 is officially positioned for urology, paired with portable and cart-based systems for pelvic and small-parts ultrasound in clinic and hospital settings.",
+          cta: "View Urology Ultrasound",
         },
         {
           id: "veterinarian",
           specialty: "Veterinary Surgeon",
           needs:
-            "High-frame-rate pet fluoroscopy, dynamic orthopedic imaging, and interventional procedures.",
+            "High-frame-rate pet fluoroscopy, dynamic orthopedic imaging, veterinary ultrasound, and interventional procedures.",
           recommendedProducts: [
             {
               name: "PERLOVE VET1120 Mobile Digital C-Arm",
@@ -385,7 +709,8 @@ export const en = {
           ],
           pitch:
             "Animal-specific ultrasound, 30fps dynamic imaging, and mobile C-arm fluoroscopy designed for veterinary clinics.",
-          cta: "View Vet Equipment",        },
+          cta: "View Vet Equipment",
+        },
       ],
     },
     portfolio: {
@@ -481,9 +806,9 @@ export const en = {
           brandName: "VINNO",
           brandLogo: "/images/brands/vinno.png",
           description:
-            "VINNO portable, cart-based, and veterinary colour Doppler ultrasound — including A3, A5, VINNO 10, R300, R700, and D6 VET — built on RF and VLucid platforms for clinics, hospitals, and animal care.",
+            "VINNO portable, cart-based, and veterinary colour Doppler ultrasound — including A3, A5, VINNO 6, VINNO 8, VINNO 10, R300, R700, and D6 VET — built on RF and VLucid platforms for clinics, hospitals, and animal care.",
           href: "/brands/vinno",
-          image: "/images/products/vinno-a3-card.jpg",
+          image: "/images/products/vinno-portfolio.jpg",
           imageFit: "contain",
           imageCaptionTitle: "VINNO Ultrasound Family",
           imageCaptionSubtitle: "Portable · Cart-based · Veterinary",
@@ -571,9 +896,9 @@ export const en = {
           slug: "vinno",
           name: "VINNO",
           logo: "/images/brands/vinno.png",
-          image: "/images/products/vinno-a3-card.jpg",
+          image: "/images/products/vinno-portfolio.jpg",
           description:
-            "Innovative ultrasound technology — portable, cart-based, and veterinary colour Doppler systems including A3, A5, VINNO 10, R300, R700, and D6 VET.",
+            "Innovative ultrasound technology — portable, cart-based, and veterinary colour Doppler systems including A3, A5, VINNO 6, VINNO 8, VINNO 10, R300, R700, and D6 VET.",
         },
       ],
     },
@@ -602,7 +927,7 @@ export const en = {
     ilivtouchCaptionSubtitle: "Portable shear-wave Elastography",
     vinnoFeaturedTitle: "VINNO Portable Colour Doppler Ultrasound",
     vinnoFeaturedDesc:
-      "VINNO A3, A5, VINNO 10, R300, R700, and D6 VET — portable, cart-based, and veterinary ultrasound on RF and VLucid platforms for clinics, hospitals, and animal care",
+      "VINNO A3, A5, VINNO 6, VINNO 8, VINNO 10, R300, R700, and D6 VET — portable, cart-based, and veterinary ultrasound on RF and VLucid platforms for clinics, hospitals, and animal care",
     vinnoCaptionTitle: "VINNO Ultrasound Family",
     vinnoCaptionSubtitle: "Portable · Cart-based · Veterinary",
     brandsLabel: "Brands",
@@ -657,7 +982,7 @@ export const en = {
       "Mammography — SINO MDT Navigator 3000A 3D tomosynthesis digital mammography, UNITED IMAGING uMammo 890i low-dose 3D digital mammography",
       "MRI (Magnetic Resonance Imaging) — UNITED IMAGING uMR 670, 680 & OMEGA wide-bore 1.5T/3T systems",
       "PET-CT (Positron Emission Tomography–Computed Tomography) — UNITED IMAGING uMI Vista digital PET-CT",
-      "Ultrasound Systems — CHISON SonoEye handheld ultrasound; VINNO A3, A5, VINNO 10, R300, R700 portable/cart-based ultrasound and D6 VET veterinary ultrasound",
+      "Ultrasound Systems — CHISON SonoEye handheld ultrasound; VINNO A3, A5, VINNO 6, VINNO 8, VINNO 10, R300, R700 portable/cart-based ultrasound and D6 VET veterinary ultrasound",
       "Veterinary Mobile Digital C-arm System — PERLOVE VET1120 mobile digital C-arm",
       "Veterinary Imaging — VETOO VF1 Dynamic DR",
     ],

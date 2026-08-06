@@ -104,10 +104,10 @@ export const zh: Dictionary = {
       recommendedLabel: "推薦產品",
       items: [
         {
-          id: "physiotherapist",
-          specialty: "物理治療師",
+          id: "aesthetician",
+          specialty: "醫美及美容醫生",
           needs:
-            "快速評估軟組織、肌腱、肌肉撕裂及關節問題；即時導引乾針治療。",
+            "填充劑注射前面部血管定位、深度測量、避免血管栓塞，以及透明質酸酶溶解導引。",
           recommendedProducts: [
             {
               name: "CHISON SonoEye 手持超聲波",
@@ -120,14 +120,163 @@ export const zh: Dictionary = {
               link: "/products/vinno-a3",
             },
             {
+              name: "VINNO A5 便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
+            },
+          ],
+          pitch:
+            "高頻微血管可視化，確保填充劑精準安全放置及併發症應急處理。",
+          cta: "查看醫美超聲波",
+        },
+        {
+          id: "anesthesiologist",
+          specialty: "麻醉科及疼痛專科醫生",
+          needs:
+            "超聲波導引區域麻醉及神經阻滯、針尖可視化、圍手術期監測，以及床邊疼痛介入。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 超便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO 8 高端便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno8",
+            },
+            {
               name: "VINNO 10 旗艦便攜超聲波",
               brand: "VINNO",
               link: "/products/vinno10",
             },
           ],
           pitch:
-            "超便攜肌骨床邊超聲波（POCUS），以影像向患者清晰展示治療進度。",
-          cta: "查看物理治療設備",        },
+            "超便攜系統配備針道增強，適合精準區域麻醉、疼痛程序及圍手術期超聲波 — 符合 VINNO 對麻醉及疼痛管理的定位。",
+          cta: "查看麻醉科超聲波",
+        },
+        {
+          id: "cardiologist",
+          specialty: "心臟科醫生",
+          needs:
+            "高質素 2D 及多普勒超聲心動圖、負荷超聲及應變評估，以及心臟 CT、PET-CT 與 MRI，支援進階心血管檢查。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 超便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO 8 高端便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno8",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
+            {
+              name: "VINNO R300 推車式超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
+            },
+            {
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+            {
+              name: "UNITED IMAGING uMI Vista",
+              brand: "UNITED IMAGING",
+              link: "/products/umi-vista",
+            },
+            {
+              name: "UNITED IMAGING uMR 680",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-680",
+            },
+            {
+              name: "UNITED IMAGING uMR OMEGA",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-omega",
+            },
+          ],
+          pitch:
+            "具備心臟超聲能力的平台，加上 CT、PET-CT 及 MRI 系統，覆蓋診所至醫院心臟科路徑 — 由床邊多普勒至進階解剖及功能影像。",
+          cta: "查看心臟科影像",
+        },
+        {
+          id: "cardiothoracic",
+          specialty: "心胸外科醫生",
+          needs:
+            "心臟及胸腔床邊超聲波、胸腔積液檢查、術前／術後胸部 CT 及 MRI，以及進階心血管解剖與 PET 影像。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 超便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
+            {
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+            {
+              name: "UNITED IMAGING uMR 670",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-670",
+            },
+            {
+              name: "UNITED IMAGING uMR 680",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-680",
+            },
+            {
+              name: "UNITED IMAGING uMR OMEGA",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-omega",
+            },
+            {
+              name: "UNITED IMAGING uMI Vista",
+              brand: "UNITED IMAGING",
+              link: "/products/umi-vista",
+            },
+          ],
+          pitch:
+            "床邊心臟及胸腔 POCUS，配合專用 CT、MRI 及 PET-CT 系統，支援手術規劃及術後追蹤 — 不含乳腺攝影路徑。",
+          cta: "查看心胸外科設備",
+        },
         {
           id: "chiropractor",
           specialty: "脊醫",
@@ -140,29 +289,9 @@ export const zh: Dictionary = {
               link: "/products/sonoeye",
             },
             {
-              name: "VINNO A3 緊湊超聲波",
+              name: "VINNO 6 超便攜超聲波",
               brand: "VINNO",
-              link: "/products/vinno-a3",
-            },
-            {
-              name: "VINNO 10 旗艦便攜超聲波",
-              brand: "VINNO",
-              link: "/products/vinno10",
-            },
-          ],
-          pitch:
-            "即時高解像度影像，在診室內驗證脊柱及關節半脫位治療效果。",
-          cta: "查看脊醫設備",        },
-        {
-          id: "aesthetician",
-          specialty: "醫美及美容醫生",
-          needs:
-            "填充劑注射前面部血管定位、深度測量、避免血管栓塞，以及透明質酸酶溶解導引。",
-          recommendedProducts: [
-            {
-              name: "CHISON SonoEye 手持超聲波（高頻線陣）",
-              brand: "CHISON",
-              link: "/products/sonoeye",
+              link: "/products/vinno6",
             },
             {
               name: "VINNO A3 緊湊超聲波",
@@ -170,80 +299,102 @@ export const zh: Dictionary = {
               link: "/products/vinno-a3",
             },
             {
-              name: "VINNO 10 旗艦便攜超聲波",
+              name: "VINNO A5 便攜超聲波",
               brand: "VINNO",
-              link: "/products/vinno10",
+              link: "/products/vinno-a5",
             },
           ],
           pitch:
-            "高頻微血管可視化，確保填充劑精準安全放置及併發症應急處理。",
-          cta: "查看醫美超聲波",        },
+            "即時高解像度肌骨影像，在診室內驗證脊柱及關節軟組織表現。",
+          cta: "查看脊醫設備",
+        },
         {
-          id: "obgyn",
-          specialty: "婦產科（產科及婦科）",
+          id: "emergency",
+          specialty: "急診及重症科醫生",
           needs:
-            "床邊盆腔檢查、胎心偵測、快速孕齡評估及緊急產科評估。",
+            "急診室及 ICU 快速床邊分流、肺部及心臟 POCUS、血管通路導引，以及創傷／急性 CT，分秒必爭時的可靠影像。",
           recommendedProducts: [
             {
-              name: "CHISON SonoEye（凸陣 / POCUS 探頭）",
+              name: "CHISON SonoEye 手持超聲波",
               brand: "CHISON",
               link: "/products/sonoeye",
             },
             {
-              name: "SINO MDT Navigator 3000A 3D 乳腺攝影",
-              brand: "SINO MDT",
-              link: "/products/navigator-3000a",
-            },
-            {
-              name: "VINNO A3 緊湊超聲波",
+              name: "VINNO 6 超便攜超聲波",
               brand: "VINNO",
-              link: "/products/vinno-a3",
+              link: "/products/vinno6",
             },
             {
               name: "VINNO 10 旗艦便攜超聲波",
               brand: "VINNO",
               link: "/products/vinno10",
             },
-          ],
-          pitch:
-            "手持胎兒及盆腔篩查，配合高精度 3D 斷層合成乳腺健康診斷系統。",
-          cta: "查看女性健康方案",        },
-        {
-          id: "orthopedic",
-          specialty: "骨科醫生",
-          needs:
-            "術中透視導引、高解像度關節／韌帶動態影像、術後植入物核實，以及快速 CT／MRI 掃描。",
-          recommendedProducts: [
             {
-              name: "CHISON SonoEye 肌骨手持超聲波",
-              brand: "CHISON",
-              link: "/products/sonoeye",
+              name: "VINNO A5 便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
             },
             {
-              name: "UNITED IMAGING MRI 及 CT 掃描系統",
+              name: "UNITED IMAGING uCT 780",
               brand: "UNITED IMAGING",
-              link: "/brands/united-imaging",
+              link: "/products/uct-780",
             },
             {
-              name: "VINNO A3 緊湊超聲波",
-              brand: "VINNO",
-              link: "/products/vinno-a3",
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+          ],
+          pitch:
+            "VINNO 6 及 VINNO 10 支援急診／ICU 床邊影像，口袋型 SonoEye 作即時分流，高速 CT 用於創傷及急性檢查。",
+          cta: "查看急診影像",
+        },
+        {
+          id: "gastroenterologist",
+          specialty: "腸胃肝病科醫生",
+          needs:
+            "床邊腹部超聲波、膽道及腹水評估、定量肝硬度（LSM）與超聲衰減參數（UAP），以及 CT 分期支援。",
+          recommendedProducts: [
+            {
+              name: "iLivTouch Mini800 剪切波彈性成像",
+              brand: "HISKY",
+              link: "/products/mini800",
+            },
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
             },
             {
               name: "VINNO 10 旗艦便攜超聲波",
               brand: "VINNO",
               link: "/products/vinno10",
             },
+            {
+              name: "VINNO R300 推車式超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
+            },
+            {
+              name: "VINNO R700 共享服務超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-r700",
+            },
+            {
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
           ],
           pitch:
-            "由床邊 POCUS 檢查至全身 MRI 診斷，全面涵蓋骨骼、關節及軟組織影像。",
-          cta: "查看骨科系統",
+            "結合便攜腹部 POCUS、FDA 認證剪切波彈性成像、旗艦 VINNO 10 及共享服務推車，並配合 CT，服務診所及醫院腸胃／肝病影像需求。",
+          cta: "查看肝病科設備",
         },
         {
           id: "gp",
           specialty: "普通科醫生（GP）",
           needs:
-            "快速床邊分流、基本腹部檢查，以及非侵入性脂肪肝快速篩查。",
+            "快速床邊分流、基本腹部檢查、緊湊彩色多普勒影像，以及非侵入性脂肪肝快速篩查。",
           recommendedProducts: [
             {
               name: "CHISON SonoEye 手持超聲波",
@@ -261,50 +412,25 @@ export const zh: Dictionary = {
               link: "/products/vinno-a3",
             },
             {
-              name: "VINNO 10 旗艦便攜超聲波",
+              name: "VINNO A5 便攜超聲波",
               brand: "VINNO",
-              link: "/products/vinno10",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "VINNO 6 超便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno6",
             },
           ],
           pitch:
-            "即時進行床邊診斷超聲波及肝臟健康評分，無需另行轉介。",
-          cta: "查看普通科方案",        },
-        {
-          id: "gastroenterologist",
-          specialty: "腸胃肝病科醫生",
-          needs:
-            "床邊腹部超聲波、膽道及腹水評估，以及定量肝硬度（LSM）與超聲衰減參數（UAP），用於脂肪肝及肝纖維化監測。",
-          recommendedProducts: [
-            {
-              name: "CHISON SonoEye 手持超聲波",
-              brand: "CHISON",
-              link: "/products/sonoeye",
-            },
-            {
-              name: "iLivTouch Mini800 便攜式剪切波彈性成像",
-              brand: "HISKY",
-              link: "/products/mini800",
-            },
-            {
-              name: "VINNO A3 緊湊超聲波",
-              brand: "VINNO",
-              link: "/products/vinno-a3",
-            },
-            {
-              name: "VINNO 10 旗艦便攜超聲波",
-              brand: "VINNO",
-              link: "/products/vinno10",
-            },
-          ],
-          pitch:
-            "結合便攜腹部 POCUS 與 FDA 認證剪切波彈性成像，快速、可重複、非侵入性進行肝臟及消化系統評估。",
-          cta: "查看肝病科設備",
+            "以便攜多場景 VINNO 及 SonoEye 系統即時進行床邊診斷超聲波及肝臟健康評分。",
+          cta: "查看普通科方案",
         },
         {
-          id: "cardiothoracic",
-          specialty: "心胸外科醫生",
+          id: "obgyn",
+          specialty: "婦產科（產科及婦科）",
           needs:
-            "心臟及胸腔床邊超聲波、胸腔積液檢查、術前／術後胸部 CT 及 MRI，以及進階心血管解剖影像。",
+            "產科及婦科影像、胎兒可視化、HSG 及立體影像工具，以及雙乳腺攝影路徑支援乳腺篩查。",
           recommendedProducts: [
             {
               name: "CHISON SonoEye 手持超聲波",
@@ -312,9 +438,9 @@ export const zh: Dictionary = {
               link: "/products/sonoeye",
             },
             {
-              name: "UNITED IMAGING MRI 及 CT 掃描系統",
-              brand: "UNITED IMAGING",
-              link: "/brands/united-imaging",
+              name: "VINNO 8 高端便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno8",
             },
             {
               name: "VINNO A3 緊湊超聲波",
@@ -322,30 +448,218 @@ export const zh: Dictionary = {
               link: "/products/vinno-a3",
             },
             {
-              name: "VINNO 10 旗艦便攜超聲波",
+              name: "VINNO A5 便攜超聲波",
               brand: "VINNO",
-              link: "/products/vinno10",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "VINNO R300 推車式超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
+            },
+            {
+              name: "VINNO R700 共享服務超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-r700",
+            },
+            {
+              name: "SINO MDT Navigator 3000A 3D 乳腺攝影",
+              brand: "SINO MDT",
+              link: "/products/navigator-3000a",
+            },
+            {
+              name: "UNITED IMAGING uMammo 890i",
+              brand: "UNITED IMAGING",
+              link: "/products/umammo-890i",
             },
           ],
           pitch:
-            "床邊心臟及胸腔 POCUS，配合高解像度 CT／MRI 系統，支援手術規劃及術後追蹤。",
-          cta: "查看心胸外科設備",
+            "VINNO 平台支援婦產超聲波（包括 HSG 及立體工具），並同時提供 Navigator 3000A 與 uMammo 890i 兩套 3D 乳腺攝影路徑。",
+          cta: "查看女性健康方案",
+        },
+        {
+          id: "orthopedic",
+          specialty: "骨科醫生",
+          needs:
+            "肌骨軟組織超聲波、高解像度關節及韌帶影像、數位放射影像，以及快速 CT／MRI 評估骨骼與植入物 — 不含乳腺攝影或 PET 路徑。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 超便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO A5 便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+            {
+              name: "UNITED IMAGING uDR 596i",
+              brand: "UNITED IMAGING",
+              link: "/products/udr-596i",
+            },
+            {
+              name: "UNITED IMAGING uMR 670",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-670",
+            },
+            {
+              name: "UNITED IMAGING uMR 680",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-680",
+            },
+            {
+              name: "UNITED IMAGING uMR OMEGA",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-omega",
+            },
+          ],
+          pitch:
+            "由肌骨 POCUS 至數位放射、CT 及 MRI，涵蓋骨骼、關節及軟組織診斷 — 聚焦骨科影像，不含乳腺攝影或 PET。",
+          cta: "查看骨科系統",
+        },
+        {
+          id: "physiotherapist",
+          specialty: "物理治療師",
+          needs:
+            "快速評估軟組織、肌腱、肌肉撕裂及關節問題；即時導引乾針治療。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
+            },
+            {
+              name: "VINNO 6 超便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno6",
+            },
+            {
+              name: "VINNO A3 緊湊超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a3",
+            },
+            {
+              name: "VINNO A5 便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-a5",
+            },
+          ],
+          pitch:
+            "超便攜肌骨床邊超聲波 — VINNO 6 官方定位涵蓋肌骨檢查，並配合 A 系列緊湊系統。",
+          cta: "查看物理治療設備",
         },
         {
           id: "radiologist",
           specialty: "放射科醫生",
           needs:
-            "高通量解剖掃描、低劑量 3D 乳腺斷層合成，以及全身 MRI／CT。",
+            "全面診斷影像組合 — CT、MRI、PET-CT、DR、雙乳腺攝影、肝彈性成像，以及高通量共享服務超聲波與介入工具。",
           recommendedProducts: [
             {
-              name: "SINO MDT Navigator 3000A 3D 斷層合成",
+              name: "UNITED IMAGING uCT 780",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-780",
+            },
+            {
+              name: "UNITED IMAGING uCT 960+",
+              brand: "UNITED IMAGING",
+              link: "/products/uct-960",
+            },
+            {
+              name: "UNITED IMAGING uDR 596i",
+              brand: "UNITED IMAGING",
+              link: "/products/udr-596i",
+            },
+            {
+              name: "UNITED IMAGING uMammo 890i",
+              brand: "UNITED IMAGING",
+              link: "/products/umammo-890i",
+            },
+            {
+              name: "UNITED IMAGING uMR 670",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-670",
+            },
+            {
+              name: "UNITED IMAGING uMR 680",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-680",
+            },
+            {
+              name: "UNITED IMAGING uMR OMEGA",
+              brand: "UNITED IMAGING",
+              link: "/products/umr-omega",
+            },
+            {
+              name: "UNITED IMAGING uMI Vista",
+              brand: "UNITED IMAGING",
+              link: "/products/umi-vista",
+            },
+            {
+              name: "SINO MDT Navigator 3000A 3D 乳腺攝影",
               brand: "SINO MDT",
               link: "/products/navigator-3000a",
             },
             {
-              name: "UNITED IMAGING MRI 及 CT 掃描系統",
-              brand: "UNITED IMAGING",
-              link: "/brands/united-imaging",
+              name: "iLivTouch Mini800 剪切波彈性成像",
+              brand: "HISKY",
+              link: "/products/mini800",
+            },
+            {
+              name: "VINNO 8 高端便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno8",
+            },
+            {
+              name: "VINNO 10 旗艦便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno10",
+            },
+            {
+              name: "VINNO R300 推車式超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
+            },
+            {
+              name: "VINNO R700 共享服務超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-r700",
+            },
+          ],
+          pitch:
+            "端到端放射科方案：UNITED IMAGING CT／MRI／PET／DR／乳腺攝影、Navigator 3D 乳腺攝影、Mini800 彈性成像，以及具備介入能力的 VINNO 共享服務超聲波。",
+          cta: "查看放射科系統",
+        },
+        {
+          id: "urologist",
+          specialty: "泌尿外科醫生",
+          needs:
+            "盆腔、陰囊及小器官超聲波、膀胱及前列腺評估，以及以便攜與推車式彩色多普勒系統進行導引程序。",
+          recommendedProducts: [
+            {
+              name: "CHISON SonoEye 手持超聲波",
+              brand: "CHISON",
+              link: "/products/sonoeye",
             },
             {
               name: "VINNO A3 緊湊超聲波",
@@ -353,23 +667,33 @@ export const zh: Dictionary = {
               link: "/products/vinno-a3",
             },
             {
-              name: "VINNO 10 旗艦便攜超聲波",
+              name: "VINNO A5 便攜超聲波",
               brand: "VINNO",
-              link: "/products/vinno10",
+              link: "/products/vinno-a5",
+            },
+            {
+              name: "VINNO 8 高端便攜超聲波",
+              brand: "VINNO",
+              link: "/products/vinno8",
+            },
+            {
+              name: "VINNO R300 推車式超聲波",
+              brand: "VINNO",
+              link: "/products/vinno-r300",
             },
           ],
           pitch:
-            "高解像度診斷系統，配備 AI 輔助分析及低劑量成像協議。",
-          cta: "查看放射科系統",
+            "VINNO A3 官方定位涵蓋泌尿科，並配合便攜及推車式系統，服務診所及醫院盆腔與小器官超聲波。",
+          cta: "查看泌尿科超聲波",
         },
         {
           id: "veterinarian",
           specialty: "獸醫外科醫生",
           needs:
-            "高幀率寵物透視、動態骨科影像及介入程序。",
+            "高幀率寵物透視、動態骨科影像、獸醫超聲波及介入程序。",
           recommendedProducts: [
             {
-              name: "PERLOVE VET1120 移動式數位 C-arm",
+              name: "PERLOVE VET1120 移動式數位 C-Arm",
               brand: "PERLOVE",
               link: "/products/vet1120",
             },
@@ -386,7 +710,8 @@ export const zh: Dictionary = {
           ],
           pitch:
             "專為獸醫診所設計的動物超聲波、30fps 動態影像及移動式 C-arm 透視。",
-          cta: "查看獸醫設備",        },
+          cta: "查看獸醫設備",
+        },
       ],
     },
     portfolio: {
@@ -482,9 +807,9 @@ export const zh: Dictionary = {
           brandName: "VINNO",
           brandLogo: "/images/brands/vinno.png",
           description:
-            "VINNO 便攜、推車式及獸醫彩色多普勒超聲波 — 涵蓋 A3、A5、VINNO 10、R300、R700 及 D6 VET，建基於 RF 及 VLucid 平台，適合診所、醫院及動物護理。",
+            "VINNO 便攜、推車式及獸醫彩色多普勒超聲波 — 涵蓋 A3、A5、VINNO 6、VINNO 8、VINNO 10、R300、R700 及 D6 VET，建基於 RF 及 VLucid 平台，適合診所、醫院及動物護理。",
           href: "/brands/vinno",
-          image: "/images/products/vinno-a3-card.jpg",
+          image: "/images/products/vinno-portfolio.jpg",
           imageFit: "contain",
           imageCaptionTitle: "VINNO 超聲波系列",
           imageCaptionSubtitle: "便攜 · 推車式 · 獸醫",
@@ -568,9 +893,9 @@ export const zh: Dictionary = {
           slug: "vinno",
           name: "VINNO",
           logo: "/images/brands/vinno.png",
-          image: "/images/products/vinno-a3-card.jpg",
+          image: "/images/products/vinno-portfolio.jpg",
           description:
-            "創新超聲波技術 — 便攜、推車式及獸醫彩色多普勒系統，涵蓋 A3、A5、VINNO 10、R300、R700 及 D6 VET。",
+            "創新超聲波技術 — 便攜、推車式及獸醫彩色多普勒系統，涵蓋 A3、A5、VINNO 6、VINNO 8、VINNO 10、R300、R700 及 D6 VET。",
         },
       ],
     },
@@ -597,7 +922,7 @@ export const zh: Dictionary = {
     ilivtouchCaptionSubtitle: "便攜式剪切波彈性成像",
     vinnoFeaturedTitle: "VINNO 便攜彩色多普勒超聲波",
     vinnoFeaturedDesc:
-      "VINNO A3、A5、VINNO 10、R300、R700 及 D6 VET — 便攜、推車式及獸醫超聲波，建基於 RF 及 VLucid 平台，適合診所、醫院及動物護理",
+      "VINNO A3、A5、VINNO 6、VINNO 8、VINNO 10、R300、R700 及 D6 VET — 便攜、推車式及獸醫超聲波，建基於 RF 及 VLucid 平台，適合診所、醫院及動物護理",
     vinnoCaptionTitle: "VINNO 超聲波系列",
     vinnoCaptionSubtitle: "便攜 · 推車式 · 獸醫",
     brandsLabel: "Brands",
@@ -649,7 +974,7 @@ export const zh: Dictionary = {
       "乳腺攝影 — SINO MDT Navigator 3000A 3D 斷層合成數位乳腺攝影、UNITED IMAGING uMammo 890i 低劑量 3D 數位乳腺攝影",
       "MRI（磁共振成像）— UNITED IMAGING uMR 670、680 及 OMEGA 寬孔徑 1.5T/3T 系統",
       "PET-CT（正電子發射斷層–電腦斷層）— UNITED IMAGING uMI Vista 數位 PET-CT",
-      "超聲波系統 — CHISON SonoEye 手持超聲波；VINNO A3、A5、VINNO 10、R300、R700 便攜／推車式超聲波及 D6 VET 獸醫超聲波",
+      "超聲波系統 — CHISON SonoEye 手持超聲波；VINNO A3、A5、VINNO 6、VINNO 8、VINNO 10、R300、R700 便攜／推車式超聲波及 D6 VET 獸醫超聲波",
       "獸醫移動式數位 C-arm 系統 — PERLOVE VET1120 移動式數位 C-arm",
       "獸醫影像 — VETOO VF1 Dynamic DR",
     ],

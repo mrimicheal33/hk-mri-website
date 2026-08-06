@@ -513,6 +513,93 @@ const en: Record<string, ProductLocaleFields> = {
       },
     ],
   },
+  vinno6: {
+    tagline: "Ultra-light. Ultra-thin. Ultra-precise.",
+    description:
+      "VINNO 6 is an ultra-portable colour Doppler ultrasound system built on VINNO’s RF platform. It delivers clear images and precise measurements in a compact form that can be carried by hand or mounted on a multi-probe cart — ideal for emergency medicine, anesthesiology, pain management, critical care, MSK, and bedside imaging.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Portability & Design",
+        items: [
+          "Ultra-light, ultra-thin portable console for true bedside and point-of-care mobility",
+          "Optional mobile cart with multi-probe connection for shared-service workflows",
+          "Intuitive touch-panel operation with built-in user manual / tutorial support",
+          "Built for fast deployment when every second counts in emergency and ICU settings",
+        ],
+      },
+      {
+        title: "Imaging Platform",
+        items: [
+          "VINNO RF ultrasonic metadata platform for improved resolution and contrast",
+          "2–23 MHz frequency range for clear superficial-to-deep tissue visualisation",
+          "Xcen high-frequency and Pure Wave probe technologies for penetration and colour sensitivity",
+          "Needle enhancement / VGuide support for clearer puncture and biopsy guidance",
+        ],
+      },
+      {
+        title: "Clinical Applications",
+        items: [
+          "Emergency, critical care, anesthesiology, and pain-management imaging",
+          "MSK and physiotherapy assessments with application-specific presets",
+          "General imaging, abdominal, OB/GYN, small parts, and vascular exams",
+          "Cardiovascular tools including strong 2D/Doppler, Stress Echo, strain, TDI, and PWV options",
+        ],
+      },
+      {
+        title: "Connectivity & Workflow",
+        items: [
+          "PACS, modality worklist, DICOM, Wi‑Fi, and Bluetooth connectivity",
+          "VINNO remote solutions platform for streamlined collaboration",
+          "Easy Compare for before/after exam review",
+          "Wide transducer selection and comprehensive measurement packages",
+        ],
+      },
+    ],
+  },
+  vinno8: {
+    tagline: "Groundbreaking Design. Powerful Capabilities.",
+    description:
+      "VINNO 8 brings premium portable ultrasound performance without bounds. It combines advanced Zone Imaging, smart workflow, and a compact lightweight design — supporting enhanced OB/GYN, extended cardiac tools, and general imaging across clinics and hospitals.",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "Advanced Imaging",
+        items: [
+          "Zone Imaging with multi-frequency apodized transmission and instantaneous phase superposition for more uniform resolution",
+          "VFlow adaptive colour-flow filtering to enhance detection of tiny vessels",
+          "Pure Wave probe technology for improved penetration in difficult patients",
+          "2–23 MHz frequency range from superficial to deep tissue imaging",
+        ],
+      },
+      {
+        title: "OB/GYN & Volume Tools",
+        items: [
+          "Volume Contrast Imaging (VCI) to adjust slice thickness and enhance contrast in 3D/4D",
+          "Niche View multiplanar reconstruction for clearer spatial correlation of structures",
+          "Multiline Free View — obtain any plane from volume data, including irregular structures",
+          "Hysterosalpingo Contrast Sonography (HSG) support for tubal and uterine assessment",
+        ],
+      },
+      {
+        title: "Cardiac Applications",
+        items: [
+          "Auto EF measurement to accelerate cardiac function assessment",
+          "CW, TDI, Multi-Angle M-Mode (MAM), and Stress Echo modes",
+          "Designed for accurate cardiac analysis alongside shared-service imaging",
+        ],
+      },
+      {
+        title: "Design & Workflow",
+        items: [
+          "Compact, lightweight portable console with intuitive touch-panel operation",
+          "Easy Compare for patient exam follow-up",
+          "Needle enhancement for clearer tip visualisation in interventional procedures",
+          "Optional battery pack, probe holders, and probe-extension accessories for flexible deployment",
+        ],
+      },
+    ],
+  },
   vinno10: {
     tagline: "Premium compact ultrasound wherever you need it",
     description:
@@ -1570,6 +1657,93 @@ const zh: Record<string, ProductLocaleFields> = {
         items: [
           "支援 DICOM 及靈活數據匯出",
           "現代化連接方案，方便患者資料管理",
+        ],
+      },
+    ],
+  },
+  vinno6: {
+    tagline: "Ultra-light. Ultra-thin. Ultra-precise. — 超輕、超薄、超精準",
+    description:
+      "VINNO 6 為超輕薄便攜彩色多普勒超聲波系統，建基於 VINNO RF 平台，於緊湊機身提供清晰影像與精準測量，可手提使用或安裝於多探頭推車 — 適合急診、麻醉、疼痛、重症、肌骨及床邊診斷。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "便攜與設計",
+        items: [
+          "超輕、超薄便攜主機，真正支援床邊及床旁流動檢查",
+          "可選配多探頭推車，方便共享服務工作流程",
+          "直覺觸控操作，內置使用教學／說明支援",
+          "為急診及 ICU 等高時效場景快速部署而設計",
+        ],
+      },
+      {
+        title: "成像平台",
+        items: [
+          "VINNO RF 超聲波元數據平台，提升解析度與對比度",
+          "2–23 MHz 頻寬，清晰呈現表淺至深部組織",
+          "Xcen 高頻及 Pure Wave 探頭技術，加強穿透力與彩色靈敏度",
+          "Needle enhancement／VGuide 針道增強，提升穿刺及活檢導引清晰度",
+        ],
+      },
+      {
+        title: "臨床應用",
+        items: [
+          "急診、重症、麻醉及疼痛管理影像",
+          "肌骨及物理治療評估，配備應用專用預設",
+          "一般影像、腹部、婦產、小器官及血管檢查",
+          "心血管工具包括優異 2D／多普勒、Stress Echo、應變、TDI 及 PWV 選項",
+        ],
+      },
+      {
+        title: "連接與工作流程",
+        items: [
+          "支援 PACS、檢查工作清單、DICOM、Wi‑Fi 及藍牙連接",
+          "VINNO 遠程解決方案平台，提升協作效率",
+          "Easy Compare 方便檢查前後對比",
+          "豐富探頭選擇及全面測量套件",
+        ],
+      },
+    ],
+  },
+  vinno8: {
+    tagline: "Groundbreaking Design. Powerful Capabilities. — 突破設計，強大性能",
+    description:
+      "VINNO 8 帶來不受限制的高端便攜超聲波表現 — 結合進階 Zone Imaging、智能工作流程及輕巧設計，支援強化婦產、延伸心臟工具及一般影像，適合診所與醫院多場景應用。",
+    highlights: [],
+    featureGroups: [
+      {
+        title: "進階成像",
+        items: [
+          "Zone Imaging 以多頻 apodized 發射及瞬時相位疊加，提供更均勻解析度",
+          "VFlow 自適應彩色血流濾波，加強微細血管偵測",
+          "Pure Wave 探頭技術，提升困難患者的穿透表現",
+          "2–23 MHz 頻寬，涵蓋表淺至深部組織成像",
+        ],
+      },
+      {
+        title: "婦產與立體影像工具",
+        items: [
+          "Volume Contrast Imaging（VCI）調整層厚，提升 3D／4D 對比",
+          "Niche View 多平面重建，更清楚顯示結構空間關係",
+          "Multiline Free View — 從體數據任意取面，包括不規則結構",
+          "子宮輸卵管造影（HSG）支援，評估輸卵管通暢及子宮內膜異常",
+        ],
+      },
+      {
+        title: "心臟應用",
+        items: [
+          "Auto EF 測量，加快心功能評估",
+          "CW、TDI、多角度 M 模式（MAM）及 Stress Echo",
+          "兼顧精準心臟分析與共享服務影像需求",
+        ],
+      },
+      {
+        title: "設計與工作流程",
+        items: [
+          "緊湊輕巧便攜主機，直覺觸控操作",
+          "Easy Compare 方便患者覆診對比",
+          "針道增強，提升介入程序中針尖可見度",
+          "可選電池組、探頭架及探頭擴充配件，部署更靈活",
         ],
       },
     ],
