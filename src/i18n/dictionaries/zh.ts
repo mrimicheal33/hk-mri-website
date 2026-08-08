@@ -91,7 +91,7 @@ export const zh: Dictionary = {
       tagline: "您可信賴的醫療設備及影像解決方案專家",
       intro:
         "透過提供創新影像及診斷技術，推進患者護理及臨床成效。",
-      backgroundImage: "/images/hero-clinical-facility.png",
+      backgroundImage: "/images/hero-clinical-facility.jpg",
       ctaProducts: "瀏覽產品",
       ctaAbout: "關於我們",
     },
@@ -819,7 +819,7 @@ export const zh: Dictionary = {
     whyChoose: {
       label: "Why Choose Us",
       title: "為何選擇 HK MRI Instrument Ltd.？",
-      image: "/images/hero-clinical-facility.png",
+      image: "/images/hero-clinical-facility.jpg",
       imageAlt: "臨床影像環境",
       items: [
         {
