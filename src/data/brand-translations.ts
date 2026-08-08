@@ -30,7 +30,7 @@ const en: Record<
   },
   vinno: {
     description:
-      "Innovative ultrasound technology brand delivering portable, cart-based, and veterinary colour Doppler systems on VINNO’s RF platform and VLucid imaging architecture.",
+      "Innovative ultrasound technology for human clinical care — portable and cart-based colour Doppler systems (A3, A5, VINNO 6, 8, 10, R300, R700) on VLucid platforms with AI-assisted tools. D6 VET is a dedicated veterinary model for animal imaging.",
   },
 };
 

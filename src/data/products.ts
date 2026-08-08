@@ -110,7 +110,7 @@ export const brands: Brand[] = [
     nameEn: "VINNO Technology (Suzhou)",
     logo: "/images/brands/vinno.png",
     description:
-      "創新超聲波技術品牌，以 RF 平台及 VLucid 成像架構提供便攜式、推車式及獸醫彩色多普勒超聲波系統。",
+      "創新超聲波技術品牌，為人體臨床提供便攜及推車式彩色多普勒系統（A3、A5、VINNO 6、8、10、R300、R700），建基於 VLucid 平台並配備 AI 輔助工具。D6 VET 為專用獸醫型號，僅用於動物影像。",
     color: "#2f8f4e",
   },
 ];
@@ -335,7 +335,7 @@ export const products: Product[] = [
     category: "ultrasound",
     tagline: "Expect More With Less — 輕巧便攜彩色多普勒超聲波",
     description:
-      "VINNO A3 為緊湊型便攜彩色多普勒超聲波系統 — 以 VINNO RF 平台提供高解析度影像，結合簡化工作流程、快速開機、內置電池及可調高度推車，適合一般影像、肌骨、婦產、泌尿及床邊診斷等臨床場景。",
+      "VINNO A3 為緊湊型便攜彩色多普勒超聲波系統 — 以高解析度影像、簡化工作流程、快速開機、內置電池及可調高度推車，適合一般影像、肌骨、婦產、泌尿及床邊診斷等人體臨床場景。",
     highlights: [],
     featured: true,
     image: "/images/products/vinno-a3-card.jpg",
@@ -350,7 +350,7 @@ export const products: Product[] = [
     category: "ultrasound",
     tagline: "Ultra-light. Ultra-thin. Ultra-precise.",
     description:
-      "VINNO 6 為超輕薄便攜彩色多普勒超聲波系統 — 建基於 VINNO RF 平台，提供清晰影像與精準測量，可手提使用或搭配多探頭推車，適合急診、麻醉、疼痛、重症、肌骨及床邊診斷。",
+      "VINNO 6 為超輕薄便攜彩色多普勒超聲波系統 — 提供清晰影像與精準測量，可手提使用或搭配多探頭推車，適合急診、麻醉、疼痛、重症、肌骨及床邊診斷等人體臨床應用。",
     highlights: [],
     featured: true,
     image: "/images/products/vinno6-card.jpg",

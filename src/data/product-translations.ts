@@ -471,13 +471,13 @@ const en: Record<string, ProductLocaleFields> = {
   "vinno-a3": {
     tagline: "Expect More With Less — compact portable colour Doppler ultrasound",
     description:
-      "VINNO A3 is a compact portable colour Doppler ultrasound system built on VINNO’s proprietary RF platform. It combines high image quality with a simplified workflow, fast boot, built-in battery, and height-adjustable trolley options — ideal for clinics, hospitals, and specialty practices needing reliable imaging wherever care is delivered.",
+      "VINNO A3 is a compact portable colour Doppler ultrasound system for human clinical care. It combines high image quality with a simplified workflow, fast boot, built-in battery, and height-adjustable trolley options — ideal for clinics, hospitals, and specialty practices needing reliable imaging wherever care is delivered.",
     highlights: [],
     featureGroups: [
       {
         title: "Imaging Platform",
         items: [
-          "VINNO RF platform captures and processes full radio-frequency data for enhanced resolution and contrast",
+          "Advanced imaging platform for enhanced resolution and contrast across clinical scans",
           "Comprehensive modes including B, M, Color, Power, PW, CW, and Duplex imaging",
           "One-key image optimisation and customisable presets for faster daily scanning",
           "Strong penetration with clear visualisation of superficial and deeper structures",
@@ -516,7 +516,7 @@ const en: Record<string, ProductLocaleFields> = {
   vinno6: {
     tagline: "Ultra-light. Ultra-thin. Ultra-precise.",
     description:
-      "VINNO 6 is an ultra-portable colour Doppler ultrasound system built on VINNO’s RF platform. It delivers clear images and precise measurements in a compact form that can be carried by hand or mounted on a multi-probe cart — ideal for emergency medicine, anesthesiology, pain management, critical care, MSK, and bedside imaging.",
+      "VINNO 6 is an ultra-portable colour Doppler ultrasound system for human clinical care. It delivers clear images and precise measurements in a compact form that can be carried by hand or mounted on a multi-probe cart — ideal for emergency medicine, anesthesiology, pain management, critical care, MSK, and bedside imaging.",
     highlights: [],
     featureGroups: [
       {
@@ -531,7 +531,7 @@ const en: Record<string, ProductLocaleFields> = {
       {
         title: "Imaging Platform",
         items: [
-          "VINNO RF ultrasonic metadata platform for improved resolution and contrast",
+          "Advanced imaging platform for improved resolution and contrast",
           "2–23 MHz frequency range for clear superficial-to-deep tissue visualisation",
           "Xcen high-frequency and Pure Wave probe technologies for penetration and colour sensitivity",
           "Needle enhancement / VGuide support for clearer puncture and biopsy guidance",
@@ -1619,13 +1619,13 @@ const zh: Record<string, ProductLocaleFields> = {
   "vinno-a3": {
     tagline: "Expect More With Less — 輕巧便攜彩色多普勒超聲波",
     description:
-      "VINNO A3 為緊湊型便攜彩色多普勒超聲波系統，建基於 VINNO 專有 RF 平台。結合高影像質素、簡化工作流程、快速開機、內置電池及可調高度推車選配，適合診所、醫院及專科執業，於不同場景提供可靠診斷影像。",
+      "VINNO A3 為緊湊型便攜彩色多普勒超聲波系統，專為人體臨床設計。結合高影像質素、簡化工作流程、快速開機、內置電池及可調高度推車選配，適合診所、醫院及專科執業，於不同場景提供可靠診斷影像。",
     highlights: [],
     featureGroups: [
       {
         title: "成像平台",
         items: [
-          "VINNO RF 平台擷取並處理完整射頻數據，提升解析度與對比度",
+          "進階成像平台，提升解析度與對比度",
           "全面成像模式，包括 B、M、彩色、能量、PW、CW 及 Duplex",
           "一鍵影像優化及可自訂預設，加快日常掃描",
           "優良穿透力，清晰顯示表淺及深層結構",
@@ -1664,7 +1664,7 @@ const zh: Record<string, ProductLocaleFields> = {
   vinno6: {
     tagline: "Ultra-light. Ultra-thin. Ultra-precise. — 超輕、超薄、超精準",
     description:
-      "VINNO 6 為超輕薄便攜彩色多普勒超聲波系統，建基於 VINNO RF 平台，於緊湊機身提供清晰影像與精準測量，可手提使用或安裝於多探頭推車 — 適合急診、麻醉、疼痛、重症、肌骨及床邊診斷。",
+      "VINNO 6 為超輕薄便攜彩色多普勒超聲波系統，專為人體臨床設計，於緊湊機身提供清晰影像與精準測量，可手提使用或安裝於多探頭推車 — 適合急診、麻醉、疼痛、重症、肌骨及床邊診斷。",
     highlights: [],
     featureGroups: [
       {
@@ -1679,7 +1679,7 @@ const zh: Record<string, ProductLocaleFields> = {
       {
         title: "成像平台",
         items: [
-          "VINNO RF 超聲波元數據平台，提升解析度與對比度",
+          "進階成像平台，提升解析度與對比度",
           "2–23 MHz 頻寬，清晰呈現表淺至深部組織",
           "Xcen 高頻及 Pure Wave 探頭技術，加強穿透力與彩色靈敏度",
           "Needle enhancement／VGuide 針道增強，提升穿刺及活檢導引清晰度",
