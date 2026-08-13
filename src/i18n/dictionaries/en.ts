@@ -15,6 +15,9 @@ export const en = {
     brandNotFound: "Brand Not Found",
     productNotFound: "Product Not Found",
     specialtyNotFound: "Specialty Not Found",
+    mini800LiverTitle: "Non-invasive Liver Fibrosis Diagnostic System",
+    mini800LiverDescription:
+      "Academic overview of transient elastography for quantitative liver stiffness and steatosis assessment with iLivTouch Mini800.",
   },
   nav: {
     home: "Home",
@@ -1201,6 +1204,148 @@ export const en = {
           modes: "B Mode | M Mode | Color Mode | PW Mode | CPA Mode | DPD Mode | 2B Mode",
         },
       },
+    },
+  },
+  mini800Science: {
+    button: "Non-invasive Liver Fibrosis Diagnostic System",
+    teaserLabel: "Science",
+    teaserTitle: "Non-invasive Liver Fibrosis Diagnostic System",
+    teaserDesc:
+      "Transient elastography (TE) quantifies liver stiffness and steatosis without biopsy — a 10 × 40 mm sampling volume at least 100 times larger than a needle biopsy core.",
+    imageAlt:
+      "Diagram of a TE probe transmitting ultrasonic and shear waves through skin and abdominal wall into the liver, with a 10 mm × 40 mm cylindrical sample volume at least 100 times larger than a biopsy sample",
+    page: {
+      title: "Non-invasive Liver Fibrosis Diagnostic System",
+      subtitle:
+        "Vibration-controlled transient elastography for quantitative assessment of hepatic fibrosis and steatosis",
+      intro:
+        "iLivTouch Mini800 applies controlled transient elastography (TE) — the same scientific principle as the HISKY FibroTouch platform — to measure liver stiffness (LSM, kPa) and the ultrasound attenuation parameter (UAP). Together these biomarkers support non-invasive staging of fibrosis and fatty change, enabling earlier intervention in chronic liver disease.",
+      principlesLabel: "Physical principle",
+      principlesTitle: "How transient elastography interrogates the liver",
+      principlesBody:
+        "A controlled low-frequency shear wave is generated at the body surface and propagates through hepatic parenchyma. High-frequency ultrasound tracks that wave. Because shear-wave speed increases with tissue stiffness, a scientifically derived liver stiffness measurement (LSM, expressed in kilopascals) can be obtained and used to assess the degree of fibrosis. Concurrently, the system records energy loss of the ultrasound beam during propagation, yielding the ultrasound attenuation parameter (UAP) as a quantitative index of hepatic steatosis.",
+      shearNote:
+        "The speed of shear waves depends on the stiffness of the tissues they are travelling through.",
+      sampleTitle: "Sampling geometry versus biopsy",
+      sampleLead:
+        "The interrogated volume is a cylinder approximately 10 mm in diameter and 40 mm in length.",
+      sampleItems: [
+        "Sample volume is at least 100 times larger than a typical liver-biopsy core, reducing sampling error from heterogeneous fibrosis.",
+        "Results show high concordance with histological staging while remaining non-invasive and repeatable.",
+        "No venepuncture is required; serial examinations support treatment monitoring and surveillance.",
+      ],
+      guidelinesTitle: "Guideline-recognised technology",
+      guidelinesIntro:
+        "Transient elastography for tissue-stiffness measurement is widely cited by major hepatology societies:",
+      guidelines: [
+        "European Association for the Study of the Liver (EASL)",
+        "American Association for the Study of Liver Diseases (AASLD)",
+        "Asian Pacific Association for the Study of the Liver (APASL)",
+        "Chinese Society of Hepatology",
+      ],
+      outputsTitle: "Quantitative outputs in a single examination",
+      outputs: [
+        {
+          title: "Liver fibrosis — LSM (kPa)",
+          description:
+            "Liver stiffness is highly correlated with fibrosis stage across major aetiologies, including chronic hepatitis B and C, alcoholic liver disease, and non-alcoholic fatty liver disease (NAFLD).",
+        },
+        {
+          title: "Hepatic steatosis — UAP",
+          description:
+            "UAP stratifies steatosis as normal, mild, moderate, or severe, providing an objective complement to conventional B-mode ultrasound, which often misses fat fractions below about 30%.",
+        },
+        {
+          title: "Optional B-mode guidance",
+          description:
+            "An optional ultrasound imaging probe on Mini800 assists probe placement and morphological context while LSM and UAP remain the quantitative core of the examination.",
+        },
+      ],
+      rationaleLabel: "Clinical rationale",
+      rationaleTitle: "The liver is a silent organ — fibrosis is the common pathway",
+      quote:
+        "Anyone who can stop or delay liver fibrosis would be able to cure most chronic liver diseases.",
+      quoteBy: "Dr Hans Popper, founder of hepatology",
+      rationaleBody:
+        "The liver is the metabolic centre of the body and contains no pain-sensing nerves, so substantial injury may remain clinically silent. Fibrosis is the shared histopathological sequence through which diverse chronic liver diseases progress toward cirrhosis, hepatocellular carcinoma, and liver failure. Early- and mid-stage fibrosis is widely regarded as reversible; timely diagnosis and treatment can interrupt that trajectory.",
+      causesTitle: "Principal aetiologies leading to fibrosis",
+      causes: [
+        "Viral hepatitis (HBV, HCV, HDV)",
+        "Alcoholic liver disease (ALD)",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Drug-induced liver injury",
+        "Primary biliary cholangitis and biliary tract disease",
+        "Parasitic infection; post-liver-transplant surveillance",
+      ],
+      reversible: [
+        "Early and intermediate fibrosis is clinically acknowledged to be reversible.",
+        "Early diagnosis and treatment can prevent progression to cirrhosis, liver cancer, and liver failure.",
+      ],
+      traditionalTitle: "Limitations of conventional diagnostic pathways",
+      traditionalIntro:
+        "Histology remains the reference standard, yet each established method has constraints that motivate a rapid, quantitative, non-invasive alternative.",
+      methods: [
+        {
+          name: "Liver biopsy",
+          points: [
+            "Histological gold standard",
+            "Invasive, with procedure-related adverse events",
+            "Sampling error from a small tissue core",
+            "Poorly suited to repeated follow-up",
+          ],
+        },
+        {
+          name: "Serological tests",
+          points: [
+            "Minimally invasive blood sampling",
+            "Limited accuracy for fibrosis staging",
+            "Confounded by active inflammation",
+            "Variable clinical acceptance",
+          ],
+        },
+        {
+          name: "Conventional imaging",
+          points: [
+            "Ultrasound: morphology only; late-stage fibrosis; steatosis often undetected if <30%",
+            "CT: ionising radiation and higher cost",
+            "MRI: high cost and longer examination time",
+          ],
+        },
+      ],
+      advantagesTitle: "Clinical advantages of TE-based assessment",
+      advantages: [
+        {
+          title: "Non-invasive and repeatable",
+          description:
+            "No blood collection. Suitable for longitudinal follow-up of fibrosis and steatosis and for evaluating treatment response.",
+        },
+        {
+          title: "Simultaneous dual biomarkers",
+          description:
+            "Fibrosis (LSM) and steatosis (UAP) are obtained in one sitting, with results stored for intra-patient comparison over time.",
+        },
+        {
+          title: "Rapid quantitative readout",
+          description:
+            "A complete examination typically takes only a few minutes, with stiffness and attenuation reported immediately.",
+        },
+        {
+          title: "Larger, more representative sample",
+          description:
+            "The ~10 × 40 mm cylindrical volume is ≥100× a biopsy core and shows high consistency with histological results.",
+        },
+      ],
+      departmentsTitle: "Intended clinical settings",
+      departmentsIntro:
+        "Quantitative TE supports both case-finding in at-risk populations and serial monitoring in established liver disease.",
+      departments: [
+        "Department of Internal Medicine — Hepatology",
+        "Gastroenterology",
+        "Infectious diseases",
+        "Endocrinology and metabolic medicine",
+        "Medical check-up / physical-examination centres",
+      ],
+      backToProduct: "Back to iLivTouch Mini800",
     },
   },
 };

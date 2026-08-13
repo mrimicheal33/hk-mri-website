@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { ProductBreadcrumb } from "@/components/products/ProductBreadcrumb";
 import { ProductCTA } from "@/components/products/ProductCTA";
+import { Mini800ScienceTeaser } from "@/components/products/Mini800ScienceTeaser";
 import { SonoEyeProbeGuide } from "@/components/products/SonoEyeProbeGuide";
 import { ProductCard } from "@/components/products/ProductCard";
 import { ProductImage } from "@/components/products/ProductImage";
@@ -158,6 +159,8 @@ export function ProductDetail({ product }: ProductDetailProps) {
           </div>
         </Container>
       </section>
+
+      {product.id === "mini800" && <Mini800ScienceTeaser />}
 
       {product.id === "sonoeye" && <SonoEyeProbeGuide />}
 
