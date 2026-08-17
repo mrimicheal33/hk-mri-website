@@ -19,6 +19,9 @@ export const zh: Dictionary = {
     mini800LiverTitle: "非侵入性肝纖維化診斷系統",
     mini800LiverDescription:
       "以 iLivTouch Mini800 瞬時彈性成像進行肝硬度及脂肪變定量評估的學術說明。",
+    sonoeyeIntroTitle: "CHISON SonoEye 產品介紹",
+    sonoeyeIntroDescription:
+      "CHISON SonoEye 手持超聲波：探頭系列、可編程按鍵，以及點護成像的 AI 輔助工作流程。",
   },
   nav: {
     home: "首頁",
@@ -1319,6 +1322,153 @@ export const zh: Dictionary = {
         "體檢／健康檢查中心",
       ],
       backToProduct: "返回 iLivTouch Mini800",
+    },
+  },
+  sonoeyeIntro: {
+    button: "CHISON SonoEye 產品介紹",
+    page: {
+      title: "CHISON SonoEye 產品介紹",
+      subtitle: "醫生感官的延伸，看見更多。",
+      intro:
+        "SonoEye 是有線手持超聲波，可連接 iOS 及 Android 智能手機與平板。適用於醫院、專科診所及普通科——從肌骨、醫美，到急症、教學與危重護理的點護成像。",
+      imageAlt: "CHISON SonoEye 手持超聲波探頭",
+      settingsLabel: "使用場景",
+      settingsTitle: "臨床場景",
+      settingsIntro:
+        "適用於推車式超聲波不便使用的床邊及門診環境，涵蓋點護、心臟、婦產、內科及其他專科；可於市立醫院、社區醫院及普通科診所用於 POC、心臟、婦產及內科等科室。",
+      settings: [
+        "肌骨（MSK）及運動醫學",
+        "醫美及介入注射引導",
+        "急症及現場評估",
+        "教學及遠程帶教",
+        "危重護理及 ICU",
+      ],
+      designTitle: "設計與操作",
+      designIntro:
+        "四枚可編程實體按鍵（國際專利）支援凍結、存圖及參數調節，讓操作者單手掃描，另一手進行穿刺或接觸患者。",
+      designItems: [
+        "有線傳輸，影像較一般無線探頭更穩定。",
+        "探頭約 120–140 克，便於放入口袋及床邊使用。",
+        "IP67 防護及 MIL-STD-810G 抗跌落，適合嚴苛臨床環境。",
+        "成像模式包括 B、彩色（C）、脈衝波多普勒（PW）、M 型、CPA 及 DPD。",
+        "可編程按鍵減少傳染病場景下接觸設備的次數，並簡化活檢流程。",
+      ],
+      solutionsTitle: "臨床方案",
+      solutions: [
+        {
+          title: "運動醫學及物理治療",
+          body: "快速評估肌肉、肌腱及韌帶損傷；專用肌骨預設；兩款不同頻率的線陣探頭覆蓋肩、腕、三角肌等結構。適合戶外及床邊使用。",
+        },
+        {
+          title: "介入及活檢",
+          body: "活檢套件（P1 / P2 / P5 / P6）及中心標記（P1 / P2）協助定位穿刺路徑。Super Needle 以折射增強針體顯示；SonoNeedle 使聲束保持垂直於針體，突出針尖與針道。",
+        },
+        {
+          title: "醫美",
+          body: "高頻線陣可顯示皮膚層次，支援注射前深度規劃、填充過程中監測，以及術後評估——包括肉毒桿菌、微針及透明質酸操作。",
+        },
+        {
+          title: "急症及 ICU",
+          body: "eFAST 相關預設覆蓋肝腎隱窩、脾腎隱窩、劍突、盆腔及胸腔。ICU 工具針對不便搬動的患者，以及超聲波經驗較少的操作者。",
+        },
+      ],
+      toolsTitle: "智能軟件",
+      tools: [
+        {
+          title: "SonoDiaph",
+          body: "自動識別膈肌並測量活動幅度，協助評估呼吸機撤機時機。適用於 SonoEye P5——廠方定位為常見手持系統中較為獨特的功能。",
+        },
+        {
+          title: "Lung Analysis",
+          body: "自動提供胸膜線厚度及 B 線數量，並可對同一患者不同時間點作比較報告。適用於 P1、P2、P3 及 P5。",
+        },
+        {
+          title: "SonoBladder",
+          body: "自動識別膀胱邊界並測量容量，約 5 步完成，相對常見 12 步手動流程更省時。適用於 P3、P5 及 P6。",
+        },
+        {
+          title: "Auto EF",
+          body: "一鍵取得 EDV、ESV 及射血分數，相對 Simpson 法約 6 步描記更簡便。適用於 P3。",
+        },
+        {
+          title: "血管工具",
+          body: "Auto IMT 及實時 IMT（P1 / P2）、Intelligent Doppler 自動調整 ROI 與取樣門，以及 PW 頻譜 Auto Trace。",
+        },
+        {
+          title: "學習、記錄與會診",
+          body: "SonoHelp 解剖引導（甲狀腺、心臟、頸動脈、腎臟）；SonoMSK 以顏色標註肌腱與肌肉（P1 / P2）；SonoCam 病例錄製；SonoRemote 專家會診及遠程教學。",
+        },
+      ],
+      probesTitle: "探頭系列",
+      probesIntro:
+        "五款探頭覆蓋線陣、凸陣及相控陣應用。本站規格頁目前列出 P2、P3 及 P5。",
+      probesHeaders: {
+        model: "型號",
+        center: "中心頻率（MHz）",
+        freq: "頻率（MHz）",
+        elements: "晶片數",
+        fov: "視場",
+        depth: "掃描深度（cm）",
+        apps: "臨床應用",
+      },
+      probes: [
+        {
+          model: "P1",
+          href: "",
+          center: "9.0",
+          freq: "6.0–18.0",
+          elements: "128",
+          fov: "—",
+          depth: "1.0–14.8",
+          apps: "頸動脈、甲狀腺、肌骨、乳腺、肺、神經",
+        },
+        {
+          model: "P2",
+          href: "/products/sonoeye/p2",
+          center: "7.5",
+          freq: "4.5–15.0",
+          elements: "128",
+          fov: "—",
+          depth: "1.0–14.8",
+          apps: "頸動脈、甲狀腺、肌骨、乳腺、肺、神經",
+        },
+        {
+          model: "P3",
+          href: "/products/sonoeye/p3",
+          center: "2.5",
+          freq: "1.5–4.0",
+          elements: "32",
+          fov: "90°",
+          depth: "4.9–22.7",
+          apps: "心臟、腹部、經顱多普勒",
+        },
+        {
+          model: "P5",
+          href: "/products/sonoeye/p5",
+          center: "3.5",
+          freq: "2.0–5.0",
+          elements: "96",
+          fov: "59°",
+          depth: "3.8–37.3",
+          apps: "腹部、腎臟、產科、婦科、肺、膀胱",
+        },
+        {
+          model: "P6",
+          href: "",
+          center: "6.0",
+          freq: "4.0–10.0",
+          elements: "64",
+          fov: "93°",
+          depth: "4.4–20.2",
+          apps: "小兒腹部、小兒心臟",
+        },
+      ],
+      studyTitle: "獨立評估",
+      studyBody:
+        "一份已發表的專家比較研究評估九款手持超聲波（腹部超聲的 B 超質量、操作手感與軟件）。CHISON SonoEye 屬於最高分系統之一，專家認為其在影像質量、操作與軟件功能之間取得較佳平衡。",
+      studyCite:
+        "Prospective Comparison of Nine Different Handheld Ultrasound Devices by Ultrasound Experts with Regard to B-Scan Quality, Device Handling, and Software in Abdominal Sonography.",
+      backToProduct: "返回 CHISON SonoEye",
     },
   },
 };

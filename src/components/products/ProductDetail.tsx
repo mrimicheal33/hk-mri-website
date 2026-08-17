@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle2, FileDown } from "lucide-react";
+import { ArrowRight, CheckCircle2, FileDown } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -48,12 +48,20 @@ export function ProductDetail({ product }: ProductDetailProps) {
             <p className="text-text-secondary leading-relaxed text-base sm:text-lg">
               {localized.description}
             </p>
-            {product.brochure && (
-              <div className="mt-8">
-                <Button href={product.brochure} variant="outline" size="md" external>
-                  <FileDown size={16} />
-                  {t.common.downloadBrochure}
-                </Button>
+            {(product.brochure || product.id === "sonoeye") && (
+              <div className="mt-8 flex flex-wrap gap-3">
+                {product.brochure && (
+                  <Button href={product.brochure} variant="outline" size="md" external>
+                    <FileDown size={16} />
+                    {t.common.downloadBrochure}
+                  </Button>
+                )}
+                {product.id === "sonoeye" && (
+                  <Button href="/products/sonoeye/introduction" variant="primary" size="md">
+                    {t.sonoeyeIntro.button}
+                    <ArrowRight size={16} />
+                  </Button>
+                )}
               </div>
             )}
             {videos && videos.length > 0 && (

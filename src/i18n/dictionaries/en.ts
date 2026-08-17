@@ -18,6 +18,9 @@ export const en = {
     mini800LiverTitle: "Non-invasive Liver Fibrosis Diagnostic System",
     mini800LiverDescription:
       "Academic overview of transient elastography for quantitative liver stiffness and steatosis assessment with iLivTouch Mini800.",
+    sonoeyeIntroTitle: "CHISON SonoEye Introduction",
+    sonoeyeIntroDescription:
+      "CHISON SonoEye handheld ultrasound — probe family, programmable controls, and AI-assisted workflows for point-of-care imaging.",
   },
   nav: {
     home: "Home",
@@ -1346,6 +1349,153 @@ export const en = {
         "Medical check-up / physical-examination centres",
       ],
       backToProduct: "Back to iLivTouch Mini800",
+    },
+  },
+  sonoeyeIntro: {
+    button: "CHISON SonoEye Introduction",
+    page: {
+      title: "CHISON SonoEye Introduction",
+      subtitle: "An extension of the doctor's senses to See More.",
+      intro:
+        "SonoEye is a wired handheld ultrasound that connects to iOS and Android smartphones and tablets. It is designed for point-of-care use across hospitals, specialist clinics, and general practice — from musculoskeletal and aesthetic work to emergency, education, and critical care.",
+      imageAlt: "CHISON SonoEye handheld ultrasound probe",
+      settingsLabel: "Where it is used",
+      settingsTitle: "Clinical settings",
+      settingsIntro:
+        "The system is intended for bedside and outpatient imaging where a cart-based scanner is impractical, including POC, cardiology, obstetrics and gynaecology, internal medicine, and other specialty clinics in municipal hospitals, community hospitals, and GP rooms.",
+      settings: [
+        "Musculoskeletal (MSK) and sports medicine",
+        "Aesthetic and interventional injection guidance",
+        "Emergency and first-response assessment",
+        "Education and remote teaching",
+        "Critical care and ICU",
+      ],
+      designTitle: "Design and workflow",
+      designIntro:
+        "Four programmable physical buttons (international patent) support freeze, image save, and parameter adjustment so the operator can scan with one hand and keep the other free for needle work or patient contact.",
+      designItems: [
+        "Wired connection for stable image transmission versus typical wireless probes.",
+        "Probe mass about 120–140 g, sized for pocket carry and bedside use.",
+        "IP67 ingress protection and MIL-STD-810G drop resistance for demanding clinical environments.",
+        "Imaging modes include B, colour (C), pulsed-wave Doppler (PW), M-mode, CPA, and DPD.",
+        "Programmable buttons reduce device contact during infectious cases and simplify biopsy workflow.",
+      ],
+      solutionsTitle: "Clinical solutions",
+      solutions: [
+        {
+          title: "Sports medicine and physiotherapy",
+          body: "Rapid assessment of muscle, tendon, and ligament injury; dedicated MSK presets; two linear probes at different frequencies for shoulder, wrist, deltoid, and related structures. Suitable for outdoor and bedside use.",
+        },
+        {
+          title: "Intervention and biopsy",
+          body: "Biopsy kit (P1 / P2 / P5 / P6) and Central Mark (P1 / P2) help locate the puncture path. Super Needle uses refraction to enhance the needle; SonoNeedle steers the beam to stay perpendicular to the needle so the tip and path remain visible.",
+        },
+        {
+          title: "Aesthetic medicine",
+          body: "High-frequency linear imaging of skin layers supports pre-injection depth planning, intra-procedure monitoring of fillers, and post-procedure review — including botulinum toxin, microneedling, and hyaluronic acid work.",
+        },
+        {
+          title: "Emergency and ICU",
+          body: "eFAST-oriented presets for hepatorenal and splenorenal spaces, xiphoid, pelvis, and thorax. ICU tools address patients who cannot be moved easily and operators with limited ultrasound experience.",
+        },
+      ],
+      toolsTitle: "Smart software",
+      tools: [
+        {
+          title: "SonoDiaph",
+          body: "Automatic diaphragm recognition and excursion measurement to support ventilator-weaning assessment. Available on SonoEye P5 — a capability the manufacturer positions as unique among common handheld systems.",
+        },
+        {
+          title: "Lung Analysis",
+          body: "Automatic pleural-line thickness and B-line counting, with comparison reports over time. Available on P1, P2, P3, and P5.",
+        },
+        {
+          title: "SonoBladder",
+          body: "Automatic bladder-boundary detection and volume measurement in five steps versus a typical twelve-step manual workflow. Available on P3, P5, and P6.",
+        },
+        {
+          title: "Auto EF",
+          body: "One-click EDV, ESV, and ejection fraction versus a six-step Simpson trace. Available on P3.",
+        },
+        {
+          title: "Vascular tools",
+          body: "Auto IMT and real-time IMT (P1 / P2), Intelligent Doppler for automatic ROI and gate placement, and Auto Trace of PW spectra.",
+        },
+        {
+          title: "Learn, record, and consult",
+          body: "SonoHelp anatomical guidance (thyroid, cardiac, carotid, kidney); SonoMSK colour overlay of tendons and muscles (P1 / P2); SonoCam case recording; SonoRemote expert consultation and teaching.",
+        },
+      ],
+      probesTitle: "Probe family",
+      probesIntro:
+        "Five probe models cover linear, convex, and phased-array work. Dedicated specification pages on this site currently list P2, P3, and P5.",
+      probesHeaders: {
+        model: "Model",
+        center: "Centre (MHz)",
+        freq: "Frequency (MHz)",
+        elements: "Elements",
+        fov: "FOV",
+        depth: "Depth (cm)",
+        apps: "Clinical applications",
+      },
+      probes: [
+        {
+          model: "P1",
+          href: "",
+          center: "9.0",
+          freq: "6.0–18.0",
+          elements: "128",
+          fov: "—",
+          depth: "1.0–14.8",
+          apps: "Carotid, thyroid, MSK, breast, lung, nerve",
+        },
+        {
+          model: "P2",
+          href: "/products/sonoeye/p2",
+          center: "7.5",
+          freq: "4.5–15.0",
+          elements: "128",
+          fov: "—",
+          depth: "1.0–14.8",
+          apps: "Carotid, thyroid, MSK, breast, lung, nerve",
+        },
+        {
+          model: "P3",
+          href: "/products/sonoeye/p3",
+          center: "2.5",
+          freq: "1.5–4.0",
+          elements: "32",
+          fov: "90°",
+          depth: "4.9–22.7",
+          apps: "Cardiac, abdomen, TCD",
+        },
+        {
+          model: "P5",
+          href: "/products/sonoeye/p5",
+          center: "3.5",
+          freq: "2.0–5.0",
+          elements: "96",
+          fov: "59°",
+          depth: "3.8–37.3",
+          apps: "Abdomen, kidney, OB, GYN, lung, bladder",
+        },
+        {
+          model: "P6",
+          href: "",
+          center: "6.0",
+          freq: "4.0–10.0",
+          elements: "64",
+          fov: "93°",
+          depth: "4.4–20.2",
+          apps: "Paediatric abdomen, paediatric cardiac",
+        },
+      ],
+      studyTitle: "Independent evaluation",
+      studyBody:
+        "In a published expert comparison of nine handheld ultrasound devices (B-scan quality, handling, and software in abdominal sonography), CHISON SonoEye was among the highest-scoring systems, noted for a balanced combination of image quality, handling, and software.",
+      studyCite:
+        "Prospective Comparison of Nine Different Handheld Ultrasound Devices by Ultrasound Experts with Regard to B-Scan Quality, Device Handling, and Software in Abdominal Sonography.",
+      backToProduct: "Back to CHISON SonoEye",
     },
   },
 };
